@@ -3,9 +3,38 @@ import "./Test.css";
 import { Player } from "../interfaces/player";
 
 function Test() {
+    // strings for testing
     const players = ["jerry", "terry", "larry"];
-    const [widgets, setWidgets] = useState<string[]>([]);
 
+    // some players to work with
+    const player1: Player = {
+        name: "Jerry",
+        description: "short",
+        image: "mid",
+        position: "QB",
+        rating: 12,
+        stats: { touchdowns: 0, receptions: 0, rushAttempts: 0, totalYards: 0 }
+    };
+    const player2: Player = {
+        name: "Terry",
+        description: "tall",
+        image: "mid",
+        position: "RB",
+        rating: 9,
+        stats: { touchdowns: 0, receptions: 0, rushAttempts: 0, totalYards: 0 }
+    };
+    const player3: Player = {
+        name: "Lerry",
+        description: "shall",
+        image: "mid",
+        position: "WR",
+        rating: 55,
+        stats: { touchdowns: 0, receptions: 0, rushAttempts: 0, totalYards: 0 }
+    };
+    // player list for testing
+    const playerList = [player1, player2, player3];
+
+    const [widgets, setWidgets] = useState<string[]>([]);
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
     }
@@ -22,14 +51,15 @@ function Test() {
     return (
         <div className="Test">
             <div className="widgets">
-                {players.map((curr: string) => (
+                {playerList.map((curr: Player) => (
                     <div
                         key="list"
                         className="widget"
                         draggable
-                        onDragStart={(e) => handleOnDrag(e, curr)}
+                        onDragStart={(e) => handleOnDrag(e, curr.name)}
                     >
-                        {curr}
+                        <div>{curr.name}</div>
+                        <div>{curr.position}</div>
                     </div>
                 ))}
             </div>
