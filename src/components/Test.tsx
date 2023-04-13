@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./Test.css";
+import { Player } from "../interfaces/player";
 
 function Test() {
+    const players = ["jerry", "terry", "larry"];
     const [widgets, setWidgets] = useState<string[]>([]);
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
@@ -20,27 +22,16 @@ function Test() {
     return (
         <div className="Test">
             <div className="widgets">
-                <div
-                    className="widget"
-                    draggable
-                    onDragStart={(e) => handleOnDrag(e, "Widget A")}
-                >
-                    Player 1
-                </div>
-                <div
-                    className="widget"
-                    draggable
-                    onDragStart={(e) => handleOnDrag(e, "widget B")}
-                >
-                    Player 2
-                </div>
-                <div
-                    className="widget"
-                    draggable
-                    onDragStart={(e) => handleOnDrag(e, "widget C")}
-                >
-                    Player 3
-                </div>
+                {players.map((curr: string) => (
+                    <div
+                        key="list"
+                        className="widget"
+                        draggable
+                        onDragStart={(e) => handleOnDrag(e, curr)}
+                    >
+                        {curr}
+                    </div>
+                ))}
             </div>
             <div
                 className="page"
