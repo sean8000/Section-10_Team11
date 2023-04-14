@@ -13,6 +13,10 @@ function App(): JSX.Element {
                 <Row>
                     <Col>
                         <h2> List 1: Central List</h2>
+                        <img
+                            src="https://www.gettyimages.com/photos/american-football-player"
+                            alt="player"
+                        />
                     </Col>
                     <Col>
                         <h2> List 2: Admin List</h2>

@@ -9,7 +9,10 @@
 
 .widgets {
     float: left;
-    width: 100px;
-    height: 100px;
-    outline: 2px solid black;
+    width: 200px;
+    height: 400px;
+    outline: 4px solid black;
+}
+
+.displayQB {
 }
