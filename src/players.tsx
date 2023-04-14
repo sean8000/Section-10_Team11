@@ -5,7 +5,7 @@ import { Player } from "./interfaces/player";
 const pMahomes: Player = {
     name: "Patrick Mahomes",
     description: "Kansas City Chiefs",
-    image: "./src/player images/Mahomes.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
     position: "QB",
     stats: {
         touchdowns: 41,
@@ -19,7 +19,7 @@ const pMahomes: Player = {
 const jBurrow: Player = {
     name: "Joe Burrow",
     description: "Cincinnati Bengals",
-    image: "./src/player images/Burrow.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn",
     position: "QB",
     stats: {
         touchdowns: 40,
@@ -33,7 +33,7 @@ const jBurrow: Player = {
 const jAllen: Player = {
     name: "Josh Allen",
     description: "Buffalo Bulls",
-    image: "./src/player images/Allen.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n",
     position: "QB",
     stats: {
         touchdowns: 35,
@@ -47,7 +47,7 @@ const jAllen: Player = {
 const dJones: Player = {
     name: "Daniel Jones",
     description: "New York Giants",
-    image: "./src/player images/Jones.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/af6nbjqa6qubnu8oi4ms",
     position: "QB",
     stats: {
         touchdowns: 15,
@@ -63,7 +63,7 @@ const dJones: Player = {
 const sBarkley: Player = {
     name: "Saquon Barkley",
     description: "New York Giants",
-    image: "./src/player images/Barkley.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/o8tlhps5u1tvnaaxlpjk",
     position: "RB",
     stats: {
         touchdowns: 10,
@@ -77,7 +77,7 @@ const sBarkley: Player = {
 const cMcCaffrey: Player = {
     name: "Christian McCaffrey",
     description: "San Francisco 49ers",
-    image: "./src/player images/CMC.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw",
     position: "RB",
     stats: {
         touchdowns: 13,
@@ -91,7 +91,7 @@ const cMcCaffrey: Player = {
 const aEkeler: Player = {
     name: "Austin Ekeler",
     description: "Los Angeles Chargers",
-    image: "./src/player images/Ekeler.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/tl0nhc7kyf4aumbyzs5b",
     position: "RB",
     stats: {
         touchdowns: 18,
@@ -105,7 +105,7 @@ const aEkeler: Player = {
 const jMixon: Player = {
     name: "Joe Mixon",
     description: "Cincinnati Bengals",
-    image: "./src/player images/Mixon.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/rd210pq6ch22vpoygtfn",
     position: "RB",
     stats: {
         touchdowns: 9,
@@ -119,7 +119,7 @@ const jMixon: Player = {
 const dHenry: Player = {
     name: "Derrick Henry",
     description: "Tennesse Titans",
-    image: "./src/player images/Henry.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/lvdvmkqltz7zz7fjtopr",
     position: "RB",
     stats: {
         touchdowns: 13,
@@ -133,7 +133,7 @@ const dHenry: Player = {
 const jJacobs: Player = {
     name: "Josh Jacobs",
     description: "Las Vegas Raiders",
-    image: "./src/player images/Jacobs.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/sagoqkubeaz5yht01ow7",
     position: "RB",
     stats: {
         touchdowns: 12,
@@ -147,7 +147,7 @@ const jJacobs: Player = {
 const nChubb: Player = {
     name: "Nick Chubb",
     description: "Cleveland Browns",
-    image: "./src/player images/Chubb.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/a8ib0haur75wrhqrbtyo",
     position: "RB",
     stats: {
         touchdowns: 13,
@@ -161,7 +161,7 @@ const nChubb: Player = {
 const dCook: Player = {
     name: "Dalvin Cook",
     description: "Minnesota Vikings",
-    image: "./src/player images/Cook.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/gfwvqolvz9vegp1amhf3",
     position: "RB",
     stats: {
         touchdowns: 10,
@@ -175,7 +175,7 @@ const dCook: Player = {
 const aJones: Player = {
     name: "Aaron Jones",
     description: "Green Bay Packers",
-    image: "./src/player images/Aaron.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/oo8yixhsahh4gznox7th",
     position: "RB",
     stats: {
         touchdowns: 7,
@@ -191,7 +191,7 @@ const aJones: Player = {
 const jJefferson: Player = {
     name: "Justin Jefferson",
     description: "Minnesota Vikings",
-    image: "./src/player images/Jefferson.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/zdstmm4sloqnichybgja",
     position: "WR",
     stats: {
         touchdowns: 8,
@@ -205,7 +205,7 @@ const jJefferson: Player = {
 const dAdams: Player = {
     name: "Davante Adams",
     description: "Las Vegas Raiders",
-    image: "./src/player images/Adams.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/jmojceirzhgctrcfi4aw",
     position: "WR",
     stats: {
         touchdowns: 14,
@@ -219,7 +219,7 @@ const dAdams: Player = {
 const jChase: Player = {
     name: "Ja'Marr Chase",
     description: "Cincinnati Bengals",
-    image: "./src/player images/Chase.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/hwrzdfsng9bh4tba7uoe",
     position: "WR",
     stats: {
         touchdowns: 9,
@@ -233,7 +233,7 @@ const jChase: Player = {
 const mEvans: Player = {
     name: "Mike Evans",
     description: "Tampa Bay Buccaneers",
-    image: "./src/player images/Evans.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/pyilrqdmfvv1zceem1cg",
     position: "WR",
     stats: {
         touchdowns: 6,
@@ -247,7 +247,7 @@ const mEvans: Player = {
 const dHopkins: Player = {
     name: "DeAndre Hopkins",
     description: "Arizona Cardinals",
-    image: "./src/player images/Hopkins.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/kikfprn4t5ap1lju4a4k",
     position: "WR",
     stats: {
         touchdowns: 3,
@@ -261,7 +261,7 @@ const dHopkins: Player = {
 const tHill: Player = {
     name: "Tyreek Hill",
     description: "Miami Dolphins",
-    image: "./src/player images/Hill.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/lsszbdnkusxc7mduw5be",
     position: "WR",
     stats: {
         touchdowns: 7,
@@ -275,7 +275,7 @@ const tHill: Player = {
 const sDiggs: Player = {
     name: "Stefon Diggs",
     description: "Buffalo Bills",
-    image: "./src/player images/Diggs.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/hcvd2avk0kufoli80veb",
     position: "WR",
     stats: {
         touchdowns: 11,
@@ -289,7 +289,7 @@ const sDiggs: Player = {
 const dSamuel: Player = {
     name: "Deebo Samuel",
     description: "San Francisco 49ers",
-    image: "./src/player images/Samuel.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/ciwaktyqewczcquks4wy",
     position: "WR",
     stats: {
         touchdowns: 2,
@@ -303,7 +303,7 @@ const dSamuel: Player = {
 const aCooper: Player = {
     name: "Amari Cooper",
     description: "Cleveland Browns",
-    image: "./src/player images/Cooper.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/zibbxjtein7gpu5zgcj4",
     position: "WR",
     stats: {
         touchdowns: 9,
@@ -319,7 +319,7 @@ const aCooper: Player = {
 const tKelce: Player = {
     name: "Travis Kelce",
     description: "Kansas City Chiefs",
-    image: "./src/player images/Kelce.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/gorkhvipsk0gdqb6bo34",
     position: "TE",
     stats: {
         touchdowns: 12,
@@ -333,7 +333,7 @@ const tKelce: Player = {
 const mAndrews: Player = {
     name: "Mark Andrews",
     description: "Baltimore Ravens",
-    image: "./src/player images/Andrews.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/m1fmyihulvtdiav4bwxm",
     position: "TE",
     stats: {
         touchdowns: 5,
@@ -347,7 +347,7 @@ const mAndrews: Player = {
 const dWaller: Player = {
     name: "Darren Waller",
     description: "New York Giants",
-    image: "./src/player images/Waller.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/c7jaefxw5xiawscvnqc0",
     position: "TE",
     stats: {
         touchdowns: 3,
@@ -361,7 +361,7 @@ const dWaller: Player = {
 const gKittle: Player = {
     name: "George Kittle",
     description: "San Francisco 49ers",
-    image: "./src/player images/Kittle.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/znlqhc55l9zwi0euf1mk",
     position: "TE",
     stats: {
         touchdowns: 11,
@@ -377,7 +377,7 @@ const gKittle: Player = {
 const jTucker: Player = {
     name: "Justin Tucker",
     description: "Baltimore Ravens",
-    image: "./src/player images/Tucker.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf",
     position: "K",
     stats: {
         touchdowns: -1,
@@ -391,7 +391,7 @@ const jTucker: Player = {
 const hButker: Player = {
     name: "Harrison Butker",
     description: "Kansas City Chiefs",
-    image: "./src/player images/Butker.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/snhlmpr5wfw1t8w1yqgu",
     position: "K",
     stats: {
         touchdowns: -1,
@@ -405,7 +405,7 @@ const hButker: Player = {
 const eMcPherson: Player = {
     name: "Evan McPherson",
     description: "Cincinnati Bengals",
-    image: "./src/player images/Mcpherson.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/qxyqg1xibovrlkhebks2",
     position: "K",
     stats: {
         touchdowns: -1,
@@ -419,7 +419,7 @@ const eMcPherson: Player = {
 const yKoo: Player = {
     name: "Younghoe Koo",
     description: "Atlanta Falcons",
-    image: "./src/player images/Koo.png",
+    image: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/nvtusyryw9cpf6p8tz8n",
     position: "K",
     stats: {
         touchdowns: -1,
