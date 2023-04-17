@@ -25,11 +25,11 @@ function Test() {
     }
     return (
         <div className="Test">
-            <div className="widgets">
+            <div className="central">
                 {players.map((curr: string) => (
                     <div
                         key="list"
-                        className="widget"
+                        className="player"
                         draggable
                         onDragStart={(e) => handleOnDrag(e, curr)}
                     >
@@ -46,15 +46,15 @@ function Test() {
                 ))}
             </div>
             <div
-                className="page"
+                className="user"
                 onDrop={handleOnDrop}
                 onDragOver={handleDragOver}
             >
-                {widgets.map((widget, index) => (
-                    <div className="dropped-widget" key={index}>
-                        {widget}
+                {widgets.map((curr, index) => (
+                    <div className="player" key={index}>
+                        {curr}
                         <img
-                            src={player_map[widget]}
+                            src={player_map[curr]}
                             style={{
                                 width: 50,
                                 height: 50
