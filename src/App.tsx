@@ -8,7 +8,10 @@ function App(): JSX.Element {
     return (
         <div>
             <h1> This is our website</h1>
-            <span>Alexander Marshall, Michael Murphy, Sean Johnson</span>
+            <span>
+                Alexander Marshall, Michael Murphy, Sean Johnson, Michael
+                Lorang, Dean Turner
+            </span>
             <Test></Test>
             <Container>
                 <Row>
