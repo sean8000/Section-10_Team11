@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+//import { Col, Container, Row } from "react-bootstrap";
 import "./Test.css";
 
-function Test() {
+function Test({ role }: { role: string }) {
     const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
         jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
@@ -26,6 +27,7 @@ function Test() {
     return (
         <div className="Test">
             <div className="central">
+                <span> Central List </span>
                 {players.map((curr: string) => (
                     <div
                         key="list"
@@ -50,6 +52,7 @@ function Test() {
                 onDrop={handleOnDrop}
                 onDragOver={handleDragOver}
             >
+                <span> List for: {role}</span>
                 {widgets.map((curr, index) => (
                     <div className="player" key={index}>
                         {curr}
