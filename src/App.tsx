@@ -16,15 +16,6 @@ function App(): JSX.Element {
             <Container>
                 <Row>
                     <Col>
-                        <h2> List 1: Central List</h2>
-                    </Col>
-                    <Col>
-                        <h2> List 2: Admin List</h2>
-                    </Col>
-                    <Col>
-                        <h3> List 3: Users List</h3>
-                    </Col>
-                    <Col>
                         <h4>Role Select</h4>
                         <RoleSelect></RoleSelect>
                     </Col>
