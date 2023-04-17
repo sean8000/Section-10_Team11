@@ -8,7 +8,7 @@ function App(): JSX.Element {
     return (
         <div>
             <h1> This is our website</h1>
-            <p> Sean</p>
+            <span>Alexander Marshall, Michael Murphy, Sean Johnson</span>
             <Test></Test>
             <Container>
                 <Row>
