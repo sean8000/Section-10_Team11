@@ -28,7 +28,7 @@
         "test:cov": "react-scripts test --coverage --watchAll",
         "eject": "react-scripts eject",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
+        "deploy": "main -d build",
         "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0",
         "format": "prettier --config .prettierrc --write src/**/*.{ts,tsx}"
     },
