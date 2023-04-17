@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import "./Test.css";
-import { Player } from "../interfaces/player";
 
 function Test() {
     const players = ["jerry", "terry", "larry"];
+    const player_map: Record<string, string> = {
+        jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
+        terry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn",
+        larry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n"
+    };
     const [widgets, setWidgets] = useState<string[]>([]);
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
@@ -30,6 +34,14 @@ function Test() {
                         onDragStart={(e) => handleOnDrag(e, curr)}
                     >
                         {curr}
+                        <img
+                            src={player_map[curr]}
+                            style={{
+                                width: 50,
+                                height: 50
+                            }}
+                            alt="Here"
+                        />
                     </div>
                 ))}
             </div>
@@ -41,6 +53,14 @@ function Test() {
                 {widgets.map((widget, index) => (
                     <div className="dropped-widget" key={index}>
                         {widget}
+                        <img
+                            src={player_map[widget]}
+                            style={{
+                                width: 50,
+                                height: 50
+                            }}
+                            alt="Here"
+                        />
                     </div>
                 ))}
             </div>
