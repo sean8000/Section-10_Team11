@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Player } from "./interfaces/player";
 
 //QUARTERBACKS
