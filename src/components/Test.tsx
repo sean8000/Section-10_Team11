@@ -3,8 +3,8 @@ import "./Test.css";
 import { Player } from "../interfaces/player";
 
 function Test() {
-    // strings for testing
-    const players = ["jerry", "terry", "larry"];
+// strings for testing
+// const players = ["jerry", "terry", "larry"];
 
     // some players to work with
     const player1: Player = {
@@ -65,7 +65,9 @@ function Test() {
                             }}
                         >
                             <img
-                                src="https://www.google.com/search?q=football+player+stock+image&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjfrpzppaj-AhWKFFkFHWu7A4sQ0pQJegQIBhAC&biw=1280&bih=648&dpr=1.5#imgrc=v2X-XUxbM9o_uM"
+                                src="src\player_images\Aaron.png"
+                                width="50px"
+                                height="50px"
                                 alt="player"
                             />
                             {curr.name}: {curr.position}
@@ -86,6 +88,7 @@ function Test() {
             </div>
         </div>
     );
+
 }
 
 export default Test;
