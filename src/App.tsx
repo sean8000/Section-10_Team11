@@ -5,6 +5,7 @@ import { RoleSelect } from "./roleSelect";
 
 function App(): JSX.Element {
     const [role, setRole] = useState<string>("Super");
+    const [widgets, setWidgets] = useState<string[]>([]);
     return (
         <div>
             <h1> This is our website, Can it finally deploy please?</h1>
@@ -16,7 +17,11 @@ function App(): JSX.Element {
                 <Row>
                     <Col>
                         {role !== "Super" ? (
-                            <Test role={role}></Test>
+                            <Test
+                                widgets={widgets}
+                                setWidgets={setWidgets}
+                                role={role}
+                            ></Test>
                         ) : (
                             <span>
                                 Central List, Added later when player list
@@ -26,7 +31,11 @@ function App(): JSX.Element {
                     </Col>
                     <Col>
                         <h4>Role Select</h4>
-                        <RoleSelect setRole={setRole} role={role}></RoleSelect>
+                        <RoleSelect
+                            setRole={setRole}
+                            role={role}
+                            setWidgets={setWidgets}
+                        ></RoleSelect>
                     </Col>
                 </Row>
             </Container>

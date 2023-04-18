@@ -3,12 +3,14 @@ import { Form } from "react-bootstrap";
 interface Roles {
     setRole: (newString: string) => void;
     role: string;
+    setWidgets: (newStringList: string[]) => void;
 }
-export function RoleSelect({ setRole, role }: Roles): JSX.Element {
+export function RoleSelect({ setRole, role, setWidgets }: Roles): JSX.Element {
     //const [role, setRole] = useState<string>("Super");
 
     function updateRole(event: React.ChangeEvent<HTMLSelectElement>) {
         setRole(event.target.value);
+        setWidgets([]);
     }
 
     // This is the View

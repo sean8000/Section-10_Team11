@@ -1,16 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
-
-function Test({ role }: { role: string }) {
+interface Widgets {
+    setWidgets: (newStringList: string[]) => void;
+    widgets: string[];
+    role: string;
+}
+function Test({ role, widgets, setWidgets }: Widgets) {
     const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
         jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
         terry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn",
         larry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n"
     };
-    const [widgets, setWidgets] = useState<string[]>([]);
-
+    //const [widgets, setWidgets] = useState<string[]>([]);
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
     }
