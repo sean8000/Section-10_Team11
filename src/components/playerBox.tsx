@@ -1,6 +1,7 @@
 import React from "react";
 import { useDrag } from "react-dnd";
 
+// THESE ARE COPY PASTED AS EXAMPLES I DONT KNOW ANYTHING ABOUT THEM THOUGH
 export function playerBox() {
     const [{ isDragging }, drag, dragPreview] = useDrag(() => ({
         // "type" is required. It is used by the "accept" specification of drop targets.
