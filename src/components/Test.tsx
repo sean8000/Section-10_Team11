@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import { Col, Container, Row } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "./Test.css";
 
 function Test({ role }: { role: string }) {
@@ -20,6 +20,12 @@ function Test({ role }: { role: string }) {
         //console.log("widgetType", widgetType);
         setWidgets([...widgets, widgetType]);
     }
+    function handleOnButtonClick(removedPlayer: string) {
+        const newList = widgets.filter(
+            (player: string): boolean => player !== removedPlayer
+        );
+        setWidgets(newList);
+    }
 
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
@@ -39,8 +45,8 @@ function Test({ role }: { role: string }) {
                         <img
                             src={player_map[curr]}
                             style={{
-                                width: 50,
-                                height: 50
+                                width: 40,
+                                height: 40
                             }}
                             alt="Here"
                         />
@@ -59,11 +65,14 @@ function Test({ role }: { role: string }) {
                         <img
                             src={player_map[curr]}
                             style={{
-                                width: 50,
-                                height: 50
+                                width: 40,
+                                height: 40
                             }}
                             alt="Here"
                         />
+                        <Button onClick={() => handleOnButtonClick(curr)}>
+                            Delete Player
+                        </Button>
                     </div>
                 ))}
             </div>
