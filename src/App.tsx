@@ -6,6 +6,19 @@ import { RoleSelect } from "./roleSelect";
 function App(): JSX.Element {
     const [role, setRole] = useState<string>("Super");
     const [widgets, setWidgets] = useState<string[]>([]);
+    const [totalRoles, setTotalRoles] = useState<string[]>([
+        "Super",
+        "Admin",
+        "User1"
+    ]);
+
+    {
+        /*}
+    function addUser() {
+        setTotalRoles([...totalRoles, "User2"]);
+    }
+{*/
+    }
     return (
         <div>
             <h1> This is our website, Can it finally deploy please?</h1>
@@ -35,7 +48,10 @@ function App(): JSX.Element {
                             setRole={setRole}
                             role={role}
                             setWidgets={setWidgets}
+                            totalRoles={totalRoles}
+                            setTotalRoles={setTotalRoles}
                         ></RoleSelect>
+                        {/*}<Button onClick={() => addUser()}>Add User</Button>{*/}
                     </Col>
                 </Row>
             </Container>
