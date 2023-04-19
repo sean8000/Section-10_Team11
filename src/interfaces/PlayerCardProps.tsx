@@ -21,4 +21,6 @@ export interface PlayerCardProps {
         // overall rating (1-100)
         rating: number;
     };
+
+    // dragable: boolean;
 }
