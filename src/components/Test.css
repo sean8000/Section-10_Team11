@@ -6,14 +6,46 @@
     outline: 2px solid black;
 }
 
-.player:nth-child(odd) {
-    background-color: lightgray;
+.player {
+    background-color: gray;
 }
 
 .central {
-    text-align: center;
+    text-align: right;
     float: left;
     width: 200px;
     height: 300px;
     outline: 2px solid black;
+}
+
+.rockwell {
+    font-family: "Rockwell";
+    font-size: larger;
+}
+
+.heading {
+    align-items: center;
+    text-align: center;
+    background: rgb(29, 26, 26);
+    color: white;
+    padding: 40px;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(31, 31, 207);
+    color: white;
+    padding: 50px;
+}
+
+.roleSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    color: black;
 }

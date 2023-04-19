@@ -1,5 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
+import "./Test.css";
 interface Roles {
     setRole: (newString: string) => void;
     role: string;
@@ -16,8 +17,8 @@ export function RoleSelect({ setRole, role, setWidgets }: Roles): JSX.Element {
     // This is the View
     return (
         <div>
-            <Form.Group controlId="Roles">
-                <Form.Label>What role would you like to pick?</Form.Label>
+            <Form.Group className="instructions" controlId="Roles">
+                <Form.Label>Which role</Form.Label>
                 <Form.Select value={role} onChange={updateRole}>
                     <option value="Super">Super</option>
                     <option value="Admin">Admin</option>
