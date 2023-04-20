@@ -9,6 +9,8 @@ interface Widgets {
     widgets: Player[];
     role: string;
 }
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function Test({ role, widgets, setWidgets }: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
@@ -64,7 +66,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
     return (
         <div className="Test">
             <div className="central">
-                <span> Central List </span>
+                <h4 className="playersTitle">Players</h4>
                 {centralList.map((curr: Player) => (
                     <div
                         key="list"
@@ -90,7 +92,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
                 onDrop={handleOnDrop}
                 onDragOver={handleDragOver}
             >
-                <span> List for: {role}</span>
+                <h4 className="playersTitle">Your Team</h4>
                 {widgets.map((curr, index) => (
                     <div className="player" key={index}>
                         {curr.name}
