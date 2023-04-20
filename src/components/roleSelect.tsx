@@ -1,34 +1,30 @@
+import "./Test.css";
 import React, { useState } from "react";
-import { UserText } from "./UserText";
+import { UserText } from "../UserText";
 import { Form, Button } from "react-bootstrap";
+import { Player } from "../interfaces/player";
+
 interface Roles {
     setRole: (newString: string) => void;
     role: string;
-    widgets: string[];
-    setWidgets: (newStringList: string[]) => void;
+    setWidgets: (newStringList: Player[]) => void;
     totalRoles: string[];
     setTotalRoles: (newStringList: string[]) => void;
-    myMap: Map<string, string[]>;
-    setMyMap: (newRecord: Map<string, string[]>) => void;
+    myMap: Map<string, Player[]>;
+    //setMyMap: (newMap: Map<string, Player[]>) => void;
 }
 export function RoleSelect({
     setRole,
     role,
-    //widgets,
+    myMap,
     setWidgets,
     totalRoles,
-    setTotalRoles,
-    myMap
-}: //setMyMap
-Roles): JSX.Element {
+    setTotalRoles
+}: Roles): JSX.Element {
     //const [role, setRole] = useState<string>("Super");
     const [userText, setUserText] = useState<string>("");
     function updateRole(event: React.ChangeEvent<HTMLSelectElement>) {
-        //setMyMap(myMap.set(role, [...widgets]));
-        //console.log("prev" + role);
         setRole(event.target.value);
-        console.log("new" + role);
-        console.log(myMap.get(role));
         setWidgets(myMap.get(event.target.value) ?? []);
     }
     function addUser() {
@@ -37,9 +33,11 @@ Roles): JSX.Element {
 
     // This is the View
     return (
-        <div>
+        <div className="roleSelect">
             <Form.Group controlId="Roles">
-                <Form.Label>What role would you like to pick?</Form.Label>
+                <Form.Label className="roleSelectHeadings">
+                    Which role
+                </Form.Label>
                 <Form.Select value={role} onChange={updateRole}>
                     {totalRoles.map((role: string) => (
                         <option key={role} value={role}>
@@ -54,9 +52,14 @@ Roles): JSX.Element {
                     {*/}
                 </Form.Select>
             </Form.Group>
-            The Currently chosen role is: {role}.
-            <UserText userText={userText} setUserText={setUserText}></UserText>
-            <Button onClick={() => addUser()}>Add this User</Button>
+            <div className="addUserBox">
+                {" "}
+                <UserText
+                    userText={userText}
+                    setUserText={setUserText}
+                ></UserText>
+                <Button onClick={() => addUser()}>Add this User</Button>
+            </div>
         </div>
     );
 }

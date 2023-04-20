@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Test from "./components/Test";
 import { Col, Container, Row } from "react-bootstrap";
-import { RoleSelect } from "./roleSelect";
+import { RoleSelect } from ".//components/roleSelect";
+import { Player } from "./interfaces/player";
 
 function App(): JSX.Element {
     const [role, setRole] = useState<string>("Super");
     const [myMap, setMyMap] = useState(new Map());
-    const [widgets, setWidgets] = useState<string[]>([]);
+    const [widgets, setWidgets] = useState<Player[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
         "Super",
         "Admin",
@@ -22,11 +23,25 @@ function App(): JSX.Element {
     }
     return (
         <div>
-            <h1> This is our website, Can it finally deploy please?</h1>
-            <span>
-                Alexander Marshall, Michael Murphy, Sean Johnson, Michael
-                Lorang, Dean Turner
-            </span>
+            <h1 className="heading">NFL Football TeamBuilder</h1>
+            <h5 className="instructions">
+                LEAGUE MANAGERS ----- ADD/REMOVE PLAYERS
+            </h5>
+            <h5 className="instructions">
+                TEAM MANAGERS ----- EDIT YOUR PLAYERS
+            </h5>
+            <h5 className="instructions">
+                TEAM BUILDERS ----- BUILD YOUR TEAM
+            </h5>
+            <h4 className="roleSelectHeadings">Role Select</h4>
+            <RoleSelect
+                setRole={setRole}
+                role={role}
+                setWidgets={setWidgets}
+                totalRoles={totalRoles}
+                setTotalRoles={setTotalRoles}
+                myMap={myMap}
+            ></RoleSelect>
             <Container>
                 <Row>
                     <Col>
@@ -45,6 +60,7 @@ function App(): JSX.Element {
                             </span>
                         )}
                     </Col>
+                    {/*}
                     <Col>
                         <h4>Role Select</h4>
                         <RoleSelect
@@ -57,10 +73,15 @@ function App(): JSX.Element {
                             myMap={myMap}
                             setMyMap={setMyMap}
                         ></RoleSelect>
-                        {/*}<Button onClick={() => addUser()}>Add User</Button>{*/}
+                        {/*}<Button onClick={() => addUser()}>Add User</Button>{
                     </Col>
+                    */}
                 </Row>
             </Container>
+            <span className="names">
+                Alexander Marshall, Michael Murphy, Sean Johnson, Michael
+                Lorang, Dean Turner
+            </span>
         </div>
     );
 }

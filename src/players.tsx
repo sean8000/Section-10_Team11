@@ -430,3 +430,37 @@ const yKoo: Player = {
     },
     rating: 90
 };
+
+// can import this list to any file to access all the players
+export const playerList = [
+    pMahomes,
+    jBurrow,
+    jAllen,
+    dJones,
+    sBarkley,
+    cMcCaffrey,
+    aEkeler,
+    jMixon,
+    dHenry,
+    jJacobs,
+    aJones,
+    nChubb,
+    dCook,
+    tHill,
+    dHopkins,
+    tKelce,
+    hButker,
+    mEvans,
+    jTucker,
+    gKittle,
+    eMcPherson,
+    dSamuel,
+    sDiggs,
+    aCooper,
+    mAndrews,
+    jChase,
+    dWaller,
+    jJefferson,
+    dAdams,
+    yKoo
+];
