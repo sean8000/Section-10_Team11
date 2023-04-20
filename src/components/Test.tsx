@@ -22,7 +22,6 @@ function Test({ role, widgets, setWidgets }: Widgets) {
     // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
     const [centralList, setCentralList] = useState<Player[]>(playerList);
 
-    //const [widgets, setWidgets] = useState<string[]>([]);
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
     }
@@ -30,12 +29,12 @@ function Test({ role, widgets, setWidgets }: Widgets) {
     function handleOnDrop(e: React.DragEvent) {
         const widgetType = e.dataTransfer.getData("widgetType") as string;
 
-        // find dropped player based on name
+        // find dropped player  object based on name
         const oldPlayer = playerList.find(
             (ele) => ele.name === widgetType
         ) as Player;
 
-        // make a new copy of the player (is probably an easier way to do this)
+        // make a new copy of the player (might not be neccessary?)
         const newPlayer = { ...oldPlayer };
 
         // add the player to the list
@@ -45,7 +44,8 @@ function Test({ role, widgets, setWidgets }: Widgets) {
     }
 
     function handleOnButtonClick(removedPlayer: Player) {
-        // to fix maybe generate and ID thats attached to each player when they get added to the user list
+        // modified because now widgets are players, so when you delete one player it doesnt
+        // delete other players with the same name
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
@@ -56,8 +56,10 @@ function Test({ role, widgets, setWidgets }: Widgets) {
         e.preventDefault();
     }
 
-    // the curr in the first map below now represents a player,
+    // the curr in the both maps below now represents players,
     // you can access its attributes with dot notation
+    // also we should consider makeing a "renderPlayer" function that way we can format the player
+    // cards separatly and clean up the code a little
     return (
         <div className="Test">
             <div className="central">
