@@ -75,7 +75,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
                 onDrop={handleOnDrop}
                 onDragOver={handleDragOver}
             >
-                <span> List for: {role}</span>
+                <h4 className="playersTitle">Your Team</h4>
                 {widgets.map((curr, index) => (
                     <div className="player" key={index}>
                         {curr}

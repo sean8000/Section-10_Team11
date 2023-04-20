@@ -22,15 +22,23 @@ function App(): JSX.Element {
     return (
         <div>
             <h1 className="heading">NFL Football TeamBuilder</h1>
-            <h4 className="instructions">
+            <h5 className="instructions">
                 LEAGUE MANAGERS ----- ADD/REMOVE PLAYERS
-            </h4>
-            <h4 className="instructions">
+            </h5>
+            <h5 className="instructions">
                 TEAM MANAGERS ----- EDIT YOUR PLAYERS
-            </h4>
-            <h4 className="instructions">
+            </h5>
+            <h5 className="instructions">
                 TEAM BUILDERS ----- BUILD YOUR TEAM
-            </h4>
+            </h5>
+            <h4 className="roleSelectHeadings">Role Select</h4>
+            <RoleSelect
+                setRole={setRole}
+                role={role}
+                setWidgets={setWidgets}
+                totalRoles={totalRoles}
+                setTotalRoles={setTotalRoles}
+            ></RoleSelect>
             <Container>
                 <Row>
                     <Col>
@@ -47,6 +55,7 @@ function App(): JSX.Element {
                             </span>
                         )}
                     </Col>
+                    {/*}
                     <Col>
                         <h4>Role Select</h4>
                         <RoleSelect
@@ -56,11 +65,12 @@ function App(): JSX.Element {
                             totalRoles={totalRoles}
                             setTotalRoles={setTotalRoles}
                         ></RoleSelect>
-                        {/*}<Button onClick={() => addUser()}>Add User</Button>{*/}
+                        {/*}<Button onClick={() => addUser()}>Add User</Button>{
                     </Col>
+                    */}
                 </Row>
             </Container>
-            <span>
+            <span className="names">
                 Alexander Marshall, Michael Murphy, Sean Johnson, Michael
                 Lorang, Dean Turner
             </span>

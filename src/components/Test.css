@@ -1,8 +1,10 @@
 .user {
-    float: left;
+    float: right;
+    text-align: center;
     width: 500px;
-    height: 300px;
-    outline: 1px solid black;
+    height: auto;
+    outline: 1px solid white;
+    position: relative;
 }
 
 .player {
@@ -14,7 +16,7 @@
     text-align: center;
     float: left;
     width: 500px;
-    height: 300px;
+    height: auto;
     outline: 1px solid black;
 }
 
@@ -28,8 +30,6 @@
 }
 
 .instructions {
-    float: inline-start;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -42,6 +42,14 @@
 .playersTitle {
     font-family: "Alkatra";
     color: white;
+    text-align: center;
+}
+
+.roleSelectHeadings {
+    align-items: center;
+    color: white;
+    font-family: "Alkatra";
+    text-align: center;
 }
 
 .roleSelect {
@@ -49,6 +57,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 150px;
+    width: 1000px;
     color: black;
+}
+
+.names {
+    bottom: 0%;
+    position: fixed;
+    color: white;
+}
+
+.addUserBox {
+    float: right;
+    color: white;
+    font-family: "Alkatra";
 }
