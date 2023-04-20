@@ -29,6 +29,7 @@ export function RoleSelect({
     }
     function addUser() {
         setTotalRoles([...totalRoles, userText]);
+        setUserText("");
     }
 
     // This is the View
