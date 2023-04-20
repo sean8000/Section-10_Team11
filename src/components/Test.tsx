@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import "./Test.css";
 import { playerList } from "../players";
 import { Player } from "../interfaces/player";
+import { SortSelect } from "./sortSelect";
 
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
@@ -24,6 +25,9 @@ function Test({ role, widgets, setWidgets }: Widgets) {
     // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [centralList, setCentralList] = useState<Player[]>(playerList);
+
+    // hold current sorting method of central list
+    const [centralSort, setCentralSort] = useState<string>("None");
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
@@ -67,6 +71,11 @@ function Test({ role, widgets, setWidgets }: Widgets) {
         <div className="Test">
             <div className="central">
                 <h4 className="playersTitle">Players</h4>
+                Sort by:
+                <SortSelect
+                    sortOption={centralSort}
+                    setSortOption={setCentralSort}
+                ></SortSelect>
                 {centralList.map((curr: Player) => (
                     <div
                         key="list"
@@ -86,6 +95,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
                         />
                     </div>
                 ))}
+                ; Currently Sorting By {centralSort}
             </div>
             <div
                 className="user"
