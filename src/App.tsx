@@ -44,11 +44,13 @@ function App(): JSX.Element {
                 <Row>
                     <Col>
                         {role !== "Super" ? (
-                            <Test
-                                widgets={widgets}
-                                setWidgets={setWidgets}
-                                role={role}
-                            ></Test>
+                            <>
+                                <Test
+                                    widgets={widgets}
+                                    setWidgets={setWidgets}
+                                    role={role}
+                                ></Test>
+                            </>
                         ) : (
                             <span>
                                 Central List, Added later when player list
