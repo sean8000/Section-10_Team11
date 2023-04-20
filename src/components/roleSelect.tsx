@@ -31,7 +31,7 @@ export function RoleSelect({
     // This is the View
     return (
         <div>
-            <Form.Group className="instructions" controlId="Roles">
+            <Form.Group controlId="Roles">
                 <Form.Label>Which role</Form.Label>
                 <Form.Select value={role} onChange={updateRole}>
                     {totalRoles.map((role: string) => (

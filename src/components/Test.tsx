@@ -36,7 +36,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
     return (
         <div className="Test">
             <div className="central">
-                <span> Central List </span>
+                <h4 className="playersTitle">Players</h4>
                 {players.map((curr: string) => (
                     <div
                         key="list"

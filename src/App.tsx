@@ -21,14 +21,16 @@ function App(): JSX.Element {
     }
     return (
         <div>
-            <h1 className="heading">
-                <div className="rockwell">NFL Football TeamBuilder</div>
-            </h1>
-            <RoleSelect
-                setRole={setRole}
-                role={role}
-                setWidgets={setWidgets}
-            ></RoleSelect>
+            <h1 className="heading">NFL Football TeamBuilder</h1>
+            <h4 className="instructions">
+                LEAGUE MANAGERS ----- ADD/REMOVE PLAYERS
+            </h4>
+            <h4 className="instructions">
+                TEAM MANAGERS ----- EDIT YOUR PLAYERS
+            </h4>
+            <h4 className="instructions">
+                TEAM BUILDERS ----- BUILD YOUR TEAM
+            </h4>
             <Container>
                 <Row>
                     <Col>
@@ -58,9 +60,6 @@ function App(): JSX.Element {
                     </Col>
                 </Row>
             </Container>
-            <h3 className="instructions">
-                League Managers: add or remove players
-            </h3>
             <span>
                 Alexander Marshall, Michael Murphy, Sean Johnson, Michael
                 Lorang, Dean Turner
