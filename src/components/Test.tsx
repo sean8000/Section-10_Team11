@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
+import { playerList } from "../players";
+import { Player } from "../interfaces/player";
+
 interface Widgets {
     setWidgets: (newStringList: string[]) => void;
     widgets: string[];
@@ -13,6 +16,12 @@ function Test({ role, widgets, setWidgets }: Widgets) {
         terry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn",
         larry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n"
     };
+
+    // YOU CAN ACCESS THE PLAYER LIST THROUGH THE IMPORTED "playerList" VARIABLE
+    // IT IS AN ARRAY OF PLAYER OBJECTS
+    // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
+    const [centralList, setCentralList] = useState<Player[]>(playerList);
+
     //const [widgets, setWidgets] = useState<string[]>([]);
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
@@ -24,6 +33,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
         setWidgets([...widgets, widgetType]);
     }
     function handleOnButtonClick(removedPlayer: string) {
+        // to fix maybe generate and ID thats attached to each player when they get added to the user list
         const newList = widgets.filter(
             (player: string): boolean => player !== removedPlayer
         );
@@ -33,20 +43,24 @@ function Test({ role, widgets, setWidgets }: Widgets) {
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
     }
+
+    // the curr in the first map below now represents a player,
+    // you can access its attributes with dot notation
     return (
         <div className="Test">
             <div className="central">
-                <span> Central List </span>
-                {players.map((curr: string) => (
+                <h4 className="playersTitle">Players</h4>
+                {centralList.map((curr: Player) => (
                     <div
                         key="list"
                         className="player"
                         draggable
-                        onDragStart={(e) => handleOnDrag(e, curr)}
+                        onDragStart={(e) => handleOnDrag(e, curr.name)}
                     >
-                        {curr}
+                        {curr.name} | {curr.position} <br /> Rating:{" "}
+                        {curr.rating}
                         <img
-                            src={player_map[curr]}
+                            src={curr.image}
                             style={{
                                 width: 40,
                                 height: 40
@@ -61,7 +75,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
                 onDrop={handleOnDrop}
                 onDragOver={handleDragOver}
             >
-                <span> List for: {role}</span>
+                <h4 className="playersTitle">Your Team</h4>
                 {widgets.map((curr, index) => (
                     <div className="player" key={index}>
                         {curr}

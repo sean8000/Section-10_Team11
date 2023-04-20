@@ -1,5 +1,6 @@
+import "./Test.css";
 import React, { useState } from "react";
-import { UserText } from "./UserText";
+import { UserText } from "../UserText";
 import { Form, Button } from "react-bootstrap";
 interface Roles {
     setRole: (newString: string) => void;
@@ -29,9 +30,11 @@ export function RoleSelect({
 
     // This is the View
     return (
-        <div>
+        <div className="roleSelect">
             <Form.Group controlId="Roles">
-                <Form.Label>What role would you like to pick?</Form.Label>
+                <Form.Label className="roleSelectHeadings">
+                    Which role
+                </Form.Label>
                 <Form.Select value={role} onChange={updateRole}>
                     {totalRoles.map((role: string) => (
                         <option key={role} value={role}>
@@ -46,9 +49,14 @@ export function RoleSelect({
                     {*/}
                 </Form.Select>
             </Form.Group>
-            The Currently chosen role is: {role}.
-            <UserText userText={userText} setUserText={setUserText}></UserText>
-            <Button onClick={() => addUser()}>Add this User</Button>
+            <div className="addUserBox">
+                {" "}
+                <UserText
+                    userText={userText}
+                    setUserText={setUserText}
+                ></UserText>
+                <Button onClick={() => addUser()}>Add this User</Button>
+            </div>
         </div>
     );
 }

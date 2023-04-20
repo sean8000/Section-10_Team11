@@ -430,3 +430,36 @@ const yKoo: Player = {
     },
     rating: 90
 };
+
+export const playerList = [
+    pMahomes,
+    jBurrow,
+    jAllen,
+    dJones,
+    sBarkley,
+    cMcCaffrey,
+    aEkeler,
+    jMixon,
+    dHenry,
+    jJacobs,
+    aJones,
+    nChubb,
+    dCook,
+    tHill,
+    dHopkins,
+    tKelce,
+    hButker,
+    mEvans,
+    jTucker,
+    gKittle,
+    eMcPherson,
+    dSamuel,
+    sDiggs,
+    aCooper,
+    mAndrews,
+    jChase,
+    dWaller,
+    jJefferson,
+    dAdams,
+    yKoo
+];
