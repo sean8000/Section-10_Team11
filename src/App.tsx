@@ -77,6 +77,7 @@ function App(): JSX.Element {
                 Alexander Marshall, Michael Murphy, Sean Johnson, Michael
                 Lorang, Dean Turner
             </span>
+            <div className="padding"></div>
         </div>
     );
 }
