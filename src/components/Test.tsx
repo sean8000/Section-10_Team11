@@ -5,8 +5,8 @@ import { playerList } from "../players";
 import { Player } from "../interfaces/player";
 
 interface Widgets {
-    setWidgets: (newStringList: string[]) => void;
-    widgets: string[];
+    setWidgets: (newStringList: Player[]) => void;
+    widgets: Player[];
     role: string;
 }
 function Test({ role, widgets, setWidgets }: Widgets) {
@@ -29,13 +29,25 @@ function Test({ role, widgets, setWidgets }: Widgets) {
 
     function handleOnDrop(e: React.DragEvent) {
         const widgetType = e.dataTransfer.getData("widgetType") as string;
-        //console.log("widgetType", widgetType);
-        setWidgets([...widgets, widgetType]);
+
+        // find dropped player based on name
+        const oldPlayer = playerList.find(
+            (ele) => ele.name === widgetType
+        ) as Player;
+
+        // make a new copy of the player (is probably an easier way to do this)
+        const newPlayer = { ...oldPlayer };
+
+        // add the player to the list
+        if (newPlayer !== undefined) {
+            setWidgets([...widgets, newPlayer]);
+        }
     }
-    function handleOnButtonClick(removedPlayer: string) {
+
+    function handleOnButtonClick(removedPlayer: Player) {
         // to fix maybe generate and ID thats attached to each player when they get added to the user list
         const newList = widgets.filter(
-            (player: string): boolean => player !== removedPlayer
+            (player: Player): boolean => player !== removedPlayer
         );
         setWidgets(newList);
     }
@@ -78,9 +90,9 @@ function Test({ role, widgets, setWidgets }: Widgets) {
                 <span> List for: {role}</span>
                 {widgets.map((curr, index) => (
                     <div className="player" key={index}>
-                        {curr}
+                        {curr.name}
                         <img
-                            src={player_map[curr]}
+                            src={curr.image}
                             style={{
                                 width: 40,
                                 height: 40

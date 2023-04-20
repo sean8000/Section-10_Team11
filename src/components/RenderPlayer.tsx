@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 import "./Test.css";
 import { playerList } from "../players";
 
+// FOR FUTURE USE SO WE CAN PASS PLAYERS TO THIS FUNCTION TO AUTO GENERATE THEM
 export function RenderPlayer(player: Player) {
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
