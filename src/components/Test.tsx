@@ -84,6 +84,15 @@ function Test({ role, widgets, setWidgets }: Widgets) {
                             }}
                             alt="Here"
                         />
+                        <br /> Description: {curr.description}
+                        <br />
+                        Touchdowns: {curr.stats.touchdowns}
+                        <br />
+                        Receptions: {curr.stats.receptions}
+                        <br />
+                        Rush Attempts: {curr.stats.rushAttempts}
+                        <br />
+                        Yards: {curr.stats.totalYards}
                     </div>
                 ))}
             </div>
