@@ -20,11 +20,11 @@
     float: left;
     width: 500px;
     height: 350px;
-    overflow-x: hidden;
-    overflow-y: auto;
     color: white;
     background-color: gray;
     outline: 1px solid black;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .heading {
