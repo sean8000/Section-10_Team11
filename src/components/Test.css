@@ -1,8 +1,9 @@
 .user {
     float: right;
-    text-align: center;
+    text-align: justify;
     width: 500px;
     height: auto;
+    min-height: 100px;
     outline: 1px solid white;
     background-color: gray;
     color: white;
@@ -15,7 +16,7 @@
 }
 
 .central {
-    text-align: center;
+    text-align: justify;
     float: left;
     width: 500px;
     height: 350px;
@@ -78,4 +79,8 @@
     float: right;
     color: white;
     font-family: "Alkatra";
+}
+
+.padding {
+    padding-bottom: 60px;
 }
