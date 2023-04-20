@@ -6,6 +6,19 @@ import { RoleSelect } from "./components/roleSelect";
 function App(): JSX.Element {
     const [role, setRole] = useState<string>("Super");
     const [widgets, setWidgets] = useState<string[]>([]);
+    const [totalRoles, setTotalRoles] = useState<string[]>([
+        "Super",
+        "Admin",
+        "User1"
+    ]);
+
+    {
+        /*}
+    function addUser() {
+        setTotalRoles([...totalRoles, "User2"]);
+    }
+{*/
+    }
     return (
         <div>
             <h1 className="heading">
@@ -31,6 +44,17 @@ function App(): JSX.Element {
                                 created
                             </span>
                         )}
+                    </Col>
+                    <Col>
+                        <h4>Role Select</h4>
+                        <RoleSelect
+                            setRole={setRole}
+                            role={role}
+                            setWidgets={setWidgets}
+                            totalRoles={totalRoles}
+                            setTotalRoles={setTotalRoles}
+                        ></RoleSelect>
+                        {/*}<Button onClick={() => addUser()}>Add User</Button>{*/}
                     </Col>
                 </Row>
             </Container>
