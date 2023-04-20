@@ -1,8 +1,10 @@
 import { Player } from "../interfaces/player";
-import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import React from "react";
+// import React, { useState } from "react";
+// import { Button } from "react-bootstrap";
 import "./Test.css";
-import { playerList } from "../players";
+// import { playerList } from "../players";
+// commented out some imports to avoid warnings
 
 // FOR FUTURE USE SO WE CAN PASS PLAYERS TO THIS FUNCTION TO AUTO RENDER THEM
 export function RenderPlayer(player: Player) {

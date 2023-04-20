@@ -10,16 +10,17 @@ interface Widgets {
     role: string;
 }
 function Test({ role, widgets, setWidgets }: Widgets) {
-    const players = ["jerry", "terry", "larry"];
+    /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
         jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
         terry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn",
         larry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n"
-    };
+    }; */
 
     // YOU CAN ACCESS THE PLAYER LIST THROUGH THE IMPORTED "playerList" VARIABLE
     // IT IS AN ARRAY OF PLAYER OBJECTS
     // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [centralList, setCentralList] = useState<Player[]>(playerList);
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
