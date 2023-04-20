@@ -7,15 +7,16 @@ import { Player } from "../interfaces/player";
 interface Roles {
     setRole: (newString: string) => void;
     role: string;
-    //widgets: string[];
     setWidgets: (newStringList: Player[]) => void;
     totalRoles: string[];
     setTotalRoles: (newStringList: string[]) => void;
+    myMap: Map<string, Player[]>;
+    //setMyMap: (newMap: Map<string, Player[]>) => void;
 }
 export function RoleSelect({
     setRole,
     role,
-    //widgets,
+    myMap,
     setWidgets,
     totalRoles,
     setTotalRoles
@@ -24,7 +25,7 @@ export function RoleSelect({
     const [userText, setUserText] = useState<string>("");
     function updateRole(event: React.ChangeEvent<HTMLSelectElement>) {
         setRole(event.target.value);
-        setWidgets([]);
+        setWidgets(myMap.get(event.target.value) ?? []);
     }
     function addUser() {
         setTotalRoles([...totalRoles, userText]);
