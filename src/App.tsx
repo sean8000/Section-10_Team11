@@ -5,13 +5,14 @@ import { RoleSelect } from "./roleSelect";
 
 function App(): JSX.Element {
     const [role, setRole] = useState<string>("Super");
+    const [myMap, setMyMap] = useState(new Map());
     const [widgets, setWidgets] = useState<string[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
         "Super",
         "Admin",
         "User1"
     ]);
-
+    //const [userDict, setDict] = useState<Record<string, string[]>>({});
     {
         /*}
     function addUser() {
@@ -34,6 +35,8 @@ function App(): JSX.Element {
                                 widgets={widgets}
                                 setWidgets={setWidgets}
                                 role={role}
+                                myMap={myMap}
+                                setMyMap={setMyMap}
                             ></Test>
                         ) : (
                             <span>
@@ -47,9 +50,12 @@ function App(): JSX.Element {
                         <RoleSelect
                             setRole={setRole}
                             role={role}
+                            widgets={widgets}
                             setWidgets={setWidgets}
                             totalRoles={totalRoles}
                             setTotalRoles={setTotalRoles}
+                            myMap={myMap}
+                            setMyMap={setMyMap}
                         ></RoleSelect>
                         {/*}<Button onClick={() => addUser()}>Add User</Button>{*/}
                     </Col>

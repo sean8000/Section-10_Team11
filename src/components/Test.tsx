@@ -5,8 +5,10 @@ interface Widgets {
     setWidgets: (newStringList: string[]) => void;
     widgets: string[];
     role: string;
+    myMap: Map<string, string[]>;
+    setMyMap: (newRecord: Map<string, string[]>) => void;
 }
-function Test({ role, widgets, setWidgets }: Widgets) {
+function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
     const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
         jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
@@ -73,6 +75,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
                             }}
                             alt="Here"
                         />
+                        {setMyMap(myMap.set(role, [...widgets]))}
                         <Button onClick={() => handleOnButtonClick(curr)}>
                             Delete Player
                         </Button>

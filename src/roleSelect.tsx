@@ -4,10 +4,12 @@ import { Form, Button } from "react-bootstrap";
 interface Roles {
     setRole: (newString: string) => void;
     role: string;
-    //widgets: string[];
+    widgets: string[];
     setWidgets: (newStringList: string[]) => void;
     totalRoles: string[];
     setTotalRoles: (newStringList: string[]) => void;
+    myMap: Map<string, string[]>;
+    setMyMap: (newRecord: Map<string, string[]>) => void;
 }
 export function RoleSelect({
     setRole,
@@ -15,13 +17,19 @@ export function RoleSelect({
     //widgets,
     setWidgets,
     totalRoles,
-    setTotalRoles
-}: Roles): JSX.Element {
+    setTotalRoles,
+    myMap
+}: //setMyMap
+Roles): JSX.Element {
     //const [role, setRole] = useState<string>("Super");
     const [userText, setUserText] = useState<string>("");
     function updateRole(event: React.ChangeEvent<HTMLSelectElement>) {
+        //setMyMap(myMap.set(role, [...widgets]));
+        //console.log("prev" + role);
         setRole(event.target.value);
-        setWidgets([]);
+        console.log("new" + role);
+        console.log(myMap.get(role));
+        setWidgets(myMap.get(event.target.value) ?? []);
     }
     function addUser() {
         setTotalRoles([...totalRoles, userText]);
