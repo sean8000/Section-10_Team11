@@ -2,11 +2,13 @@ import "./Test.css";
 import React, { useState } from "react";
 import { UserText } from "../UserText";
 import { Form, Button } from "react-bootstrap";
+import { Player } from "../interfaces/player";
+
 interface Roles {
     setRole: (newString: string) => void;
     role: string;
     //widgets: string[];
-    setWidgets: (newStringList: string[]) => void;
+    setWidgets: (newStringList: Player[]) => void;
     totalRoles: string[];
     setTotalRoles: (newStringList: string[]) => void;
 }

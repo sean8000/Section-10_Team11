@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Test from "./components/Test";
 import { Col, Container, Row } from "react-bootstrap";
-import { RoleSelect } from "./components/roleSelect";
+import { RoleSelect } from ".//components/roleSelect";
+import { Player } from "./interfaces/player";
 
 function App(): JSX.Element {
     const [role, setRole] = useState<string>("Super");
-    const [widgets, setWidgets] = useState<string[]>([]);
+    const [widgets, setWidgets] = useState<Player[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
         "Super",
         "Admin",
