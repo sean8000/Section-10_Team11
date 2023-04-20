@@ -95,7 +95,8 @@ function Test({ role, widgets, setWidgets }: Widgets) {
                 <h4 className="playersTitle">Your Team</h4>
                 {widgets.map((curr, index) => (
                     <div className="player" key={index}>
-                        {curr.name}
+                        {curr.name} | {curr.position} <br /> Rating:{" "}
+                        {curr.rating}
                         <img
                             src={curr.image}
                             style={{

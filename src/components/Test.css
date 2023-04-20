@@ -4,10 +4,12 @@
     width: 500px;
     height: auto;
     outline: 1px solid white;
+    background-color: gray;
+    color: white;
     position: relative;
 }
 
-.player {
+.player:nth-child(odd) {
     background-color: black;
     color: white;
 }
@@ -17,6 +19,8 @@
     float: left;
     width: 500px;
     height: 350px;
+    color: white;
+    background-color: gray;
     outline: 1px solid black;
     overflow-y: auto;
     overflow-x: hidden;
@@ -45,6 +49,7 @@
     font-family: "Alkatra";
     color: white;
     text-align: center;
+    background-color: black;
 }
 
 .roleSelectHeadings {
