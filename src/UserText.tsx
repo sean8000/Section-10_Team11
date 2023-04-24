@@ -14,10 +14,9 @@ export function UserText({ userText, setUserText }: Users): JSX.Element {
     return (
         <div>
             <Form.Group controlId="UserTextBox">
-                <Form.Label>User Name:</Form.Label>
+                <Form.Label>User Name: {userText}</Form.Label>
                 <Form.Control value={userText} onChange={updateText} />
             </Form.Group>
-            <div>User Name: {userText} </div>
         </div>
     );
 }
