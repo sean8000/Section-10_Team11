@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import Test from "./components/Test";
 import { Col, Container, Row } from "react-bootstrap";
-import { RoleSelect } from ".//components/roleSelect";
+import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
+import { playerList } from "./players";
+import { AddPlayers } from "./components/AddPlayers";
 
 function App(): JSX.Element {
     const [role, setRole] = useState<string>("League Manager");
     const [myMap, setMyMap] = useState(new Map());
+    const [centralList, setCentralList] = useState<Player[]>(playerList);
     const [widgets, setWidgets] = useState<Player[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
         "League Manager",
@@ -52,6 +55,7 @@ function App(): JSX.Element {
                             role={role}
                             myMap={myMap}
                             setMyMap={setMyMap}
+                            centralList={centralList}
                         ></Test>
                         {/*}
                         {role !== "League Manager" ? (
@@ -86,6 +90,14 @@ function App(): JSX.Element {
                         {/*}<Button onClick={() => addUser()}>Add User</Button>{
                     </Col>
                     */}
+                </Row>
+                <Row>
+                    <Col>
+                        <AddPlayers
+                            centralList={centralList}
+                            setCentralList={setCentralList}
+                        ></AddPlayers>
+                    </Col>
                 </Row>
             </Container>
             <span className="names">
