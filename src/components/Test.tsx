@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import "./Test.css";
 import { playerList } from "../players";
 import { Player } from "../interfaces/player";
+import { Col, Container, Row } from "react-bootstrap";
 
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
@@ -67,62 +68,85 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
-            <div className="central">
-                <h4 className="playersTitle">Players</h4>
-                {centralList.map((curr: Player) => (
-                    <div
-                        key="list"
-                        className="player"
-                        draggable
-                        onDragStart={(e) => handleOnDrag(e, curr.name)}
-                    >
-                        {curr.name} | {curr.position} <br /> Rating:{" "}
-                        {curr.rating}
-                        <img
-                            src={curr.image}
-                            style={{
-                                width: 40,
-                                height: 40
-                            }}
-                            alt="Here"
-                        />
-                        <br /> Description: {curr.description}
-                        <br />
-                        Touchdowns: {curr.stats.touchdowns}
-                        <br />
-                        Receptions: {curr.stats.receptions}
-                        <br />
-                        Rush Attempts: {curr.stats.rushAttempts}
-                        <br />
-                        Yards: {curr.stats.totalYards}
-                    </div>
-                ))}
-            </div>
-            <div
-                className="user"
-                onDrop={handleOnDrop}
-                onDragOver={handleDragOver}
-            >
-                <h4 className="playersTitle">Your Team</h4>
-                {widgets.map((curr, index) => (
-                    <div className="player" key={index}>
-                        {curr.name} | {curr.position} <br /> Rating:{" "}
-                        {curr.rating}
-                        <img
-                            src={curr.image}
-                            style={{
-                                width: 40,
-                                height: 40
-                            }}
-                            alt="Here"
-                        />
-                        {setMyMap(myMap.set(role, [...widgets]))}
-                        <Button onClick={() => handleOnButtonClick(curr)}>
-                            Delete Player
-                        </Button>
-                    </div>
-                ))}
-            </div>
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="central">
+                            <h4 className="playersTitle">Players</h4>
+                            {centralList.map((curr: Player) => (
+                                <div
+                                    key="list"
+                                    className="player"
+                                    draggable
+                                    onDragStart={(e) =>
+                                        handleOnDrag(e, curr.name)
+                                    }
+                                >
+                                    {curr.name} | {curr.position} <br /> Rating:{" "}
+                                    {curr.rating}
+                                    <img
+                                        src={curr.image}
+                                        style={{
+                                            width: 40,
+                                            height: 40
+                                        }}
+                                        alt="Here"
+                                    />
+                                    <br /> Description: {curr.description}
+                                    <br />
+                                    Touchdowns: {curr.stats.touchdowns}
+                                    <br />
+                                    Receptions: {curr.stats.receptions}
+                                    <br />
+                                    Rush Attempts: {curr.stats.rushAttempts}
+                                    <br />
+                                    Yards: {curr.stats.totalYards}
+                                </div>
+                            ))}
+                        </div>
+                    </Col>
+                    <Col>
+                        {role !== "League Manager" ? (
+                            <div
+                                className="user"
+                                onDrop={handleOnDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                <h4 className="playersTitle">Your Team</h4>
+                                {widgets.map((curr, index) => (
+                                    <div className="player" key={index}>
+                                        {curr.name} | {curr.position} <br />{" "}
+                                        Rating: {curr.rating}
+                                        <img
+                                            src={curr.image}
+                                            style={{
+                                                width: 40,
+                                                height: 40
+                                            }}
+                                            alt="Here"
+                                        />
+                                        {setMyMap(
+                                            myMap.set(role, [...widgets])
+                                        )}
+                                        <Button
+                                            onClick={() =>
+                                                handleOnButtonClick(curr)
+                                            }
+                                        >
+                                            Delete Player
+                                        </Button>
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <h2>
+                                You can not drag to another list as the League
+                                Manager
+                            </h2>
+                        )}
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }
