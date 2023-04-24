@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
-import { playerList } from "../players";
+//import { playerList } from "../players";
 import { Player } from "../interfaces/player";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -45,7 +45,7 @@ function Test({
         const widgetType = e.dataTransfer.getData("widgetType") as string;
 
         // find dropped player  object based on name
-        const oldPlayer = playerList.find(
+        const oldPlayer = centralList.find(
             (ele) => ele.name === widgetType
         ) as Player;
 
@@ -99,7 +99,7 @@ function Test({
                                             width: 40,
                                             height: 40
                                         }}
-                                        alt="Here"
+                                        alt="Image"
                                     />
                                     <br /> Description: {curr.description}
                                     <br />
@@ -132,7 +132,7 @@ function Test({
                                                 width: 40,
                                                 height: 40
                                             }}
-                                            alt="Here"
+                                            alt="Image"
                                         />
                                         {setMyMap(
                                             myMap.set(role, [...widgets])
