@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Player, Position } from "../interfaces/player";
 import { Form, Button } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 interface PlayersToBeAdded {
     centralList: Player[];
     setCentralList: (newStringList: Player[]) => void;
@@ -49,39 +50,67 @@ export function AddPlayers({ centralList, setCentralList }: PlayersToBeAdded) {
     }
     return (
         <div>
-            <Form.Group controlId="PlayerTextName">
-                <Form.Label>Player Name: {playerName}</Form.Label>
-                <Form.Control value={playerName} onChange={updateName} />
-            </Form.Group>
+            <Container>
+                <Row>
+                    <div>
+                        <Col>
+                            <Form.Group controlId="PlayerTextName">
+                                <Form.Label>
+                                    Player Name: {playerName}
+                                </Form.Label>
+                                <Form.Control
+                                    value={playerName}
+                                    onChange={updateName}
+                                />
+                            </Form.Group>
 
-            <Form.Group controlId="PlayerTextDesc">
-                <Form.Label>Player Description: {playerDescription}</Form.Label>
-                <Form.Control value={playerDescription} onChange={updateDesc} />
-            </Form.Group>
-
-            <Form.Group controlId="PlayerTextURL">
-                <Form.Label>Image URL: {playerURL}</Form.Label>
-                <Form.Control value={playerURL} onChange={updateURL} />
-            </Form.Group>
-
-            <Form.Group controlId="Positions">
-                <Form.Label className="roleSelectHeadings">
-                    Which Position
-                </Form.Label>
-                <Form.Select value={newPosition} onChange={updatePosition}>
-                    {totalPositions.map((position: string) => (
-                        <option key={position} value={position}>
-                            {position}
-                        </option>
-                    ))}
-                </Form.Select>
-            </Form.Group>
-            <Button
-                style={{ backgroundColor: "#000000" }}
-                onClick={addNewPlayer}
-            >
-                Add This New Player:{" "}
-            </Button>
+                            <Form.Group controlId="PlayerTextDesc">
+                                <Form.Label>
+                                    Player Description: {playerDescription}
+                                </Form.Label>
+                                <Form.Control
+                                    value={playerDescription}
+                                    onChange={updateDesc}
+                                />
+                            </Form.Group>
+                        </Col>
+                        <Col>
+                            <Form.Group controlId="PlayerTextURL">
+                                <Form.Label>Image URL: {playerURL}</Form.Label>
+                                <Form.Control
+                                    value={playerURL}
+                                    onChange={updateURL}
+                                />
+                            </Form.Group>
+                        </Col>
+                        <Col>
+                            <Form.Group controlId="Positions">
+                                <Form.Label className="roleSelectHeadings">
+                                    Which Position
+                                </Form.Label>
+                                <Form.Select
+                                    value={newPosition}
+                                    onChange={updatePosition}
+                                >
+                                    {totalPositions.map((position: string) => (
+                                        <option key={position} value={position}>
+                                            {position}
+                                        </option>
+                                    ))}
+                                </Form.Select>
+                            </Form.Group>
+                        </Col>
+                        <Col>
+                            <Button
+                                style={{ backgroundColor: "#000000" }}
+                                onClick={addNewPlayer}
+                            >
+                                Add This New Player:{" "}
+                            </Button>
+                        </Col>
+                    </div>
+                </Row>
+            </Container>
         </div>
     );
 }
