@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
 import { playerList } from "../players";
@@ -11,10 +11,19 @@ interface Widgets {
     role: string;
     myMap: Map<string, Player[]>;
     setMyMap: (newRecord: Map<string, Player[]>) => void;
+    centralList: Player[];
+    //setCentralList: (newStringList: Player[]) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
+function Test({
+    role,
+    widgets,
+    setWidgets,
+    myMap,
+    setMyMap,
+    centralList
+}: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
         jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
@@ -26,7 +35,7 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
     // IT IS AN ARRAY OF PLAYER OBJECTS
     // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [centralList, setCentralList] = useState<Player[]>(playerList);
+    //const [centralList, setCentralList] = useState<Player[]>(playerList);
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
