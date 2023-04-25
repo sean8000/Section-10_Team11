@@ -3,6 +3,8 @@ import { Button } from "react-bootstrap";
 import "./Test.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
+
+import { SortSelect } from "./sortSelect";
 import { Col, Container, Row } from "react-bootstrap";
 
 interface Widgets {
@@ -36,6 +38,9 @@ function Test({
     // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     //const [centralList, setCentralList] = useState<Player[]>(playerList);
+
+    // hold current sorting method of central list
+    const [centralSort, setCentralSort] = useState<string>("None");
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
@@ -72,6 +77,10 @@ function Test({
         e.preventDefault();
     }
 
+    function updateCentralList(newCentralList: Player[]) {
+        setCentralList(newCentralList);
+    }
+
     // the curr in the both maps below now represents players,
     // you can access its attributes with dot notation
     // also we should consider makeing a "renderPlayer" function that way we can format the player
@@ -83,6 +92,13 @@ function Test({
                     <Col>
                         <div className="central">
                             <h4 className="playersTitle">Players</h4>
+                            Sort by:
+                            <SortSelect
+                                sortOption={centralSort}
+                                setSortOption={setCentralSort}
+                                playerList={centralList}
+                                setPlayerList={setCentralList}
+                             ></SortSelect>
                             {centralList.map((curr: Player) => (
                                 <div
                                     key="list"
