@@ -60,7 +60,21 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
     }
+    /*
+    function playerStats(list: Player[]) {
+        return list.map((curr: Player) => {
+            curr.description;
+            curr.stats.touchdowns;
+            curr.stats.receptions;
+            curr.stats.rushAttempts;
+        });
+    }
+    */
 
+    const [visible, setVisible] = useState<boolean>(false);
+    function flipVisibility(): void {
+        setVisible(!visible);
+    }
     // the curr in the both maps below now represents players,
     // you can access its attributes with dot notation
     // also we should consider makeing a "renderPlayer" function that way we can format the player
@@ -86,15 +100,23 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
                             }}
                             alt="Here"
                         />
-                        <br /> Description: {curr.description}
-                        <br />
-                        Touchdowns: {curr.stats.touchdowns}
-                        <br />
-                        Receptions: {curr.stats.receptions}
-                        <br />
-                        Rush Attempts: {curr.stats.rushAttempts}
-                        <br />
-                        Yards: {curr.stats.totalYards}
+                        <div>
+                            <Button onClick={flipVisibility}>STATS</Button>
+                            {visible && (
+                                <div>
+                                    Description: {curr.description}
+                                    <br />
+                                    Touchdowns: {curr.stats.touchdowns}
+                                    <br />
+                                    Receptions: {curr.stats.receptions}
+                                    <br />
+                                    Rush Attempts: {curr.stats.rushAttempts}
+                                    <br />
+                                    Yards: {curr.stats.totalYards}
+                                    <br />
+                                </div>
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>
@@ -120,6 +142,23 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
                         <Button onClick={() => handleOnButtonClick(curr)}>
                             Delete Player
                         </Button>
+                        <div>
+                            <Button onClick={flipVisibility}>STATS</Button>
+                            {visible && (
+                                <div>
+                                    Description: {curr.description}
+                                    <br />
+                                    Touchdowns: {curr.stats.touchdowns}
+                                    <br />
+                                    Receptions: {curr.stats.receptions}
+                                    <br />
+                                    Rush Attempts: {curr.stats.rushAttempts}
+                                    <br />
+                                    Yards: {curr.stats.totalYards}
+                                    <br />
+                                </div>
+                            )}
+                        </div>
                     </div>
                 ))}
             </div>
