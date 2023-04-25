@@ -56,6 +56,7 @@ function App(): JSX.Element {
                             myMap={myMap}
                             setMyMap={setMyMap}
                             centralList={centralList}
+                            setCentralList={setCentralList}
                         ></Test>
                         {/*}
                         {role !== "League Manager" ? (

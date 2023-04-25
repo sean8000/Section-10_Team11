@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
 //import { playerList } from "../players";
@@ -14,7 +14,7 @@ interface Widgets {
     myMap: Map<string, Player[]>;
     setMyMap: (newRecord: Map<string, Player[]>) => void;
     centralList: Player[];
-    //setCentralList: (newStringList: Player[]) => void;
+    setCentralList: (newPlayerList: Player[]) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -24,7 +24,8 @@ function Test({
     setWidgets,
     myMap,
     setMyMap,
-    centralList
+    centralList,
+    setCentralList
 }: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
@@ -77,9 +78,9 @@ function Test({
         e.preventDefault();
     }
 
-    function updateCentralList(newCentralList: Player[]) {
+    /* function updateCentralList(newCentralList: Player[]) {
         setCentralList(newCentralList);
-    }
+    } */
 
     // the curr in the both maps below now represents players,
     // you can access its attributes with dot notation
@@ -90,15 +91,14 @@ function Test({
             <Container>
                 <Row>
                     <Col>
+                        <SortSelect
+                            sortOption={centralSort}
+                            setSortOption={setCentralSort}
+                            playerList={centralList}
+                            setPlayerList={setCentralList}
+                        ></SortSelect>
                         <div className="central">
                             <h4 className="playersTitle">Players</h4>
-                            Sort by:
-                            <SortSelect
-                                sortOption={centralSort}
-                                setSortOption={setCentralSort}
-                                playerList={centralList}
-                                setPlayerList={setCentralList}
-                             ></SortSelect>
                             {centralList.map((curr: Player) => (
                                 <div
                                     key="list"

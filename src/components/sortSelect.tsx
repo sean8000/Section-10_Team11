@@ -1,9 +1,7 @@
 import "./Test.css";
-import React, { useState } from "react";
-import { UserText } from "../UserText";
-import { Form, Button } from "react-bootstrap";
+import React from "react";
+import { Form } from "react-bootstrap";
 import { Player } from "../interfaces/player";
-import { string } from "yargs";
 
 export interface Sort {
     sortOption: string;
