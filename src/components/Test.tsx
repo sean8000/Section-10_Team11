@@ -63,6 +63,24 @@ function Test({ role, widgets, setWidgets }: Widgets) {
         e.preventDefault();
     }
 
+    function updateCentralList(newCentralList: Player[]) {
+        setCentralList(newCentralList);
+    }
+
+    /* const tempCentralList = centralList;
+    if (centralSort === "None") {
+        // Does nothing
+    } else if (centralSort === "Position") {
+        tempCentralList.sort((a, b) => (a.name < b.name ? -1 : 1));
+    } else if (centralSort === "Rating") {
+        tempCentralList.sort((a, b) => (a.position < b.position ? -1 : 1));
+    } else if (centralSort === "Touchdowns") {
+        tempCentralList.sort((a, b) =>
+            a.stats.touchdowns < b.stats.touchdowns ? -1 : 1
+        );
+    }
+    updateCentralList(tempCentralList); */
+
     // the curr in the both maps below now represents players,
     // you can access its attributes with dot notation
     // also we should consider makeing a "renderPlayer" function that way we can format the player
@@ -75,6 +93,8 @@ function Test({ role, widgets, setWidgets }: Widgets) {
                 <SortSelect
                     sortOption={centralSort}
                     setSortOption={setCentralSort}
+                    playerList={centralList}
+                    setPlayerList={setCentralList}
                 ></SortSelect>
                 {centralList.map((curr: Player) => (
                     <div
