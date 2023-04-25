@@ -55,7 +55,7 @@ export function AddPlayers({ centralList, setCentralList }: PlayersToBeAdded) {
                     <div>
                         <Col>
                             <Form.Group controlId="PlayerTextName">
-                                <Form.Label>
+                                <Form.Label style={{ color: "white" }}>
                                     Player Name: {playerName}
                                 </Form.Label>
                                 <Form.Control
@@ -65,7 +65,7 @@ export function AddPlayers({ centralList, setCentralList }: PlayersToBeAdded) {
                             </Form.Group>
 
                             <Form.Group controlId="PlayerTextDesc">
-                                <Form.Label>
+                                <Form.Label style={{ color: "white" }}>
                                     Player Description: {playerDescription}
                                 </Form.Label>
                                 <Form.Control
@@ -76,7 +76,9 @@ export function AddPlayers({ centralList, setCentralList }: PlayersToBeAdded) {
                         </Col>
                         <Col>
                             <Form.Group controlId="PlayerTextURL">
-                                <Form.Label>Image URL: {playerURL}</Form.Label>
+                                <Form.Label style={{ color: "white" }}>
+                                    Image URL: {playerURL}
+                                </Form.Label>
                                 <Form.Control
                                     value={playerURL}
                                     onChange={updateURL}
