@@ -1,18 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
-import { playerList } from "../players";
+//import { playerList } from "../players";
 import { Player } from "../interfaces/player";
+
 import { SortSelect } from "./sortSelect";
+import { Col, Container, Row } from "react-bootstrap";
 
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
     widgets: Player[];
     role: string;
+    myMap: Map<string, Player[]>;
+    setMyMap: (newRecord: Map<string, Player[]>) => void;
+    centralList: Player[];
+    //setCentralList: (newStringList: Player[]) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-function Test({ role, widgets, setWidgets }: Widgets) {
+function Test({
+    role,
+    widgets,
+    setWidgets,
+    myMap,
+    setMyMap,
+    centralList
+}: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
         jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
@@ -24,7 +37,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
     // IT IS AN ARRAY OF PLAYER OBJECTS
     // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [centralList, setCentralList] = useState<Player[]>(playerList);
+    //const [centralList, setCentralList] = useState<Player[]>(playerList);
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
@@ -37,7 +50,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
         const widgetType = e.dataTransfer.getData("widgetType") as string;
 
         // find dropped player  object based on name
-        const oldPlayer = playerList.find(
+        const oldPlayer = centralList.find(
             (ele) => ele.name === widgetType
         ) as Player;
 
@@ -57,6 +70,7 @@ function Test({ role, widgets, setWidgets }: Widgets) {
             (player: Player): boolean => player !== removedPlayer
         );
         setWidgets(newList);
+        setMyMap(myMap.set(role, newList));
     }
 
     function handleDragOver(e: React.DragEvent) {
@@ -73,59 +87,92 @@ function Test({ role, widgets, setWidgets }: Widgets) {
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
-            <div className="central">
-                <h4 className="playersTitle">Players</h4>
-                Sort by:
-                <SortSelect
-                    sortOption={centralSort}
-                    setSortOption={setCentralSort}
-                    playerList={centralList}
-                    setPlayerList={setCentralList}
-                ></SortSelect>
-                {centralList.map((curr: Player) => (
-                    <div
-                        key="list"
-                        className="player"
-                        draggable
-                        onDragStart={(e) => handleOnDrag(e, curr.name)}
-                    >
-                        {curr.name} | {curr.position} <br /> Rating:{" "}
-                        {curr.rating}
-                        <img
-                            src={curr.image}
-                            style={{
-                                width: 40,
-                                height: 40
-                            }}
-                            alt="Here"
-                        />
-                    </div>
-                ))}
-                ; Currently Sorting By {centralSort}
-            </div>
-            <div
-                className="user"
-                onDrop={handleOnDrop}
-                onDragOver={handleDragOver}
-            >
-                <h4 className="playersTitle">Your Team</h4>
-                {widgets.map((curr, index) => (
-                    <div className="player" key={index}>
-                        {curr.name}
-                        <img
-                            src={curr.image}
-                            style={{
-                                width: 40,
-                                height: 40
-                            }}
-                            alt="Here"
-                        />
-                        <Button onClick={() => handleOnButtonClick(curr)}>
-                            Delete Player
-                        </Button>
-                    </div>
-                ))}
-            </div>
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="central">
+                            <h4 className="playersTitle">Players</h4>
+                            Sort by:
+                            <SortSelect
+                                sortOption={centralSort}
+                                setSortOption={setCentralSort}
+                                playerList={centralList}
+                                setPlayerList={setCentralList}
+                             ></SortSelect>
+                            {centralList.map((curr: Player) => (
+                                <div
+                                    key="list"
+                                    className="player"
+                                    draggable
+                                    onDragStart={(e) =>
+                                        handleOnDrag(e, curr.name)
+                                    }
+                                >
+                                    {curr.name} | {curr.position} <br /> Rating:{" "}
+                                    {curr.rating}
+                                    <img
+                                        src={curr.image}
+                                        style={{
+                                            width: 40,
+                                            height: 40
+                                        }}
+                                        alt="Image"
+                                    />
+                                    <br /> Description: {curr.description}
+                                    <br />
+                                    Touchdowns: {curr.stats.touchdowns}
+                                    <br />
+                                    Receptions: {curr.stats.receptions}
+                                    <br />
+                                    Rush Attempts: {curr.stats.rushAttempts}
+                                    <br />
+                                    Yards: {curr.stats.totalYards}
+                                </div>
+                            ))}
+                        </div>
+                    </Col>
+                    <Col>
+                        {role !== "League Manager" ? (
+                            <div
+                                className="user"
+                                onDrop={handleOnDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                <h4 className="playersTitle">Your Team</h4>
+                                {widgets.map((curr, index) => (
+                                    <div className="player" key={index}>
+                                        {curr.name} | {curr.position} <br />{" "}
+                                        Rating: {curr.rating}
+                                        <img
+                                            src={curr.image}
+                                            style={{
+                                                width: 40,
+                                                height: 40
+                                            }}
+                                            alt="Image"
+                                        />
+                                        <Button
+                                            onClick={() =>
+                                                handleOnButtonClick(curr)
+                                            }
+                                        >
+                                            Delete Player
+                                        </Button>
+                                        {setMyMap(
+                                            myMap.set(role, [...widgets])
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <h2>
+                                You can not drag to another list as the League
+                                Manager
+                            </h2>
+                        )}
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 import Test from "./components/Test";
 import { Col, Container, Row } from "react-bootstrap";
-import { RoleSelect } from ".//components/roleSelect";
+import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
+import { playerList } from "./players";
+import { AddPlayers } from "./components/AddPlayers";
 
 function App(): JSX.Element {
-    const [role, setRole] = useState<string>("Super");
+    const [role, setRole] = useState<string>("League Manager");
+    const [myMap, setMyMap] = useState(new Map());
+    const [centralList, setCentralList] = useState<Player[]>(playerList);
     const [widgets, setWidgets] = useState<Player[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
-        "Super",
-        "Admin",
-        "User1"
+        "League Manager",
+        "Team Manager",
+        "Guest User"
     ]);
-
+    //const [userDict, setDict] = useState<Record<string, string[]>>({});
     {
         /*}
     function addUser() {
@@ -39,15 +43,28 @@ function App(): JSX.Element {
                 setWidgets={setWidgets}
                 totalRoles={totalRoles}
                 setTotalRoles={setTotalRoles}
+                myMap={myMap}
             ></RoleSelect>
+            ~{"\n"}
             <Container>
                 <Row>
                     <Col>
-                        {role !== "Super" ? (
+                        <Test
+                            widgets={widgets}
+                            setWidgets={setWidgets}
+                            role={role}
+                            myMap={myMap}
+                            setMyMap={setMyMap}
+                            centralList={centralList}
+                        ></Test>
+                        {/*}
+                        {role !== "League Manager" ? (
                             <Test
                                 widgets={widgets}
                                 setWidgets={setWidgets}
                                 role={role}
+                                myMap={myMap}
+                                setMyMap={setMyMap}
                             ></Test>
                         ) : (
                             <span>
@@ -55,6 +72,7 @@ function App(): JSX.Element {
                                 created
                             </span>
                         )}
+                        {*/}
                     </Col>
                     {/*}
                     <Col>
@@ -62,19 +80,31 @@ function App(): JSX.Element {
                         <RoleSelect
                             setRole={setRole}
                             role={role}
+                            widgets={widgets}
                             setWidgets={setWidgets}
                             totalRoles={totalRoles}
                             setTotalRoles={setTotalRoles}
+                            myMap={myMap}
+                            setMyMap={setMyMap}
                         ></RoleSelect>
                         {/*}<Button onClick={() => addUser()}>Add User</Button>{
                     </Col>
                     */}
+                </Row>
+                <Row>
+                    <Col>
+                        <AddPlayers
+                            centralList={centralList}
+                            setCentralList={setCentralList}
+                        ></AddPlayers>
+                    </Col>
                 </Row>
             </Container>
             <span className="names">
                 Alexander Marshall, Michael Murphy, Sean Johnson, Michael
                 Lorang, Dean Turner
             </span>
+            <div className="padding"></div>
         </div>
     );
 }

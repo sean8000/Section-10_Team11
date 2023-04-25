@@ -1,23 +1,30 @@
 .user {
     float: right;
-    text-align: center;
+    text-align: justify;
     width: 500px;
     height: auto;
+    min-height: 100px;
     outline: 1px solid white;
+    background-color: gray;
+    color: white;
     position: relative;
 }
 
-.player {
+.player:nth-child(odd) {
     background-color: black;
     color: white;
 }
 
 .central {
-    text-align: center;
+    text-align: justify;
     float: left;
     width: 500px;
-    height: auto;
+    height: 350px;
+    color: white;
+    background-color: gray;
     outline: 1px solid black;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .heading {
@@ -34,7 +41,7 @@
     align-items: center;
     text-align: center;
     font-family: "Alkatra";
-    background: rgb(31, 31, 207);
+    background: rgb(2, 82, 2);
     color: white;
     padding: 20px;
 }
@@ -43,6 +50,7 @@
     font-family: "Alkatra";
     color: white;
     text-align: center;
+    background-color: black;
 }
 
 .roleSelectHeadings {
@@ -71,4 +79,8 @@
     float: right;
     color: white;
     font-family: "Alkatra";
+}
+
+.padding {
+    padding-bottom: 60px;
 }

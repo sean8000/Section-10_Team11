@@ -3,19 +3,21 @@ import React, { useState } from "react";
 import { UserText } from "../UserText";
 import { Form, Button } from "react-bootstrap";
 import { Player } from "../interfaces/player";
+import { Col, Container, Row } from "react-bootstrap";
 
 interface Roles {
     setRole: (newString: string) => void;
     role: string;
-    //widgets: string[];
     setWidgets: (newStringList: Player[]) => void;
     totalRoles: string[];
     setTotalRoles: (newStringList: string[]) => void;
+    myMap: Map<string, Player[]>;
+    //setMyMap: (newMap: Map<string, Player[]>) => void;
 }
 export function RoleSelect({
     setRole,
     role,
-    //widgets,
+    myMap,
     setWidgets,
     totalRoles,
     setTotalRoles
@@ -24,10 +26,11 @@ export function RoleSelect({
     const [userText, setUserText] = useState<string>("");
     function updateRole(event: React.ChangeEvent<HTMLSelectElement>) {
         setRole(event.target.value);
-        setWidgets([]);
+        setWidgets(myMap.get(event.target.value) ?? []);
     }
     function addUser() {
         setTotalRoles([...totalRoles, userText]);
+        setUserText("");
     }
 
     // This is the View
@@ -51,13 +54,27 @@ export function RoleSelect({
                     {*/}
                 </Form.Select>
             </Form.Group>
+
             <div className="addUserBox">
-                {" "}
-                <UserText
-                    userText={userText}
-                    setUserText={setUserText}
-                ></UserText>
-                <Button onClick={() => addUser()}>Add this User</Button>
+                <Container>
+                    <Row>
+                        <Col>
+                            <UserText
+                                userText={userText}
+                                setUserText={setUserText}
+                            ></UserText>
+                        </Col>
+                        <Col>
+                            <br></br>
+                            <Button
+                                style={{ backgroundColor: "#000000" }}
+                                onClick={() => addUser()}
+                            >
+                                Add This User
+                            </Button>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         </div>
     );
