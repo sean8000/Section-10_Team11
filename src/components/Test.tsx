@@ -65,6 +65,7 @@ function Test({
             (player: Player): boolean => player !== removedPlayer
         );
         setWidgets(newList);
+        setMyMap(myMap.set(role, newList));
     }
 
     function handleDragOver(e: React.DragEvent) {
@@ -134,9 +135,6 @@ function Test({
                                             }}
                                             alt="Image"
                                         />
-                                        {setMyMap(
-                                            myMap.set(role, [...widgets])
-                                        )}
                                         <Button
                                             onClick={() =>
                                                 handleOnButtonClick(curr)
@@ -144,6 +142,9 @@ function Test({
                                         >
                                             Delete Player
                                         </Button>
+                                        {setMyMap(
+                                            myMap.set(role, [...widgets])
+                                        )}
                                     </div>
                                 ))}
                             </div>
