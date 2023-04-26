@@ -6,6 +6,7 @@ import { Player } from "../interfaces/player";
 
 import { SortSelect } from "./sortSelect";
 import { Col, Container, Row } from "react-bootstrap";
+import { AddPlayers } from "./AddPlayers";
 
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
@@ -165,10 +166,12 @@ function Test({
                                 ))}
                             </div>
                         ) : (
-                            <h2>
-                                You can not drag to another list as the League
-                                Manager
-                            </h2>
+                            <div className="addPlayer">
+                                <AddPlayers
+                                    centralList={centralList}
+                                    setCentralList={setCentralList}
+                                ></AddPlayers>
+                            </div>
                         )}
                     </Col>
                 </Row>
