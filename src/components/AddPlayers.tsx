@@ -50,69 +50,41 @@ export function AddPlayers({ centralList, setCentralList }: PlayersToBeAdded) {
     }
     return (
         <div>
-            <Container>
-                <Row>
-                    <div>
-                        <Col>
-                            <Form.Group controlId="PlayerTextName">
-                                <Form.Label style={{ color: "white" }}>
-                                    Player Name: {playerName}
-                                </Form.Label>
-                                <Form.Control
-                                    value={playerName}
-                                    onChange={updateName}
-                                />
-                            </Form.Group>
-
-                            <Form.Group controlId="PlayerTextDesc">
-                                <Form.Label style={{ color: "white" }}>
-                                    Player Description: {playerDescription}
-                                </Form.Label>
-                                <Form.Control
-                                    value={playerDescription}
-                                    onChange={updateDesc}
-                                />
-                            </Form.Group>
-                        </Col>
-                        <Col>
-                            <Form.Group controlId="PlayerTextURL">
-                                <Form.Label style={{ color: "white" }}>
-                                    Image URL: {playerURL}
-                                </Form.Label>
-                                <Form.Control
-                                    value={playerURL}
-                                    onChange={updateURL}
-                                />
-                            </Form.Group>
-                        </Col>
-                        <Col>
-                            <Form.Group controlId="Positions">
-                                <Form.Label className="roleSelectHeadings">
-                                    Which Position
-                                </Form.Label>
-                                <Form.Select
-                                    value={newPosition}
-                                    onChange={updatePosition}
-                                >
-                                    {totalPositions.map((position: string) => (
-                                        <option key={position} value={position}>
-                                            {position}
-                                        </option>
-                                    ))}
-                                </Form.Select>
-                            </Form.Group>
-                        </Col>
-                        <Col>
-                            <Button
-                                style={{ backgroundColor: "#000000" }}
-                                onClick={addNewPlayer}
-                            >
-                                Add This New Player:{" "}
-                            </Button>
-                        </Col>
-                    </div>
-                </Row>
-            </Container>
+            <Form.Group className="playerNameBox" controlId="PlayerTextName">
+                <Form.Label style={{ color: "white" }}>Player Name:</Form.Label>
+                <Form.Control value={playerName} onChange={updateName} />
+            </Form.Group>
+            <Form.Group
+                className="playerDescriptionBox"
+                controlId="PlayerTextDesc"
+            >
+                <Form.Label style={{ color: "white" }}>
+                    Player Description:
+                </Form.Label>
+                <Form.Control value={playerDescription} onChange={updateDesc} />
+            </Form.Group>
+            <Form.Group className="playerImageBox" controlId="PlayerTextURL">
+                <Form.Label style={{ color: "white" }}>Image URL:</Form.Label>
+                <Form.Control value={playerURL} onChange={updateURL} />
+            </Form.Group>
+            <Form.Group className="playerPositionBox" controlId="Positions">
+                <Form.Label style={{ color: "white" }}>
+                    Which Position
+                </Form.Label>
+                <Form.Select value={newPosition} onChange={updatePosition}>
+                    {totalPositions.map((position: string) => (
+                        <option key={position} value={position}>
+                            {position}
+                        </option>
+                    ))}
+                </Form.Select>
+            </Form.Group>
+            <Button
+                style={{ backgroundColor: "#000000" }}
+                onClick={addNewPlayer}
+            >
+                Add This New Player:{" "}
+            </Button>
         </div>
     );
 }

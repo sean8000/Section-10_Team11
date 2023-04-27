@@ -92,14 +92,6 @@ function App(): JSX.Element {
                     </Col>
                     */}
                 </Row>
-                <Row>
-                    <Col>
-                        <AddPlayers
-                            centralList={centralList}
-                            setCentralList={setCentralList}
-                        ></AddPlayers>
-                    </Col>
-                </Row>
             </Container>
             <span className="names">
                 Alexander Marshall, Michael Murphy, Sean Johnson, Michael

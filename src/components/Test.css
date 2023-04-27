@@ -84,3 +84,27 @@
 .padding {
     padding-bottom: 60px;
 }
+
+.playerNameBox {
+    width: 200px;
+    overflow-x: auto;
+}
+
+.playerDescriptionBox {
+    width: 200px;
+    overflow-x: auto;
+}
+
+.playerImageBox {
+    width: 200px;
+    overflow-x: auto;
+}
+
+.playerPositionBox {
+    width: 150px;
+    overflow-x: auto;
+}
+
+.sortSelect {
+    width: 200px;
+}
