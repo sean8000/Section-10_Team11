@@ -60,16 +60,6 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
     }
-    /*
-    function playerStats(list: Player[]) {
-        return list.map((curr: Player) => {
-            curr.description;
-            curr.stats.touchdowns;
-            curr.stats.receptions;
-            curr.stats.rushAttempts;
-        });
-    }
-    */
 
     const [visible, setVisible] = useState<boolean>(false);
     function flipVisibility(): void {
