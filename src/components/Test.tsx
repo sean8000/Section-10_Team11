@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import "./Test.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
-
+import { PositionFilter } from "./PositionFilter";
 import { SortSelect } from "./sortSelect";
 import { Col, Container, Row } from "react-bootstrap";
 
@@ -91,6 +91,7 @@ function Test({
             <Container>
                 <Row>
                     <Col>
+                        <PositionFilter></PositionFilter>
                         <SortSelect
                             sortOption={centralSort}
                             setSortOption={setCentralSort}
