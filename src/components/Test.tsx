@@ -112,11 +112,8 @@ function Test({
                                     {curr.name} | {curr.position} <br /> Rating:{" "}
                                     {curr.rating}
                                     <img
+                                        className="playerImage"
                                         src={curr.image}
-                                        style={{
-                                            width: 40,
-                                            height: 40
-                                        }}
                                         alt="Image"
                                     />
                                     <br /> Description: {curr.description}
