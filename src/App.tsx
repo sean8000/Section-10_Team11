@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
 import { playerList } from "./players";
-import { AddPlayers } from "./components/AddPlayers";
+//import { AddPlayers } from "./components/AddPlayers";
 
 function App(): JSX.Element {
     const [role, setRole] = useState<string>("League Manager");
