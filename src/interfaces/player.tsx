@@ -1,6 +1,6 @@
+/** A representation of a Player */
 export type Position = "QB" | "RB" | "WR" | "TE" | "K";
 
-/** A representation of a Player */
 export interface Player {
     // name of the player
     name: string;

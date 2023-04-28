@@ -79,6 +79,10 @@ function Test({
         e.preventDefault();
     }
 
+    const [visible, setVisible] = useState<boolean>(false);
+    function flipVisibility(): void {
+        setVisible(!visible);
+    }
     /* function updateCentralList(newCentralList: Player[]) {
         setCentralList(newCentralList);
     } */
@@ -116,15 +120,28 @@ function Test({
                                         src={curr.image}
                                         alt="Image"
                                     />
-                                    <br /> Description: {curr.description}
-                                    <br />
-                                    Touchdowns: {curr.stats.touchdowns}
-                                    <br />
-                                    Receptions: {curr.stats.receptions}
-                                    <br />
-                                    Rush Attempts: {curr.stats.rushAttempts}
-                                    <br />
-                                    Yards: {curr.stats.totalYards}
+                                    <div>
+                                        <Button onClick={flipVisibility}>
+                                            STATS
+                                        </Button>
+                                        {visible && (
+                                            <div>
+                                                Description: {curr.description}
+                                                <br />
+                                                Touchdowns:{" "}
+                                                {curr.stats.touchdowns}
+                                                <br />
+                                                Receptions:{" "}
+                                                {curr.stats.receptions}
+                                                <br />
+                                                Rush Attempts:{" "}
+                                                {curr.stats.rushAttempts}
+                                                <br />
+                                                Yards: {curr.stats.totalYards}
+                                                <br />
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -156,6 +173,30 @@ function Test({
                                         >
                                             Delete Player
                                         </Button>
+                                        <div>
+                                            <Button onClick={flipVisibility}>
+                                                STATS
+                                            </Button>
+                                            {visible && (
+                                                <div>
+                                                    Description:{" "}
+                                                    {curr.description}
+                                                    <br />
+                                                    Touchdowns:{" "}
+                                                    {curr.stats.touchdowns}
+                                                    <br />
+                                                    Receptions:{" "}
+                                                    {curr.stats.receptions}
+                                                    <br />
+                                                    Rush Attempts:{" "}
+                                                    {curr.stats.rushAttempts}
+                                                    <br />
+                                                    Yards:{" "}
+                                                    {curr.stats.totalYards}
+                                                    <br />
+                                                </div>
+                                            )}
+                                        </div>
                                         {setMyMap(
                                             myMap.set(role, [...widgets])
                                         )}
