@@ -99,7 +99,12 @@ function Test({
                             playerList={centralList}
                             setPlayerList={setCentralList}
                         ></PositionFilter>
-
+                        <SortSelect
+                            sortOption={centralSort}
+                            setSortOption={setCentralSort}
+                            playerList={centralList}
+                            setPlayerList={setCentralList}
+                        ></SortSelect>
                         <div className="central">
                             <h4 className="playersTitle">Players</h4>
                             {centralList.map((curr: Player) => (
