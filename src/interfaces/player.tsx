@@ -1,4 +1,6 @@
 /** A representation of a Player */
+export type Position = "QB" | "RB" | "WR" | "TE" | "K";
+
 export interface Player {
     // name of the player
     name: string;
@@ -7,7 +9,7 @@ export interface Player {
     // url/path to player picture
     image: string;
     // player's position
-    position: string;
+    position: Position;
     // some statistics as a dict
     stats: {
         touchdowns: number;

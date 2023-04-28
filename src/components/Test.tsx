@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
-import { playerList } from "../players";
+//import { playerList } from "../players";
 import { Player } from "../interfaces/player";
+
+import { SortSelect } from "./sortSelect";
+import { Col, Container, Row } from "react-bootstrap";
+import { AddPlayers } from "./AddPlayers";
 
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
@@ -10,10 +14,20 @@ interface Widgets {
     role: string;
     myMap: Map<string, Player[]>;
     setMyMap: (newRecord: Map<string, Player[]>) => void;
+    centralList: Player[];
+    setCentralList: (newPlayerList: Player[]) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
+function Test({
+    role,
+    widgets,
+    setWidgets,
+    myMap,
+    setMyMap,
+    centralList,
+    setCentralList
+}: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
         jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
@@ -25,7 +39,10 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
     // IT IS AN ARRAY OF PLAYER OBJECTS
     // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [centralList, setCentralList] = useState<Player[]>(playerList);
+    //const [centralList, setCentralList] = useState<Player[]>(playerList);
+
+    // hold current sorting method of central list
+    const [centralSort, setCentralSort] = useState<string>("None");
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
@@ -35,7 +52,7 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
         const widgetType = e.dataTransfer.getData("widgetType") as string;
 
         // find dropped player  object based on name
-        const oldPlayer = playerList.find(
+        const oldPlayer = centralList.find(
             (ele) => ele.name === widgetType
         ) as Player;
 
@@ -55,6 +72,7 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
             (player: Player): boolean => player !== removedPlayer
         );
         setWidgets(newList);
+        setMyMap(myMap.set(role, newList));
     }
 
     function handleDragOver(e: React.DragEvent) {
@@ -65,93 +83,137 @@ function Test({ role, widgets, setWidgets, myMap, setMyMap }: Widgets) {
     function flipVisibility(): void {
         setVisible(!visible);
     }
+    /* function updateCentralList(newCentralList: Player[]) {
+        setCentralList(newCentralList);
+    } */
+
     // the curr in the both maps below now represents players,
     // you can access its attributes with dot notation
     // also we should consider makeing a "renderPlayer" function that way we can format the player
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
-            <div className="central">
-                <h4 className="playersTitle">Players</h4>
-                {centralList.map((curr: Player) => (
-                    <div
-                        key="list"
-                        className="player"
-                        draggable
-                        onDragStart={(e) => handleOnDrag(e, curr.name)}
-                    >
-                        {curr.name} | {curr.position} <br /> Rating:{" "}
-                        {curr.rating}
-                        <img
-                            src={curr.image}
-                            style={{
-                                width: 40,
-                                height: 40
-                            }}
-                            alt="Here"
-                        />
-                        <div>
-                            <Button onClick={flipVisibility}>STATS</Button>
-                            {visible && (
-                                <div>
-                                    Description: {curr.description}
-                                    <br />
-                                    Touchdowns: {curr.stats.touchdowns}
-                                    <br />
-                                    Receptions: {curr.stats.receptions}
-                                    <br />
-                                    Rush Attempts: {curr.stats.rushAttempts}
-                                    <br />
-                                    Yards: {curr.stats.totalYards}
-                                    <br />
+            <Container>
+                <Row>
+                    <Col>
+                        <SortSelect
+                            sortOption={centralSort}
+                            setSortOption={setCentralSort}
+                            playerList={centralList}
+                            setPlayerList={setCentralList}
+                        ></SortSelect>
+                        <div className="central">
+                            <h4 className="playersTitle">Players</h4>
+                            {centralList.map((curr: Player) => (
+                                <div
+                                    key="list"
+                                    className="player"
+                                    draggable
+                                    onDragStart={(e) =>
+                                        handleOnDrag(e, curr.name)
+                                    }
+                                >
+                                    {curr.name} | {curr.position} <br /> Rating:{" "}
+                                    {curr.rating}
+                                    <img
+                                        className="playerImage"
+                                        src={curr.image}
+                                        alt="Image"
+                                    />
+                                    <div>
+                                        <Button onClick={flipVisibility}>
+                                            STATS
+                                        </Button>
+                                        {visible && (
+                                            <div>
+                                                Description: {curr.description}
+                                                <br />
+                                                Touchdowns:{" "}
+                                                {curr.stats.touchdowns}
+                                                <br />
+                                                Receptions:{" "}
+                                                {curr.stats.receptions}
+                                                <br />
+                                                Rush Attempts:{" "}
+                                                {curr.stats.rushAttempts}
+                                                <br />
+                                                Yards: {curr.stats.totalYards}
+                                                <br />
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
-                            )}
+                            ))}
                         </div>
-                    </div>
-                ))}
-            </div>
-            <div
-                className="user"
-                onDrop={handleOnDrop}
-                onDragOver={handleDragOver}
-            >
-                <h4 className="playersTitle">Your Team</h4>
-                {widgets.map((curr, index) => (
-                    <div className="player" key={index}>
-                        {curr.name} | {curr.position} <br /> Rating:{" "}
-                        {curr.rating}
-                        <img
-                            src={curr.image}
-                            style={{
-                                width: 40,
-                                height: 40
-                            }}
-                            alt="Here"
-                        />
-                        {setMyMap(myMap.set(role, [...widgets]))}
-                        <Button onClick={() => handleOnButtonClick(curr)}>
-                            Delete Player
-                        </Button>
-                        <div>
-                            <Button onClick={flipVisibility}>STATS</Button>
-                            {visible && (
-                                <div>
-                                    Description: {curr.description}
-                                    <br />
-                                    Touchdowns: {curr.stats.touchdowns}
-                                    <br />
-                                    Receptions: {curr.stats.receptions}
-                                    <br />
-                                    Rush Attempts: {curr.stats.rushAttempts}
-                                    <br />
-                                    Yards: {curr.stats.totalYards}
-                                    <br />
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                ))}
-            </div>
+                    </Col>
+                    <Col>
+                        {role !== "League Manager" ? (
+                            <div
+                                className="user"
+                                onDrop={handleOnDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                <h4 className="playersTitle">Your Team</h4>
+                                {widgets.map((curr, index) => (
+                                    <div className="player" key={index}>
+                                        {curr.name} | {curr.position} <br />{" "}
+                                        Rating: {curr.rating}
+                                        <img
+                                            src={curr.image}
+                                            style={{
+                                                width: 40,
+                                                height: 40
+                                            }}
+                                            alt="Image"
+                                        />
+                                        <Button
+                                            onClick={() =>
+                                                handleOnButtonClick(curr)
+                                            }
+                                        >
+                                            Delete Player
+                                        </Button>
+                                        <div>
+                                            <Button onClick={flipVisibility}>
+                                                STATS
+                                            </Button>
+                                            {visible && (
+                                                <div>
+                                                    Description:{" "}
+                                                    {curr.description}
+                                                    <br />
+                                                    Touchdowns:{" "}
+                                                    {curr.stats.touchdowns}
+                                                    <br />
+                                                    Receptions:{" "}
+                                                    {curr.stats.receptions}
+                                                    <br />
+                                                    Rush Attempts:{" "}
+                                                    {curr.stats.rushAttempts}
+                                                    <br />
+                                                    Yards:{" "}
+                                                    {curr.stats.totalYards}
+                                                    <br />
+                                                </div>
+                                            )}
+                                        </div>
+                                        {setMyMap(
+                                            myMap.set(role, [...widgets])
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <div className="addPlayer">
+                                <AddPlayers
+                                    centralList={centralList}
+                                    setCentralList={setCentralList}
+                                ></AddPlayers>
+                            </div>
+                        )}
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

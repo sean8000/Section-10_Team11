@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import Test from "./components/Test";
 import { Col, Container, Row } from "react-bootstrap";
-import { RoleSelect } from ".//components/roleSelect";
+import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
+import { playerList } from "./players";
+//import { AddPlayers } from "./components/AddPlayers";
 
 function App(): JSX.Element {
-    const [role, setRole] = useState<string>("Super");
+    const [role, setRole] = useState<string>("League Manager");
     const [myMap, setMyMap] = useState(new Map());
+    const [centralList, setCentralList] = useState<Player[]>(playerList);
     const [widgets, setWidgets] = useState<Player[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
-        "Super",
-        "Admin",
-        "User1"
+        "League Manager",
+        "Team Manager",
+        "Guest User"
     ]);
     //const [userDict, setDict] = useState<Record<string, string[]>>({});
     {
@@ -42,10 +45,21 @@ function App(): JSX.Element {
                 setTotalRoles={setTotalRoles}
                 myMap={myMap}
             ></RoleSelect>
+            ~{"\n"}
             <Container>
                 <Row>
                     <Col>
-                        {role !== "Super" ? (
+                        <Test
+                            widgets={widgets}
+                            setWidgets={setWidgets}
+                            role={role}
+                            myMap={myMap}
+                            setMyMap={setMyMap}
+                            centralList={centralList}
+                            setCentralList={setCentralList}
+                        ></Test>
+                        {/*}
+                        {role !== "League Manager" ? (
                             <Test
                                 widgets={widgets}
                                 setWidgets={setWidgets}
@@ -59,6 +73,7 @@ function App(): JSX.Element {
                                 created
                             </span>
                         )}
+                        {*/}
                     </Col>
                     {/*}
                     <Col>
