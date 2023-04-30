@@ -13,6 +13,13 @@
 .player:nth-child(odd) {
     background-color: black;
     color: white;
+    height: 250px;
+}
+
+.player:nth-child(even) {
+    background-color: gray;
+    color: white;
+    height: 250px;
 }
 
 .central {
@@ -51,6 +58,7 @@
     color: white;
     text-align: center;
     background-color: black;
+    margin-bottom: 0%;
 }
 
 .roleSelectHeadings {
@@ -112,8 +120,7 @@
 .playerImage {
     position: relative;
     float: right;
-    margin-right: 50px;
-    margin-top: -26px;
-    width: 170px;
-    height: 170px;
+    margin-top: -24px;
+    width: 250px;
+    height: 250px;
 }
