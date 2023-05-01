@@ -26,16 +26,6 @@ function App(): JSX.Element {
     return (
         <div>
             <h1 className="heading">NFL Football TeamBuilder</h1>
-            <h5 className="instructions">
-                LEAGUE MANAGERS ----- ADD/REMOVE PLAYERS
-            </h5>
-            <h5 className="instructions">
-                TEAM MANAGERS ----- EDIT YOUR PLAYERS
-            </h5>
-            <h5 className="instructions">
-                TEAM BUILDERS ----- BUILD YOUR TEAM
-            </h5>
-            <h4 className="roleSelectHeadings">Role Select</h4>
             <RoleSelect
                 setRole={setRole}
                 role={role}

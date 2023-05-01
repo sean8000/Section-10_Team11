@@ -36,9 +36,6 @@ export function RoleSelect({
     return (
         <div className="roleSelect">
             <Form.Group controlId="Roles">
-                <Form.Label className="roleSelectHeadings">
-                    Which role
-                </Form.Label>
                 <Form.Select value={role} onChange={updateRole}>
                     {totalRoles.map((role: string) => (
                         <option key={role} value={role}>
@@ -59,12 +56,12 @@ export function RoleSelect({
                     userText={userText}
                     setUserText={setUserText}
                 ></UserText>
-                <br></br>
                 <Button
+                    className="addUserButton"
                     style={{ backgroundColor: "#000000" }}
                     onClick={() => addUser()}
                 >
-                    Add This User
+                    Add User
                 </Button>
             </div>
         </div>
