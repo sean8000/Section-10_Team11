@@ -174,6 +174,7 @@ function Test({
                                             Delete Player
                                         </Button>
                                         <div>
+                                            {/*}
                                             <Button onClick={flipVisibility}>
                                                 STATS
                                             </Button>
@@ -196,6 +197,7 @@ function Test({
                                                     <br />
                                                 </div>
                                             )}
+                                            {*/}
                                         </div>
                                         {setMyMap(
                                             myMap.set(role, [...widgets])
