@@ -147,7 +147,8 @@ function Test({
                         </div>
                     </Col>
                     <Col>
-                        {role !== "League Manager" ? (
+                        {role !== "League Manager" &&
+                        role !== "Team Manager" ? (
                             <div
                                 className="user"
                                 onDrop={handleOnDrop}
