@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import "./Test.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
-
+import { PositionFilter } from "./PositionFilter";
 import { SortSelect } from "./sortSelect";
 import { Col, Container, Row } from "react-bootstrap";
 import { AddPlayers } from "./AddPlayers";
@@ -43,6 +43,8 @@ function Test({
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
+    const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
+    //const filterBoolean = [false, false, false, false, false];
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
@@ -96,6 +98,11 @@ function Test({
             <Container>
                 <Row>
                     <Col>
+                        <PositionFilter
+                            filterPosition={filterPositions}
+                            playerList={centralList}
+                            setPlayerList={setCentralList}
+                        ></PositionFilter>
                         <SortSelect
                             sortOption={centralSort}
                             setSortOption={setCentralSort}

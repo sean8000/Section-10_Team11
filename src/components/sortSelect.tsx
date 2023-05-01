@@ -21,13 +21,18 @@ export function SortSelect({
         const newSort = event.target.value;
         setSortOption(event.target.value);
 
-        const tempPlayerList = playerList;
+        let tempPlayerList = playerList;
+
         if (newSort === "None") {
             console.log("None");
             // Does nothing
         } else if (newSort === "Position") {
             console.log("Pos");
-            tempPlayerList.sort((a, b) => (a.position < b.position ? -1 : 1));
+            //tempPlayerList.sort((a, b) => (a.position < b.position ? -1 : 1));
+            tempPlayerList = tempPlayerList.filter(
+                (player: Player): boolean => player.position === "QB"
+            );
+            console.log(tempPlayerList);
         } else if (newSort === "Rating") {
             console.log("Rat");
             tempPlayerList.sort((a, b) => (a.rating > b.rating ? -1 : 1));
