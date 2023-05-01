@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import { Player } from "../interfaces/player";
+import { playerList } from "../players";
+
+const allPlayers = playerList;
 
 export interface Filter {
     filterPosition: string[];
@@ -25,17 +28,49 @@ export function PositionFilter({
 
         setIsCheckted(updatedCheckedState);
 
-        let tempPlayerList = playerList;
-        if (filterBoolean[0] === true) {
-            tempPlayerList = tempPlayerList.filter(
-                (player: Player): boolean => player.position === "QB"
-            );
-            console.log(tempPlayerList);
+        let tempPlayerList = playerList.map(
+            (player: Player): Player => ({ ...player })
+        );
+
+        if (updatedCheckedState[0] === true) {
+            if (tempPlayerList.length === 0) {
+                tempPlayerList = allPlayers.filter(
+                    (player: Player): boolean => player.position === "QB"
+                );
+            }
+            // tempPlayerList = allPlayers.filter(
+            //     (player: Player): boolean => player.position === "QB"
+            // );
+
+            // setPlayerList(tempPlayerList);
+            // console.log("temp list: " + tempPlayerList);
+            // console.log("player list: " + playerList);
         }
 
-        setPlayerList(tempPlayerList);
-        console.log(tempPlayerList);
-        console.log(updatedCheckedState);
+        if (updatedCheckedState[1] === true) {
+            tempPlayerList = allPlayers.filter(
+                (player: Player): boolean => player.position === "RB"
+            );
+
+            setPlayerList(tempPlayerList);
+            console.log("temp list: " + tempPlayerList);
+            console.log("player list: " + playerList);
+        }
+
+        const everyFalse = updatedCheckedState.every(
+            (bool: boolean): boolean => bool === false
+        );
+
+        if (everyFalse === true) {
+            console.log("t: " + tempPlayerList);
+            console.log("p: " + playerList);
+            console.log("all false");
+            setPlayerList(allPlayers);
+        }
+
+        //console.log("everyFalse: " + everyFalse);
+        //console.log(tempPlayerList);
+        //console.log("updatedCheckedState: " + updatedCheckedState);
     }
     return (
         <div>
