@@ -112,6 +112,10 @@ function Test({
                                     onDragStart={(e) =>
                                         handleOnDrag(e, curr.name)
                                     }
+                                    style={{
+                                        width: 483.33,
+                                        height: 210
+                                    }}
                                 >
                                     {curr.name} | {curr.position} <br /> Rating:{" "}
                                     {curr.rating}
@@ -119,6 +123,10 @@ function Test({
                                         className="playerImage"
                                         src={curr.image}
                                         alt="Image"
+                                        style={{
+                                            width: 200,
+                                            height: 210
+                                        }}
                                     />
                                     <div>
                                         <Button onClick={flipVisibility}>
