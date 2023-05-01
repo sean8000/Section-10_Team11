@@ -93,127 +93,83 @@ function Test({
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
-            <Container>
-                <Row>
-                    <Col>
-                        <SortSelect
-                            sortOption={centralSort}
-                            setSortOption={setCentralSort}
-                            playerList={centralList}
-                            setPlayerList={setCentralList}
-                        ></SortSelect>
-                        <div className="central">
-                            <h4 className="playersTitle">Players</h4>
-                            {centralList.map((curr: Player) => (
-                                <div
-                                    key="list"
-                                    className="player"
-                                    draggable
-                                    onDragStart={(e) =>
-                                        handleOnDrag(e, curr.name)
-                                    }
-                                >
-                                    {curr.name} | {curr.position} <br /> Rating:{" "}
-                                    {curr.rating}
-                                    <img
-                                        className="playerImage"
-                                        src={curr.image}
-                                        alt="Image"
-                                    />
-                                    <div>
-                                        <Button onClick={flipVisibility}>
-                                            STATS
-                                        </Button>
-                                        {visible && (
-                                            <div>
-                                                Description: {curr.description}
-                                                <br />
-                                                Touchdowns:{" "}
-                                                {curr.stats.touchdowns}
-                                                <br />
-                                                Receptions:{" "}
-                                                {curr.stats.receptions}
-                                                <br />
-                                                Rush Attempts:{" "}
-                                                {curr.stats.rushAttempts}
-                                                <br />
-                                                Yards: {curr.stats.totalYards}
-                                                <br />
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </Col>
-                    <Col>
-                        {role !== "League Manager" ? (
-                            <div
-                                className="user"
-                                onDrop={handleOnDrop}
-                                onDragOver={handleDragOver}
+            <SortSelect
+                sortOption={centralSort}
+                setSortOption={setCentralSort}
+                playerList={centralList}
+                setPlayerList={setCentralList}
+            ></SortSelect>
+            <h4 className="playersTitle">Players {"\n"}</h4>
+            <div className="central">
+                {centralList.map((curr: Player) => (
+                    <div
+                        key="list"
+                        className="player"
+                        draggable
+                        onDragStart={(e) => handleOnDrag(e, curr.name)}
+                    >
+                        <div className="stats">
+                            <Button
+                                className="accordion"
+                                onClick={flipVisibility}
                             >
-                                <h4 className="playersTitle">Your Team</h4>
-                                {widgets.map((curr, index) => (
-                                    <div className="player" key={index}>
-                                        {curr.name} | {curr.position} <br />{" "}
-                                        Rating: {curr.rating}
-                                        <img
-                                            src={curr.image}
-                                            style={{
-                                                width: 40,
-                                                height: 40
-                                            }}
-                                            alt="Image"
-                                        />
-                                        <Button
-                                            onClick={() =>
-                                                handleOnButtonClick(curr)
-                                            }
-                                        >
-                                            Delete Player
-                                        </Button>
-                                        <div>
-                                            <Button onClick={flipVisibility}>
-                                                STATS
-                                            </Button>
-                                            {visible && (
-                                                <div>
-                                                    Description:{" "}
-                                                    {curr.description}
-                                                    <br />
-                                                    Touchdowns:{" "}
-                                                    {curr.stats.touchdowns}
-                                                    <br />
-                                                    Receptions:{" "}
-                                                    {curr.stats.receptions}
-                                                    <br />
-                                                    Rush Attempts:{" "}
-                                                    {curr.stats.rushAttempts}
-                                                    <br />
-                                                    Yards:{" "}
-                                                    {curr.stats.totalYards}
-                                                    <br />
-                                                </div>
-                                            )}
-                                        </div>
-                                        {setMyMap(
-                                            myMap.set(role, [...widgets])
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
-                        ) : (
-                            <div className="addPlayer">
-                                <AddPlayers
-                                    centralList={centralList}
-                                    setCentralList={setCentralList}
-                                ></AddPlayers>
-                            </div>
-                        )}
-                    </Col>
-                </Row>
-            </Container>
+                                <div className="namesAndPositionText">
+                                    {curr.name} | {curr.rating}
+                                </div>
+                            </Button>
+                            {visible && (
+                                <div>
+                                    Description: {curr.description}
+                                    <br />
+                                    Touchdowns: {curr.stats.touchdowns}
+                                    <br />
+                                    Receptions: {curr.stats.receptions}
+                                    <br />
+                                    Rush Attempts: {curr.stats.rushAttempts}
+                                    <br />
+                                    Yards: {curr.stats.totalYards}
+                                    <br />
+                                </div>
+                            )}
+                        </div>
+                        <img
+                            className="playerImage"
+                            src={curr.image}
+                            alt="Image"
+                        />
+                    </div>
+                ))}
+            </div>
+            {role !== "League Manager" ? (
+                <div
+                    className="user"
+                    onDrop={handleOnDrop}
+                    onDragOver={handleDragOver}
+                >
+                    <h4 className="teamTitle">Your Team</h4>
+                    {widgets.map((curr, index) => (
+                        <div className="player" key={index}>
+                            {curr.name} | {curr.position} <br />
+                            <Button onClick={() => handleOnButtonClick(curr)}>
+                                Delete Player
+                            </Button>
+                            <img
+                                className="playerImage"
+                                src={curr.image}
+                                alt="Image"
+                            />
+                            {setMyMap(myMap.set(role, [...widgets]))}
+                        </div>
+                    ))}
+                </div>
+            ) : (
+                <div className="addPlayer">
+                    <AddPlayers
+                        centralList={centralList}
+                        setCentralList={setCentralList}
+                    ></AddPlayers>
+                </div>
+            )}
         </div>
     );
 }

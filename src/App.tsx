@@ -45,20 +45,17 @@ function App(): JSX.Element {
                 setTotalRoles={setTotalRoles}
                 myMap={myMap}
             ></RoleSelect>
-            ~{"\n"}
-            <Container>
-                <Row>
-                    <Col>
-                        <Test
-                            widgets={widgets}
-                            setWidgets={setWidgets}
-                            role={role}
-                            myMap={myMap}
-                            setMyMap={setMyMap}
-                            centralList={centralList}
-                            setCentralList={setCentralList}
-                        ></Test>
-                        {/*}
+            {"\n"}
+            <Test
+                widgets={widgets}
+                setWidgets={setWidgets}
+                role={role}
+                myMap={myMap}
+                setMyMap={setMyMap}
+                centralList={centralList}
+                setCentralList={setCentralList}
+            ></Test>
+            {/*}
                         {role !== "League Manager" ? (
                             <Test
                                 widgets={widgets}
@@ -74,8 +71,7 @@ function App(): JSX.Element {
                             </span>
                         )}
                         {*/}
-                    </Col>
-                    {/*}
+            {/*}
                     <Col>
                         <h4>Role Select</h4>
                         <RoleSelect
@@ -91,8 +87,6 @@ function App(): JSX.Element {
                         {/*}<Button onClick={() => addUser()}>Add User</Button>{
                     </Col>
                     */}
-                </Row>
-            </Container>
             <span className="names">
                 Alexander Marshall, Michael Murphy, Sean Johnson, Michael
                 Lorang, Dean Turner
