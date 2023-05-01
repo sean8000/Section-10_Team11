@@ -24,35 +24,35 @@ export function PositionFilter({
 
         if (event.target.value === "QB") {
             setPlayerList(allPlayers);
-            const tempPlayerList = playerList.filter(
+            const tempPlayerList = allPlayers.filter(
                 (player: Player): boolean => player.position === "QB"
             );
             setPlayerList(tempPlayerList);
         }
         if (event.target.value === "RB") {
             setPlayerList(allPlayers);
-            const tempPlayerList = playerList.filter(
+            const tempPlayerList = allPlayers.filter(
                 (player: Player): boolean => player.position === "RB"
             );
             setPlayerList(tempPlayerList);
         }
         if (event.target.value === "WR") {
             setPlayerList(allPlayers);
-            const tempPlayerList = playerList.filter(
+            const tempPlayerList = allPlayers.filter(
                 (player: Player): boolean => player.position === "WR"
             );
             setPlayerList(tempPlayerList);
         }
         if (event.target.value === "TE") {
             setPlayerList(allPlayers);
-            const tempPlayerList = playerList.filter(
+            const tempPlayerList = allPlayers.filter(
                 (player: Player): boolean => player.position === "TE"
             );
             setPlayerList(tempPlayerList);
         }
         if (event.target.value === "K") {
             setPlayerList(allPlayers);
-            const tempPlayerList = playerList.filter(
+            const tempPlayerList = allPlayers.filter(
                 (player: Player): boolean => player.position === "K"
             );
             setPlayerList(tempPlayerList);
