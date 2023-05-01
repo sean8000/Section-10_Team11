@@ -44,6 +44,7 @@ function Test({
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
     const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
+    const [pos, setPosition] = useState<string>("None");
     //const filterBoolean = [false, false, false, false, false];
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
@@ -102,6 +103,7 @@ function Test({
                             filterPosition={filterPositions}
                             playerList={centralList}
                             setPlayerList={setCentralList}
+                            setPosition={setPosition}
                         ></PositionFilter>
                         <SortSelect
                             sortOption={centralSort}
@@ -111,54 +113,67 @@ function Test({
                         ></SortSelect>
                         <div className="central">
                             <h4 className="playersTitle">Players</h4>
-                            {centralList.map((curr: Player) => (
-                                <div
-                                    key="list"
-                                    className="player"
-                                    draggable
-                                    onDragStart={(e) =>
-                                        handleOnDrag(e, curr.name)
-                                    }
-                                    style={{
-                                        width: 483.33,
-                                        height: 210
-                                    }}
-                                >
-                                    {curr.name} | {curr.position} <br /> Rating:{" "}
-                                    {curr.rating}
-                                    <img
-                                        className="playerImage"
-                                        src={curr.image}
-                                        alt="Image"
-                                        style={{
-                                            width: 200,
-                                            height: 210
-                                        }}
-                                    />
-                                    <div>
-                                        <Button onClick={flipVisibility}>
-                                            STATS
-                                        </Button>
-                                        {visible && (
+                            {centralList.map((curr: Player) =>
+                                curr.position === pos ? (
+                                    <>
+                                        <div
+                                            key="list"
+                                            className="player"
+                                            draggable
+                                            onDragStart={(e) =>
+                                                handleOnDrag(e, curr.name)
+                                            }
+                                            style={{
+                                                width: 483.33,
+                                                height: 210
+                                            }}
+                                        >
+                                            {curr.name} | {curr.position} <br />{" "}
+                                            Rating: {curr.rating}
+                                            <img
+                                                className="playerImage"
+                                                src={curr.image}
+                                                alt="Image"
+                                                style={{
+                                                    width: 200,
+                                                    height: 210
+                                                }}
+                                            />
                                             <div>
-                                                Description: {curr.description}
-                                                <br />
-                                                Touchdowns:{" "}
-                                                {curr.stats.touchdowns}
-                                                <br />
-                                                Receptions:{" "}
-                                                {curr.stats.receptions}
-                                                <br />
-                                                Rush Attempts:{" "}
-                                                {curr.stats.rushAttempts}
-                                                <br />
-                                                Yards: {curr.stats.totalYards}
-                                                <br />
+                                                <Button
+                                                    onClick={flipVisibility}
+                                                >
+                                                    STATS
+                                                </Button>
+                                                {visible && (
+                                                    <div>
+                                                        Description:{" "}
+                                                        {curr.description}
+                                                        <br />
+                                                        Touchdowns:{" "}
+                                                        {curr.stats.touchdowns}
+                                                        <br />
+                                                        Receptions:{" "}
+                                                        {curr.stats.receptions}
+                                                        <br />
+                                                        Rush Attempts:{" "}
+                                                        {
+                                                            curr.stats
+                                                                .rushAttempts
+                                                        }
+                                                        <br />
+                                                        Yards:{" "}
+                                                        {curr.stats.totalYards}
+                                                        <br />
+                                                    </div>
+                                                )}
                                             </div>
-                                        )}
-                                    </div>
-                                </div>
-                            ))}
+                                        </div>
+                                    </>
+                                ) : (
+                                    ""
+                                )
+                            )}
                         </div>
                     </Col>
                     <Col>
