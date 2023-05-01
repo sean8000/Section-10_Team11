@@ -5,7 +5,6 @@ import "./Test.css";
 import { Player } from "../interfaces/player";
 
 import { SortSelect } from "./sortSelect";
-import { Col, Container, Row } from "react-bootstrap";
 import { AddPlayers } from "./AddPlayers";
 
 interface Widgets {

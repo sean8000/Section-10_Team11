@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { UserText } from "../UserText";
 import { Form, Button } from "react-bootstrap";
 import { Player } from "../interfaces/player";
-import { Col, Container, Row } from "react-bootstrap";
 
 interface Roles {
     setRole: (newString: string) => void;

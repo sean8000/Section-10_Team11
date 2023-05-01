@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Test from "./components/Test";
-import { Col, Container, Row } from "react-bootstrap";
 import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
 import { playerList } from "./players";
