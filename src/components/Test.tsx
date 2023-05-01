@@ -42,8 +42,8 @@ function Test({
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
-    const filterPositions = ["QB", "RB", "WR", "TE", "K"];
-    const filterBoolean = [false, false, false, false, false];
+    const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
+    //const filterBoolean = [false, false, false, false, false];
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
@@ -95,7 +95,6 @@ function Test({
                     <Col>
                         <PositionFilter
                             filterPosition={filterPositions}
-                            filterBoolean={filterBoolean}
                             playerList={centralList}
                             setPlayerList={setCentralList}
                         ></PositionFilter>

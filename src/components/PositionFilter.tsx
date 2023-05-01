@@ -7,83 +7,74 @@ const allPlayers = playerList;
 
 export interface Filter {
     filterPosition: string[];
-    filterBoolean: boolean[];
     playerList: Player[];
     setPlayerList: (newPlayerList: Player[]) => void;
 }
 
 export function PositionFilter({
     filterPosition,
-    filterBoolean,
     playerList,
     setPlayerList
 }: Filter): JSX.Element {
-    const [isChecked, setIsCheckted] = useState<boolean[]>(filterBoolean);
+    const [filter, setFilter] = useState<string>("None");
 
-    function handleOnChange(position: number) {
-        const updatedCheckedState = isChecked.map(
-            (item: boolean, index: number) =>
-                index === position ? !item : item
-        );
+    function updateFilter(event: React.ChangeEvent<HTMLInputElement>) {
+        setFilter(event.target.value);
+        setPlayerList(allPlayers);
 
-        setIsCheckted(updatedCheckedState);
-
-        let tempPlayerList = playerList.map(
-            (player: Player): Player => ({ ...player })
-        );
-
-        if (updatedCheckedState[0] === true) {
-            if (tempPlayerList.length === 0) {
-                tempPlayerList = allPlayers.filter(
-                    (player: Player): boolean => player.position === "QB"
-                );
-            }
-            // tempPlayerList = allPlayers.filter(
-            //     (player: Player): boolean => player.position === "QB"
-            // );
-
-            // setPlayerList(tempPlayerList);
-            // console.log("temp list: " + tempPlayerList);
-            // console.log("player list: " + playerList);
+        if (event.target.value === "QB") {
+            setPlayerList(allPlayers);
+            const tempPlayerList = playerList.filter(
+                (player: Player): boolean => player.position === "QB"
+            );
+            setPlayerList(tempPlayerList);
         }
-
-        if (updatedCheckedState[1] === true) {
-            tempPlayerList = allPlayers.filter(
+        if (event.target.value === "RB") {
+            setPlayerList(allPlayers);
+            const tempPlayerList = playerList.filter(
                 (player: Player): boolean => player.position === "RB"
             );
-
             setPlayerList(tempPlayerList);
-            console.log("temp list: " + tempPlayerList);
-            console.log("player list: " + playerList);
         }
-
-        const everyFalse = updatedCheckedState.every(
-            (bool: boolean): boolean => bool === false
-        );
-
-        if (everyFalse === true) {
-            console.log("t: " + tempPlayerList);
-            console.log("p: " + playerList);
-            console.log("all false");
+        if (event.target.value === "WR") {
+            setPlayerList(allPlayers);
+            const tempPlayerList = playerList.filter(
+                (player: Player): boolean => player.position === "WR"
+            );
+            setPlayerList(tempPlayerList);
+        }
+        if (event.target.value === "TE") {
+            setPlayerList(allPlayers);
+            const tempPlayerList = playerList.filter(
+                (player: Player): boolean => player.position === "TE"
+            );
+            setPlayerList(tempPlayerList);
+        }
+        if (event.target.value === "K") {
+            setPlayerList(allPlayers);
+            const tempPlayerList = playerList.filter(
+                (player: Player): boolean => player.position === "K"
+            );
+            setPlayerList(tempPlayerList);
+        }
+        if (event.target.value === "None") {
             setPlayerList(allPlayers);
         }
-
-        //console.log("everyFalse: " + everyFalse);
-        //console.log(tempPlayerList);
-        //console.log("updatedCheckedState: " + updatedCheckedState);
     }
+
     return (
         <div>
-            {filterPosition.map((position: string) => (
+            {filterPosition.map((choice: string) => (
                 <Form.Check
-                    key={position}
-                    value={position}
-                    name={position}
-                    label={position}
-                    onChange={() =>
-                        handleOnChange(filterPosition.indexOf(position))
-                    }
-                ></Form.Check>
+                    inline
+                    type="radio"
+                    name="positions"
+                    onChange={updateFilter}
+                    key={choice}
+                    label={choice}
+                    value={choice}
+                    checked={choice === filter}
+                />
             ))}
         </div>
     );
