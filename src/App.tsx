@@ -61,13 +61,6 @@ function App(): JSX.Element {
                             filteredList={filteredList}
                             setFilteredList={setFilteredList}
                         ></Test>
-                        <span
-                            data-testid="playerCount"
-                            style={{ color: "white", fontSize: "20" }}
-                        >
-                            Current player count in the central list is:{" "}
-                            {filteredList.length}
-                        </span>
                         {/*}
                         {role !== "League Manager" ? (
                             <Test

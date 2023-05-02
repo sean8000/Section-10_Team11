@@ -167,6 +167,13 @@ function Test({
                         <Button data-testid="stats" onClick={flipVisibility}>
                             STATS
                         </Button>
+                        <span
+                            data-testid="playerCount"
+                            style={{ color: "white", fontSize: "20" }}
+                        >
+                            Current player count in the central list is:{" "}
+                            {filteredList.length}
+                        </span>
                     </Col>
                     <Col>
                         {role !== "League Manager" ? (
@@ -187,8 +194,8 @@ function Test({
                                         <img
                                             src={curr.image}
                                             style={{
-                                                width: 40,
-                                                height: 40
+                                                width: 200,
+                                                height: 210
                                             }}
                                             alt="Image"
                                         />
@@ -236,6 +243,8 @@ function Test({
                                 <AddPlayers
                                     centralList={centralList}
                                     setCentralList={setCentralList}
+                                    setFilteredList={setFilteredList}
+                                    filteredList={filteredList}
                                 ></AddPlayers>
                             </div>
                         )}
