@@ -68,7 +68,8 @@ export function RoleSelect({
                                 <br></br>
                                 <Button
                                     style={{ backgroundColor: "#000000" }}
-                                    onClick={() => addUser()}
+                                    data-testid="addButton"
+                                    onClick={addUser}
                                 >
                                     Add This User
                                 </Button>

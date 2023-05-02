@@ -79,6 +79,7 @@ export function AddPlayers({ centralList, setCentralList }: PlayersToBeAdded) {
                 </Form.Select>
             </Form.Group>
             <Button
+                data-testid="addPlayer"
                 style={{ backgroundColor: "#000000" }}
                 onClick={addNewPlayer}
             >

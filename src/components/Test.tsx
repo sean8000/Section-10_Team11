@@ -114,32 +114,33 @@ function Test({
                         ></SortSelect>
                         <div className="central">
                             <h4 className="playersTitle">Players</h4>
-                            {centralList.map((curr: Player) =>
-                                curr.position === pos ? (
-                                    <>
-                                        <div
-                                            key="list"
-                                            className="player"
-                                            draggable
-                                            onDragStart={(e) =>
-                                                handleOnDrag(e, curr.name)
-                                            }
-                                            style={{
-                                                width: 483.33,
-                                                height: 210
-                                            }}
-                                        >
-                                            {curr.name} | {curr.position} <br />{" "}
-                                            Rating: {curr.rating}
-                                            <img
-                                                className="playerImage"
-                                                src={curr.image}
-                                                alt="Image"
-                                                style={{
-                                                    width: 200,
-                                                    height: 210
-                                                }}
-                                            />
+                            {centralList.map((curr, index) => (
+                                <div
+                                    key={curr.name}
+                                    data-testid={index}
+                                    className="player"
+                                    draggable
+                                    onDragStart={(e) =>
+                                        handleOnDrag(e, curr.name)
+                                    }
+                                    style={{
+                                        width: 483.33,
+                                        height: 210
+                                    }}
+                                >
+                                    {curr.name} | {curr.position} <br /> Rating:{" "}
+                                    {curr.rating}
+                                    <img
+                                        className="playerImage"
+                                        src={curr.image}
+                                        alt="Image"
+                                        style={{
+                                            width: 200,
+                                            height: 210
+                                        }}
+                                    />
+                                    <div>
+                                        {visible && (
                                             <div>
                                                 <Button
                                                     onClick={flipVisibility}
@@ -176,6 +177,9 @@ function Test({
                                 )
                             )}
                         </div>
+                        <Button data-testid="stats" onClick={flipVisibility}>
+                            STATS
+                        </Button>
                     </Col>
                     <Col>
                         {role !== "League Manager" ? (
@@ -186,7 +190,11 @@ function Test({
                             >
                                 <h4 className="playersTitle">Your Team</h4>
                                 {widgets.map((curr, index) => (
-                                    <div className="player" key={index}>
+                                    <div
+                                        className="player"
+                                        key={"other" + index}
+                                        data-testid={"other" + index}
+                                    >
                                         {curr.name} | {curr.position} <br />{" "}
                                         Rating: {curr.rating}
                                         <img
