@@ -17,6 +17,8 @@ interface Widgets {
     setMyMap: (newRecord: Map<string, Player[]>) => void;
     centralList: Player[];
     setCentralList: (newPlayerList: Player[]) => void;
+    filteredList: Player[];
+    setFilteredList: (newPlayerList: Player[]) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -27,7 +29,9 @@ function Test({
     myMap,
     setMyMap,
     centralList,
-    setCentralList
+    setCentralList,
+    filteredList,
+    setFilteredList
 }: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
@@ -103,17 +107,17 @@ function Test({
                         <PositionFilter
                             filterPosition={filterPositions}
                             playerList={centralList}
-                            setPlayerList={setCentralList}
+                            setFilteredList={setFilteredList}
                         ></PositionFilter>
                         <SortSelect
                             sortOption={centralSort}
                             setSortOption={setCentralSort}
-                            playerList={centralList}
-                            setPlayerList={setCentralList}
+                            playerList={filteredList}
+                            setPlayerList={setFilteredList}
                         ></SortSelect>
                         <div className="central">
                             <h4 className="playersTitle">Players</h4>
-                            {centralList.map((curr, index) => (
+                            {filteredList.map((curr, index) => (
                                 <div
                                     key={curr.name}
                                     data-testid={index}
