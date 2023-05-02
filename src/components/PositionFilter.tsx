@@ -13,6 +13,7 @@ export interface Filter {
 
 export function PositionFilter({
     filterPosition,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     playerList,
     setPlayerList
 }: Filter): JSX.Element {
@@ -64,18 +65,23 @@ export function PositionFilter({
 
     return (
         <div>
-            {filterPosition.map((choice: string) => (
-                <Form.Check
-                    inline
-                    type="radio"
-                    name="positions"
-                    onChange={updateFilter}
-                    key={choice}
-                    label={choice}
-                    value={choice}
-                    checked={choice === filter}
-                />
-            ))}
+            {
+                <Form.Group data-testid="radioButtons">
+                    {filterPosition.map((choice: string) => (
+                        <Form.Check
+                            inline
+                            type="radio"
+                            name="positions"
+                            onChange={updateFilter}
+                            key={choice}
+                            label={choice}
+                            value={choice}
+                            checked={choice === filter}
+                            data-testid={"filter" + choice}
+                        />
+                    ))}
+                </Form.Group>
+            }
         </div>
     );
 }

@@ -27,16 +27,16 @@ function App(): JSX.Element {
     return (
         <div>
             <h1 className="heading">NFL Football TeamBuilder</h1>
-            <h5 className="instructions">
+            <h2 className="instructions">
                 LEAGUE MANAGERS ----- ADD/REMOVE PLAYERS
-            </h5>
-            <h5 className="instructions">
+            </h2>
+            <h3 className="instructions">
                 TEAM MANAGERS ----- EDIT YOUR PLAYERS
-            </h5>
-            <h5 className="instructions">
-                TEAM BUILDERS ----- BUILD YOUR TEAM
-            </h5>
-            <h4 className="roleSelectHeadings">Role Select</h4>
+            </h3>
+            <h4 className="instructions">
+                TEAM BUILDERS ----- BUILD YOUR TEAMS
+            </h4>
+            <h5 className="roleSelectHeadings">Role Select</h5>
             <RoleSelect
                 setRole={setRole}
                 role={role}
@@ -58,6 +58,13 @@ function App(): JSX.Element {
                             centralList={centralList}
                             setCentralList={setCentralList}
                         ></Test>
+                        <span
+                            data-testid="playerCount"
+                            style={{ color: "white", fontSize: "20" }}
+                        >
+                            Current player count in the central list is:{" "}
+                            {centralList.length}
+                        </span>
                         {/*}
                         {role !== "League Manager" ? (
                             <Test

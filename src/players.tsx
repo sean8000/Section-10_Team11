@@ -432,35 +432,36 @@ const yKoo: Player = {
 };
 
 // can import this list to any file to access all the players
+//Changing up the list to more easily see sort
 export const playerList = [
-    pMahomes,
+    cMcCaffrey,
+    gKittle,
     jBurrow,
     jAllen,
     dJones,
     sBarkley,
-    cMcCaffrey,
     aEkeler,
+    pMahomes,
     jMixon,
     dHenry,
     jJacobs,
     aJones,
+    tHill,
     nChubb,
     dCook,
-    tHill,
     dHopkins,
     tKelce,
     hButker,
     mEvans,
     jTucker,
-    gKittle,
     eMcPherson,
     dSamuel,
     sDiggs,
     aCooper,
     mAndrews,
+    yKoo,
     jChase,
     dWaller,
     jJefferson,
-    dAdams,
-    yKoo
+    dAdams
 ];

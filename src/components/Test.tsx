@@ -111,9 +111,10 @@ function Test({
                         ></SortSelect>
                         <div className="central">
                             <h4 className="playersTitle">Players</h4>
-                            {centralList.map((curr: Player) => (
+                            {centralList.map((curr, index) => (
                                 <div
-                                    key="list"
+                                    key={curr.name}
+                                    data-testid={index}
                                     className="player"
                                     draggable
                                     onDragStart={(e) =>
@@ -136,9 +137,6 @@ function Test({
                                         }}
                                     />
                                     <div>
-                                        <Button onClick={flipVisibility}>
-                                            STATS
-                                        </Button>
                                         {visible && (
                                             <div>
                                                 Description: {curr.description}
@@ -160,6 +158,9 @@ function Test({
                                 </div>
                             ))}
                         </div>
+                        <Button data-testid="stats" onClick={flipVisibility}>
+                            STATS
+                        </Button>
                     </Col>
                     <Col>
                         {role !== "League Manager" ? (
@@ -170,7 +171,11 @@ function Test({
                             >
                                 <h4 className="playersTitle">Your Team</h4>
                                 {widgets.map((curr, index) => (
-                                    <div className="player" key={index}>
+                                    <div
+                                        className="player"
+                                        key={"other" + index}
+                                        data-testid={"other" + index}
+                                    >
                                         {curr.name} | {curr.position} <br />{" "}
                                         Rating: {curr.rating}
                                         <img
