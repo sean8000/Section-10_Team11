@@ -1,3 +1,5 @@
+/* eslint-disable indent */
+// had to disable this sorry gang
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
@@ -16,6 +18,8 @@ interface Widgets {
     setMyMap: (newRecord: Map<string, Player[]>) => void;
     centralList: Player[];
     setCentralList: (newPlayerList: Player[]) => void;
+    adminWidgets: Player[];
+    setAdminWidgets: (newPlayerList: Player[]) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -26,7 +30,9 @@ function Test({
     myMap,
     setMyMap,
     centralList,
-    setCentralList
+    setCentralList,
+    adminWidgets,
+    setAdminWidgets
 }: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
@@ -147,6 +153,41 @@ function Test({
                         </div>
                     </Col>
                     <Col>
+                        {role === "Team Manager" ? (
+                            <div
+                                className="user"
+                                onDrop={handleOnDrop}
+                                onDragOver={handleDragOver}
+                            >
+                                <h4 className="playersTitle">Your Team</h4>
+                                {widgets.map((curr, index) => (
+                                    <div className="player" key={index}>
+                                        {curr.name} | {curr.position} <br />{" "}
+                                        Rating: {curr.rating}
+                                        <img
+                                            src={curr.image}
+                                            style={{
+                                                width: 40,
+                                                height: 40
+                                            }}
+                                            alt="Image"
+                                        />
+                                        <Button
+                                            onClick={() =>
+                                                handleOnButtonClick(curr)
+                                            }
+                                        >
+                                            Delete Player
+                                        </Button>
+                                        {setMyMap(
+                                            myMap.set(role, [...widgets])
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <div></div>
+                        )}
                         {role !== "League Manager" &&
                         role !== "Team Manager" ? (
                             <div
