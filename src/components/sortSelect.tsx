@@ -15,7 +15,7 @@ export function SortSelect({
     playerList,
     setPlayerList
 }: Sort): JSX.Element {
-    const OPTIONS = ["None", "Rating", "Touchdowns"];
+    const OPTIONS = ["None", "Position", "Rating", "Touchdowns"];
 
     function updateSort(event: React.ChangeEvent<HTMLSelectElement>) {
         const newSort = event.target.value;
