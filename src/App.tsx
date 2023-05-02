@@ -10,6 +10,7 @@ function App(): JSX.Element {
     const [role, setRole] = useState<string>("League Manager");
     const [myMap, setMyMap] = useState(new Map());
     const [centralList, setCentralList] = useState<Player[]>(playerList);
+    const [filteredList, setFilteredList] = useState<Player[]>(playerList);
     const [widgets, setWidgets] = useState<Player[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
         "League Manager",
@@ -57,14 +58,9 @@ function App(): JSX.Element {
                             setMyMap={setMyMap}
                             centralList={centralList}
                             setCentralList={setCentralList}
+                            filteredList={filteredList}
+                            setFilteredList={setFilteredList}
                         ></Test>
-                        <span
-                            data-testid="playerCount"
-                            style={{ color: "white", fontSize: "20" }}
-                        >
-                            Current player count in the central list is:{" "}
-                            {centralList.length}
-                        </span>
                         {/*}
                         {role !== "League Manager" ? (
                             <Test
