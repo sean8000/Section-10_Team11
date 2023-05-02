@@ -6,6 +6,7 @@ import "./Test.css";
 import { Player } from "../interfaces/player";
 import { PositionFilter } from "./PositionFilter";
 import { SortSelect } from "./sortSelect";
+import { UserRating } from "./UserRating";
 import { Col, Container, Row } from "react-bootstrap";
 import { AddPlayers } from "./AddPlayers";
 
@@ -190,7 +191,6 @@ function Test({
                                         data-testid={"other" + index}
                                     >
                                         {curr.name} | {curr.position} <br />{" "}
-                                        Rating: {curr.rating}
                                         <img
                                             src={curr.image}
                                             style={{
@@ -206,6 +206,9 @@ function Test({
                                         >
                                             Delete Player
                                         </Button>
+                                        <UserRating
+                                            initialRating={curr.rating}
+                                        ></UserRating>
                                         <div>
                                             {/*}
                                             <Button onClick={flipVisibility}>

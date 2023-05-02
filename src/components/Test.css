@@ -98,6 +98,11 @@
     overflow-x: auto;
 }
 
+.playerRatingBox {
+    width: 70px;
+    overflow-x: auto;
+}
+
 .playerDescriptionBox {
     width: 200px;
     overflow-x: auto;
