@@ -1,3 +1,4 @@
+/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
@@ -44,6 +45,7 @@ function Test({
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
     const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
+    const [pos, setPosition] = useState<string>("None");
     //const filterBoolean = [false, false, false, false, false];
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
@@ -102,6 +104,7 @@ function Test({
                             filterPosition={filterPositions}
                             playerList={centralList}
                             setPlayerList={setCentralList}
+                            setPosition={setPosition}
                         ></PositionFilter>
                         <SortSelect
                             sortOption={centralSort}
@@ -139,24 +142,40 @@ function Test({
                                     <div>
                                         {visible && (
                                             <div>
-                                                Description: {curr.description}
-                                                <br />
-                                                Touchdowns:{" "}
-                                                {curr.stats.touchdowns}
-                                                <br />
-                                                Receptions:{" "}
-                                                {curr.stats.receptions}
-                                                <br />
-                                                Rush Attempts:{" "}
-                                                {curr.stats.rushAttempts}
-                                                <br />
-                                                Yards: {curr.stats.totalYards}
-                                                <br />
+                                                <Button
+                                                    onClick={flipVisibility}
+                                                >
+                                                    STATS
+                                                </Button>
+                                                {visible && (
+                                                    <div>
+                                                        Description:{" "}
+                                                        {curr.description}
+                                                        <br />
+                                                        Touchdowns:{" "}
+                                                        {curr.stats.touchdowns}
+                                                        <br />
+                                                        Receptions:{" "}
+                                                        {curr.stats.receptions}
+                                                        <br />
+                                                        Rush Attempts:{" "}
+                                                        {
+                                                            curr.stats
+                                                                .rushAttempts
+                                                        }
+                                                        <br />
+                                                        Yards:{" "}
+                                                        {curr.stats.totalYards}
+                                                        <br />
+                                                    </div>
+                                                )}
                                             </div>
-                                        )}
-                                    </div>
-                                </div>
-                            ))}
+                                        </div>
+                                    </>
+                                ) : (
+                                    ""
+                                )
+                            )}
                         </div>
                         <Button data-testid="stats" onClick={flipVisibility}>
                             STATS
@@ -194,7 +213,6 @@ function Test({
                                             Delete Player
                                         </Button>
                                         <div>
-                                            {/*}
                                             <Button onClick={flipVisibility}>
                                                 STATS
                                             </Button>
@@ -217,7 +235,6 @@ function Test({
                                                     <br />
                                                 </div>
                                             )}
-                                            {*/}
                                         </div>
                                         {setMyMap(
                                             myMap.set(role, [...widgets])
