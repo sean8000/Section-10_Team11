@@ -50,20 +50,24 @@ export function RoleSelect({
                     {*/}
                 </Form.Select>
             </Form.Group>
-
-            <div className="addUserBox">
-                <UserText
-                    userText={userText}
-                    setUserText={setUserText}
-                ></UserText>
-                <Button
-                    className="addUserButton"
-                    style={{ backgroundColor: "#000000" }}
-                    onClick={() => addUser()}
-                >
-                    Add User
-                </Button>
-            </div>
+            {role === "League Manager" ? (
+                <div className="addUserBox">
+                    <UserText
+                        userText={userText}
+                        setUserText={setUserText}
+                    ></UserText>
+                    <br></br>
+                    <Button
+                        className="addUserButton"
+                        style={{ backgroundColor: "#000000" }}
+                        onClick={() => addUser()}
+                    >
+                        Add This User
+                    </Button>
+                </div>
+            ) : (
+                <span></span>
+            )}
         </div>
     );
 }
