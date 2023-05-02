@@ -2,11 +2,461 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-No tests found, exiting with code 1
-Run with `--passWithNoTests` to exit with code 0
-In /home/runner/work/Section-10_Team11/Section-10_Team11
-  12 files checked.
-  testMatch: /home/runner/work/Section-10_Team11/Section-10_Team11/src/**/__tests__/**/*.{js,jsx,ts,tsx}, /home/runner/work/Section-10_Team11/Section-10_Team11/src/**/*.{spec,test}.{js,jsx,ts,tsx} - 0 matches
-  testPathIgnorePatterns: /node_modules/ - 12 matches
-  testRegex:  - 0 matches
-Pattern:  - 0 matches
+  console.log
+    Pos
+
+      at updateSort (src/components/sortSelect.tsx:30:21)
+
+  console.log
+    [
+      {
+        name: 'Harrison Butker',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/snhlmpr5wfw1t8w1yqgu',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 96
+      },
+      {
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 99
+      },
+      {
+        name: 'Evan McPherson',
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/qxyqg1xibovrlkhebks2',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 93
+      },
+      {
+        name: 'Younghoe Koo',
+        description: 'Atlanta Falcons',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/nvtusyryw9cpf6p8tz8n',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 90
+      },
+      {
+        name: 'Joe Burrow',
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn',
+        position: 'QB',
+        stats: {
+          touchdowns: 40,
+          receptions: 0,
+          rushAttempts: 75,
+          totalYards: 4475
+        },
+        rating: 95
+      },
+      {
+        name: 'Josh Allen',
+        description: 'Buffalo Bulls',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n',
+        position: 'QB',
+        stats: {
+          touchdowns: 35,
+          receptions: 0,
+          rushAttempts: 124,
+          totalYards: 4283
+        },
+        rating: 95
+      },
+      {
+        name: 'Daniel Jones',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/af6nbjqa6qubnu8oi4ms',
+        position: 'QB',
+        stats: {
+          touchdowns: 15,
+          receptions: 0,
+          rushAttempts: 108,
+          totalYards: 3205
+        },
+        rating: 90
+      },
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      },
+      {
+        name: 'Christian McCaffrey',
+        description: 'San Francisco 49ers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+        position: 'RB',
+        stats: {
+          touchdowns: 13,
+          receptions: 85,
+          rushAttempts: 244,
+          totalYards: 1880
+        },
+        rating: 95
+      },
+      {
+        name: 'Saquon Barkley',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/o8tlhps5u1tvnaaxlpjk',
+        position: 'RB',
+        stats: {
+          touchdowns: 10,
+          receptions: 57,
+          rushAttempts: 277,
+          totalYards: 1650
+        },
+        rating: 99
+      },
+      {
+        name: 'Austin Ekeler',
+        description: 'Los Angeles Chargers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/tl0nhc7kyf4aumbyzs5b',
+        position: 'RB',
+        stats: {
+          touchdowns: 18,
+          receptions: 107,
+          rushAttempts: 204,
+          totalYards: 1637
+        },
+        rating: 94
+      },
+      {
+        name: 'Joe Mixon',
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rd210pq6ch22vpoygtfn',
+        position: 'RB',
+        stats: {
+          touchdowns: 9,
+          receptions: 60,
+          rushAttempts: 210,
+          totalYards: 1255
+        },
+        rating: 88
+      },
+      {
+        name: 'Derrick Henry',
+        description: 'Tennesse Titans',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/lvdvmkqltz7zz7fjtopr',
+        position: 'RB',
+        stats: {
+          touchdowns: 13,
+          receptions: 33,
+          rushAttempts: 349,
+          totalYards: 1936
+        },
+        rating: 99
+      },
+      {
+        name: 'Josh Jacobs',
+        description: 'Las Vegas Raiders',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/sagoqkubeaz5yht01ow7',
+        position: 'RB',
+        stats: {
+          touchdowns: 12,
+          receptions: 53,
+          rushAttempts: 340,
+          totalYards: 2053
+        },
+        rating: 99
+      },
+      {
+        name: 'Aaron Jones',
+        description: 'Green Bay Packers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/oo8yixhsahh4gznox7th',
+        position: 'RB',
+        stats: {
+          touchdowns: 7,
+          receptions: 59,
+          rushAttempts: 213,
+          totalYards: 1516
+        },
+        rating: 89
+      },
+      {
+        name: 'Nick Chubb',
+        description: 'Cleveland Browns',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/a8ib0haur75wrhqrbtyo',
+        position: 'RB',
+        stats: {
+          touchdowns: 13,
+          receptions: 27,
+          rushAttempts: 302,
+          totalYards: 1764
+        },
+        rating: 99
+      },
+      {
+        name: 'Dalvin Cook',
+        description: 'Minnesota Vikings',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/gfwvqolvz9vegp1amhf3',
+        position: 'RB',
+        stats: {
+          touchdowns: 10,
+          receptions: 39,
+          rushAttempts: 264,
+          totalYards: 1468
+        },
+        rating: 86
+      },
+      {
+        name: 'George Kittle',
+        description: 'San Francisco 49ers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/znlqhc55l9zwi0euf1mk',
+        position: 'TE',
+        stats: {
+          touchdowns: 11,
+          receptions: 60,
+          rushAttempts: 0,
+          totalYards: 765
+        },
+        rating: 96
+      },
+      {
+        name: 'Travis Kelce',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/gorkhvipsk0gdqb6bo34',
+        position: 'TE',
+        stats: {
+          touchdowns: 12,
+          receptions: 110,
+          rushAttempts: 0,
+          totalYards: 1338
+        },
+        rating: 99
+      },
+      {
+        name: 'Mark Andrews',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/m1fmyihulvtdiav4bwxm',
+        position: 'TE',
+        stats: { touchdowns: 5, receptions: 73, rushAttempts: 0, totalYards: 847 },
+        rating: 94
+      },
+      {
+        name: 'Darren Waller',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/c7jaefxw5xiawscvnqc0',
+        position: 'TE',
+        stats: { touchdowns: 3, receptions: 28, rushAttempts: 0, totalYards: 388 },
+        rating: 90
+      },
+      {
+        name: 'Tyreek Hill',
+        description: 'Miami Dolphins',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/lsszbdnkusxc7mduw5be',
+        position: 'WR',
+        stats: {
+          touchdowns: 7,
+          receptions: 119,
+          rushAttempts: 0,
+          totalYards: 1710
+        },
+        rating: 98
+      },
+      {
+        name: 'DeAndre Hopkins',
+        description: 'Arizona Cardinals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/kikfprn4t5ap1lju4a4k',
+        position: 'WR',
+        stats: { touchdowns: 3, receptions: 64, rushAttempts: 0, totalYards: 717 },
+        rating: 91
+      },
+      {
+        name: 'Mike Evans',
+        description: 'Tampa Bay Buccaneers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/pyilrqdmfvv1zceem1cg',
+        position: 'WR',
+        stats: {
+          touchdowns: 6,
+          receptions: 77,
+          rushAttempts: 0,
+          totalYards: 1124
+        },
+        rating: 92
+      },
+      {
+        name: 'Deebo Samuel',
+        description: 'San Francisco 49ers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/ciwaktyqewczcquks4wy',
+        position: 'WR',
+        stats: { touchdowns: 2, receptions: 56, rushAttempts: 0, totalYards: 632 },
+        rating: 89
+      },
+      {
+        name: 'Stefon Diggs',
+        description: 'Buffalo Bills',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hcvd2avk0kufoli80veb',
+        position: 'WR',
+        stats: {
+          touchdowns: 11,
+          receptions: 108,
+          rushAttempts: 0,
+          totalYards: 1429
+        },
+        rating: 95
+      },
+      {
+        name: 'Amari Cooper',
+        description: 'Cleveland Browns',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/zibbxjtein7gpu5zgcj4',
+        position: 'WR',
+        stats: {
+          touchdowns: 9,
+          receptions: 78,
+          rushAttempts: 0,
+          totalYards: 1160
+        },
+        rating: 88
+      },
+      {
+        name: "Ja'Marr Chase",
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hwrzdfsng9bh4tba7uoe',
+        position: 'WR',
+        stats: {
+          touchdowns: 9,
+          receptions: 87,
+          rushAttempts: 0,
+          totalYards: 1046
+        },
+        rating: 92
+      },
+      {
+        name: 'Justin Jefferson',
+        description: 'Minnesota Vikings',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/zdstmm4sloqnichybgja',
+        position: 'WR',
+        stats: {
+          touchdowns: 8,
+          receptions: 128,
+          rushAttempts: 0,
+          totalYards: 1809
+        },
+        rating: 99
+      },
+      {
+        name: 'Davante Adams',
+        description: 'Las Vegas Raiders',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/jmojceirzhgctrcfi4aw',
+        position: 'WR',
+        stats: {
+          touchdowns: 14,
+          receptions: 100,
+          rushAttempts: 0,
+          totalYards: 1516
+        },
+        rating: 98
+      }
+    ]
+
+      at updateSort (src/components/sortSelect.tsx:37:21)
+
+  console.log
+    Rat
+
+      at updateSort (src/components/sortSelect.tsx:39:21)
+
+  console.log
+    Touch
+
+      at updateSort (src/components/sortSelect.tsx:42:21)
+
+  console.log
+    Touch
+
+      at updateSort (src/components/sortSelect.tsx:42:21)
+
+  console.log
+    None
+
+      at updateSort (src/components/sortSelect.tsx:27:21)
+
+PASS src/Components.test.tsx
+  Role Tests
+    ✓ Tests that there is a combobox (229 ms)
+    ✓ Tests that the first role value is League Manager (82 ms)
+    ✓ Tests that the changed value is Team Manager (186 ms)
+    ✓ Tests that the changed value is Guest User (86 ms)
+    ✓ Test adding user (153 ms)
+  Drag Tests
+    ✓ Testing for original 30 player list (66 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (54 ms)
+    ✓ Testing that draggable list appears when not league manager (135 ms)
+    ✓ Testing that first player is draggable (48 ms)
+    ✓ Testing that first player can be dragged to other list (45 ms)
+  Testing Adding players
+    ✓ Testing for original 30 player list, and that league manager can add players (40 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (254 ms)
+    ✓ Testing for adding 1 player, see if list increased in size (251 ms)
+    ✓ Test adding player doesn't appear when not league manager (57 ms)
+    ✓ Test adding player doesn't appear when not league manager (60 ms)
+  Testing Filter
+    ✓ Testing for original 30 player list (34 ms)
+    ✓ Testing no filter (27 ms)
+    ✓ Testing for filtered by QB (37 ms)
+    ✓ Testing for filtered by RB (39 ms)
+    ✓ Testing for filtered by WR (36 ms)
+    ✓ Testing for filtered by TE (38 ms)
+    ✓ Testing for filtered by K (32 ms)
+  Testing Sort
+    ✓ Testing for original 30 player list, and that league manager can add players (33 ms)
+    ✓ Testing for sorted by position (108 ms)
+    ✓ Test sorted by Rating (76 ms)
+    ✓ Test sorted by Touchdowns (98 ms)
+    ✓ Test sorted by None (135 ms)
+
+---------------------|---------|----------|---------|---------|-------------------
+File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------|---------|----------|---------|---------|-------------------
+All files            |   86.61 |    88.88 |   72.09 |   86.42 |                   
+ src                 |     100 |      100 |     100 |     100 |                   
+  App.tsx            |     100 |      100 |     100 |     100 |                   
+  UserText.tsx       |     100 |      100 |     100 |     100 |                   
+  players.tsx        |     100 |      100 |     100 |     100 |                   
+ src/components      |   81.55 |    88.88 |      70 |   81.18 |                   
+  AddPlayers.tsx     |     100 |      100 |     100 |     100 |                   
+  PositionFilter.tsx |   96.96 |    91.66 |     100 |   96.96 | 62                
+  RenderPlayer.tsx   |       0 |      100 |       0 |       0 | 12-20             
+  Test.tsx           |   28.57 |    66.66 |      25 |   28.57 | 52-83,123-193     
+  roleSelect.tsx     |     100 |      100 |     100 |     100 |                   
+  sortSelect.tsx     |     100 |    92.85 |     100 |     100 | 41                
+ src/interfaces      |       0 |        0 |       0 |       0 |                   
+  player.tsx         |       0 |        0 |       0 |       0 |                   
+---------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       27 passed, 27 total
+Snapshots:   0 total
+Time:        5.125 s
+Ran all test suites.
