@@ -12,6 +12,7 @@ function App(): JSX.Element {
     const [centralList, setCentralList] = useState<Player[]>(playerList);
     const [filteredList, setFilteredList] = useState<Player[]>(playerList);
     const [widgets, setWidgets] = useState<Player[]>([]);
+    const [adminWidgets, setAdminWidgets] = useState<Player[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
         "League Manager",
         "Team Manager",
@@ -58,6 +59,8 @@ function App(): JSX.Element {
                             setMyMap={setMyMap}
                             centralList={centralList}
                             setCentralList={setCentralList}
+                            adminWidgets={adminWidgets}
+                            setAdminWidgets={setAdminWidgets}
                             filteredList={filteredList}
                             setFilteredList={setFilteredList}
                         ></Test>

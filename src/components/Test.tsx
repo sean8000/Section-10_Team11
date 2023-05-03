@@ -1,3 +1,5 @@
+/* eslint-disable indent */
+// had to disable this sorry gang
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
@@ -18,6 +20,8 @@ interface Widgets {
     setMyMap: (newRecord: Map<string, Player[]>) => void;
     centralList: Player[];
     setCentralList: (newPlayerList: Player[]) => void;
+    adminWidgets: Player[];
+    setAdminWidgets: (newPlayerList: Player[]) => void;
     filteredList: Player[];
     setFilteredList: (newPlayerList: Player[]) => void;
 }
@@ -31,6 +35,8 @@ function Test({
     setMyMap,
     centralList,
     setCentralList,
+    adminWidgets,
+    setAdminWidgets
     filteredList,
     setFilteredList
 }: Widgets) {
@@ -72,6 +78,29 @@ function Test({
         if (newPlayer !== undefined) {
             setWidgets([...widgets, newPlayer]);
         }
+    }
+
+    function handleOnDropAdmin(e: React.DragEvent) {
+        const widgetType = e.dataTransfer.getData("widgetType") as string;
+
+        // find dropped player  object based on name
+        const oldPlayer = centralList.find(
+            (ele) => ele.name === widgetType
+        ) as Player;
+
+        // add the player original player directly to the list
+        // (shallow copy so the admin list players reference the same players as the central list)
+        if (
+            oldPlayer !== undefined &&
+            adminWidgets.filter(
+                (player: Player): boolean => player === oldPlayer
+            ).length <= 0
+        ) {
+            setAdminWidgets([...adminWidgets, oldPlayer]);
+        }
+
+        console.log(oldPlayer);
+        console.log(adminWidgets);
     }
 
     function handleOnButtonClick(removedPlayer: Player) {
@@ -177,7 +206,43 @@ function Test({
                         </span>
                     </Col>
                     <Col>
-                        {role !== "League Manager" ? (
+                        {role === "Team Manager" ? (
+                            <div
+                                className="user"
+                                onDrop={handleOnDropAdmin}
+                                onDragOver={handleDragOver}
+                            >
+                                <h4 className="playersTitle">Admin List</h4>
+                                {adminWidgets.map((curr, index) => (
+                                    <div className="player" key={index}>
+                                        {curr.name} | {curr.position} <br />{" "}
+                                        Rating: {curr.rating}
+                                        <img
+                                            src={curr.image}
+                                            style={{
+                                                width: 40,
+                                                height: 40
+                                            }}
+                                            alt="Image"
+                                        />
+                                        <Button
+                                            onClick={() =>
+                                                handleOnButtonClick(curr)
+                                            }
+                                        >
+                                            Delete Player
+                                        </Button>
+                                        {setMyMap(
+                                            myMap.set(role, [...widgets])
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        ) : (
+                            <div></div>
+                        )}
+                        {role !== "League Manager" &&
+                        role !== "Team Manager" ? (
                             <div
                                 className="user"
                                 onDrop={handleOnDrop}
