@@ -36,7 +36,7 @@ function Test({
     centralList,
     setCentralList,
     adminWidgets,
-    setAdminWidgets
+    setAdminWidgets,
     filteredList,
     setFilteredList
 }: Widgets) {
