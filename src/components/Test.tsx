@@ -109,6 +109,8 @@ function Test({
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
+        console.log("Player deleted");
+        console.log(newList);
         setWidgets(newList);
         setMyMap(myMap.set(role, newList));
     }
@@ -264,6 +266,7 @@ function Test({
                                             }}
                                             alt="Image"
                                         />
+                                        {console.log(widgets.indexOf(curr))}
                                         <Button
                                             onClick={() =>
                                                 handleOnButtonClick(curr)
@@ -272,8 +275,13 @@ function Test({
                                             Delete Player
                                         </Button>
                                         <UserRating
-                                            initialRating={curr.rating}
+                                            player={curr}
+                                            widgets={widgets}
+                                            setWidgets={setWidgets}
                                         ></UserRating>
+                                        {setMyMap(
+                                            myMap.set(role, [...widgets])
+                                        )}
                                         <div>
                                             {/*}
                                             <Button onClick={flipVisibility}>
@@ -300,9 +308,6 @@ function Test({
                                             )}
                                             {*/}
                                         </div>
-                                        {setMyMap(
-                                            myMap.set(role, [...widgets])
-                                        )}
                                     </div>
                                 ))}
                             </div>
