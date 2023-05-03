@@ -71,6 +71,29 @@ function Test({
         }
     }
 
+    function handleOnDropAdmin(e: React.DragEvent) {
+        const widgetType = e.dataTransfer.getData("widgetType") as string;
+
+        // find dropped player  object based on name
+        const oldPlayer = centralList.find(
+            (ele) => ele.name === widgetType
+        ) as Player;
+
+        // add the player original player directly to the list
+        // (shallow copy so the admin list players reference the same players as the central list)
+        if (
+            oldPlayer !== undefined &&
+            adminWidgets.filter(
+                (player: Player): boolean => player === oldPlayer
+            ).length <= 0
+        ) {
+            setAdminWidgets([...adminWidgets, oldPlayer]);
+        }
+
+        console.log(oldPlayer);
+        console.log(adminWidgets);
+    }
+
     function handleOnButtonClick(removedPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
@@ -156,11 +179,11 @@ function Test({
                         {role === "Team Manager" ? (
                             <div
                                 className="user"
-                                onDrop={handleOnDrop}
+                                onDrop={handleOnDropAdmin}
                                 onDragOver={handleDragOver}
                             >
-                                <h4 className="playersTitle">Your Team</h4>
-                                {widgets.map((curr, index) => (
+                                <h4 className="playersTitle">Admin List</h4>
+                                {adminWidgets.map((curr, index) => (
                                     <div className="player" key={index}>
                                         {curr.name} | {curr.position} <br />{" "}
                                         Rating: {curr.rating}
