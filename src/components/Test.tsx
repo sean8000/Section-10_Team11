@@ -1,12 +1,14 @@
 /* eslint-disable indent */
 // had to disable this sorry gang
+/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Test.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
-
+import { PositionFilter } from "./PositionFilter";
 import { SortSelect } from "./sortSelect";
+import { UserRating } from "./UserRating";
 import { Col, Container, Row } from "react-bootstrap";
 import { AddPlayers } from "./AddPlayers";
 
@@ -20,6 +22,8 @@ interface Widgets {
     setCentralList: (newPlayerList: Player[]) => void;
     adminWidgets: Player[];
     setAdminWidgets: (newPlayerList: Player[]) => void;
+    filteredList: Player[];
+    setFilteredList: (newPlayerList: Player[]) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -33,6 +37,8 @@ function Test({
     setCentralList,
     adminWidgets,
     setAdminWidgets
+    filteredList,
+    setFilteredList
 }: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
@@ -49,6 +55,9 @@ function Test({
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
+    const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
+    //const [pos, setPosition] = useState<string>("None");
+    //const filterBoolean = [false, false, false, false, false];
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
@@ -125,22 +134,32 @@ function Test({
             <Container>
                 <Row>
                     <Col>
+                        <PositionFilter
+                            filterPosition={filterPositions}
+                            playerList={centralList}
+                            setFilteredList={setFilteredList}
+                        ></PositionFilter>
                         <SortSelect
                             sortOption={centralSort}
                             setSortOption={setCentralSort}
-                            playerList={centralList}
-                            setPlayerList={setCentralList}
+                            playerList={filteredList}
+                            setPlayerList={setFilteredList}
                         ></SortSelect>
                         <div className="central">
                             <h4 className="playersTitle">Players</h4>
-                            {centralList.map((curr: Player) => (
+                            {filteredList.map((curr, index) => (
                                 <div
-                                    key="list"
+                                    key={curr.name}
+                                    data-testid={index}
                                     className="player"
                                     draggable
                                     onDragStart={(e) =>
                                         handleOnDrag(e, curr.name)
                                     }
+                                    style={{
+                                        width: 483.33,
+                                        height: 210
+                                    }}
                                 >
                                     {curr.name} | {curr.position} <br /> Rating:{" "}
                                     {curr.rating}
@@ -148,11 +167,12 @@ function Test({
                                         className="playerImage"
                                         src={curr.image}
                                         alt="Image"
+                                        style={{
+                                            width: 200,
+                                            height: 210
+                                        }}
                                     />
                                     <div>
-                                        <Button onClick={flipVisibility}>
-                                            STATS
-                                        </Button>
                                         {visible && (
                                             <div>
                                                 Description: {curr.description}
@@ -174,6 +194,16 @@ function Test({
                                 </div>
                             ))}
                         </div>
+                        <Button data-testid="stats" onClick={flipVisibility}>
+                            STATS
+                        </Button>
+                        <span
+                            data-testid="playerCount"
+                            style={{ color: "white", fontSize: "20" }}
+                        >
+                            Current player count in the central list is:{" "}
+                            {filteredList.length}
+                        </span>
                     </Col>
                     <Col>
                         {role === "Team Manager" ? (
@@ -220,14 +250,17 @@ function Test({
                             >
                                 <h4 className="playersTitle">Your Team</h4>
                                 {widgets.map((curr, index) => (
-                                    <div className="player" key={index}>
+                                    <div
+                                        className="player"
+                                        key={"other" + index}
+                                        data-testid={"other" + index}
+                                    >
                                         {curr.name} | {curr.position} <br />{" "}
-                                        Rating: {curr.rating}
                                         <img
                                             src={curr.image}
                                             style={{
-                                                width: 40,
-                                                height: 40
+                                                width: 200,
+                                                height: 210
                                             }}
                                             alt="Image"
                                         />
@@ -238,7 +271,11 @@ function Test({
                                         >
                                             Delete Player
                                         </Button>
+                                        <UserRating
+                                            initialRating={curr.rating}
+                                        ></UserRating>
                                         <div>
+                                            {/*}
                                             <Button onClick={flipVisibility}>
                                                 STATS
                                             </Button>
@@ -261,6 +298,7 @@ function Test({
                                                     <br />
                                                 </div>
                                             )}
+                                            {*/}
                                         </div>
                                         {setMyMap(
                                             myMap.set(role, [...widgets])
@@ -273,6 +311,8 @@ function Test({
                                 <AddPlayers
                                     centralList={centralList}
                                     setCentralList={setCentralList}
+                                    setFilteredList={setFilteredList}
+                                    filteredList={filteredList}
                                 ></AddPlayers>
                             </div>
                         )}

@@ -4,9 +4,16 @@ import { Form, Button } from "react-bootstrap";
 interface PlayersToBeAdded {
     centralList: Player[];
     setCentralList: (newStringList: Player[]) => void;
+    filteredList: Player[];
+    setFilteredList: (newPlayerList: Player[]) => void;
 }
 
-export function AddPlayers({ centralList, setCentralList }: PlayersToBeAdded) {
+export function AddPlayers({
+    centralList,
+    setCentralList,
+    setFilteredList,
+    filteredList
+}: PlayersToBeAdded) {
     const [playerName, setPlayerName] = useState<string>("");
     const [playerDescription, setPlayerDescription] = useState<string>("");
     const [playerURL, setPlayerURL] = useState<string>("");
@@ -30,6 +37,7 @@ export function AddPlayers({ centralList, setCentralList }: PlayersToBeAdded) {
             rating: 1
         };
         setCentralList([...centralList, newPlayer]);
+        setFilteredList([...filteredList, newPlayer]);
         setPlayerName("");
         setPlayerDescription("");
         setPlayerURL("");
@@ -79,6 +87,7 @@ export function AddPlayers({ centralList, setCentralList }: PlayersToBeAdded) {
                 </Form.Select>
             </Form.Group>
             <Button
+                data-testid="addPlayer"
                 style={{ backgroundColor: "#000000" }}
                 onClick={addNewPlayer}
             >

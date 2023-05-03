@@ -33,6 +33,21 @@ export function RoleSelect({
         setUserText("");
     }
 
+    function removeUser() {
+        if (userText === "League Manager" || userText === "Team Manager") {
+            return;
+        }
+        const bool = totalRoles.some(
+            (name: string): boolean => name === userText
+        );
+        if (bool === true) {
+            const num = totalRoles.indexOf(userText);
+            totalRoles.splice(num, 1);
+            setTotalRoles([...totalRoles]);
+            setUserText("");
+        }
+    }
+
     // This is the View
     return (
         <div className="roleSelect">
@@ -54,28 +69,39 @@ export function RoleSelect({
                     {*/}
                 </Form.Select>
             </Form.Group>
-
-            <div className="addUserBox">
-                <Container>
-                    <Row>
-                        <Col>
-                            <UserText
-                                userText={userText}
-                                setUserText={setUserText}
-                            ></UserText>
-                        </Col>
-                        <Col>
-                            <br></br>
-                            <Button
-                                style={{ backgroundColor: "#000000" }}
-                                onClick={() => addUser()}
-                            >
-                                Add This User
-                            </Button>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            {role === "League Manager" ? (
+                <div className="addUserBox">
+                    <Container>
+                        <Row>
+                            <Col>
+                                <UserText
+                                    userText={userText}
+                                    setUserText={setUserText}
+                                ></UserText>
+                            </Col>
+                            <Col>
+                                <br></br>
+                                <Button
+                                    style={{ backgroundColor: "#000000" }}
+                                    data-testid="addButton"
+                                    onClick={addUser}
+                                >
+                                    Add This User
+                                </Button>
+                                <Button
+                                    style={{ backgroundColor: "#000000" }}
+                                    data-testid="delButton"
+                                    onClick={removeUser}
+                                >
+                                    Delete This User
+                                </Button>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+            ) : (
+                <span></span>
+            )}
         </div>
     );
 }

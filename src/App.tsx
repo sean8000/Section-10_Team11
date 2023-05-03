@@ -10,6 +10,7 @@ function App(): JSX.Element {
     const [role, setRole] = useState<string>("League Manager");
     const [myMap, setMyMap] = useState(new Map());
     const [centralList, setCentralList] = useState<Player[]>(playerList);
+    const [filteredList, setFilteredList] = useState<Player[]>(playerList);
     const [widgets, setWidgets] = useState<Player[]>([]);
     const [adminWidgets, setAdminWidgets] = useState<Player[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
@@ -28,16 +29,16 @@ function App(): JSX.Element {
     return (
         <div>
             <h1 className="heading">NFL Football TeamBuilder</h1>
-            <h5 className="instructions">
+            <h2 className="instructions">
                 LEAGUE MANAGERS ----- ADD/REMOVE PLAYERS
-            </h5>
-            <h5 className="instructions">
+            </h2>
+            <h3 className="instructions">
                 TEAM MANAGERS ----- EDIT YOUR PLAYERS
-            </h5>
-            <h5 className="instructions">
-                TEAM BUILDERS ----- BUILD YOUR TEAM
-            </h5>
-            <h4 className="roleSelectHeadings">Role Select</h4>
+            </h3>
+            <h4 className="instructions">
+                TEAM BUILDERS ----- BUILD YOUR TEAMS
+            </h4>
+            <h5 className="roleSelectHeadings">Role Select</h5>
             <RoleSelect
                 setRole={setRole}
                 role={role}
@@ -60,6 +61,8 @@ function App(): JSX.Element {
                             setCentralList={setCentralList}
                             adminWidgets={adminWidgets}
                             setAdminWidgets={setAdminWidgets}
+                            filteredList={filteredList}
+                            setFilteredList={setFilteredList}
                         ></Test>
                         {/*}
                         {role !== "League Manager" ? (
