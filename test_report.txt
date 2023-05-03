@@ -403,61 +403,254 @@
 
       at updateSort (src/components/sortSelect.tsx:27:21)
 
-PASS src/Components.test.tsx (5.828 s)
+FAIL src/Components.test.tsx (6.342 s)
   Role Tests
-    ✓ Tests that there is a combobox (242 ms)
-    ✓ Tests that the first role value is League Manager (93 ms)
-    ✓ Tests that the changed value is Team Manager (140 ms)
-    ✓ Tests that the changed value is Guest User (136 ms)
-    ✓ Test adding user (223 ms)
+    ✓ Tests that there is a combobox (303 ms)
+    ✓ Tests that the first role value is League Manager (109 ms)
+    ✓ Tests that the changed value is Team Manager (160 ms)
+    ✓ Tests that the changed value is Guest User (121 ms)
+    ✓ Test adding user (210 ms)
   Drag Tests
-    ✓ Testing for original 30 player list (85 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (82 ms)
-    ✓ Testing that draggable list appears when not league manager (174 ms)
-    ✓ Testing that first player is draggable (65 ms)
-    ✓ Testing that first player can be dragged to other list (51 ms)
+    ✓ Testing for original 30 player list (77 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (66 ms)
+    ✕ Testing that draggable list appears when not league manager (189 ms)
+    ✓ Testing that first player is draggable (76 ms)
+    ✓ Testing that first player can be dragged to other list (47 ms)
   Testing Adding players
-    ✓ Testing for original 30 player list, and that league manager can add players (54 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (352 ms)
-    ✓ Testing for adding 1 player, see if list increased in size (301 ms)
-    ✓ Test adding player doesn't appear when not league manager (82 ms)
-    ✓ Test adding player doesn't appear when not league manager (86 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (76 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (388 ms)
+    ✓ Testing for adding 1 player, see if list increased in size (366 ms)
+    ✓ Test adding player doesn't appear when not league manager (92 ms)
+    ✓ Test adding player doesn't appear when not league manager (88 ms)
   Testing Filter
-    ✓ Testing for original 30 player list (41 ms)
-    ✓ Testing no filter (42 ms)
-    ✓ Testing for filtered by QB (45 ms)
-    ✓ Testing for filtered by RB (47 ms)
-    ✓ Testing for filtered by WR (52 ms)
-    ✓ Testing for filtered by TE (43 ms)
-    ✓ Testing for filtered by K (50 ms)
+    ✓ Testing for original 30 player list (53 ms)
+    ✓ Testing no filter (44 ms)
+    ✓ Testing for filtered by QB (65 ms)
+    ✓ Testing for filtered by RB (62 ms)
+    ✓ Testing for filtered by WR (55 ms)
+    ✓ Testing for filtered by TE (63 ms)
+    ✓ Testing for filtered by K (58 ms)
   Testing Sort
-    ✓ Testing for original 30 player list, and that league manager can add players (43 ms)
-    ✓ Testing for sorted by position (126 ms)
-    ✓ Test sorted by Rating (93 ms)
-    ✓ Test sorted by Touchdowns (138 ms)
-    ✓ Test sorted by None (149 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (47 ms)
+    ✓ Testing for sorted by position (161 ms)
+    ✓ Test sorted by Rating (121 ms)
+    ✓ Test sorted by Touchdowns (163 ms)
+    ✓ Test sorted by None (215 ms)
+
+  ● Drag Tests › Testing that draggable list appears when not league manager
+
+    TestingLibraryElementError: Unable to find an element with the text: /Your Team/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+          [36m</h1>[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"instructions"[39m
+          [36m>[39m
+            [0mLEAGUE MANAGERS ----- ADD/REMOVE PLAYERS[0m
+          [36m</h2>[39m
+          [36m<h3[39m
+            [33mclass[39m=[32m"instructions"[39m
+          [36m>[39m
+            [0mTEAM MANAGERS ----- EDIT YOUR PLAYERS[0m
+          [36m</h3>[39m
+          [36m<h4[39m
+            [33mclass[39m=[32m"instructions"[39m
+          [36m>[39m
+            [0mTEAM BUILDERS ----- BUILD YOUR TEAMS[0m
+          [36m</h4>[39m
+          [36m<h5[39m
+            [33mclass[39m=[32m"roleSelectHeadings"[39m
+          [36m>[39m
+            [0mRole Select[0m
+          [36m</h5>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"roleSelect"[39m
+          [36m>[39m
+            [36m<div>[39m
+              [36m<label[39m
+                [33mclass[39m=[32m"roleSelectHeadings form-label"[39m
+                [33mfor[39m=[32m"Roles"[39m
+              [36m>[39m
+                [0mWhich role[0m
+              [36m</label>[39m
+              [36m<select[39m
+                [33mclass[39m=[32m"form-select"[39m
+                [33mid[39m=[32m"Roles"[39m
+              [36m>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"League Manager"[39m
+                [36m>[39m
+                  [0mLeague Manager[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"Team Manager"[39m
+                [36m>[39m
+                  [0mTeam Manager[0m
+                [36m</option>[39m
+                [36m<option[39m
+                  [33mvalue[39m=[32m"Guest User"[39m
+                [36m>[39m
+                  [0mGuest User[0m
+                [36m</option>[39m
+              [36m</select>[39m
+            [36m</div>[39m
+            [36m<span />[39m
+          [36m</div>[39m
+          [0m~[0m
+          [0m
+    [0m
+          [36m<div[39m
+            [33mclass[39m=[32m"container"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"row"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"col"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"Test"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"container"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"col"[39m
+                      [36m>[39m
+                        [36m<div>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"form-check form-check-inline"[39m
+                          [36m>[39m
+                            [36m<input[39m
+                              [33mchecked[39m=[32m""[39m
+                              [33mclass[39m=[32m"form-check-input"[39m
+                              [33mdata-testid[39m=[32m"filterNone"[39m
+                              [33mname[39m=[32m"positions"[39m
+                              [33mtype[39m=[32m"radio"[39m
+                              [33mvalue[39m=[32m"None"[39m
+                            [36m/>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-check-label"[39m
+                              [33mtitle[39m=[32m""[39m
+                            [36m>[39m
+                              [0mNone[0m
+                            [36m</label>[39m
+                          [36m</div>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"form-check form-check-inline"[39m
+                          [36m>[39m
+                            [36m<input[39m
+                              [33mclass[39m=[32m"form-check-input"[39m
+                              [33mdata-testid[39m=[32m"filterQB"[39m
+                              [33mname[39m=[32m"positions"[39m
+                              [33mtype[39m=[32m"radio"[39m
+                              [33mvalue[39m=[32m"QB"[39m
+                            [36m/>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-check-label"[39m
+                              [33mtitle[39m=[32m""[39m
+                            [36m>[39m
+                              [0mQB[0m
+                            [36m</label>[39m
+                          [36m</div>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"form-check form-check-inline"[39m
+                          [36m>[39m
+                            [36m<input[39m
+                              [33mclass[39m=[32m"form-check-input"[39m
+                              [33mdata-testid[39m=[32m"filterRB"[39m
+                              [33mname[39m=[32m"positions"[39m
+                              [33mtype[39m=[32m"radio"[39m
+                              [33mvalue[39m=[32m"RB"[39m
+                            [36m/>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-check-label"[39m
+                              [33mtitle[39m=[32m""[39m
+                            [36m>[39m
+                              [0mRB[0m
+                            [36m</label>[39m
+                          [36m</div>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"form-check form-check-inline"[39m
+                          [36m>[39m
+                            [36m<input[39m
+                              [33mclass[39m=[32m"form-check-input"[39m
+                              [33mdata-testid[39m=[32m"filterWR"[39m
+                              [33mname[39m=[32m"positions"[39m
+                              [33mtype[39m=[32m"radio"[39m
+                              [33mvalue[39m=[32m"WR"[39m
+                            [36m/>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-check-label"[39m
+                              [33mtitle[39m=[32m""[39m
+                            [36m>[39m
+                              [0mWR[0m
+                            [36m</label>[39m
+                          [36m</div>[39m
+                          [36m<div[39m
+                            [33mclass[39m=[32m"form-check form-check-inline"[39m
+                          [36m>[39m
+                            [36m<input[39m
+                              [33mclass[39m=[32m"form-check-input"[39m
+                              [33mdata-testid[39m=[32m"filterTE"[39m
+                              [33mname[39m=[32m"positions"[39m
+                              [33mtype[39m=[32m"radio"[39m
+                              [33mvalue[39m=[32m"TE"[39m
+                            [36m/>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-check-label"[39m
+                              [33mtitle[39m=[32m""[39m
+                            [36m>[...
+
+      57 |         userEvent.selectOptions(selectRole, "Team Manager");
+      58 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+    > 59 |         expect(screen.getByText(/Your Team/)).toBeInTheDocument;
+         |                       ^
+      60 |         userEvent.selectOptions(selectRole, "Guest User");
+      61 |         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+      62 |         expect(screen.getByText(/Your Team/)).toBeInTheDocument;
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:59:23)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   76.51 |    57.89 |   62.79 |   76.15 |                   
+All files            |   71.32 |    56.52 |   56.25 |   70.92 |                   
  src                 |     100 |      100 |     100 |     100 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   UserText.tsx       |     100 |      100 |     100 |     100 |                   
   players.tsx        |     100 |      100 |     100 |     100 |                   
- src/components      |    66.3 |    57.89 |      60 |   65.55 |                   
+ src/components      |    59.8 |    56.52 |   53.33 |      59 |                   
   AddPlayers.tsx     |     100 |      100 |     100 |     100 |                   
   PositionFilter.tsx |   88.88 |       50 |     100 |   88.88 | 31                
   RenderPlayer.tsx   |       0 |      100 |       0 |       0 | 12-20             
-  Test.tsx           |   28.57 |    66.66 |      25 |   28.57 | 57-88,128-204     
+  Test.tsx           |   19.35 |    57.14 |   17.64 |   19.35 | 63-117,157-269    
   UserRating.tsx     |       0 |        0 |       0 |       0 | 11-23             
   roleSelect.tsx     |   43.75 |       40 |   66.66 |   43.75 | 37-47             
   sortSelect.tsx     |     100 |    92.85 |     100 |     100 | 41                
  src/interfaces      |       0 |        0 |       0 |       0 |                   
   player.tsx         |       0 |        0 |       0 |       0 |                   
 ---------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 passed, 1 total
-Tests:       27 passed, 27 total
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 26 passed, 27 total
 Snapshots:   0 total
-Time:        6.491 s
+Time:        7.176 s
 Ran all test suites.
