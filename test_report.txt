@@ -388,39 +388,52 @@
 
       at updateSort (src/components/sortSelect.tsx:39:21)
 
-FAIL src/Components.test.tsx
+FAIL src/Components.test.tsx (6.912 s)
   Role Tests
-    ✓ Tests that there is a combobox (191 ms)
-    ✕ Tests that the first role value is League Manager (87 ms)
-    ✕ Tests that the changed value is Team Manager (68 ms)
-    ✕ Tests that the changed value is Guest User (58 ms)
-    ✕ Test adding user (55 ms)
+    ✓ Tests that there is a combobox (331 ms)
+    ✕ Tests that the first role value is League Manager (119 ms)
+    ✕ Tests that the changed value is Team Manager (106 ms)
+    ✕ Tests that the changed value is Guest User (91 ms)
+    ✕ Test adding user (81 ms)
   Drag Tests
-    ✕ Testing for original 30 player list (52 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (39 ms)
-    ✕ Testing that draggable list appears when not league manager (64 ms)
-    ✓ Testing that first player is draggable (42 ms)
-    ✓ Testing that first player can be dragged to other list (36 ms)
+    ✕ Testing for original 30 player list (77 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (58 ms)
+    ✕ Testing that draggable list appears when not league manager (98 ms)
+    ✓ Testing that first player is draggable (89 ms)
+    ✓ Testing that first player can be dragged to other list (62 ms)
   Testing Adding players
-    ✕ Testing for original 30 player list, and that league manager can add players (36 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (249 ms)
-    ✕ Testing for adding 1 player, see if list increased in size (199 ms)
-    ✕ Test adding player doesn't appear when not league manager (36 ms)
-    ✕ Test adding player doesn't appear when not league manager (36 ms)
+    ✕ Testing for original 30 player list, and that league manager can add players (69 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (371 ms)
+    ✕ Testing for adding 1 player, see if list increased in size (348 ms)
+    ✕ Test adding player doesn't appear when not league manager (67 ms)
+    ✕ Test adding player doesn't appear when not league manager (53 ms)
   Testing Filter
-    ✕ Testing for original 30 player list (30 ms)
-    ✕ Testing no filter (35 ms)
-    ✕ Testing for filtered by QB (38 ms)
-    ✕ Testing for filtered by RB (34 ms)
-    ✕ Testing for filtered by WR (37 ms)
-    ✕ Testing for filtered by TE (34 ms)
-    ✕ Testing for filtered by K (36 ms)
+    ✕ Testing for original 30 player list (55 ms)
+    ✕ Testing no filter (51 ms)
+    ✕ Testing for filtered by QB (60 ms)
+    ✕ Testing for filtered by RB (57 ms)
+    ✕ Testing for filtered by WR (58 ms)
+    ✕ Testing for filtered by TE (46 ms)
+    ✕ Testing for filtered by K (57 ms)
   Testing Sort
-    ✕ Testing for original 30 player list, and that league manager can add players (28 ms)
-    ✓ Testing for sorted by position (91 ms)
-    ✕ Test sorted by Rating (58 ms)
-    ✕ Test sorted by Touchdowns (47 ms)
-    ✕ Test sorted by None (39 ms)
+    ✕ Testing for original 30 player list, and that league manager can add players (58 ms)
+    ✓ Testing for sorted by position (140 ms)
+    ✕ Test sorted by Rating (80 ms)
+    ✕ Test sorted by Touchdowns (57 ms)
+    ✕ Test sorted by None (66 ms)
+    Testing adding players with filter
+      ✕ Testing for original 30 player list (48 ms)
+      ✓ Testing for adding 1 player, filter is none (267 ms)
+      ✕ Testing for adding 1 player, filter is K, player is a K (292 ms)
+      ✕ Testing for adding 1 player, filter is QB, player is a K (274 ms)
+  Testing adding players with filter
+    ✕ Testing for original 30 player list (46 ms)
+    ✕ Testing for adding player, sort is none (42 ms)
+    ✕ Testing for adding player, sort is Position (49 ms)
+    ✕ Testing for adding player, sort is Rating (41 ms)
+    ✕ Testing for adding player, sort is Touchdowns (63 ms)
+  User rating
+    ✓ Testing adding player to user list with initial overall rating
 
   ● Role Tests › Tests that the first role value is League Manager
 
@@ -616,19 +629,19 @@ FAIL src/Components.test.tsx
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      13 |     test("Tests that the first role value is League Manager", () => {
-      14 |         render(<App />);
-    > 15 |         expect(screen.getByLabelText("Which role")).toHaveValue(
+      19 |     test("Tests that the first role value is League Manager", () => {
+      20 |         render(<App />);
+    > 21 |         expect(screen.getByLabelText("Which role")).toHaveValue(
          |                       ^
-      16 |             "League Manager"
-      17 |         );
-      18 |     });
+      22 |             "League Manager"
+      23 |         );
+      24 |     });
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at getAllByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/queries/label-text.js:103:38)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:15:23)
+      at Object.<anonymous> (src/Components.test.tsx:21:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -828,19 +841,19 @@ FAIL src/Components.test.tsx
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      19 |     test("Tests that the changed value is Team Manager", () => {
-      20 |         render(<App />);
-    > 21 |         const selectRole = screen.getByLabelText("Which role", {});
+      25 |     test("Tests that the changed value is Team Manager", () => {
+      26 |         render(<App />);
+    > 27 |         const selectRole = screen.getByLabelText("Which role", {});
          |                                   ^
-      22 |         userEvent.selectOptions(selectRole, "Team Manager");
-      23 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
-      24 |     });
+      28 |         userEvent.selectOptions(selectRole, "Team Manager");
+      29 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+      30 |     });
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at getAllByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/queries/label-text.js:103:38)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:21:35)
+      at Object.<anonymous> (src/Components.test.tsx:27:35)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -1040,19 +1053,19 @@ FAIL src/Components.test.tsx
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      25 |     test("Tests that the changed value is Guest User", () => {
-      26 |         render(<App />);
-    > 27 |         const selectRole = screen.getByLabelText("Which role", {});
+      31 |     test("Tests that the changed value is Guest User", () => {
+      32 |         render(<App />);
+    > 33 |         const selectRole = screen.getByLabelText("Which role", {});
          |                                   ^
-      28 |         userEvent.selectOptions(selectRole, "Guest User");
-      29 |         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
-      30 |     });
+      34 |         userEvent.selectOptions(selectRole, "Guest User");
+      35 |         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+      36 |     });
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at getAllByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/queries/label-text.js:103:38)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:27:35)
+      at Object.<anonymous> (src/Components.test.tsx:33:35)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -1252,19 +1265,19 @@ FAIL src/Components.test.tsx
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      31 |     test("Test adding user", () => {
-      32 |         render(<App />);
-    > 33 |         const selectRole = screen.getByLabelText("Which role", {});
+      37 |     test("Test adding user", () => {
+      38 |         render(<App />);
+    > 39 |         const selectRole = screen.getByLabelText("Which role", {});
          |                                   ^
-      34 |         const nameElement = screen.getByLabelText(/User Name/i);
-      35 |         userEvent.type(nameElement, "myName");
-      36 |         expect(nameElement).toHaveValue("myName");
+      40 |         const nameElement = screen.getByLabelText(/User Name/i);
+      41 |         userEvent.type(nameElement, "myName");
+      42 |         expect(nameElement).toHaveValue("myName");
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at getAllByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/queries/label-text.js:103:38)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:33:35)
+      at Object.<anonymous> (src/Components.test.tsx:39:35)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -1464,19 +1477,19 @@ FAIL src/Components.test.tsx
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      46 |     test("Testing for original 30 player list", () => {
-      47 |         render(<App />);
-    > 48 |         expect(screen.getByText(/player count in the central list is: 30/));
+      52 |     test("Testing for original 30 player list", () => {
+      53 |         render(<App />);
+    > 54 |         expect(screen.getByText(/player count in the central list is: 30/));
          |                       ^
-      49 |     });
-      50 |     test("Testing that draggable list doesn't exist when league manager", () => {
-      51 |         render(<App />);
+      55 |     });
+      56 |     test("Testing that draggable list doesn't exist when league manager", () => {
+      57 |         render(<App />);
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:48:23)
+      at Object.<anonymous> (src/Components.test.tsx:54:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -1676,19 +1689,19 @@ FAIL src/Components.test.tsx
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      54 |     test("Testing that draggable list appears when not league manager", () => {
-      55 |         render(<App />);
-    > 56 |         const selectRole = screen.getByLabelText("Which role", {});
+      60 |     test("Testing that draggable list appears when not league manager", () => {
+      61 |         render(<App />);
+    > 62 |         const selectRole = screen.getByLabelText("Which role", {});
          |                                   ^
-      57 |         userEvent.selectOptions(selectRole, "Team Manager");
-      58 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
-      59 |         expect(screen.getByText(/Your Team/)).toBeInTheDocument;
+      63 |         userEvent.selectOptions(selectRole, "Team Manager");
+      64 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+      65 |         expect(screen.getByText(/Manage Your Team/)).toBeInTheDocument;
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at getAllByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/queries/label-text.js:103:38)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:56:35)
+      at Object.<anonymous> (src/Components.test.tsx:62:35)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -1888,19 +1901,19 @@ FAIL src/Components.test.tsx
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      79 |     test("Testing for original 30 player list, and that league manager can add players", () => {
-      80 |         render(<App />);
-    > 81 |         expect(screen.getByText(/player count in the central list is: 30/));
+      85 |     test("Testing for original 30 player list, and that league manager can add players", () => {
+      86 |         render(<App />);
+    > 87 |         expect(screen.getByText(/player count in the central list is: 30/));
          |                       ^
-      82 |         expect(screen.getByText(/Add This New Player:/)).toBeInTheDocument;
-      83 |     });
-      84 |     test("Testing for adding 1 player, see if name exists in list", () => {
+      88 |         expect(screen.getByText(/Add This New Player:/)).toBeInTheDocument;
+      89 |     });
+      90 |     test("Testing for adding 1 player, see if name exists in list", () => {
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:81:23)
+      at Object.<anonymous> (src/Components.test.tsx:87:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -2100,37 +2113,37 @@ FAIL src/Components.test.tsx
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      113 |
-      114 |         //An increase of 1
-    > 115 |         expect(screen.getAllByText(/player count in the central list is: 31/));
+      119 |
+      120 |         //An increase of 1
+    > 121 |         expect(screen.getAllByText(/player count in the central list is: 31/));
           |                       ^
-      116 |     });
-      117 |     test("Test adding player doesn't appear when not league manager", () => {
-      118 |         render(<App />);
+      122 |     });
+      123 |     test("Test adding player doesn't appear when not league manager", () => {
+      124 |         render(<App />);
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at getAllByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:109:15)
-      at Object.<anonymous> (src/Com---------------------|---------|----------|---------|---------|--------------------
+      at Object.<anonymous> (---------------------|---------|----------|---------|---------|--------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s  
 ---------------------|---------|----------|---------|---------|--------------------
-All files            |   56.87 |    30.43 |   43.13 |   56.32 |                    
+All files            |   56.87 |    31.25 |   43.13 |   56.32 |                    
  src                 |   97.56 |      100 |   66.66 |   97.56 |                    
   App.tsx            |     100 |      100 |     100 |     100 |                    
   UserText.tsx       |      50 |      100 |      50 |      50 | 10                 
   players.tsx        |     100 |      100 |     100 |     100 |                    
- src/components      |   42.85 |    30.43 |   41.66 |   41.88 |                    
+ src/components      |   42.85 |    31.25 |   41.66 |   41.88 |                    
   AddPlayers.tsx     |     100 |      100 |     100 |     100 |                    
   PositionFilter.tsx |   88.88 |       50 |     100 |   88.88 | 31                 
   RenderPlayer.tsx   |       0 |      100 |       0 |       0 | 12-20              
-  Test.tsx           |    12.5 |    28.57 |   10.52 |    12.5 | 62-131,137,169-268 
+  Test.tsx           |    12.5 |    31.25 |   10.52 |    12.5 | 62-131,137,169-268 
   UserRating.tsx     |       0 |        0 |       0 |       0 | 14-39              
   roleSelect.tsx     |   18.75 |       10 |   33.33 |   18.75 | 27-46              
   sortSelect.tsx     |   77.27 |    57.14 |   83.33 |      75 | 27,41-44           
  src/interfaces      |       0 |        0 |       0 |       0 |                    
   player.tsx         |       0 |        0 |       0 |       0 |                    
 ---------------------|---------|----------|---------|---------|--------------------
-ponents.test.tsx:115:23)
+src/Components.test.tsx:121:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -2330,19 +2343,19 @@ ponents.test.tsx:115:23)
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      117 |     test("Test adding player doesn't appear when not league manager", () => {
-      118 |         render(<App />);
-    > 119 |         const selectRole = screen.getByLabelText("Which role", {});
+      123 |     test("Test adding player doesn't appear when not league manager", () => {
+      124 |         render(<App />);
+    > 125 |         const selectRole = screen.getByLabelText("Which role", {});
           |                                   ^
-      120 |         userEvent.selectOptions(selectRole, "Team Manager");
-      121 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
-      122 |         expect(screen.queryByText(/Add This New Player:/)).not
+      126 |         userEvent.selectOptions(selectRole, "Team Manager");
+      127 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+      128 |         expect(screen.queryByText(/Add This New Player:/)).not
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at getAllByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/queries/label-text.js:103:38)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:119:35)
+      at Object.<anonymous> (src/Components.test.tsx:125:35)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -2542,19 +2555,19 @@ ponents.test.tsx:115:23)
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      125 |     test("Test adding player doesn't appear when not league manager", () => {
-      126 |         render(<App />);
-    > 127 |         const selectRole = screen.getByLabelText("Which role", {});
+      131 |     test("Test adding player doesn't appear when not league manager", () => {
+      132 |         render(<App />);
+    > 133 |         const selectRole = screen.getByLabelText("Which role", {});
           |                                   ^
-      128 |         userEvent.selectOptions(selectRole, "Guest User");
-      129 |         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
-      130 |         expect(screen.queryByText(/Add This New Player:/)).not
+      134 |         userEvent.selectOptions(selectRole, "Guest User");
+      135 |         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+      136 |         expect(screen.queryByText(/Add This New Player:/)).not
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at getAllByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/queries/label-text.js:103:38)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByLabelText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:127:35)
+      at Object.<anonymous> (src/Components.test.tsx:133:35)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -2754,19 +2767,19 @@ ponents.test.tsx:115:23)
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      137 |     test("Testing for original 30 player list", () => {
-      138 |         render(<App />);
-    > 139 |         expect(screen.getByText(/player count in the central list is: 30/));
+      143 |     test("Testing for original 30 player list", () => {
+      144 |         render(<App />);
+    > 145 |         expect(screen.getByText(/player count in the central list is: 30/));
           |                       ^
-      140 |         expect(screen.getByText(/Add This New Player:/)).toBeInTheDocument;
-      141 |     });
-      142 |     test("Testing no filter", () => {
+      146 |         expect(screen.getByText(/Add This New Player:/)).toBeInTheDocument;
+      147 |     });
+      148 |     test("Testing no filter", () => {
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:139:23)
+      at Object.<anonymous> (src/Components.test.tsx:145:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -2966,19 +2979,19 @@ ponents.test.tsx:115:23)
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      144 |         const noButton = screen.getByTestId("filter" + "None");
-      145 |         expect(noButton).toBeChecked;
-    > 146 |         expect(screen.getByText(/player count in the central list is: 30/));
+      150 |         const noButton = screen.getByTestId("filter" + "None");
+      151 |         expect(noButton).toBeChecked;
+    > 152 |         expect(screen.getByText(/player count in the central list is: 30/));
           |                       ^
-      147 |     });
-      148 |     test("Testing for filtered by QB", () => {
-      149 |         render(<App />);
+      153 |     });
+      154 |     test("Testing for filtered by QB", () => {
+      155 |         render(<App />);
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:146:23)
+      at Object.<anonymous> (src/Components.test.tsx:152:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -3421,19 +3434,19 @@ ponents.test.tsx:115:23)
       [36m</div>[39m
     [36m</body>[39m
 
-      152 |         qbButton.click();
-      153 |         expect(qbButton).toBeChecked;
-    > 154 |         expect(screen.getByText(/player count in the central list is: 4/));
+      158 |         qbButton.click();
+      159 |         expect(qbButton).toBeChecked;
+    > 160 |         expect(screen.getByText(/player count in the central list is: 4/));
           |                       ^
-      155 |         //Check if  4 QBs in the list
-      156 |         //Add 2 because there is a QB radio button, and a combobox initially displaying QB.
-      157 |         expect(screen.queryAllByText(/QB/i)).toHaveLength(4 + 2);
+      161 |         //Check if  4 QBs in the list
+      162 |         //Add 2 because there is a QB radio button, and a combobox initially displaying QB.
+      163 |         expect(screen.queryAllByText(/QB/i)).toHaveLength(4 + 2);
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:154:23)
+      at Object.<anonymous> (src/Components.test.tsx:160:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -3981,19 +3994,19 @@ ponents.test.tsx:115:23)
       [36m</div>[39m
     [36m</body>[39m
 
-      163 |         rbButton.click();
-      164 |         expect(rbButton).toBeChecked;
-    > 165 |         expect(screen.getByText(/player count in the central list is: 9/));
+      169 |         rbButton.click();
+      170 |         expect(rbButton).toBeChecked;
+    > 171 |         expect(screen.getByText(/player count in the central list is: 9/));
           |                       ^
-      166 |         //Check if  9 RBs in the list
-      167 |         //Add 2 because there is a RB radio button and a RB option.
-      168 |         expect(screen.queryAllByText(/RB/i)).toHaveLength(9 + 2);
+      172 |         //Check if  9 RBs in the list
+      173 |         //Add 2 because there is a RB radio button and a RB option.
+      174 |         expect(screen.queryAllByText(/RB/i)).toHaveLength(9 + 2);
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:165:23)
+      at Object.<anonymous> (src/Components.test.tsx:171:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -4541,19 +4554,19 @@ ponents.test.tsx:115:23)
       [36m</div>[39m
     [36m</body>[39m
 
-      174 |         wrButton.click();
-      175 |         expect(wrButton).toBeChecked;
-    > 176 |         expect(screen.getByText(/player count in the central list is: 9/));
+      180 |         wrButton.click();
+      181 |         expect(wrButton).toBeChecked;
+    > 182 |         expect(screen.getByText(/player count in the central list is: 9/));
           |                       ^
-      177 |         //Check if  9 WRs in the list
-      178 |         //Add 2 because there is a WR radio button, and a WR option.
-      179 |         expect(screen.queryAllByText(/WR/i)).toHaveLength(9 + 2);
+      183 |         //Check if  9 WRs in the list
+      184 |         //Add 2 because there is a WR radio button, and a WR option.
+      185 |         expect(screen.queryAllByText(/WR/i)).toHaveLength(9 + 2);
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:176:23)
+      at Object.<anonymous> (src/Components.test.tsx:182:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -4996,19 +5009,19 @@ ponents.test.tsx:115:23)
       [36m</div>[39m
     [36m</body>[39m
 
-      185 |         teButton.click();
-      186 |         expect(teButton).toBeChecked;
-    > 187 |         expect(screen.getByText(/player count in the central list is: 4/));
+      191 |         teButton.click();
+      192 |         expect(teButton).toBeChecked;
+    > 193 |         expect(screen.getByText(/player count in the central list is: 4/));
           |                       ^
-      188 |         //Check if  4 TEs in the list
-      189 |         //Add 4 because there is a TE radio button, a TE option, and TEAM is written twice in the App text.
-      190 |         expect(screen.queryAllByText(/TE/)).toHaveLength(4 + 4);
+      194 |         //Check if  4 TEs in the list
+      195 |         //Add 4 because there is a TE radio button, a TE option, and TEAM is written twice in the App text.
+      196 |         expect(screen.queryAllByText(/TE/)).toHaveLength(4 + 4);
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:187:23)
+      at Object.<anonymous> (src/Components.test.tsx:193:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -5451,19 +5464,19 @@ ponents.test.tsx:115:23)
       [36m</div>[39m
     [36m</body>[39m
 
-      196 |         kButton.click();
-      197 |         expect(kButton).toBeChecked;
-    > 198 |         expect(screen.getByText(/player count in the central list is: 4/));
+      202 |         kButton.click();
+      203 |         expect(kButton).toBeChecked;
+    > 204 |         expect(screen.getByText(/player count in the central list is: 4/));
           |                       ^
-      199 |         //Check if  4 TEs in the list
-      200 |         //Add 2 because there is a TE radio button, and a TE option.
-      201 |         expect(screen.queryAllByText(/K/)).toHaveLength(4 + 2);
+      205 |         //Check if  4 TEs in the list
+      206 |         //Add 2 because there is a TE radio button, and a TE option.
+      207 |         expect(screen.queryAllByText(/K/)).toHaveLength(4 + 2);
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:198:23)
+      at Object.<anonymous> (src/Components.test.tsx:204:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -5663,19 +5676,19 @@ ponents.test.tsx:115:23)
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      205 |     test("Testing for original 30 player list, and that league manager can add players", () => {
-      206 |         render(<App />);
-    > 207 |         expect(screen.getByText(/player count in the central list is: 30/));
+      211 |     test("Testing for original 30 player list, and that league manager can add players", () => {
+      212 |         render(<App />);
+    > 213 |         expect(screen.getByText(/player count in the central list is: 30/));
           |                       ^
-      208 |         expect(screen.getByText(/Add This New Player:/)).toBeInTheDocument;
-      209 |     });
-      210 |     test("Testing for sorted by position", () => {
+      214 |         expect(screen.getByText(/Add This New Player:/)).toBeInTheDocument;
+      215 |     });
+      216 |     test("Testing for sorted by position", () => {
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:207:23)
+      at Object.<anonymous> (src/Components.test.tsx:213:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -5690,15 +5703,15 @@ ponents.test.tsx:115:23)
     Received:
       Justin Tucker | K
 
-      230 |         //First person would be 99, second a 99, 18 would be a 94, 29(last) would be an 86
-      231 |         const firstRated = screen.getByTestId(0);
-    > 232 |         expect(firstRated).toHaveTextContent("99");
+      236 |         //First person would be 99, second a 99, 18 would be a 94, 29(last) would be an 86
+      237 |         const firstRated = screen.getByTestId(0);
+    > 238 |         expect(firstRated).toHaveTextContent("99");
           |                            ^
-      233 |         const SecondRated = screen.getByTestId(1);
-      234 |         expect(SecondRated).toHaveTextContent("99");
-      235 |         const eighteen = screen.getByTestId(17);
+      239 |         const SecondRated = screen.getByTestId(1);
+      240 |         expect(SecondRated).toHaveTextContent("99");
+      241 |         const eighteen = screen.getByTestId(17);
 
-      at Object.<anonymous> (src/Components.test.tsx:232:28)
+      at Object.<anonymous> (src/Components.test.tsx:238:28)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -5898,19 +5911,19 @@ ponents.test.tsx:115:23)
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      241 |         render(<App />);
-      242 |         const sortID = screen.getByLabelText(/Sort Select/);
-    > 243 |         const statsButton = screen.getByTestId("stats");
+      247 |         render(<App />);
+      248 |         const sortID = screen.getByLabelText(/Sort Select/);
+    > 249 |         const statsButton = screen.getByTestId("stats");
           |                                    ^
-      244 |         statsButton.click();
-      245 |         userEvent.selectOptions(sortID, "Touchdowns");
-      246 |         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
+      250 |         statsButton.click();
+      251 |         userEvent.selectOptions(sortID, "Touchdowns");
+      252 |         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:243:36)
+      at Object.<anonymous> (src/Components.test.tsx:249:36)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
@@ -6110,26 +6123,2229 @@ ponents.test.tsx:115:23)
                   [33mclass[39m=[32m"sortSelectHeading form-select"[39m
        ...
 
-      258 |         render(<App />);
-      259 |         const sortID = screen.getByLabelText(/Sort Select/);
-    > 260 |         const statsButton = screen.getByTestId("stats");
+      264 |         render(<App />);
+      265 |         const sortID = screen.getByLabelText(/Sort Select/);
+    > 266 |         const statsButton = screen.getByTestId("stats");
           |                                    ^
-      261 |         statsButton.click();
-      262 |         userEvent.selectOptions(sortID, "Touchdowns");
-      263 |         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
+      267 |         statsButton.click();
+      268 |         userEvent.selectOptions(sortID, "Touchdowns");
+      269 |         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:260:36)
+      at Object.<anonymous> (src/Components.test.tsx:266:36)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Testing Sort › Testing adding players with filter › Testing for original 30 player list
+
+    TestingLibraryElementError: Unable to find an element with the text: /player count in the central list is: 30/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mchecked[39m=[32m""[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterNone"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"None"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterQB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"QB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mQB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterRB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"RB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mRB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterWR"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"WR"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mWR[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterTE"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"TE"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mTE[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterK"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"K"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mK[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sortSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [0mSort Select[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"sortSelectHeading form-select"[39m
+       ...
+
+      292 |         test("Testing for original 30 player list", () => {
+      293 |             render(<App />);
+    > 294 |             expect(screen.getByText(/player count in the central list is: 30/));
+          |                           ^
+      295 |         });
+      296 |         test("Testing for adding 1 player, filter is none", () => {
+      297 |             render(<App />);
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:294:27)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Testing Sort › Testing adding players with filter › Testing for adding 1 player, filter is K, player is a K
+
+    TestingLibraryElementError: Unable to find an element with the text: /player count in the central list is: 5/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mchecked[39m=[32m""[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterNone"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"None"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterQB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"QB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mQB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterRB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"RB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mRB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterWR"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"WR"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mWR[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterTE"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"TE"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mTE[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterK"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"K"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mK[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sortSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [0mSort Select[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"sortSelectHeading form-select"[39m
+                  [33mid[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Position"[39m
+                  [36m>[39m
+                    [0mPosition[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Rating"[39m
+                  [36m>[39m
+                    [0mRating[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Touchdowns"[39m
+                  [36m>[39m
+                    [0mTouchdowns[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"central"[39m
+            [36m>[39m
+              [36m<h4[39m
+                [33mclass[39m=[32m"playersTitle"[39m
+              [36m>[39m
+                [0mPlayers[0m
+              [36m</h4>[39m
+              [36m<br />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"player"[39m
+                [33mdata-testid[39m=[32m"0"[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameAndPosition"[39m
+                [36m>[39m
+                  [0mJustin Tucker[0m
+                  [0m | [0m
+                  [0mK[0m
+                  [0m [0m
+                  [36m<br />[39m
+                [36m</div>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Image"[39m
+                  [33mclass[39m=[32m"playerImage"[39m
+                  [33msrc[39m=[32m"https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf"[39m
+                [36m/>[39m
+                [36m<div />[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"player"[39m
+                [33mdata-testid[39m=[32m"1"[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameAndPosition"[39m
+                [36m>[39m
+                  [0mHarrison Butker[0m
+                  [0m | [0m
+                  [0mK[0m
+                  [0m [0m
+                  [36m<br />[39m
+                [36m</div>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Image"[39m
+                  [33mclass[39m=[32m"playerImage"[39m
+                  [33msrc[39m=[32m"https://static.www.nfl.com/image/private/t_headshot_desktop/league/snhlmpr5wfw1t8w1yqgu"[39m
+                [36m/>[39m
+                [36m<div />[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"player"[39m
+                [33mdata-testid[39m=[32m"2"[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameAndPosition"[39m
+                [36m>[39m
+                  [0mEvan McPherson[0m
+                  [0m | [0m
+                  [0mK[0m
+                  [0m [0m
+                  [36m<br />[39m
+                [36m</div>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Image"[39m
+                  [33mclass[39m=[32m"playerImage"[39m
+                  [33msrc[39m=[32m"https://static.www.nfl.com/image/private/t_headshot_desktop/league/qxyqg1xibovrlkhebks2"[39m
+                [36m/>[39m
+                [36m<div />[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"player"[39m
+                [33mdata-testid[39m=[32m"3"[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameAndPosition"[39m
+                [36m>[39m
+                  [0mYounghoe Koo[0m
+                  [0m | [0m
+                  [0mK[0m
+                  [0m [0m
+                  [36m<br />[39m
+                [36m</div>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Image"[39m
+                  [33mclass[39m=[32m"playerImage"[39m
+                  [33msrc[39m=[32m"https://static.www.nfl.com/image/private/t_headshot_desktop/league/nvtusyryw9cpf6p8tz8n"[39m
+                [36m/>[39m
+                [36m<div />[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"player"[39m
+                [33mdata-testid[39m=[32m"4"[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameAndPosition"[39m
+                [36m>[39m
+                  [0mJustin Korup[0m
+                  [0m | [0m
+                  [0mK[0m
+                  [0m [0m
+                  [36m<br />[39m
+                [36m</div>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Image"[39m
+                  [33mclass[39m=[32m"playerImage"[39m
+                  [33msrc[39m=[32m"https://12345"[39m
+                [36m/>[39m
+                [36m<div />[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div />[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"addPlayer"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addingPlayers"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameBox"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"PlayerTextName"[39m
+                    [33mstyle[39m=[32m"color: white;"[39m
+                  [36m>[39m
+                    [0mPlayer Name:[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"PlayerTextName"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerDescriptionBox"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"PlayerTextDesc"[39m
+                    [33mstyle[39m=[32m"color: white;"[39m
+                  [36m>[39m
+                    [0mPlayer Description:[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"PlayerTextDesc"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerImageBox"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"PlayerTextURL"[39m
+                    [33mstyle[39m=[32m"color: white;"[39m
+                  [36m>[39m
+                    [0mImage URL:[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"PlayerTextURL"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerPositionBox"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Positions"[39m
+                    [33mstyle[39m=[32m"color: white;"[39m
+                  [36m>[39m
+                    [0mWhich Position[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Positions"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"QB"[39m
+                    [36m>[39m
+                      [0mQB[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"RB"[39m
+                    [36m>[39m
+                      [0mRB[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"WR"[39m
+                    [36m>[39m
+                      [0mWR[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"TE"[39m
+                    [36m>[39m
+                      [0mTE[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"K"[39m
+                    [36m>[39m
+                      [0mK[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"addPlayer"[39m
+                  [33mstyle[39m=[32m"background-color: rgb(0, 0, 0);"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mAdd This New Player:[0m
+                  [0m [0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"newPlayerPreview"[39m
+              [36m>[39m
+                [0mPut Preview of New Player Here? [0m
+                [0m&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;[0m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mAlexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"padding"[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      332 |             kButton.click();
+      333 |             expect(kButton).toBeChecked;
+    > 334 |             expect(screen.getByText(/player count in the central list is: 5/));
+          |                           ^
+      335 |             //Check if  4 Ks in the list +1 player added whos a K
+      336 |             //Add 2 because there is a K radio button, and a K option.
+      337 |             expect(screen.queryAllByText(/K/i)).toHaveLength(5 + 2);
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:334:27)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Testing Sort › Testing adding players with filter › Testing for adding 1 player, filter is QB, player is a K
+
+    TestingLibraryElementError: Unable to find an element with the text: /player count in the central list is: 4/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mchecked[39m=[32m""[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterNone"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"None"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterQB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"QB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mQB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterRB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"RB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mRB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterWR"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"WR"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mWR[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterTE"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"TE"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mTE[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterK"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"K"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mK[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sortSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [0mSort Select[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"sortSelectHeading form-select"[39m
+                  [33mid[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Position"[39m
+                  [36m>[39m
+                    [0mPosition[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Rating"[39m
+                  [36m>[39m
+                    [0mRating[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Touchdowns"[39m
+                  [36m>[39m
+                    [0mTouchdowns[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"central"[39m
+            [36m>[39m
+              [36m<h4[39m
+                [33mclass[39m=[32m"playersTitle"[39m
+              [36m>[39m
+                [0mPlayers[0m
+              [36m</h4>[39m
+              [36m<br />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"player"[39m
+                [33mdata-testid[39m=[32m"0"[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameAndPosition"[39m
+                [36m>[39m
+                  [0mPatrick Mahomes[0m
+                  [0m | [0m
+                  [0mQB[0m
+                  [0m [0m
+                  [36m<br />[39m
+                [36m</div>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Image"[39m
+                  [33mclass[39m=[32m"playerImage"[39m
+                  [33msrc[39m=[32m"https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu"[39m
+                [36m/>[39m
+                [36m<div />[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"player"[39m
+                [33mdata-testid[39m=[32m"1"[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameAndPosition"[39m
+                [36m>[39m
+                  [0mJoe Burrow[0m
+                  [0m | [0m
+                  [0mQB[0m
+                  [0m [0m
+                  [36m<br />[39m
+                [36m</div>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Image"[39m
+                  [33mclass[39m=[32m"playerImage"[39m
+                  [33msrc[39m=[32m"https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn"[39m
+                [36m/>[39m
+                [36m<div />[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"player"[39m
+                [33mdata-testid[39m=[32m"2"[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameAndPosition"[39m
+                [36m>[39m
+                  [0mJosh Allen[0m
+                  [0m | [0m
+                  [0mQB[0m
+                  [0m [0m
+                  [36m<br />[39m
+                [36m</div>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Image"[39m
+                  [33mclass[39m=[32m"playerImage"[39m
+                  [33msrc[39m=[32m"https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n"[39m
+                [36m/>[39m
+                [36m<div />[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"player"[39m
+                [33mdata-testid[39m=[32m"3"[39m
+                [33mdraggable[39m=[32m"true"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameAndPosition"[39m
+                [36m>[39m
+                  [0mDaniel Jones[0m
+                  [0m | [0m
+                  [0mQB[0m
+                  [0m [0m
+                  [36m<br />[39m
+                [36m</div>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Image"[39m
+                  [33mclass[39m=[32m"playerImage"[39m
+                  [33msrc[39m=[32m"https://static.www.nfl.com/image/private/t_headshot_desktop/league/af6nbjqa6qubnu8oi4ms"[39m
+                [36m/>[39m
+                [36m<div />[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div />[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"addPlayer"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addingPlayers"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerNameBox"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"PlayerTextName"[39m
+                    [33mstyle[39m=[32m"color: white;"[39m
+                  [36m>[39m
+                    [0mPlayer Name:[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"PlayerTextName"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerDescriptionBox"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"PlayerTextDesc"[39m
+                    [33mstyle[39m=[32m"color: white;"[39m
+                  [36m>[39m
+                    [0mPlayer Description:[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"PlayerTextDesc"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerImageBox"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"PlayerTextURL"[39m
+                    [33mstyle[39m=[32m"color: white;"[39m
+                  [36m>[39m
+                    [0mImage URL:[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"PlayerTextURL"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"playerPositionBox"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Positions"[39m
+                    [33mstyle[39m=[32m"color: white;"[39m
+                  [36m>[39m
+                    [0mWhich Position[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Positions"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"QB"[39m
+                    [36m>[39m
+                      [0mQB[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"RB"[39m
+                    [36m>[39m
+                      [0mRB[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"WR"[39m
+                    [36m>[39m
+                      [0mWR[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"TE"[39m
+                    [36m>[39m
+                      [0mTE[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"K"[39m
+                    [36m>[39m
+                      [0mK[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"addPlayer"[39m
+                  [33mstyle[39m=[32m"background-color: rgb(0, 0, 0);"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mAdd This New Player:[0m
+                  [0m [0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"newPlayerPreview"[39m
+              [36m>[39m
+                [0mPut Preview of New Player Here? [0m
+                [0m&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;[0m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mAlexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"padding"[39m
+          [36m/>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      359 |             expect(qbButton).toBeChecked;
+      360 |             //player not displayed since they're a K
+    > 361 |             expect(screen.getByText(/player count in the central list is: 4/));
+          |                           ^
+      362 |             //Check if  4 QBs in the list +2 because of radio button and QB option
+      363 |             expect(screen.queryAllByText(/QB/i)).toHaveLength(4 + 2);
+      364 |         });
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:361:27)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Testing adding players with filter › Testing for original 30 player list
+
+    TestingLibraryElementError: Unable to find an element with the text: /player count in the central list is: 30/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mchecked[39m=[32m""[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterNone"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"None"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterQB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"QB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mQB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterRB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"RB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mRB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterWR"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"WR"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mWR[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterTE"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"TE"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mTE[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterK"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"K"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mK[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sortSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [0mSort Select[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"sortSelectHeading form-select"[39m
+       ...
+
+      370 |     test("Testing for original 30 player list", () => {
+      371 |         render(<App />);
+    > 372 |         expect(screen.getByText(/player count in the central list is: 30/));
+          |                       ^
+      373 |     });
+      374 |     test("Testing for adding player, sort is none", () => {
+      375 |         render(<App />);
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:372:23)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Testing adding players with filter › Testing for adding player, sort is none
+
+    TestingLibraryElementError: Unable to find an element with the text: /player count in the central list is: 30/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mchecked[39m=[32m""[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterNone"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"None"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterQB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"QB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mQB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterRB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"RB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mRB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterWR"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"WR"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mWR[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterTE"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"TE"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mTE[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterK"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"K"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mK[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sortSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [0mSort Select[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"sortSelectHeading form-select"[39m
+       ...
+
+      374 |     test("Testing for adding player, sort is none", () => {
+      375 |         render(<App />);
+    > 376 |         expect(screen.getByText(/player count in the central list is: 30/));
+          |                       ^
+      377 |         const playerName = screen.getByLabelText(/Player Name:/i);
+      378 |         userEvent.type(playerName, "Justin Korup");
+      379 |         const playerDescription = screen.getByLabelText(/Player Description:/i);
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:376:23)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Testing adding players with filter › Testing for adding player, sort is Position
+
+    TestingLibraryElementError: Unable to find an element with the text: /player count in the central list is: 30/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mchecked[39m=[32m""[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterNone"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"None"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterQB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"QB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mQB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterRB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"RB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mRB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterWR"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"WR"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mWR[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterTE"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"TE"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mTE[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterK"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"K"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mK[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sortSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [0mSort Select[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"sortSelectHeading form-select"[39m
+       ...
+
+      397 |     test("Testing for adding player, sort is Position", () => {
+      398 |         render(<App />);
+    > 399 |         expect(screen.getByText(/player count in the central list is: 30/));
+          |                       ^
+      400 |         const playerName = screen.getByLabelText(/Player Name:/i);
+      401 |         userEvent.type(playerName, "Justin Korup");
+      402 |         const playerDescription = screen.getByLabelText(/Player Description:/i);
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:399:23)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Testing adding players with filter › Testing for adding player, sort is Rating
+
+    TestingLibraryElementError: Unable to find an element with the text: /player count in the central list is: 30/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mchecked[39m=[32m""[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterNone"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"None"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterQB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"QB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mQB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterRB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"RB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mRB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterWR"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"WR"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mWR[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterTE"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"TE"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mTE[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterK"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"K"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mK[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sortSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [0mSort Select[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"sortSelectHeading form-select"[39m
+       ...
+
+      421 |     test("Testing for adding player, sort is Rating", () => {
+      422 |         render(<App />);
+    > 423 |         expect(screen.getByText(/player count in the central list is: 30/));
+          |                       ^
+      424 |         const playerName = screen.getByLabelText(/Player Name:/i);
+      425 |         userEvent.type(playerName, "Justin Korup");
+      426 |         const playerDescription = screen.getByLabelText(/Player Description:/i);
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:423:23)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Testing adding players with filter › Testing for adding player, sort is Touchdowns
+
+    TestingLibraryElementError: Unable to find an element with the text: /player count in the central list is: 30/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mchecked[39m=[32m""[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterNone"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"None"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mNone[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterQB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"QB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mQB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterRB"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"RB"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mRB[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterWR"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"WR"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mWR[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterTE"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"TE"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mTE[0m
+                [36m</label>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"form-check form-check-inline"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"form-check-input"[39m
+                  [33mdata-testid[39m=[32m"filterK"[39m
+                  [33mname[39m=[32m"positions"[39m
+                  [33mtype[39m=[32m"radio"[39m
+                  [33mvalue[39m=[32m"K"[39m
+                [36m/>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-check-label"[39m
+                  [33mtitle[39m=[32m""[39m
+                [36m>[39m
+                  [0mK[0m
+                [36m</label>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"sortSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Sort"[39m
+                [36m>[39m
+                  [0mSort Select[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"sortSelectHeading form-select"[39m
+       ...
+
+      444 |     test("Testing for adding player, sort is Touchdowns", () => {
+      445 |         render(<App />);
+    > 446 |         expect(screen.getByText(/player count in the central list is: 30/));
+          |                       ^
+      447 |         const playerName = screen.getByLabelText(/Player Name:/i);
+      448 |         userEvent.type(playerName, "Justin Korup");
+      449 |         const playerDescription = screen.getByLabelText(/Player Description:/i);
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:446:23)
       at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
       at runJest (node_modules/@jest/core/build/runJest.js:404:19)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 Test Suites: 1 failed, 1 total
-Tests:       21 failed, 6 passed, 27 total
+Tests:       29 failed, 8 passed, 37 total
 Snapshots:   0 total
-Time:        4.599 s
+Time:        7.724 s
 Ran all test suites.
