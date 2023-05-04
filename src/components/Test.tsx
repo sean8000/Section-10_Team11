@@ -115,6 +115,18 @@ function Test({
         setMyMap(myMap.set(role, newList));
     }
 
+    function handleOnAdminButtonClick(removedPlayer: Player) {
+        const newList = adminWidgets.filter(
+            (player: Player): boolean => player !== removedPlayer
+        );
+
+        console.log(removedPlayer);
+        console.log("Player deleted");
+        console.log(newList);
+
+        setAdminWidgets(newList);
+    }
+
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
     }
@@ -252,7 +264,7 @@ function Test({
                                 ></UserRating>
                                 {setMyMap(myMap.set(role, [...widgets]))}
                                 <Button
-                                    onClick={() => handleOnButtonClick(curr)}
+                                    onClick={() => handleOnAdminButtonClick(curr)}
                                 >
                                     Delete Player
                                 </Button>
