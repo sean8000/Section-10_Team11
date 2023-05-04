@@ -9,7 +9,6 @@ import { Player } from "../interfaces/player";
 import { PositionFilter } from "./PositionFilter";
 import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
-import { Col, Container, Row } from "react-bootstrap";
 import { AddPlayers } from "./AddPlayers";
 
 interface Widgets {
@@ -133,6 +132,7 @@ function Test({
     }
 
     const [visible, setVisible] = useState<boolean>(false);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     function flipVisibility(): void {
         setVisible(!visible);
     }
@@ -146,158 +146,131 @@ function Test({
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
-            <Container>
-                <Row>
-                    <Col>
-                        <PositionFilter
-                            filterPosition={filterPositions}
-                            playerList={centralList}
-                            setFilteredList={setFilteredList}
-                        ></PositionFilter>
-                        <SortSelect
-                            sortOption={centralSort}
-                            setSortOption={setCentralSort}
-                            playerList={filteredList}
-                            setPlayerList={setFilteredList}
-                        ></SortSelect>
-                        <div className="central">
-                            <h4 className="playersTitle">Players</h4>
-                            {filteredList.map((curr, index) => (
-                                <div
-                                    key={curr.name}
-                                    data-testid={index}
-                                    className="player"
-                                    draggable
-                                    onDragStart={(e) =>
-                                        handleOnDrag(e, curr.name)
-                                    }
-                                    style={{
-                                        width: 483.33,
-                                        height: 210
-                                    }}
-                                >
-                                    {curr.name} | {curr.position} <br /> Rating:{" "}
-                                    {curr.rating}
-                                    <img
-                                        className="playerImage"
-                                        src={curr.image}
-                                        alt="Image"
-                                        style={{
-                                            width: 200,
-                                            height: 210
-                                        }}
-                                    />
-                                    <div>
-                                        {visible && (
-                                            <div>
-                                                Description: {curr.description}
-                                                <br />
-                                                Touchdowns:{" "}
-                                                {curr.stats.touchdowns}
-                                                <br />
-                                                Receptions:{" "}
-                                                {curr.stats.receptions}
-                                                <br />
-                                                Rush Attempts:{" "}
-                                                {curr.stats.rushAttempts}
-                                                <br />
-                                                Yards: {curr.stats.totalYards}
-                                                <br />
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                            ))}
+            <PositionFilter
+                filterPosition={filterPositions}
+                playerList={centralList}
+                setFilteredList={setFilteredList}
+            ></PositionFilter>
+            <SortSelect
+                sortOption={centralSort}
+                setSortOption={setCentralSort}
+                playerList={filteredList}
+                setPlayerList={setFilteredList}
+            ></SortSelect>
+            <div className="central">
+                <h4 className="playersTitle">Players</h4>
+                <br></br>
+                {filteredList.map((curr, index) => (
+                    <div
+                        key={curr.name}
+                        data-testid={index}
+                        className="player"
+                        draggable
+                        onDragStart={(e) => handleOnDrag(e, curr.name)}
+                    >
+                        <div className="playerNameAndPosition">
+                            {curr.name} | {curr.position} <br />
                         </div>
-                        <Button data-testid="stats" onClick={flipVisibility}>
-                            STATS
-                        </Button>
-                        <span
-                            data-testid="playerCount"
-                            style={{ color: "white", fontSize: "20" }}
+                        <img
+                            className="playerImage"
+                            src={curr.image}
+                            alt="Image"
+                        />
+                        <div>
+                            {visible && (
+                                <div>
+                                    Description: {curr.description}
+                                    <br />
+                                    Touchdowns: {curr.stats.touchdowns}
+                                    <br />
+                                    Receptions: {curr.stats.receptions}
+                                    <br />
+                                    Rush Attempts: {curr.stats.rushAttempts}
+                                    <br />
+                                    Yards: {curr.stats.totalYards}
+                                    <br />
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                ))}
+            </div>
+            {/*}
+            <Button data-testid="stats" onClick={flipVisibility}>
+                STATS
+            </Button>
+                            
+            <span
+                data-testid="playerCount"
+                style={{ color: "white", fontSize: "20" }}
+            >
+                Current player count in the central list is:{" "}
+                {filteredList.length}
+            </span>
+                            */}
+            {role === "Team Manager" ? (
+                <div
+                    className="user"
+                    onDrop={handleOnDropAdmin}
+                    onDragOver={handleDragOver}
+                >
+                    <h4 className="playersTitle">Admin List</h4>
+                    {adminWidgets.map((curr, index) => (
+                        <div className="player" key={index}>
+                            {curr.name} | {curr.position} <br /> Rating:{" "}
+                            {curr.rating}
+                            <img
+                                className="playerImage"
+                                src={curr.image}
+                                alt="Image"
+                            />
+                            <Button onClick={() => handleOnButtonClick(curr)}>
+                                Delete Player
+                            </Button>
+                            {setMyMap(myMap.set(role, [...widgets]))}
+                        </div>
+                    ))}
+                </div>
+            ) : (
+                <div></div>
+            )}
+            {role !== "League Manager" && role !== "Team Manager" ? (
+                <div
+                    className="user"
+                    onDrop={handleOnDrop}
+                    onDragOver={handleDragOver}
+                >
+                    <h4 className="playersTitle">Your Team</h4>
+                    <br></br>
+                    {widgets.map((curr, index) => (
+                        <div
+                            className="player"
+                            key={"other" + index}
+                            data-testid={"other" + index}
                         >
-                            Current player count in the central list is:{" "}
-                            {filteredList.length}
-                        </span>
-                    </Col>
-                    <Col>
-                        {role === "Team Manager" ? (
-                            <div
-                                className="user"
-                                onDrop={handleOnDropAdmin}
-                                onDragOver={handleDragOver}
-                            >
-                                <h4 className="playersTitle">Admin List</h4>
-                                {adminWidgets.map((curr, index) => (
-                                    <div className="player" key={index}>
-                                        {curr.name} | {curr.position} <br />{" "}
-                                        Rating: {curr.rating}
-                                        <img
-                                            src={curr.image}
-                                            style={{
-                                                width: 40,
-                                                height: 40
-                                            }}
-                                            alt="Image"
-                                        />
-                                        <Button
-                                            onClick={() =>
-                                                handleOnAdminButtonClick(curr)
-                                            }
-                                        >
-                                            Delete Player
-                                        </Button>
-                                        {setMyMap(
-                                            myMap.set(role, [...widgets])
-                                        )}
-                                    </div>
-                                ))}
+                            {curr.name} | {curr.position} <br />{" "}
+                            <img
+                                className="playerImage"
+                                src={curr.image}
+                                alt="Image"
+                            />
+                            <div className="userChangeRatings">
+                                <span>Rating: {curr.rating}</span>
+                                {console.log(widgets.indexOf(curr))}
+                                <UserRating
+                                    player={curr}
+                                    widgets={widgets}
+                                    setWidgets={setWidgets}
+                                ></UserRating>
+                                {setMyMap(myMap.set(role, [...widgets]))}
+                                <Button
+                                    onClick={() => handleOnAdminButtonClick(curr)}
+                                >
+                                    Delete Player
+                                </Button>
                             </div>
-                        ) : (
-                            <div></div>
-                        )}
-                        {role !== "League Manager" &&
-                        role !== "Team Manager" ? (
-                            <div
-                                className="user"
-                                onDrop={handleOnDrop}
-                                onDragOver={handleDragOver}
-                            >
-                                <h4 className="playersTitle">Your Team</h4>
-                                {widgets.map((curr, index) => (
-                                    <div
-                                        className="player"
-                                        key={"other" + index}
-                                        data-testid={"other" + index}
-                                    >
-                                        {curr.name} | {curr.position} <br />{" "}
-                                        <img
-                                            src={curr.image}
-                                            style={{
-                                                width: 200,
-                                                height: 210
-                                            }}
-                                            alt="Image"
-                                        />
-                                        <span>Rating: {curr.rating}</span>
-                                        {console.log(widgets.indexOf(curr))}
-                                        <UserRating
-                                            player={curr}
-                                            widgets={widgets}
-                                            setWidgets={setWidgets}
-                                        ></UserRating>
-                                        {setMyMap(
-                                            myMap.set(role, [...widgets])
-                                        )}
-                                        <Button
-                                            onClick={() =>
-                                                handleOnButtonClick(curr)
-                                            }
-                                        >
-                                            Delete Player
-                                        </Button>
-                                        <div>
-                                            {/*}
+                            <div>
+                                {/*}
                                             <Button onClick={flipVisibility}>
                                                 STATS
                                             </Button>
@@ -321,23 +294,20 @@ function Test({
                                                 </div>
                                             )}
                                             {*/}
-                                        </div>
-                                    </div>
-                                ))}
                             </div>
-                        ) : (
-                            <div className="addPlayer">
-                                <AddPlayers
-                                    centralList={centralList}
-                                    setCentralList={setCentralList}
-                                    setFilteredList={setFilteredList}
-                                    filteredList={filteredList}
-                                ></AddPlayers>
-                            </div>
-                        )}
-                    </Col>
-                </Row>
-            </Container>
+                        </div>
+                    ))}
+                </div>
+            ) : (
+                <div className="addPlayer">
+                    <AddPlayers
+                        centralList={centralList}
+                        setCentralList={setCentralList}
+                        setFilteredList={setFilteredList}
+                        filteredList={filteredList}
+                    ></AddPlayers>
+                </div>
+            )}
         </div>
     );
 }

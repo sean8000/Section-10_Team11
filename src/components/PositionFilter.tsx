@@ -33,7 +33,7 @@ export function PositionFilter({
     }
 
     return (
-        <div>
+        <div className="positionFilter">
             {filterPosition.map((choice: string) => (
                 <Form.Check
                     inline
