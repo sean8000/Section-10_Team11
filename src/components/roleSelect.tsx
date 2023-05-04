@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { UserText } from "../UserText";
 import { Form, Button } from "react-bootstrap";
 import { Player } from "../interfaces/player";
-import { Col, Container, Row } from "react-bootstrap";
 
 interface Roles {
     setRole: (newString: string) => void;
@@ -71,33 +70,25 @@ export function RoleSelect({
             </Form.Group>
             {role === "League Manager" ? (
                 <div className="addUserBox">
-                    <Container>
-                        <Row>
-                            <Col>
-                                <UserText
-                                    userText={userText}
-                                    setUserText={setUserText}
-                                ></UserText>
-                            </Col>
-                            <Col>
-                                <br></br>
-                                <Button
-                                    style={{ backgroundColor: "#000000" }}
-                                    data-testid="addButton"
-                                    onClick={addUser}
-                                >
-                                    Add This User
-                                </Button>
-                                <Button
-                                    style={{ backgroundColor: "#000000" }}
-                                    data-testid="delButton"
-                                    onClick={removeUser}
-                                >
-                                    Delete This User
-                                </Button>
-                            </Col>
-                        </Row>
-                    </Container>
+                    <UserText
+                        userText={userText}
+                        setUserText={setUserText}
+                    ></UserText>
+                    <br></br>
+                    <Button
+                        style={{ backgroundColor: "#000000" }}
+                        data-testid="addButton"
+                        onClick={addUser}
+                    >
+                        Add This User
+                    </Button>
+                    <Button
+                        style={{ backgroundColor: "#000000" }}
+                        data-testid="delButton"
+                        onClick={removeUser}
+                    >
+                        Delete This User
+                    </Button>
                 </div>
             ) : (
                 <span></span>

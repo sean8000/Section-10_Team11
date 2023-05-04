@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Test from "./components/Test";
-import { Col, Container, Row } from "react-bootstrap";
 import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
 import { playerList } from "./players";
@@ -39,23 +38,20 @@ function App(): JSX.Element {
                 myMap={myMap}
             ></RoleSelect>
             ~{"\n"}
-            <Container>
-                <Row>
-                    <Col>
-                        <Test
-                            widgets={widgets}
-                            setWidgets={setWidgets}
-                            role={role}
-                            myMap={myMap}
-                            setMyMap={setMyMap}
-                            centralList={centralList}
-                            setCentralList={setCentralList}
-                            adminWidgets={adminWidgets}
-                            setAdminWidgets={setAdminWidgets}
-                            filteredList={filteredList}
-                            setFilteredList={setFilteredList}
-                        ></Test>
-                        {/*}
+            <Test
+                widgets={widgets}
+                setWidgets={setWidgets}
+                role={role}
+                myMap={myMap}
+                setMyMap={setMyMap}
+                centralList={centralList}
+                setCentralList={setCentralList}
+                adminWidgets={adminWidgets}
+                setAdminWidgets={setAdminWidgets}
+                filteredList={filteredList}
+                setFilteredList={setFilteredList}
+            ></Test>
+            {/*}
                         {role !== "League Manager" ? (
                             <Test
                                 widgets={widgets}
@@ -71,8 +67,7 @@ function App(): JSX.Element {
                             </span>
                         )}
                         {*/}
-                    </Col>
-                    {/*}
+            {/*}
                     <Col>
                         <h4>Role Select</h4>
                         <RoleSelect
@@ -88,8 +83,6 @@ function App(): JSX.Element {
                         {/*}<Button onClick={() => addUser()}>Add User</Button>{
                     </Col>
                     */}
-                </Row>
-            </Container>
             <span className="names">
                 Alexander Marshall, Michael Murphy, Sean Johnson, Michael
                 Lorang, Dean Turner
