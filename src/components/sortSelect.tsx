@@ -1,4 +1,4 @@
-import "./Test.css";
+import "./style.css";
 import React from "react";
 import { Form } from "react-bootstrap";
 import { Player } from "../interfaces/player";
