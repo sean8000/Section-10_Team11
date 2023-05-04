@@ -38,7 +38,6 @@ export function UserRating({ widgets, setWidgets, player }: Rating) {
 
     return (
         <div>
-            <span> Overall Rating is: {rating}</span>
             <Form.Group className="playerRatingBox" controlId="PlayerRating">
                 <Form.Label></Form.Label>
                 <Form.Control
