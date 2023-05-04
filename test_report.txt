@@ -388,39 +388,39 @@
 
       at updateSort (src/components/sortSelect.tsx:39:21)
 
-FAIL src/Components.test.tsx (5.425 s)
+FAIL src/Components.test.tsx
   Role Tests
-    ✓ Tests that there is a combobox (357 ms)
-    ✕ Tests that the first role value is League Manager (115 ms)
-    ✕ Tests that the changed value is Team Manager (100 ms)
-    ✕ Tests that the changed value is Guest User (104 ms)
-    ✕ Test adding user (78 ms)
+    ✓ Tests that there is a combobox (191 ms)
+    ✕ Tests that the first role value is League Manager (87 ms)
+    ✕ Tests that the changed value is Team Manager (68 ms)
+    ✕ Tests that the changed value is Guest User (58 ms)
+    ✕ Test adding user (55 ms)
   Drag Tests
-    ✕ Testing for original 30 player list (64 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (59 ms)
-    ✕ Testing that draggable list appears when not league manager (69 ms)
-    ✓ Testing that first player is draggable (99 ms)
-    ✓ Testing that first player can be dragged to other list (52 ms)
+    ✕ Testing for original 30 player list (52 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (39 ms)
+    ✕ Testing that draggable list appears when not league manager (64 ms)
+    ✓ Testing that first player is draggable (42 ms)
+    ✓ Testing that first player can be dragged to other list (36 ms)
   Testing Adding players
-    ✕ Testing for original 30 player list, and that league manager can add players (61 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (326 ms)
-    ✕ Testing for adding 1 player, see if list increased in size (266 ms)
-    ✕ Test adding player doesn't appear when not league manager (53 ms)
-    ✕ Test adding player doesn't appear when not league manager (50 ms)
+    ✕ Testing for original 30 player list, and that league manager can add players (36 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (249 ms)
+    ✕ Testing for adding 1 player, see if list increased in size (199 ms)
+    ✕ Test adding player doesn't appear when not league manager (36 ms)
+    ✕ Test adding player doesn't appear when not league manager (36 ms)
   Testing Filter
-    ✕ Testing for original 30 player list (39 ms)
-    ✕ Testing no filter (55 ms)
-    ✕ Testing for filtered by QB (44 ms)
-    ✕ Testing for filtered by RB (56 ms)
-    ✕ Testing for filtered by WR (42 ms)
-    ✕ Testing for filtered by TE (51 ms)
-    ✕ Testing for filtered by K (37 ms)
+    ✕ Testing for original 30 player list (30 ms)
+    ✕ Testing no filter (35 ms)
+    ✕ Testing for filtered by QB (38 ms)
+    ✕ Testing for filtered by RB (34 ms)
+    ✕ Testing for filtered by WR (37 ms)
+    ✕ Testing for filtered by TE (34 ms)
+    ✕ Testing for filtered by K (36 ms)
   Testing Sort
-    ✕ Testing for original 30 player list, and that league manager can add players (43 ms)
-    ✓ Testing for sorted by position (132 ms)
-    ✕ Test sorted by Rating (63 ms)
-    ✕ Test sorted by Touchdowns (49 ms)
-    ✕ Test sorted by None (49 ms)
+    ✕ Testing for original 30 player list, and that league manager can add players (28 ms)
+    ✓ Testing for sorted by position (91 ms)
+    ✕ Test sorted by Rating (58 ms)
+    ✕ Test sorted by Touchdowns (47 ms)
+    ✕ Test sorted by None (39 ms)
 
   ● Role Tests › Tests that the first role value is League Manager
 
@@ -6131,5 +6131,5 @@ ponents.test.tsx:115:23)
 Test Suites: 1 failed, 1 total
 Tests:       21 failed, 6 passed, 27 total
 Snapshots:   0 total
-Time:        6.156 s
+Time:        4.599 s
 Ran all test suites.
