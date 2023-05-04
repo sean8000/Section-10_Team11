@@ -28,7 +28,7 @@ function App(): JSX.Element {
     return (
         <div>
             <h1 className="heading">
-                {"**"} NFL Football TeamBuilder
+                {"NFL Football TeamBuilder"}
                 <RoleSelect
                     setRole={setRole}
                     role={role}

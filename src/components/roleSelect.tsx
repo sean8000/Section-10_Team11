@@ -49,38 +49,39 @@ export function RoleSelect({
 
     // This is the View
     return (
-        <div className="roleSelect">
-            <Form.Group controlId="Roles">
-                <Form.Select value={role} onChange={updateRole}>
-                    {totalRoles.map((role: string) => (
-                        <option key={role} value={role}>
-                            {role}
-                        </option>
-                    ))}
-                    {/*}
+        <>
+            <div className="roleSelect">
+                <Form.Group controlId="Roles">
+                    <Form.Select value={role} onChange={updateRole}>
+                        {totalRoles.map((role: string) => (
+                            <option key={role} value={role}>
+                                {role}
+                            </option>
+                        ))}
+                        {/*}
                     <option value="Super">Super</option>
                     <option value="Admin">Admin</option>
                     <option value="User1">User1</option>
                     <option value="User2">User2</option>
                     {*/}
-                </Form.Select>
-            </Form.Group>
+                    </Form.Select>
+                </Form.Group>
+            </div>
             {role === "League Manager" ? (
-                <div className="addUserBox">
+                <div className="AddingAndDeletingUsers">
                     <UserText
                         userText={userText}
                         setUserText={setUserText}
                     ></UserText>
-                    <br></br>
                     <Button
-                        style={{ backgroundColor: "#000000" }}
+                        className="AddOrDeleteUserButtons"
                         data-testid="addButton"
                         onClick={addUser}
                     >
                         Add This User
                     </Button>
                     <Button
-                        style={{ backgroundColor: "#000000" }}
+                        className="AddOrDeleteUserButtons"
                         data-testid="delButton"
                         onClick={removeUser}
                     >
@@ -90,6 +91,6 @@ export function RoleSelect({
             ) : (
                 <span></span>
             )}
-        </div>
+        </>
     );
 }

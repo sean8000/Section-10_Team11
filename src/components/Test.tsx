@@ -120,6 +120,7 @@ function Test({
     }
 
     const [visible, setVisible] = useState<boolean>(false);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     function flipVisibility(): void {
         setVisible(!visible);
     }
