@@ -227,7 +227,9 @@ function Test({
                                 onDrop={handleOnDropAdmin}
                                 onDragOver={handleDragOver}
                             >
-                                <h4 className="playersTitle">Admin List</h4>
+                                <h4 className="playersTitle">
+                                    Manage Your Team
+                                </h4>
                                 {adminWidgets.map((curr, index) => (
                                     <div className="player" key={index}>
                                         {curr.name} | {curr.position} <br />{" "}
@@ -259,6 +261,7 @@ function Test({
                         {role !== "League Manager" &&
                         role !== "Team Manager" ? (
                             <div
+                                data-testid={"userList" + role}
                                 className="user"
                                 onDrop={handleOnDrop}
                                 onDragOver={handleDragOver}
