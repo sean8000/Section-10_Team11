@@ -56,43 +56,61 @@ export function AddPlayers({
         setNewPosition(event.target.value as Position);
     }
     return (
-        <div>
-            <Form.Group className="playerNameBox" controlId="PlayerTextName">
-                <Form.Label style={{ color: "white" }}>Player Name:</Form.Label>
-                <Form.Control value={playerName} onChange={updateName} />
-            </Form.Group>
-            <Form.Group
-                className="playerDescriptionBox"
-                controlId="PlayerTextDesc"
-            >
-                <Form.Label style={{ color: "white" }}>
-                    Player Description:
-                </Form.Label>
-                <Form.Control value={playerDescription} onChange={updateDesc} />
-            </Form.Group>
-            <Form.Group className="playerImageBox" controlId="PlayerTextURL">
-                <Form.Label style={{ color: "white" }}>Image URL:</Form.Label>
-                <Form.Control value={playerURL} onChange={updateURL} />
-            </Form.Group>
-            <Form.Group className="playerPositionBox" controlId="Positions">
-                <Form.Label style={{ color: "white" }}>
-                    Which Position
-                </Form.Label>
-                <Form.Select value={newPosition} onChange={updatePosition}>
-                    {totalPositions.map((position: string) => (
-                        <option key={position} value={position}>
-                            {position}
-                        </option>
-                    ))}
-                </Form.Select>
-            </Form.Group>
-            <Button
-                data-testid="addPlayer"
-                style={{ backgroundColor: "#000000" }}
-                onClick={addNewPlayer}
-            >
-                Add This New Player:{" "}
-            </Button>
-        </div>
+        <>
+            <div className="addingPlayers">
+                <Form.Group
+                    className="playerNameBox"
+                    controlId="PlayerTextName"
+                >
+                    <Form.Label style={{ color: "white" }}>
+                        Player Name:
+                    </Form.Label>
+                    <Form.Control value={playerName} onChange={updateName} />
+                </Form.Group>
+                <Form.Group
+                    className="playerDescriptionBox"
+                    controlId="PlayerTextDesc"
+                >
+                    <Form.Label style={{ color: "white" }}>
+                        Player Description:
+                    </Form.Label>
+                    <Form.Control
+                        value={playerDescription}
+                        onChange={updateDesc}
+                    />
+                </Form.Group>
+                <Form.Group
+                    className="playerImageBox"
+                    controlId="PlayerTextURL"
+                >
+                    <Form.Label style={{ color: "white" }}>
+                        Image URL:
+                    </Form.Label>
+                    <Form.Control value={playerURL} onChange={updateURL} />
+                </Form.Group>
+                <Form.Group className="playerPositionBox" controlId="Positions">
+                    <Form.Label style={{ color: "white" }}>
+                        Which Position
+                    </Form.Label>
+                    <Form.Select value={newPosition} onChange={updatePosition}>
+                        {totalPositions.map((position: string) => (
+                            <option key={position} value={position}>
+                                {position}
+                            </option>
+                        ))}
+                    </Form.Select>
+                </Form.Group>
+                <Button
+                    data-testid="addPlayer"
+                    style={{ backgroundColor: "#000000" }}
+                    onClick={addNewPlayer}
+                >
+                    Add This New Player:{" "}
+                </Button>
+            </div>
+            <div className="newPlayerPreview">
+                Put Preview of New Player Here? {">>>>>>>>>>>>>>>>>>>>"}
+            </div>
+        </>
     );
 }

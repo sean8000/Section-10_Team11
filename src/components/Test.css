@@ -1,32 +1,42 @@
+.Test {
+    margin-left: 50px;
+}
+
 .user {
-    float: right;
+    float: left;
     text-align: justify;
-    width: 500px;
+    width: 550px;
     height: auto;
     min-height: 100px;
-    outline: 1px solid white;
+    outline: 1px solid black;
     background-color: gray;
     color: white;
-    position: relative;
+    margin-left: 50px;
 }
 
 .player:nth-child(odd) {
     background-color: black;
     color: white;
-    height: 360px;
+    height: 250px;
 }
 
 .player:nth-child(even) {
     background-color: gray;
     color: white;
-    height: 360px;
+    height: 250px;
+}
+
+.playerNameAndPosition {
+    font-family: "Impact";
+    font-size: xx-large;
+    padding-left: 30px;
 }
 
 .central {
     text-align: justify;
     float: left;
-    width: 500px;
-    height: 350px;
+    width: 550px;
+    height: 700px;
     color: white;
     background-color: gray;
     outline: 1px solid black;
@@ -35,12 +45,13 @@
 }
 
 .heading {
-    align-items: center;
-    text-align: center;
     background: rgb(29, 26, 26);
     color: white;
     padding: 40px;
     font-family: "Rockwell";
+    margin: auto;
+    margin-bottom: 50px;
+    padding-left: 100px;
 }
 
 .instructions {
@@ -58,35 +69,39 @@
     color: white;
     text-align: center;
     background-color: black;
-    margin-bottom: 0%;
-}
-
-.roleSelectHeadings {
-    align-items: center;
-    color: white;
-    font-family: "Alkatra";
-    text-align: center;
+    width: 550px;
+    position: absolute;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .roleSelect {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 1000px;
+    width: 200px;
     color: black;
 }
 
 .names {
-    bottom: 0%;
     position: fixed;
     color: white;
+    bottom: 0%;
 }
 
 .addUserBox {
-    float: right;
     color: white;
-    font-family: "Alkatra";
+    margin-top: 5px;
+    float: right;
+    width: 200px;
+}
+
+.AddOrDeleteUserButtons {
+    background-color: #000000;
+}
+
+.AddingAndDeletingUsers {
+    width: 200px;
 }
 
 .padding {
@@ -118,14 +133,32 @@
     overflow-x: auto;
 }
 
+.addingPlayers {
+    float: left;
+    margin-left: 100px;
+}
+
 .sortSelect {
     width: 200px;
+    color: white;
 }
 
 .playerImage {
-    position: relative;
     float: right;
-    margin-top: -24px;
+    display: flex;
     width: 250px;
     height: 250px;
+    margin-top: -48px;
+}
+
+.newPlayerPreview {
+    float: right;
+}
+
+.positionFilter {
+    color: white;
+}
+
+.userChangeRatings {
+    float: right;
 }
