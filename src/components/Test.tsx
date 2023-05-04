@@ -208,11 +208,8 @@ function Test({
                             {curr.name} | {curr.position} <br /> Rating:{" "}
                             {curr.rating}
                             <img
+                                className="playerImage"
                                 src={curr.image}
-                                style={{
-                                    width: 40,
-                                    height: 40
-                                }}
                                 alt="Image"
                             />
                             <Button onClick={() => handleOnButtonClick(curr)}>
@@ -232,6 +229,7 @@ function Test({
                     onDragOver={handleDragOver}
                 >
                     <h4 className="playersTitle">Your Team</h4>
+                    <br></br>
                     {widgets.map((curr, index) => (
                         <div
                             className="player"
@@ -240,24 +238,25 @@ function Test({
                         >
                             {curr.name} | {curr.position} <br />{" "}
                             <img
+                                className="playerImage"
                                 src={curr.image}
-                                style={{
-                                    width: 200,
-                                    height: 210
-                                }}
                                 alt="Image"
                             />
-                            <span>Rating: {curr.rating}</span>
-                            {console.log(widgets.indexOf(curr))}
-                            <UserRating
-                                player={curr}
-                                widgets={widgets}
-                                setWidgets={setWidgets}
-                            ></UserRating>
-                            {setMyMap(myMap.set(role, [...widgets]))}
-                            <Button onClick={() => handleOnButtonClick(curr)}>
-                                Delete Player
-                            </Button>
+                            <div className="userChangeRatings">
+                                <span>Rating: {curr.rating}</span>
+                                {console.log(widgets.indexOf(curr))}
+                                <UserRating
+                                    player={curr}
+                                    widgets={widgets}
+                                    setWidgets={setWidgets}
+                                ></UserRating>
+                                {setMyMap(myMap.set(role, [...widgets]))}
+                                <Button
+                                    onClick={() => handleOnButtonClick(curr)}
+                                >
+                                    Delete Player
+                                </Button>
+                            </div>
                             <div>
                                 {/*}
                                             <Button onClick={flipVisibility}>
