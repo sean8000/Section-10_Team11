@@ -264,7 +264,9 @@ function Test({
                                 ></UserRating>
                                 {setMyMap(myMap.set(role, [...widgets]))}
                                 <Button
-                                    onClick={() => handleOnAdminButtonClick(curr)}
+                                    onClick={() =>
+                                        handleOnAdminButtonClick(curr)
+                                    }
                                 >
                                     Delete Player
                                 </Button>
