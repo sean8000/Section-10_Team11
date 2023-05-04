@@ -156,8 +156,9 @@ function Test({
                         draggable
                         onDragStart={(e) => handleOnDrag(e, curr.name)}
                     >
-                        {curr.name} | {curr.position} <br /> Rating:{" "}
-                        {curr.rating}
+                        <div className="playerNameAndPosition">
+                            {curr.name} | {curr.position} <br />
+                        </div>
                         <img
                             className="playerImage"
                             src={curr.image}
