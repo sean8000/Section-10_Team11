@@ -300,7 +300,7 @@ function Test({
                         </div>
                     ))}
                 </div>
-            ) : (
+            ) : role === "League Manager" ? (
                 <div className="addPlayer">
                     <AddPlayers
                         centralList={centralList}
@@ -309,6 +309,8 @@ function Test({
                         filteredList={filteredList}
                     ></AddPlayers>
                 </div>
+            ) : (
+                ""
             )}
         </div>
     );

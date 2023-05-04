@@ -1,10 +1,16 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "./App";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { UserRating } from "./components/UserRating";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { playerList } from "./players";
+//import { Player } from "./interfaces/player";
 import userEvent from "@testing-library/user-event";
 
 //NEED TO ADD MORE DRAG TESTS
 //Testing Role
+
 describe("Role Tests", () => {
     test("Tests that there is a combobox", () => {
         render(<App />);
@@ -56,7 +62,7 @@ describe("Drag Tests", () => {
         const selectRole = screen.getByLabelText("Which role", {});
         userEvent.selectOptions(selectRole, "Team Manager");
         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
-        expect(screen.getByText(/Your Team/)).toBeInTheDocument;
+        expect(screen.getByText(/Manage Your Team/)).toBeInTheDocument;
         userEvent.selectOptions(selectRole, "Guest User");
         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
         expect(screen.getByText(/Your Team/)).toBeInTheDocument;
@@ -279,5 +285,197 @@ describe("Testing Sort", () => {
         expect(otherEighteen).toHaveTextContent("13");
         const otherLast = screen.getByTestId(29);
         expect(otherLast).toHaveTextContent("-1");
+    });
+
+    //Tests filtering a list after adding a player
+    describe("Testing adding players with filter", () => {
+        test("Testing for original 30 player list", () => {
+            render(<App />);
+            expect(screen.getByText(/player count in the central list is: 30/));
+        });
+        test("Testing for adding 1 player, filter is none", () => {
+            render(<App />);
+            const playerName = screen.getByLabelText(/Player Name:/i);
+            userEvent.type(playerName, "Justin Korup");
+            const playerDescription =
+                screen.getByLabelText(/Player Description:/i);
+            userEvent.type(playerDescription, "Newest Player");
+            const playerURL = screen.getByLabelText(/Image URL:/i);
+            userEvent.type(playerURL, "https://12345");
+            const playerPosition = screen.getByLabelText(/Which Position/i);
+            userEvent.selectOptions(playerPosition, "K");
+            const addPlayerButton = screen.getByTestId("addPlayer");
+            addPlayerButton.click();
+
+            //Justin Korup is in the player list displayed on the screen
+            expect(screen.getByText(/Justin Korup/i));
+        });
+        test("Testing for adding 1 player, filter is K, player is a K", () => {
+            render(<App />);
+            const playerName = screen.getByLabelText(/Player Name:/i);
+            userEvent.type(playerName, "Justin Korup");
+            const playerDescription =
+                screen.getByLabelText(/Player Description:/i);
+            userEvent.type(playerDescription, "Newest Player");
+            const playerURL = screen.getByLabelText(/Image URL:/i);
+            userEvent.type(playerURL, "https://12345");
+            const playerPosition = screen.getByLabelText(/Which Position/i);
+            userEvent.selectOptions(playerPosition, "K");
+            const addPlayerButton = screen.getByTestId("addPlayer");
+            addPlayerButton.click();
+
+            //Justin Korup is in the player list displayed on the screen
+            expect(screen.getByText(/Justin Korup/i));
+
+            const kButton = screen.getByTestId("filter" + "K");
+            expect(kButton).not.toBeChecked;
+            kButton.click();
+            expect(kButton).toBeChecked;
+            expect(screen.getByText(/player count in the central list is: 5/));
+            //Check if  4 Ks in the list +1 player added whos a K
+            //Add 2 because there is a K radio button, and a K option.
+            expect(screen.queryAllByText(/K/i)).toHaveLength(5 + 2);
+        });
+        test("Testing for adding 1 player, filter is QB, player is a K", () => {
+            render(<App />);
+            const playerName = screen.getByLabelText(/Player Name:/i);
+            userEvent.type(playerName, "Justin Korup");
+            const playerDescription =
+                screen.getByLabelText(/Player Description:/i);
+            userEvent.type(playerDescription, "Newest Player");
+            const playerURL = screen.getByLabelText(/Image URL:/i);
+            userEvent.type(playerURL, "https://12345");
+            const playerPosition = screen.getByLabelText(/Which Position/i);
+            userEvent.selectOptions(playerPosition, "K");
+            const addPlayerButton = screen.getByTestId("addPlayer");
+            addPlayerButton.click();
+
+            //Justin Korup is in the player list displayed on the screen
+            expect(screen.getByText(/Justin Korup/i));
+
+            const qbButton = screen.getByTestId("filter" + "QB");
+            expect(qbButton).not.toBeChecked;
+            qbButton.click();
+            expect(qbButton).toBeChecked;
+            //player not displayed since they're a K
+            expect(screen.getByText(/player count in the central list is: 4/));
+            //Check if  4 QBs in the list +2 because of radio button and QB option
+            expect(screen.queryAllByText(/QB/i)).toHaveLength(4 + 2);
+        });
+    });
+});
+
+//Tests sorting a list with a super added player
+describe("Testing adding players with filter", () => {
+    test("Testing for original 30 player list", () => {
+        render(<App />);
+        expect(screen.getByText(/player count in the central list is: 30/));
+    });
+    test("Testing for adding player, sort is none", () => {
+        render(<App />);
+        expect(screen.getByText(/player count in the central list is: 30/));
+        const playerName = screen.getByLabelText(/Player Name:/i);
+        userEvent.type(playerName, "Justin Korup");
+        const playerDescription = screen.getByLabelText(/Player Description:/i);
+        userEvent.type(playerDescription, "Newest Player");
+        const playerURL = screen.getByLabelText(/Image URL:/i);
+        userEvent.type(playerURL, "https://12345");
+        const playerPosition = screen.getByLabelText(/Which Position/i);
+        userEvent.selectOptions(playerPosition, "K");
+        const addPlayerButton = screen.getByTestId("addPlayer");
+        addPlayerButton.click();
+
+        //Justin Korup is in the player list displayed on the screen
+        expect(screen.getByText(/Justin Korup/i));
+
+        const sortID = screen.getByLabelText(/Sort Select/);
+        userEvent.selectOptions(sortID, "None");
+
+        const addedLast = screen.getByTestId(30);
+        expect(addedLast).toHaveTextContent("K"); // since he's a kicker
+    });
+    test("Testing for adding player, sort is Position", () => {
+        render(<App />);
+        expect(screen.getByText(/player count in the central list is: 30/));
+        const playerName = screen.getByLabelText(/Player Name:/i);
+        userEvent.type(playerName, "Justin Korup");
+        const playerDescription = screen.getByLabelText(/Player Description:/i);
+        userEvent.type(playerDescription, "Newest Player");
+        const playerURL = screen.getByLabelText(/Image URL:/i);
+        userEvent.type(playerURL, "https://12345");
+        const playerPosition = screen.getByLabelText(/Which Position/i);
+        userEvent.selectOptions(playerPosition, "K");
+        const addPlayerButton = screen.getByTestId("addPlayer");
+        addPlayerButton.click();
+
+        //Justin Korup is in the player list displayed on the screen
+        expect(screen.getByText(/Justin Korup/i));
+
+        const sortID = screen.getByLabelText(/Sort Select/);
+        userEvent.selectOptions(sortID, "Position");
+
+        const addedLast = screen.getByTestId(4); //He would be index 4, 5th place in the list
+        //since he was a kicker added last, so every other kicker is rendered before him
+        expect(addedLast).toHaveTextContent("K"); // since he's a kicker
+    });
+    test("Testing for adding player, sort is Rating", () => {
+        render(<App />);
+        expect(screen.getByText(/player count in the central list is: 30/));
+        const playerName = screen.getByLabelText(/Player Name:/i);
+        userEvent.type(playerName, "Justin Korup");
+        const playerDescription = screen.getByLabelText(/Player Description:/i);
+        userEvent.type(playerDescription, "Newest Player");
+        const playerURL = screen.getByLabelText(/Image URL:/i);
+        userEvent.type(playerURL, "https://12345");
+        const playerPosition = screen.getByLabelText(/Which Position/i);
+        userEvent.selectOptions(playerPosition, "K");
+        const addPlayerButton = screen.getByTestId("addPlayer");
+        addPlayerButton.click();
+
+        //Justin Korup is in the player list displayed on the screen
+        expect(screen.getByText(/Justin Korup/i));
+
+        const sortID = screen.getByLabelText(/Sort Select/);
+        userEvent.selectOptions(sortID, "Rating");
+
+        const addedLast = screen.getByTestId(30); //He would be index  last since rating is 1
+        expect(addedLast).toHaveTextContent("K"); // since he's a kicker
+    });
+    test("Testing for adding player, sort is Touchdowns", () => {
+        render(<App />);
+        expect(screen.getByText(/player count in the central list is: 30/));
+        const playerName = screen.getByLabelText(/Player Name:/i);
+        userEvent.type(playerName, "Justin Korup");
+        const playerDescription = screen.getByLabelText(/Player Description:/i);
+        userEvent.type(playerDescription, "Newest Player");
+        const playerURL = screen.getByLabelText(/Image URL:/i);
+        userEvent.type(playerURL, "https://12345");
+        const playerPosition = screen.getByLabelText(/Which Position/i);
+        userEvent.selectOptions(playerPosition, "K");
+        const addPlayerButton = screen.getByTestId("addPlayer");
+        addPlayerButton.click();
+
+        //Justin Korup is in the player list displayed on the screen
+        expect(screen.getByText(/Justin Korup/i));
+
+        const sortID = screen.getByLabelText(/Sort Select/);
+        userEvent.selectOptions(sortID, "Touchdowns");
+
+        const addedLast = screen.getByTestId(26); //He would be index 26, he has the least touchdowns
+        //besides the kickers with -1
+        //since he was a kicker added last, so every other kicker is rendered before him
+        expect(addedLast).toHaveTextContent("K"); // since he's a kicker
+    });
+});
+describe("User rating", () => {
+    test("Testing adding player to user list with initial overall rating", () => {
+        //render();
+        /*
+            <UserRating
+                player={playerList[0]}
+                widgets={[]}
+                setWidgets={}
+            ></UserRating>
+            */
     });
 });
