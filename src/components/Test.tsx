@@ -147,6 +147,7 @@ function Test({
             ></SortSelect>
             <div className="central">
                 <h4 className="playersTitle">Players</h4>
+                <br></br>
                 {filteredList.map((curr, index) => (
                     <div
                         key={curr.name}
@@ -154,10 +155,6 @@ function Test({
                         className="player"
                         draggable
                         onDragStart={(e) => handleOnDrag(e, curr.name)}
-                        style={{
-                            width: 483.33,
-                            height: 210
-                        }}
                     >
                         {curr.name} | {curr.position} <br /> Rating:{" "}
                         {curr.rating}
@@ -165,10 +162,6 @@ function Test({
                             className="playerImage"
                             src={curr.image}
                             alt="Image"
-                            style={{
-                                width: 200,
-                                height: 210
-                            }}
                         />
                         <div>
                             {visible && (

@@ -17,13 +17,13 @@
 .player:nth-child(odd) {
     background-color: black;
     color: white;
-    height: 360px;
+    height: 250px;
 }
 
 .player:nth-child(even) {
     background-color: gray;
     color: white;
-    height: 360px;
+    height: 250px;
 }
 
 .central {
