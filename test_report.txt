@@ -403,39 +403,39 @@
 
       at updateSort (src/components/sortSelect.tsx:27:21)
 
-FAIL src/Components.test.tsx (5.741 s)
+FAIL src/Components.test.tsx
   Role Tests
-    ✓ Tests that there is a combobox (265 ms)
-    ✓ Tests that the first role value is League Manager (103 ms)
-    ✓ Tests that the changed value is Team Manager (147 ms)
-    ✓ Tests that the changed value is Guest User (108 ms)
-    ✓ Test adding user (176 ms)
+    ✓ Tests that there is a combobox (216 ms)
+    ✓ Tests that the first role value is League Manager (75 ms)
+    ✓ Tests that the changed value is Team Manager (115 ms)
+    ✓ Tests that the changed value is Guest User (87 ms)
+    ✓ Test adding user (141 ms)
   Drag Tests
-    ✓ Testing for original 30 player list (76 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (70 ms)
-    ✕ Testing that draggable list appears when not league manager (151 ms)
-    ✓ Testing that first player is draggable (58 ms)
-    ✓ Testing that first player can be dragged to other list (48 ms)
+    ✓ Testing for original 30 player list (59 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (47 ms)
+    ✕ Testing that draggable list appears when not league manager (111 ms)
+    ✓ Testing that first player is draggable (42 ms)
+    ✓ Testing that first player can be dragged to other list (37 ms)
   Testing Adding players
-    ✓ Testing for original 30 player list, and that league manager can add players (56 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (333 ms)
-    ✓ Testing for adding 1 player, see if list increased in size (321 ms)
-    ✓ Test adding player doesn't appear when not league manager (87 ms)
-    ✓ Test adding player doesn't appear when not league manager (75 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (41 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (281 ms)
+    ✓ Testing for adding 1 player, see if list increased in size (252 ms)
+    ✓ Test adding player doesn't appear when not league manager (64 ms)
+    ✓ Test adding player doesn't appear when not league manager (60 ms)
   Testing Filter
-    ✓ Testing for original 30 player list (44 ms)
-    ✓ Testing no filter (37 ms)
-    ✓ Testing for filtered by QB (65 ms)
-    ✓ Testing for filtered by RB (55 ms)
-    ✓ Testing for filtered by WR (57 ms)
-    ✓ Testing for filtered by TE (54 ms)
-    ✓ Testing for filtered by K (60 ms)
+    ✓ Testing for original 30 player list (35 ms)
+    ✓ Testing no filter (35 ms)
+    ✓ Testing for filtered by QB (38 ms)
+    ✓ Testing for filtered by RB (47 ms)
+    ✓ Testing for filtered by WR (46 ms)
+    ✓ Testing for filtered by TE (34 ms)
+    ✓ Testing for filtered by K (40 ms)
   Testing Sort
-    ✓ Testing for original 30 player list, and that league manager can add players (40 ms)
-    ✓ Testing for sorted by position (154 ms)
-    ✓ Test sorted by Rating (104 ms)
-    ✓ Test sorted by Touchdowns (142 ms)
-    ✓ Test sorted by None (190 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (32 ms)
+    ✓ Testing for sorted by position (116 ms)
+    ✓ Test sorted by Rating (101 ms)
+    ✓ Test sorted by Touchdowns (106 ms)
+    ✓ Test sorted by None (148 ms)
 
   ● Drag Tests › Testing that draggable list appears when not league manager
 
@@ -633,16 +633,16 @@ FAIL src/Components.test.tsx (5.741 s)
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   66.66 |    56.52 |    55.1 |   66.22 |                   
+All files            |   66.23 |    56.52 |    55.1 |   65.78 |                   
  src                 |     100 |      100 |     100 |     100 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   UserText.tsx       |     100 |      100 |     100 |     100 |                   
   players.tsx        |     100 |      100 |     100 |     100 |                   
- src/components      |   54.46 |    56.52 |   52.17 |   53.63 |                   
+ src/components      |   53.98 |    56.52 |   52.17 |   53.15 |                   
   AddPlayers.tsx     |     100 |      100 |     100 |     100 |                   
   PositionFilter.tsx |   88.88 |       50 |     100 |   88.88 | 31                
   RenderPlayer.tsx   |       0 |      100 |       0 |       0 | 12-20             
-  Test.tsx           |   18.18 |    57.14 |   17.64 |   18.18 | 63-119,159-272    
+  Test.tsx           |   17.64 |    57.14 |   17.64 |   17.64 | 63-120,160-282    
   UserRating.tsx     |       0 |        0 |       0 |       0 | 14-39             
   roleSelect.tsx     |   43.75 |       40 |   66.66 |   43.75 | 37-47             
   sortSelect.tsx     |     100 |    92.85 |     100 |     100 | 41                
@@ -652,5 +652,5 @@ All files            |   66.66 |    56.52 |    55.1 |   66.22 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 26 passed, 27 total
 Snapshots:   0 total
-Time:        6.455 s
+Time:        5.623 s
 Ran all test suites.
