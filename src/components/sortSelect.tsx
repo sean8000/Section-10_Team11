@@ -49,7 +49,7 @@ export function SortSelect({
     return (
         <div className="sortSelect">
             <Form.Group controlId="Sort">
-                <Form.Label>Sort Select</Form.Label>
+                <Form.Label>Sort Players</Form.Label>
                 <Form.Select
                     className="sortSelectHeading"
                     value={sortOption}

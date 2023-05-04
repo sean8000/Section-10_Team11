@@ -34,6 +34,7 @@ export function PositionFilter({
 
     return (
         <div>
+            {"Filter Players: "}
             {filterPosition.map((choice: string) => (
                 <Form.Check
                     inline

@@ -28,16 +28,6 @@ function App(): JSX.Element {
     return (
         <div>
             <h1 className="heading">NFL Football TeamBuilder</h1>
-            <h2 className="instructions">
-                LEAGUE MANAGERS ----- ADD/REMOVE PLAYERS
-            </h2>
-            <h3 className="instructions">
-                TEAM MANAGERS ----- EDIT YOUR PLAYERS
-            </h3>
-            <h4 className="instructions">
-                TEAM BUILDERS ----- BUILD YOUR TEAMS
-            </h4>
-            <h5 className="roleSelectHeadings">Role Select</h5>
             <RoleSelect
                 setRole={setRole}
                 role={role}
@@ -46,7 +36,7 @@ function App(): JSX.Element {
                 setTotalRoles={setTotalRoles}
                 myMap={myMap}
             ></RoleSelect>
-            ~{"\n"}
+            {"\n"}
             <Container>
                 <Row>
                     <Col>
