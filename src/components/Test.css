@@ -1,11 +1,11 @@
 .Test {
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .user {
     float: left;
     text-align: justify;
-    width: 600px;
+    width: 550px;
     height: auto;
     min-height: 100px;
     outline: 1px solid black;
@@ -35,7 +35,7 @@
 .central {
     text-align: justify;
     float: left;
-    width: 600px;
+    width: 550px;
     height: 700px;
     color: white;
     background-color: gray;
@@ -69,7 +69,7 @@
     color: white;
     text-align: center;
     background-color: black;
-    width: 600px;
+    width: 550px;
     position: absolute;
     text-decoration: underline;
     text-decoration-color: white;
