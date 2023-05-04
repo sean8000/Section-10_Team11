@@ -86,6 +86,7 @@
 .names {
     position: fixed;
     color: white;
+    bottom: 0%;
 }
 
 .addUserBox {
@@ -132,8 +133,14 @@
     overflow-x: auto;
 }
 
+.addingPlayers {
+    float: left;
+    margin-left: 100px;
+}
+
 .sortSelect {
     width: 200px;
+    color: white;
 }
 
 .playerImage {
@@ -142,4 +149,12 @@
     width: 250px;
     height: 250px;
     margin-top: -48px;
+}
+
+.newPlayerPreview {
+    float: right;
+}
+
+.positionFilter {
+    color: white;
 }
