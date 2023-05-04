@@ -27,17 +27,17 @@ function App(): JSX.Element {
     }
     return (
         <div>
-            <h1 className="heading">NFL Football TeamBuilder</h1>
-            <h5 className="roleSelectHeadings">Role Select</h5>
-            <RoleSelect
-                setRole={setRole}
-                role={role}
-                setWidgets={setWidgets}
-                totalRoles={totalRoles}
-                setTotalRoles={setTotalRoles}
-                myMap={myMap}
-            ></RoleSelect>
-            ~{"\n"}
+            <h1 className="heading">
+                {"**"} NFL Football TeamBuilder
+                <RoleSelect
+                    setRole={setRole}
+                    role={role}
+                    setWidgets={setWidgets}
+                    totalRoles={totalRoles}
+                    setTotalRoles={setTotalRoles}
+                    myMap={myMap}
+                ></RoleSelect>
+            </h1>
             <Test
                 widgets={widgets}
                 setWidgets={setWidgets}

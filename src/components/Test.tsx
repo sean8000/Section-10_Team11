@@ -188,9 +188,11 @@ function Test({
                     </div>
                 ))}
             </div>
+            {/*}
             <Button data-testid="stats" onClick={flipVisibility}>
                 STATS
             </Button>
+                            
             <span
                 data-testid="playerCount"
                 style={{ color: "white", fontSize: "20" }}
@@ -198,6 +200,7 @@ function Test({
                 Current player count in the central list is:{" "}
                 {filteredList.length}
             </span>
+                            */}
             {role === "Team Manager" ? (
                 <div
                     className="user"
