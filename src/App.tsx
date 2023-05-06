@@ -34,10 +34,14 @@ function App(): JSX.Element {
                 <RoleSelect
                     setRole={setRole}
                     role={role}
+                    widgets={widgets}
                     setWidgets={setWidgets}
+                    adminWidgets={adminWidgets}
+                    setAdminWidgets={setAdminWidgets}
                     totalRoles={totalRoles}
                     setTotalRoles={setTotalRoles}
                     myMap={myMap}
+                    setMyMap={setMyMap}
                 ></RoleSelect>
             </h1>
             <Test

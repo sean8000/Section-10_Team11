@@ -7,11 +7,14 @@ import { Player } from "../interfaces/player";
 interface Roles {
     setRole: (newString: string) => void;
     role: string;
+    widgets: Player[];
     setWidgets: (newStringList: Player[]) => void;
+    adminWidgets: Player[];
+    setAdminWidgets: (newStringList: Player[]) => void;
     totalRoles: string[];
     setTotalRoles: (newStringList: string[]) => void;
     myMap: Map<string, Player[]>;
-    //setMyMap: (newMap: Map<string, Player[]>) => void;
+    setMyMap: (newMap: Map<string, Player[]>) => void;
 }
 export function RoleSelect({
     setRole,
@@ -19,13 +22,27 @@ export function RoleSelect({
     myMap,
     setWidgets,
     totalRoles,
-    setTotalRoles
+    setTotalRoles,
+    widgets,
+    adminWidgets,
+    setAdminWidgets,
+    setMyMap
 }: Roles): JSX.Element {
     //const [role, setRole] = useState<string>("Super");
     const [userText, setUserText] = useState<string>("");
     function updateRole(event: React.ChangeEvent<HTMLSelectElement>) {
+        if (role === "Team Manager") {
+            console.log("Team Manager");
+            setMyMap(myMap.set(role, [...adminWidgets]));
+        } else {
+            setMyMap(myMap.set(role, [...widgets]));
+        }
         setRole(event.target.value);
-        setWidgets(myMap.get(event.target.value) ?? []);
+        if (event.target.value === "Team Manager") {
+            setAdminWidgets(myMap.get(event.target.value) ?? []);
+        } else {
+            setWidgets(myMap.get(event.target.value) ?? []);
+        }
     }
     function addUser() {
         setTotalRoles([...totalRoles, userText]);

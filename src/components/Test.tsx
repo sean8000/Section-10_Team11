@@ -99,7 +99,7 @@ function Test({
         }
 
         console.log(oldPlayer);
-        console.log(adminWidgets);
+        console.log([...adminWidgets, oldPlayer]);
     }
 
     function addToTeam(newPlayer: Player) {
@@ -216,12 +216,16 @@ function Test({
                             {role !== "League Manager" ? (
                                 role === "Team Manager" ? (
                                     <Button
+                                        data-testid={"adminButton" + index}
                                         onClick={() => addToAdminTeam(curr)}
                                     >
                                         Add Player to Your Team
                                     </Button>
                                 ) : (
-                                    <Button onClick={() => addToTeam(curr)}>
+                                    <Button
+                                        data-testid={"userButton" + index}
+                                        onClick={() => addToTeam(curr)}
+                                    >
                                         Add Player to Your Team
                                     </Button>
                                 )
@@ -259,13 +263,13 @@ function Test({
                     onDrop={handleOnDropAdmin}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">Your Team</h4>
+                    <h4 className="playersTitle">Manage Your Team</h4>
                     <br></br>
                     {adminWidgets.map((curr, index) => (
                         <div
                             className="playerWidget"
-                            key={"other" + index}
-                            data-testid={"other" + index}
+                            key={"otherAdmin" + index}
+                            data-testid={"otherAdmin" + index}
                         >
                             <div className="playerNameAndPosition">
                                 {curr.name} | {curr.position} <br />{" "}
@@ -276,7 +280,7 @@ function Test({
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
-                            {setMyMap(myMap.set(role, [...adminWidgets]))}
+                            {/*}{setMyMap(myMap.set(role, [...adminWidgets]))}{*/}
                             <div className="userChangeRatings">
                                 <Button
                                     onClick={() =>
@@ -298,13 +302,13 @@ function Test({
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">Your Team</h4>
+                    <h4 className="playersTitle">Build Your Team</h4>
                     <br></br>
                     {widgets.map((curr, index) => (
                         <div
                             className="playerWidget"
-                            key={"other" + index}
-                            data-testid={"other" + index}
+                            key={"other" + role + index}
+                            data-testid={"other" + role + index}
                         >
                             <div className="playerNameAndPosition">
                                 {curr.name} | {curr.position} <br />{" "}
@@ -315,6 +319,7 @@ function Test({
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
+                            {/*}{setMyMap(myMap.set(role, [...widgets]))}{*/}
                             <div className="userChangeRatings">
                                 {console.log(widgets.indexOf(curr))}
                                 <UserRating
@@ -322,7 +327,7 @@ function Test({
                                     widgets={widgets}
                                     setWidgets={setWidgets}
                                 ></UserRating>
-                                {setMyMap(myMap.set(role, [...widgets]))}
+
                                 <Button
                                     onClick={() => handleOnButtonClick(curr)}
                                 >

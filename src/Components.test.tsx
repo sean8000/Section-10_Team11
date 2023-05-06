@@ -65,7 +65,7 @@ describe("Drag Tests", () => {
         expect(screen.getByText(/Manage Your Team/)).toBeInTheDocument;
         userEvent.selectOptions(selectRole, "Guest User");
         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
-        expect(screen.getByText(/Your Team/)).toBeInTheDocument;
+        expect(screen.getByText(/Build Your Team/)).toBeInTheDocument;
     });
     test("Testing that first player is draggable", () => {
         render(<App />);
@@ -333,8 +333,8 @@ describe("Testing Sort", () => {
             expect(kButton).toBeChecked;
             expect(screen.getByText(/player count in the central list is: 5/));
             //Check if  4 Ks in the list +1 player added whos a K
-            //Add 2 because there is a K radio button, and a K option.
-            expect(screen.queryAllByText(/K/i)).toHaveLength(5 + 2);
+            //Add 2 for K radio button, K option
+            expect(screen.queryAllByText(/K/)).toHaveLength(7);
         });
         test("Testing for adding 1 player, filter is QB, player is a K", () => {
             render(<App />);
@@ -366,7 +366,7 @@ describe("Testing Sort", () => {
 });
 
 //Tests sorting a list with a super added player
-describe("Testing adding players with filter", () => {
+describe("Testing adding players with sort", () => {
     test("Testing for original 30 player list", () => {
         render(<App />);
         expect(screen.getByText(/player count in the central list is: 30/));
@@ -467,15 +467,58 @@ describe("Testing adding players with filter", () => {
         expect(addedLast).toHaveTextContent("K"); // since he's a kicker
     });
 });
-describe("User rating", () => {
-    test("Testing adding player to user list with initial overall rating", () => {
-        //render();
-        /*
-            <UserRating
-                player={playerList[0]}
-                widgets={[]}
-                setWidgets={}
-            ></UserRating>
-            */
+/*
+describe("Adding Players Using Button", () => {
+    test("Testing adding player to user list as guest user", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("other" + 0)).not.toBeInTheDocument;
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("other" + 0)).toBeInTheDocument;
+    });
+    test("Testing adding duplicates Guest User", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("other" + 0)).not.toBeInTheDocument;
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("other" + 0)).toBeInTheDocument;
+        addFirstPlayerButton.click();
+        //Player is added to the list again, now in the first index too
+        expect(screen.getByTestId("other" + 1)).toBeInTheDocument;
+    });
+    test("Testing adding duplicates as Team Manger / Admin, shouldn't work", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("other" + 0)).not.toBeInTheDocument;
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Team Manager");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+
+        const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("other" + 0)).not.toBeInTheDocument;
+        //addFirstPlayerButton.click();
+        //Player is added to the list again, now in the first index too
+        expect(screen.queryByTestId("other" + 1)).toBeInTheDocument;
     });
 });
+*/
