@@ -14,6 +14,9 @@ export function UserText({ userText, setUserText }: Users): JSX.Element {
     return (
         <div className="addUserBox">
             <Form.Group data-testid="usertext" controlId="UserTextBox">
+                <Form.Label style={{ fontSize: 15, color: "white" }}>
+                    Your User Name:
+                </Form.Label>
                 <Form.Control value={userText} onChange={updateText} />
             </Form.Group>
         </div>

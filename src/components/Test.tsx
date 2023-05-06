@@ -170,6 +170,7 @@ function Test({
                     >
                         <div className="playerNameAndPosition">
                             {curr.name} | {curr.position} <br />
+                            Overall: {curr.rating}
                         </div>
                         <img
                             className="playerImage"
@@ -195,11 +196,9 @@ function Test({
                     </div>
                 ))}
             </div>
-            {/*}
             <Button data-testid="stats" onClick={flipVisibility}>
                 STATS
             </Button>
-                            
             <span
                 data-testid="playerCount"
                 style={{ color: "white", fontSize: "20" }}
@@ -207,14 +206,13 @@ function Test({
                 Current player count in the central list is:{" "}
                 {filteredList.length}
             </span>
-                            */}
             {role === "Team Manager" ? (
                 <div
                     className="user"
                     onDrop={handleOnDropAdmin}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">Admin List</h4>
+                    <h4 className="playersTitle">Manage Your Team</h4>
                     {adminWidgets.map((curr, index) => (
                         <div className="player" key={index}>
                             {curr.name} | {curr.position} <br /> Rating:{" "}
