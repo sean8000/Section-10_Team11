@@ -3,6 +3,11 @@
 > react-scripts test --coverage
 
   console.log
+    Team Manager
+
+      at updateRole (src/components/roleSelect.tsx:35:21)
+
+  console.log
     Pos
 
       at updateSort (src/components/sortSelect.tsx:30:21)
@@ -807,289 +812,1877 @@
 
       at updateSort (src/components/sortSelect.tsx:42:21)
 
-FAIL src/Components.test.tsx (7.094 s)
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToTeam (src/components/Test.tsx:109:17)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToTeam (src/components/Test.tsx:109:17)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      },
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToTeam (src/components/Test.tsx:109:17)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToAdminTeam (src/components/Test.tsx:117:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToTeam (src/components/Test.tsx:109:17)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    <ref *1> HTMLDivElement {
+      '__reactFiber$99rf8uhpg8p': <ref *2> FiberNode {
+        tag: 5,
+        key: 'otherGuest User0',
+        elementType: 'div',
+        type: 'div',
+        stateNode: [Circular *1],
+        return: FiberNode {
+          tag: 7,
+          key: null,
+          elementType: null,
+          type: null,
+          stateNode: null,
+          return: [FiberNode],
+          child: [Circular *2],
+          sibling: null,
+          index: 2,
+          ref: null,
+          pendingProps: [Array],
+          memoizedProps: [Array],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: [Circular *2],
+          lastEffect: [Circular *2],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 101626,
+          _debugSource: null,
+          _debugOwner: null,
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        child: FiberNode {
+          tag: 5,
+          key: null,
+          elementType: 'div',
+          type: 'div',
+          stateNode: [HTMLDivElement],
+          return: [Circular *2],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 0,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: null,
+          lastEffect: null,
+          lanes: 0,
+          childLanes: 0,
+          alternate: null,
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 102221,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        sibling: null,
+        index: 0,
+        ref: null,
+        pendingProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        memoizedProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        updateQueue: null,
+        memoizedState: null,
+        dependencies: null,
+        mode: 0,
+        flags: 0,
+        nextEffect: null,
+        firstEffect: null,
+        lastEffect: null,
+        lanes: 0,
+        childLanes: 0,
+        alternate: null,
+        actualDuration: 0,
+        actualStartTime: -1,
+        selfBaseDuration: 0,
+        treeBaseDuration: 0,
+        _debugID: 102219,
+        _debugSource: {
+          fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
+          lineNumber: 308,
+          columnNumber: 25
+        },
+        _debugOwner: FiberNode {
+          tag: 0,
+          key: null,
+          elementType: [Function: Test],
+          type: [Function: Test],
+          stateNode: null,
+          return: [FiberNode],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 1,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: [Object],
+          dependencies: null,
+          mode: 0,
+          flags: 1,
+          nextEffect: null,
+          firstEffect: [FiberNode],
+          lastEffect: [FiberNode],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 99498,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: [Array]
+        },
+        _debugNeedsRemount: false,
+        _debugHookTypes: null
+      },
+      '__reactProps$99rf8uhpg8p': {
+        className: 'playerWidget',
+        'data-testid': 'otherGuest User0',
+        children: [ [Object], [Object], [Object] ]
+      }
+    }
+
+      at Object.<anonymous> (src/Components.test.tsx:539:17)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToTeam (src/components/Test.tsx:109:17)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    <ref *1> HTMLDivElement {
+      '__reactFiber$99rf8uhpg8p': <ref *2> FiberNode {
+        tag: 5,
+        key: 'otherGuest User0',
+        elementType: 'div',
+        type: 'div',
+        stateNode: [Circular *1],
+        return: FiberNode {
+          tag: 7,
+          key: null,
+          elementType: null,
+          type: null,
+          stateNode: null,
+          return: [FiberNode],
+          child: [Circular *2],
+          sibling: null,
+          index: 2,
+          ref: null,
+          pendingProps: [Array],
+          memoizedProps: [Array],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: [Circular *2],
+          lastEffect: [Circular *2],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 104408,
+          _debugSource: null,
+          _debugOwner: null,
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        child: FiberNode {
+          tag: 5,
+          key: null,
+          elementType: 'div',
+          type: 'div',
+          stateNode: [HTMLDivElement],
+          return: [Circular *2],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 0,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: null,
+          lastEffect: null,
+          lanes: 0,
+          childLanes: 0,
+          alternate: null,
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 105003,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        sibling: null,
+        index: 0,
+        ref: null,
+        pendingProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        memoizedProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        updateQueue: null,
+        memoizedState: null,
+        dependencies: null,
+        mode: 0,
+        flags: 0,
+        nextEffect: null,
+        firstEffect: null,
+        lastEffect: null,
+        lanes: 0,
+        childLanes: 0,
+        alternate: null,
+        actualDuration: 0,
+        actualStartTime: -1,
+        selfBaseDuration: 0,
+        treeBaseDuration: 0,
+        _debugID: 105001,
+        _debugSource: {
+          fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
+          lineNumber: 308,
+          columnNumber: 25
+        },
+        _debugOwner: FiberNode {
+          tag: 0,
+          key: null,
+          elementType: [Function: Test],
+          type: [Function: Test],
+          stateNode: null,
+          return: [FiberNode],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 1,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: [Object],
+          dependencies: null,
+          mode: 0,
+          flags: 1,
+          nextEffect: null,
+          firstEffect: [FiberNode],
+          lastEffect: [FiberNode],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 102280,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: [Array]
+        },
+        _debugNeedsRemount: false,
+        _debugHookTypes: null
+      },
+      '__reactProps$99rf8uhpg8p': {
+        className: 'playerWidget',
+        'data-testid': 'otherGuest User0',
+        children: [ [Object], [Object], [Object] ]
+      }
+    }
+
+      at Object.<anonymous> (src/Components.test.tsx:562:17)
+
+  console.log
+    9
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 9
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    90
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 90
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToTeam (src/components/Test.tsx:109:17)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    <ref *1> HTMLDivElement {
+      '__reactFiber$99rf8uhpg8p': <ref *2> FiberNode {
+        tag: 5,
+        key: 'otherGuest User0',
+        elementType: 'div',
+        type: 'div',
+        stateNode: [Circular *1],
+        return: FiberNode {
+          tag: 7,
+          key: null,
+          elementType: null,
+          type: null,
+          stateNode: null,
+          return: [FiberNode],
+          child: [Circular *2],
+          sibling: null,
+          index: 2,
+          ref: null,
+          pendingProps: [Array],
+          memoizedProps: [Array],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: [Circular *2],
+          lastEffect: [Circular *2],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 108315,
+          _debugSource: null,
+          _debugOwner: null,
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        child: FiberNode {
+          tag: 5,
+          key: null,
+          elementType: 'div',
+          type: 'div',
+          stateNode: [HTMLDivElement],
+          return: [Circular *2],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 0,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: null,
+          lastEffect: null,
+          lanes: 0,
+          childLanes: 0,
+          alternate: null,
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 108910,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        sibling: null,
+        index: 0,
+        ref: null,
+        pendingProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        memoizedProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        updateQueue: null,
+        memoizedState: null,
+        dependencies: null,
+        mode: 0,
+        flags: 0,
+        nextEffect: null,
+        firstEffect: null,
+        lastEffect: null,
+        lanes: 0,
+        childLanes: 0,
+        alternate: null,
+        actualDuration: 0,
+        actualStartTime: -1,
+        selfBaseDuration: 0,
+        treeBaseDuration: 0,
+        _debugID: 108908,
+        _debugSource: {
+          fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
+          lineNumber: 308,
+          columnNumber: 25
+        },
+        _debugOwner: FiberNode {
+          tag: 0,
+          key: null,
+          elementType: [Function: Test],
+          type: [Function: Test],
+          stateNode: null,
+          return: [FiberNode],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 1,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: [Object],
+          dependencies: null,
+          mode: 0,
+          flags: 1,
+          nextEffect: null,
+          firstEffect: [FiberNode],
+          lastEffect: [FiberNode],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 106187,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: [Array]
+        },
+        _debugNeedsRemount: false,
+        _debugHookTypes: null
+      },
+      '__reactProps$99rf8uhpg8p': {
+        className: 'playerWidget',
+        'data-testid': 'otherGuest User0',
+        children: [ [Object], [Object], [Object] ]
+      }
+    }
+
+      at Object.<anonymous> (src/Components.test.tsx:586:17)
+
+  console.log
+    9
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 9
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    95
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 95
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    5
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 5
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    50
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 50
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToTeam (src/components/Test.tsx:109:17)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    <ref *1> HTMLDivElement {
+      '__reactFiber$99rf8uhpg8p': <ref *2> FiberNode {
+        tag: 5,
+        key: 'otherGuest User0',
+        elementType: 'div',
+        type: 'div',
+        stateNode: [Circular *1],
+        return: FiberNode {
+          tag: 7,
+          key: null,
+          elementType: null,
+          type: null,
+          stateNode: null,
+          return: [FiberNode],
+          child: [Circular *2],
+          sibling: null,
+          index: 2,
+          ref: null,
+          pendingProps: [Array],
+          memoizedProps: [Array],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: [Circular *2],
+          lastEffect: [Circular *2],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 113322,
+          _debugSource: null,
+          _debugOwner: null,
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        child: FiberNode {
+          tag: 5,
+          key: null,
+          elementType: 'div',
+          type: 'div',
+          stateNode: [HTMLDivElement],
+          return: [Circular *2],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 0,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: null,
+          lastEffect: null,
+          lanes: 0,
+          childLanes: 0,
+          alternate: null,
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 113917,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        sibling: null,
+        index: 0,
+        ref: null,
+        pendingProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        memoizedProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        updateQueue: null,
+        memoizedState: null,
+        dependencies: null,
+        mode: 0,
+        flags: 0,
+        nextEffect: null,
+        firstEffect: null,
+        lastEffect: null,
+        lanes: 0,
+        childLanes: 0,
+        alternate: null,
+        actualDuration: 0,
+        actualStartTime: -1,
+        selfBaseDuration: 0,
+        treeBaseDuration: 0,
+        _debugID: 113915,
+        _debugSource: {
+          fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
+          lineNumber: 308,
+          columnNumber: 25
+        },
+        _debugOwner: FiberNode {
+          tag: 0,
+          key: null,
+          elementType: [Function: Test],
+          type: [Function: Test],
+          stateNode: null,
+          return: [FiberNode],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 1,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: [Object],
+          dependencies: null,
+          mode: 0,
+          flags: 1,
+          nextEffect: null,
+          firstEffect: [FiberNode],
+          lastEffect: [FiberNode],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 111194,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: [Array]
+        },
+        _debugNeedsRemount: false,
+        _debugHookTypes: null
+      },
+      '__reactProps$99rf8uhpg8p': {
+        className: 'playerWidget',
+        'data-testid': 'otherGuest User0',
+        children: [ [Object], [Object], [Object] ]
+      }
+    }
+
+      at Object.<anonymous> (src/Components.test.tsx:613:17)
+
+  console.log
+    9
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 9
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    90
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 90
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    0
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 0
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToTeam (src/components/Test.tsx:109:17)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    <ref *1> HTMLDivElement {
+      '__reactFiber$99rf8uhpg8p': <ref *2> FiberNode {
+        tag: 5,
+        key: 'otherGuest User0',
+        elementType: 'div',
+        type: 'div',
+        stateNode: [Circular *1],
+        return: FiberNode {
+          tag: 7,
+          key: null,
+          elementType: null,
+          type: null,
+          stateNode: null,
+          return: [FiberNode],
+          child: [Circular *2],
+          sibling: null,
+          index: 2,
+          ref: null,
+          pendingProps: [Array],
+          memoizedProps: [Array],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: [Circular *2],
+          lastEffect: [Circular *2],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 117779,
+          _debugSource: null,
+          _debugOwner: null,
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        child: FiberNode {
+          tag: 5,
+          key: null,
+          elementType: 'div',
+          type: 'div',
+          stateNode: [HTMLDivElement],
+          return: [Circular *2],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 0,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: null,
+          lastEffect: null,
+          lanes: 0,
+          childLanes: 0,
+          alternate: null,
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 118374,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        sibling: null,
+        index: 0,
+        ref: null,
+        pendingProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        memoizedProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        updateQueue: null,
+        memoizedState: null,
+        dependencies: null,
+        mode: 0,
+        flags: 0,
+        nextEffect: null,
+        firstEffect: null,
+        lastEffect: null,
+        lanes: 0,
+        childLanes: 0,
+        alternate: null,
+        actualDuration: 0,
+        actualStartTime: -1,
+        selfBaseDuration: 0,
+        treeBaseDuration: 0,
+        _debugID: 118372,
+        _debugSource: {
+          fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
+          lineNumber: 308,
+          columnNumber: 25
+        },
+        _debugOwner: FiberNode {
+          tag: 0,
+          key: null,
+          elementType: [Function: Test],
+          type: [Function: Test],
+          stateNode: null,
+          return: [FiberNode],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 1,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: [Object],
+          dependencies: null,
+          mode: 0,
+          flags: 1,
+          nextEffect: null,
+          firstEffect: [FiberNode],
+          lastEffect: [FiberNode],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 115651,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: [Array]
+        },
+        _debugNeedsRemount: false,
+        _debugHookTypes: null
+      },
+      '__reactProps$99rf8uhpg8p': {
+        className: 'playerWidget',
+        'data-testid': 'otherGuest User0',
+        children: [ [Object], [Object], [Object] ]
+      }
+    }
+
+      at Object.<anonymous> (src/Components.test.tsx:637:17)
+
+  console.log
+    9
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 9
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    91
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 91
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    1
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 1
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    10
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 10
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    100
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 100
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99
+      }
+    ]
+
+      at addToTeam (src/components/Test.tsx:109:17)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    <ref *1> HTMLDivElement {
+      '__reactFiber$99rf8uhpg8p': <ref *2> FiberNode {
+        tag: 5,
+        key: 'otherGuest User0',
+        elementType: 'div',
+        type: 'div',
+        stateNode: [Circular *1],
+        return: FiberNode {
+          tag: 7,
+          key: null,
+          elementType: null,
+          type: null,
+          stateNode: null,
+          return: [FiberNode],
+          child: [Circular *2],
+          sibling: null,
+          index: 2,
+          ref: null,
+          pendingProps: [Array],
+          memoizedProps: [Array],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: [Circular *2],
+          lastEffect: [Circular *2],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 123336,
+          _debugSource: null,
+          _debugOwner: null,
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        child: FiberNode {
+          tag: 5,
+          key: null,
+          elementType: 'div',
+          type: 'div',
+          stateNode: [HTMLDivElement],
+          return: [Circular *2],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 0,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: null,
+          dependencies: null,
+          mode: 0,
+          flags: 0,
+          nextEffect: null,
+          firstEffect: null,
+          lastEffect: null,
+          lanes: 0,
+          childLanes: 0,
+          alternate: null,
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 123931,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: null
+        },
+        sibling: null,
+        index: 0,
+        ref: null,
+        pendingProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        memoizedProps: {
+          className: 'playerWidget',
+          'data-testid': 'otherGuest User0',
+          children: [Array]
+        },
+        updateQueue: null,
+        memoizedState: null,
+        dependencies: null,
+        mode: 0,
+        flags: 0,
+        nextEffect: null,
+        firstEffect: null,
+        lastEffect: null,
+        lanes: 0,
+        childLanes: 0,
+        alternate: null,
+        actualDuration: 0,
+        actualStartTime: -1,
+        selfBaseDuration: 0,
+        treeBaseDuration: 0,
+        _debugID: 123929,
+        _debugSource: {
+          fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
+          lineNumber: 308,
+          columnNumber: 25
+        },
+        _debugOwner: FiberNode {
+          tag: 0,
+          key: null,
+          elementType: [Function: Test],
+          type: [Function: Test],
+          stateNode: null,
+          return: [FiberNode],
+          child: [FiberNode],
+          sibling: [FiberNode],
+          index: 1,
+          ref: null,
+          pendingProps: [Object],
+          memoizedProps: [Object],
+          updateQueue: null,
+          memoizedState: [Object],
+          dependencies: null,
+          mode: 0,
+          flags: 1,
+          nextEffect: null,
+          firstEffect: [FiberNode],
+          lastEffect: [FiberNode],
+          lanes: 0,
+          childLanes: 0,
+          alternate: [FiberNode],
+          actualDuration: 0,
+          actualStartTime: -1,
+          selfBaseDuration: 0,
+          treeBaseDuration: 0,
+          _debugID: 121208,
+          _debugSource: [Object],
+          _debugOwner: [FiberNode],
+          _debugNeedsRemount: false,
+          _debugHookTypes: [Array]
+        },
+        _debugNeedsRemount: false,
+        _debugHookTypes: null
+      },
+      '__reactProps$99rf8uhpg8p': {
+        className: 'playerWidget',
+        'data-testid': 'otherGuest User0',
+        children: [ [Object], [Object], [Object] ]
+      }
+    }
+
+      at Object.<anonymous> (src/Components.test.tsx:664:17)
+
+  console.log
+    9
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 9
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    91
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 91
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+  console.log
+    1
+
+      at updateNumber (src/components/UserRating.tsx:27:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/UserRating.tsx:28:21)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 1
+      }
+    ]
+
+      at updateNumber (src/components/UserRating.tsx:34:21)
+
+  console.log
+    0
+
+      at map (src/components/Test.tsx:324:42)
+          at Array.map (<anonymous>)
+
+PASS src/Components.test.tsx (7.372 s)
   Role Tests
-    ✓ Tests that there is a combobox (231 ms)
-    ✓ Tests that the first role value is League Manager (89 ms)
-    ✓ Tests that the changed value is Team Manager (131 ms)
-    ✓ Tests that the changed value is Guest User (100 ms)
-    ✓ Test adding user (166 ms)
+    ✓ Tests that there is a combobox (248 ms)
+    ✓ Tests that the first role value is League Manager (77 ms)
+    ✓ Tests that the changed value is Team Manager (143 ms)
+    ✓ Tests that the changed value is Guest User (93 ms)
+    ✓ Test adding user (154 ms)
   Drag Tests
-    ✓ Testing for original 30 player list (57 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (52 ms)
-    ✕ Testing that draggable list appears when not league manager (125 ms)
-    ✓ Testing that first player is draggable (52 ms)
-    ✓ Testing that first player can be dragged to other list (38 ms)
+    ✓ Testing for original 30 player list (46 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (49 ms)
+    ✓ Testing that draggable list appears when not league manager (163 ms)
+    ✓ Testing that first player is draggable (36 ms)
+    ✓ Testing that first player can be dragged to other list (27 ms)
   Testing Adding players
-    ✓ Testing for original 30 player list, and that league manager can add players (44 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (265 ms)
-    ✓ Testing for adding 1 player, see if list increased in size (236 ms)
-    ✓ Test adding player doesn't appear when not league manager (72 ms)
-    ✓ Test adding player doesn't appear when not league manager (70 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (43 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (202 ms)
+    ✓ Testing for adding 1 player, see if list increased in size (195 ms)
+    ✓ Test adding player doesn't appear when not league manager (65 ms)
+    ✓ Test adding player doesn't appear when not league manager (71 ms)
   Testing Filter
-    ✓ Testing for original 30 player list (42 ms)
-    ✓ Testing no filter (28 ms)
-    ✓ Testing for filtered by QB (47 ms)
-    ✓ Testing for filtered by RB (38 ms)
-    ✓ Testing for filtered by WR (44 ms)
-    ✓ Testing for filtered by TE (39 ms)
-    ✓ Testing for filtered by K (40 ms)
+    ✓ Testing for original 30 player list (33 ms)
+    ✓ Testing no filter (25 ms)
+    ✓ Testing for filtered by QB (33 ms)
+    ✓ Testing for filtered by RB (36 ms)
+    ✓ Testing for filtered by WR (31 ms)
+    ✓ Testing for filtered by TE (35 ms)
+    ✓ Testing for filtered by K (29 ms)
   Testing Sort
-    ✓ Testing for original 30 player list, and that league manager can add players (31 ms)
-    ✓ Testing for sorted by position (130 ms)
-    ✓ Test sorted by Rating (74 ms)
-    ✓ Test sorted by Touchdowns (98 ms)
-    ✓ Test sorted by None (132 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (113 ms)
+    ✓ Testing for sorted by position (100 ms)
+    ✓ Test sorted by Rating (61 ms)
+    ✓ Test sorted by Touchdowns (88 ms)
+    ✓ Test sorted by None (120 ms)
     Testing adding players with filter
-      ✓ Testing for original 30 player list (25 ms)
-      ✓ Testing for adding 1 player, filter is none (221 ms)
-      ✓ Testing for adding 1 player, filter is K, player is a K (221 ms)
-      ✓ Testing for adding 1 player, filter is QB, player is a K (219 ms)
-  Testing adding players with filter
-    ✓ Testing for original 30 player list (29 ms)
-    ✓ Testing for adding player, sort is none (250 ms)
-    ✓ Testing for adding player, sort is Position (286 ms)
-    ✓ Testing for adding player, sort is Rating (272 ms)
-    ✓ Testing for adding player, sort is Touchdowns (267 ms)
-  User rating
-    ✓ Testing adding player to user list with initial overall rating
+      ✓ Testing for original 30 player list (34 ms)
+      ✓ Testing for adding 1 player, filter is none (180 ms)
+      ✓ Testing for adding 1 player, filter is K, player is a K (188 ms)
+      ✓ Testing for adding 1 player, filter is QB, player is a K (182 ms)
+  Testing adding players with sort
+    ✓ Testing for original 30 player list (25 ms)
+    ✓ Testing for adding player, sort is none (220 ms)
+    ✓ Testing for adding player, sort is Position (226 ms)
+    ✓ Testing for adding player, sort is Rating (228 ms)
+    ✓ Testing for adding player, sort is Touchdowns (211 ms)
+  Adding Players Using Button
+    ✓ Testing adding player to user list as guest user (76 ms)
+    ✓ Testing adding duplicates Guest User (100 ms)
+    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (79 ms)
+  Testing User Rating
+    ✓ Testing original rating before change (84 ms)
+    ✓ Testing Changing value from 99 to 90 (139 ms)
+    ✓ Testing Changing value to 50 (194 ms)
+    ✓ Testing Changing value to 0 (153 ms)
+    ✓ Testing Changing value to 101, not possible will stay at 100 (181 ms)
+    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (151 ms)
 
-  ● Drag Tests › Testing that draggable list appears when not league manager
-
-    TestingLibraryElementError: Unable to find an element with the text: /Manage Your Team/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
-
-    Ignored nodes: comments, script, style
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<h1[39m
-            [33mclass[39m=[32m"heading"[39m
-          [36m>[39m
-            [0mNFL Football TeamBuilder[0m
-            [36m<div[39m
-              [33mclass[39m=[32m"roleSelect"[39m
-            [36m>[39m
-              [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                  [33mfor[39m=[32m"Roles"[39m
-                  [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
-                [36m>[39m
-                  [0mWhich role[0m
-                [36m</label>[39m
-                [36m<select[39m
-                  [33mclass[39m=[32m"form-select"[39m
-                  [33mid[39m=[32m"Roles"[39m
-                [36m>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"League Manager"[39m
-                  [36m>[39m
-                    [0mLeague Manager[0m
-                  [36m</option>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"Team Manager"[39m
-                  [36m>[39m
-                    [0mTeam Manager[0m
-                  [36m</option>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"Guest User"[39m
-                  [36m>[39m
-                    [0mGuest User[0m
-                  [36m</option>[39m
-                [36m</select>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<span />[39m
-          [36m</h1>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"Test"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"positionFilter"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mchecked[39m=[32m""[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mdata-testid[39m=[32m"filterNone"[39m
-                  [33mname[39m=[32m"positions"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"None"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mNone[0m
-                [36m</label>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mdata-testid[39m=[32m"filterQB"[39m
-                  [33mname[39m=[32m"positions"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"QB"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mQB[0m
-                [36m</label>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mdata-testid[39m=[32m"filterRB"[39m
-                  [33mname[39m=[32m"positions"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"RB"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mRB[0m
-                [36m</label>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mdata-testid[39m=[32m"filterWR"[39m
-                  [33mname[39m=[32m"positions"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"WR"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mWR[0m
-                [36m</label>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mdata-testid[39m=[32m"filterTE"[39m
-                  [33mname[39m=[32m"positions"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"TE"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mTE[0m
-                [36m</label>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"form-check-input"[39m
-                  [33mdata-testid[39m=[32m"filterK"[39m
-                  [33mname[39m=[32m"positions"[39m
-                  [33mtype[39m=[32m"radio"[39m
-                  [33mvalue[39m=[32m"K"[39m
-                [36m/>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-check-label"[39m
-                  [33mtitle[39m=[32m""[39m
-                [36m>[39m
-                  [0mK[0m
-                [36m</label>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"sortSelect"[39m
-            [36m>[39m
-              [36m<div>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"form-label"[39m
-                  [33mfor[39m=[32m"Sort"[39m
-                [36m>[39m
-                  [0mSort Select[0m
-                [36m</label>[39m
-                [36m<select[39m
-                  [33mclass[39m=[32m"sortSelectHeading form-select"[39m
-                  [33mid[39m=[32m"Sort"[39m
-                [36m>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"None"[39m
-                  [36m>[39m
-                    [0mNone[0m
-                  [36m</option>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"Position"[39m
-                  [36m>[39m
-                    [0mPosition[0m
-                  [36m</option>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"Rating"[39m
-                  [36m>[39m
-                    [0mRating[0m
-                  [36m</option>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"Touchdowns"[39m
-                  [36m>[39m
-                    [0mTouchdowns[0m
-                  [36m</option>[39m
-                [36m</select>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<div[39m
-         ...
-
-      63 |         userEvent.selectOptions(selectRole, "Team Manager");
-      64 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
-    > 65 |         expect(screen.getByText(/Manage Your Team/)).toBeInTheDocument;
-         |                       ^
-      66 |         userEvent.selectOptions(selectRole, "Guest User");
-      67 |         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
-      68 |         expect(screen.getByText(/Your Team/)).toBeInTheDocument;
-
-      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
-      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
-      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
-      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/Components.test.tsx:65:23)
-      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
-      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
-      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
-      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
-
----------------------|---------|----------|---------|---------|-------------------
-File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------------|---------|----------|---------|---------|-------------------
-All files            |   64.15 |    58.33 |   52.94 |   63.69 |                   
- src                 |     100 |      100 |     100 |     100 |                   
-  App.tsx            |     100 |      100 |     100 |     100 |                   
-  UserText.tsx       |     100 |      100 |     100 |     100 |                   
-  players.tsx        |     100 |      100 |     100 |     100 |                   
- src/components      |   51.69 |    58.33 |      50 |   50.86 |                   
-  AddPlayers.tsx     |     100 |      100 |     100 |     100 |                   
-  PositionFilter.tsx |   88.88 |       50 |     100 |   88.88 | 31                
-  RenderPlayer.tsx   |       0 |      100 |       0 |       0 | 12-20             
-  Test.tsx           |   15.38 |     62.5 |   15.78 |   15.38 | 62-130,168-275    
-  UserRating.tsx     |       0 |        0 |       0 |       0 | 14-39             
-  roleSelect.tsx     |   43.75 |       40 |   66.66 |   43.75 | 36-46             
-  sortSelect.tsx     |     100 |    92.85 |     100 |     100 | 41                
- src/interfaces      |       0 |        0 |       0 |       0 |                   
-  player.tsx         |       0 |        0 |       0 |       0 |                   
----------------------|---------|----------|---------|---------|-------------------
-Test Suites: 1 failed, 1 total
-Tests:       1 failed, 36 passed, 37 total
+---------------------|---------|----------|---------|---------|----------------------------
+File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
+---------------------|---------|----------|---------|---------|----------------------------
+All files            |   74.28 |       75 |   65.45 |   73.98 |                            
+ src                 |     100 |      100 |     100 |     100 |                            
+  App.tsx            |     100 |      100 |     100 |     100 |                            
+  UserText.tsx       |     100 |      100 |     100 |     100 |                            
+  players.tsx        |     100 |      100 |     100 |     100 |                            
+ src/components      |   66.41 |       75 |   63.46 |    65.9 |                            
+  AddPlayers.tsx     |     100 |      100 |     100 |     100 |                            
+  PositionFilter.tsx |   88.88 |       50 |     100 |   88.88 | 31                         
+  RenderPlayer.tsx   |       0 |      100 |       0 |       0 | 12-20                      
+  Test.tsx           |   34.69 |    68.18 |   39.13 |   34.69 | 62-102,120-148,210,287,332 
+  UserRating.tsx     |     100 |      100 |     100 |     100 |                            
+  roleSelect.tsx     |   59.09 |     62.5 |   66.66 |   59.09 | 53-63                      
+  sortSelect.tsx     |     100 |    92.85 |     100 |     100 | 41                         
+ src/interfaces      |       0 |        0 |       0 |       0 |                            
+  player.tsx         |       0 |        0 |       0 |       0 |                            
+---------------------|---------|----------|---------|---------|----------------------------
+Test Suites: 1 passed, 1 total
+Tests:       45 passed, 45 total
 Snapshots:   0 total
-Time:        7.855 s
+Time:        8.007 s
 Ran all test suites.
