@@ -109,7 +109,7 @@ export function AddPlayers({
                 </Button>
             </div>
             <div className="newPlayerPreview">
-                Put Preview of New Player Here? {">>>>>>>>>>>>>>>>>>>>"}
+                {/*}Put Preview of New Player Here? {">>>>>>>>>>>>>>>>>>>>"} {*/}
             </div>
         </>
     );

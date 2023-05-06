@@ -34,19 +34,25 @@ export function PositionFilter({
 
     return (
         <div className="positionFilter">
-            {filterPosition.map((choice: string) => (
-                <Form.Check
-                    inline
-                    type="radio"
-                    name="positions"
-                    onChange={updateFilter}
-                    key={choice}
-                    label={choice}
-                    value={choice}
-                    checked={choice === filter}
-                    data-testid={"filter" + choice}
-                />
-            ))}
+            <Form.Group>
+                <Form.Label style={{ color: "black" }}>
+                    Filter Buttons
+                </Form.Label>
+                <br></br>
+                {filterPosition.map((choice: string) => (
+                    <Form.Check
+                        inline
+                        type="radio"
+                        name="positions"
+                        onChange={updateFilter}
+                        key={choice}
+                        label={choice}
+                        value={choice}
+                        checked={choice === filter}
+                        data-testid={"filter" + choice}
+                    />
+                ))}
+            </Form.Group>
         </div>
     );
 }
