@@ -99,9 +99,27 @@ function Test({
         }
 
         console.log(oldPlayer);
-        console.log(adminWidgets);
+        console.log([...adminWidgets, oldPlayer]);
     }
 
+    function addToTeam(newPlayer: Player) {
+        // modified because now widgets are players, so when you delete one player it doesnt
+        // delete other players with the same name
+        const newList = [...widgets, newPlayer];
+        console.log(newList);
+        setWidgets(newList);
+    }
+    function addToAdminTeam(newPlayer: Player) {
+        // modified because now widgets are players, so when you delete one player it doesnt
+        // delete other players with the same name
+        if (!adminWidgets.includes(newPlayer)) {
+            const newList = [...adminWidgets, newPlayer];
+            console.log(newList);
+            setAdminWidgets(newList);
+        } else {
+            console.log("player already in list");
+        }
+    }
     function handleOnButtonClick(removedPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
@@ -159,6 +177,30 @@ function Test({
             <div className="central">
                 <h4 className="playersTitle">Players</h4>
                 <br></br>
+                <div style={{ background: "red" }}>
+                    <Button
+                        className="btn btn-primary shadow-none"
+                        style={{
+                            height: 30,
+                            width: 200,
+                            fontSize: 15,
+                            color: "black",
+                            background: "white"
+                        }}
+                        data-testid="stats"
+                        onClick={flipVisibility}
+                    >
+                        Open Stats For All Players
+                    </Button>
+                    <br></br>
+                    <span
+                        data-testid="playerCount"
+                        style={{ color: "white", fontSize: "20" }}
+                    >
+                        Current player count in the central list is:{" "}
+                        {filteredList.length}
+                    </span>
+                </div>
                 {filteredList.map((curr, index) => (
                     <div
                         key={curr.name}
@@ -170,6 +212,26 @@ function Test({
                         <div className="playerNameAndPosition">
                             {curr.name} | {curr.position} <br />
                             Overall: {curr.rating}
+                            <br />
+                            {role !== "League Manager" ? (
+                                role === "Team Manager" ? (
+                                    <Button
+                                        data-testid={"adminButton" + index}
+                                        onClick={() => addToAdminTeam(curr)}
+                                    >
+                                        Add Player to Your Team
+                                    </Button>
+                                ) : (
+                                    <Button
+                                        data-testid={"userButton" + index}
+                                        onClick={() => addToTeam(curr)}
+                                    >
+                                        Add Player to Your Team
+                                    </Button>
+                                )
+                            ) : (
+                                ""
+                            )}
                         </div>
                         <img
                             className="playerImage"
@@ -195,29 +257,19 @@ function Test({
                     </div>
                 ))}
             </div>
-            <Button data-testid="stats" onClick={flipVisibility}>
-                STATS
-            </Button>
-            <span
-                data-testid="playerCount"
-                style={{ color: "white", fontSize: "20" }}
-            >
-                Current player count in the central list is:{" "}
-                {filteredList.length}
-            </span>
             {role === "Team Manager" ? (
                 <div
                     className="userEdited"
                     onDrop={handleOnDropAdmin}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">Your Team</h4>
+                    <h4 className="playersTitle">Manage Your Team</h4>
                     <br></br>
                     {adminWidgets.map((curr, index) => (
                         <div
-                            className="player"
-                            key={"other" + index}
-                            data-testid={"other" + index}
+                            className="playerWidget"
+                            key={"otherAdmin" + index}
+                            data-testid={"otherAdmin" + index}
                         >
                             <div className="playerNameAndPosition">
                                 {curr.name} | {curr.position} <br />{" "}
@@ -228,12 +280,16 @@ function Test({
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
-                            {setMyMap(myMap.set(role, [...widgets]))}
-                            <Button
-                                onClick={() => handleOnAdminButtonClick(curr)}
-                            >
-                                Delete Player
-                            </Button>
+                            {/*}{setMyMap(myMap.set(role, [...adminWidgets]))}{*/}
+                            <div className="userChangeRatings">
+                                <Button
+                                    onClick={() =>
+                                        handleOnAdminButtonClick(curr)
+                                    }
+                                >
+                                    Delete Player
+                                </Button>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -246,13 +302,13 @@ function Test({
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">Your Team</h4>
+                    <h4 className="playersTitle">Build Your Team</h4>
                     <br></br>
                     {widgets.map((curr, index) => (
                         <div
-                            className="player"
-                            key={"other" + index}
-                            data-testid={"other" + index}
+                            className="playerWidget"
+                            key={"other" + role + index}
+                            data-testid={"other" + role + index}
                         >
                             <div className="playerNameAndPosition">
                                 {curr.name} | {curr.position} <br />{" "}
@@ -263,6 +319,7 @@ function Test({
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
+                            {/*}{setMyMap(myMap.set(role, [...widgets]))}{*/}
                             <div className="userChangeRatings">
                                 {console.log(widgets.indexOf(curr))}
                                 <UserRating
@@ -270,7 +327,7 @@ function Test({
                                     widgets={widgets}
                                     setWidgets={setWidgets}
                                 ></UserRating>
-                                {setMyMap(myMap.set(role, [...widgets]))}
+
                                 <Button
                                     onClick={() => handleOnButtonClick(curr)}
                                 >
@@ -307,7 +364,17 @@ function Test({
                     ))}
                 </div>
             ) : role === "League Manager" ? (
-                <div className="addPlayer">
+                <div className="addingPlayers">
+                    <h6
+                        style={{
+                            marginLeft: 100,
+                            fontSize: 30,
+                            color: "white",
+                            fontFamily: "Impact"
+                        }}
+                    >
+                        Add Players Here
+                    </h6>
                     <AddPlayers
                         centralList={centralList}
                         setCentralList={setCentralList}

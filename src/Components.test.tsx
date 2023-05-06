@@ -55,7 +55,8 @@ describe("Drag Tests", () => {
     });
     test("Testing that draggable list doesn't exist when league manager", () => {
         render(<App />);
-        expect(screen.queryByText(/Your Team/)).not.toBeInTheDocument;
+        expect(screen.queryByText(/Build Your Team/)).toBeNull();
+        expect(screen.queryByText(/Manage Your Team/)).toBeNull();
     });
     test("Testing that draggable list appears when not league manager", () => {
         render(<App />);
@@ -65,7 +66,7 @@ describe("Drag Tests", () => {
         expect(screen.getByText(/Manage Your Team/)).toBeInTheDocument;
         userEvent.selectOptions(selectRole, "Guest User");
         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
-        expect(screen.getByText(/Your Team/)).toBeInTheDocument;
+        expect(screen.getByText(/Build Your Team/)).toBeInTheDocument;
     });
     test("Testing that first player is draggable", () => {
         render(<App />);
@@ -125,16 +126,14 @@ describe("Testing Adding players", () => {
         const selectRole = screen.getByLabelText("Which role", {});
         userEvent.selectOptions(selectRole, "Team Manager");
         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
-        expect(screen.queryByText(/Add This New Player:/)).not
-            .toBeInTheDocument;
+        expect(screen.queryByText(/Add This New Player:/)).toBeNull();
     });
     test("Test adding player doesn't appear when not league manager", () => {
         render(<App />);
         const selectRole = screen.getByLabelText("Which role", {});
         userEvent.selectOptions(selectRole, "Guest User");
         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
-        expect(screen.queryByText(/Add This New Player:/)).not
-            .toBeInTheDocument;
+        expect(screen.queryByText(/Add This New Player:/)).toBeNull();
     });
 });
 
@@ -333,8 +332,8 @@ describe("Testing Sort", () => {
             expect(kButton).toBeChecked;
             expect(screen.getByText(/player count in the central list is: 5/));
             //Check if  4 Ks in the list +1 player added whos a K
-            //Add 2 because there is a K radio button, and a K option.
-            expect(screen.queryAllByText(/K/i)).toHaveLength(5 + 2);
+            //Add 2 for K radio button, K option
+            expect(screen.queryAllByText(/K/)).toHaveLength(7);
         });
         test("Testing for adding 1 player, filter is QB, player is a K", () => {
             render(<App />);
@@ -366,7 +365,7 @@ describe("Testing Sort", () => {
 });
 
 //Tests sorting a list with a super added player
-describe("Testing adding players with filter", () => {
+describe("Testing adding players with sort", () => {
     test("Testing for original 30 player list", () => {
         render(<App />);
         expect(screen.getByText(/player count in the central list is: 30/));
@@ -467,15 +466,208 @@ describe("Testing adding players with filter", () => {
         expect(addedLast).toHaveTextContent("K"); // since he's a kicker
     });
 });
-describe("User rating", () => {
-    test("Testing adding player to user list with initial overall rating", () => {
-        //render();
-        /*
-            <UserRating
-                player={playerList[0]}
-                widgets={[]}
-                setWidgets={}
-            ></UserRating>
-            */
+
+describe("Adding Players Using Button", () => {
+    test("Testing adding player to user list as guest user", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("otherTeam Manager" + 0)).toBeNull();
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument;
+    });
+    test("Testing adding duplicates Guest User", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument;
+        addFirstPlayerButton.click();
+        //Player is added to the list again, now in the first index too
+        expect(screen.getByTestId("otherGuest User" + 1)).toBeInTheDocument;
+    });
+    test("Testing adding duplicates as Team Manger / Admin, shouldn't work", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("otherAdmin" + 0)).toBeNull();
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Team Manager");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+
+        const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("otherAdmin" + 0)).toBeInTheDocument;
+        //addFirstPlayerButton.click();
+        //Player is added to the list again, now in the first index too
+        expect(screen.queryByTestId("otherAdmin" + 1)).toBeNull();
+    });
+});
+describe("Testing User Rating", () => {
+    test("Testing original rating before change", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("otherTeam Manager" + 0)).toBeNull();
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument;
+        const player1 = screen.getByTestId("otherGuest User" + 0);
+        console.log(screen.getByTestId("otherGuest User" + 0));
+
+        const ratingBox = screen.getByLabelText(/Rating Box/);
+        //The first player in the list has an initial rating of 99
+        expect(ratingBox).toHaveValue(99);
+        //This is his actual rating as a player in the list, which the rating box changes
+        expect(player1).toHaveTextContent("Overall: 99");
+    });
+    test("Testing Changing value from 99 to 90", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("otherTeam Manager" + 0)).toBeNull();
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument;
+        const player1 = screen.getByTestId("otherGuest User" + 0);
+        console.log(screen.getByTestId("otherGuest User" + 0));
+
+        const ratingBox = screen.getByLabelText(/Rating Box/);
+        userEvent.type(ratingBox, "{backspace}0");
+        expect(ratingBox).toHaveValue(90);
+        //This is his actual rating as a player in the list(The player list we fed it originally,
+        //not what is displayed), which the rating box changes
+        expect(player1).toHaveTextContent("Overall: 90");
+    });
+    test("Testing Changing value to 50", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("otherTeam Manager" + 0)).toBeNull();
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument;
+        const player1 = screen.getByTestId("otherGuest User" + 0);
+        console.log(screen.getByTestId("otherGuest User" + 0));
+
+        const ratingBox = screen.getByLabelText(/Rating Box/);
+        userEvent.type(
+            ratingBox,
+            "{backspace}5{arrowleft}{backspace}{arrowright}0"
+        );
+        expect(ratingBox).toHaveValue(50);
+        //This is his actual rating as a player in the list(The player list we fed it originally,
+        //not what is displayed), which the rating box changes
+        expect(player1).toHaveTextContent("Overall: 50");
+    });
+    test("Testing Changing value to 0", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("otherTeam Manager" + 0)).toBeNull();
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument;
+        const player1 = screen.getByTestId("otherGuest User" + 0);
+        console.log(screen.getByTestId("otherGuest User" + 0));
+
+        const ratingBox = screen.getByLabelText(/Rating Box/);
+        userEvent.type(ratingBox, "{backspace}0{arrowleft}{backspace}");
+        expect(ratingBox).toHaveValue(0);
+        //This is his actual rating as a player in the list(The player list we fed it originally,
+        //not what is displayed), which the rating box changes
+        expect(player1).toHaveTextContent("Overall: 0");
+    });
+    test("Testing Changing value to 101, not possible will stay at 100", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("otherTeam Manager" + 0)).toBeNull();
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument;
+        const player1 = screen.getByTestId("otherGuest User" + 0);
+        console.log(screen.getByTestId("otherGuest User" + 0));
+
+        const ratingBox = screen.getByLabelText(/Rating Box/);
+        userEvent.type(
+            ratingBox,
+            "{backspace}1{arrowleft}{backspace}{arrowright}001"
+        );
+        expect(ratingBox).toHaveValue(100);
+        //This is his actual rating as a player in the list(The player list we fed it originally,
+        //not what is displayed), which the rating box changes
+        expect(player1).toHaveTextContent("Overall: 100");
+    });
+    test("Testing Changing value to -1, not possible since - is not a number, stays at 1", () => {
+        render(<App />);
+        expect(screen.getByTestId(0)).toBeInTheDocument;
+        expect(screen.queryByTestId("otherTeam Manager" + 0)).toBeNull();
+
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Guest User");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+
+        const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
+
+        addFirstPlayerButton.click();
+        //Now Added player is in the other list, index 0 in the draggable list
+        expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument;
+        const player1 = screen.getByTestId("otherGuest User" + 0);
+        console.log(screen.getByTestId("otherGuest User" + 0));
+
+        const ratingBox = screen.getByLabelText(/Rating Box/);
+        userEvent.type(ratingBox, "{backspace}1{arrowleft}{backspace}-");
+        expect(ratingBox).toHaveValue(1);
+        //This is his actual rating as a player in the list(The player list we fed it originally,
+        //not what is displayed), which the rating box changes
+        expect(player1).toHaveTextContent("Overall: 1");
     });
 });

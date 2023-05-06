@@ -29,13 +29,19 @@ function App(): JSX.Element {
         <div>
             <h1 className="heading">
                 {"NFL Football TeamBuilder"}
+                <br></br>
+                {"Drag or Click Player Icons to Put Them on Your Team"}
                 <RoleSelect
                     setRole={setRole}
                     role={role}
+                    widgets={widgets}
                     setWidgets={setWidgets}
+                    adminWidgets={adminWidgets}
+                    setAdminWidgets={setAdminWidgets}
                     totalRoles={totalRoles}
                     setTotalRoles={setTotalRoles}
                     myMap={myMap}
+                    setMyMap={setMyMap}
                 ></RoleSelect>
             </h1>
             <Test
