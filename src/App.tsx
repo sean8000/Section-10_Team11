@@ -29,6 +29,8 @@ function App(): JSX.Element {
         <div>
             <h1 className="heading">
                 {"NFL Football TeamBuilder"}
+                <br></br>
+                {"Drag or Click Player Icons to Put Them on Your Team"}
                 <RoleSelect
                     setRole={setRole}
                     role={role}

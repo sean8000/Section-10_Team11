@@ -30,13 +30,24 @@
 .player:nth-child(odd) {
     background-color: black;
     color: white;
-    height: 250px;
+    height: 296px;
 }
 
 .player:nth-child(even) {
     background-color: gray;
     color: white;
-    height: 250px;
+    height: 296px;
+}
+.playerWidget:nth-child(odd) {
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+
+.playerWidget:nth-child(even) {
+    background-color: gray;
+    color: white;
+    height: 200px;
 }
 
 .playerNameAndPosition {
@@ -56,7 +67,6 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
-
 .heading {
     background: rgb(29, 26, 26);
     color: white;
@@ -174,4 +184,5 @@
 
 .userChangeRatings {
     float: left;
+    padding-left: 30px;
 }

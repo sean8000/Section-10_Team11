@@ -102,6 +102,24 @@ function Test({
         console.log(adminWidgets);
     }
 
+    function addToTeam(newPlayer: Player) {
+        // modified because now widgets are players, so when you delete one player it doesnt
+        // delete other players with the same name
+        const newList = [...widgets, newPlayer];
+        console.log(newList);
+        setWidgets(newList);
+    }
+    function addToAdminTeam(newPlayer: Player) {
+        // modified because now widgets are players, so when you delete one player it doesnt
+        // delete other players with the same name
+        if (!adminWidgets.includes(newPlayer)) {
+            const newList = [...adminWidgets, newPlayer];
+            console.log(newList);
+            setAdminWidgets(newList);
+        } else {
+            console.log("player already in list");
+        }
+    }
     function handleOnButtonClick(removedPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
@@ -159,6 +177,30 @@ function Test({
             <div className="central">
                 <h4 className="playersTitle">Players</h4>
                 <br></br>
+                <div style={{ background: "red" }}>
+                    <Button
+                        className="btn btn-primary shadow-none"
+                        style={{
+                            height: 30,
+                            width: 200,
+                            fontSize: 15,
+                            color: "black",
+                            background: "white"
+                        }}
+                        data-testid="stats"
+                        onClick={flipVisibility}
+                    >
+                        Open Stats For All Players
+                    </Button>
+                    <br></br>
+                    <span
+                        data-testid="playerCount"
+                        style={{ color: "white", fontSize: "20" }}
+                    >
+                        Current player count in the central list is:{" "}
+                        {filteredList.length}
+                    </span>
+                </div>
                 {filteredList.map((curr, index) => (
                     <div
                         key={curr.name}
@@ -170,6 +212,22 @@ function Test({
                         <div className="playerNameAndPosition">
                             {curr.name} | {curr.position} <br />
                             Overall: {curr.rating}
+                            <br />
+                            {role !== "League Manager" ? (
+                                role === "Team Manager" ? (
+                                    <Button
+                                        onClick={() => addToAdminTeam(curr)}
+                                    >
+                                        Add Player to Your Team
+                                    </Button>
+                                ) : (
+                                    <Button onClick={() => addToTeam(curr)}>
+                                        Add Player to Your Team
+                                    </Button>
+                                )
+                            ) : (
+                                ""
+                            )}
                         </div>
                         <img
                             className="playerImage"
@@ -195,16 +253,6 @@ function Test({
                     </div>
                 ))}
             </div>
-            <Button data-testid="stats" onClick={flipVisibility}>
-                STATS
-            </Button>
-            <span
-                data-testid="playerCount"
-                style={{ color: "white", fontSize: "20" }}
-            >
-                Current player count in the central list is:{" "}
-                {filteredList.length}
-            </span>
             {role === "Team Manager" ? (
                 <div
                     className="userEdited"
@@ -215,7 +263,7 @@ function Test({
                     <br></br>
                     {adminWidgets.map((curr, index) => (
                         <div
-                            className="player"
+                            className="playerWidget"
                             key={"other" + index}
                             data-testid={"other" + index}
                         >
@@ -228,12 +276,16 @@ function Test({
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
-                            {setMyMap(myMap.set(role, [...widgets]))}
-                            <Button
-                                onClick={() => handleOnAdminButtonClick(curr)}
-                            >
-                                Delete Player
-                            </Button>
+                            {setMyMap(myMap.set(role, [...adminWidgets]))}
+                            <div className="userChangeRatings">
+                                <Button
+                                    onClick={() =>
+                                        handleOnAdminButtonClick(curr)
+                                    }
+                                >
+                                    Delete Player
+                                </Button>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -250,7 +302,7 @@ function Test({
                     <br></br>
                     {widgets.map((curr, index) => (
                         <div
-                            className="player"
+                            className="playerWidget"
                             key={"other" + index}
                             data-testid={"other" + index}
                         >
