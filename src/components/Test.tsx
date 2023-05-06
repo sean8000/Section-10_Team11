@@ -108,7 +108,6 @@ function Test({
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
-        console.log(removedPlayer);
         console.log("Player deleted");
         console.log(newList);
         setWidgets(newList);
@@ -222,7 +221,9 @@ function Test({
                                 src={curr.image}
                                 alt="Image"
                             />
-                            <Button onClick={() => handleOnButtonClick(curr)}>
+                            <Button
+                                onClick={() => handleOnAdminButtonClick(curr)}
+                            >
                                 Delete Player
                             </Button>
                             {setMyMap(myMap.set(role, [...widgets]))}
@@ -262,9 +263,7 @@ function Test({
                                 ></UserRating>
                                 {setMyMap(myMap.set(role, [...widgets]))}
                                 <Button
-                                    onClick={() =>
-                                        handleOnAdminButtonClick(curr)
-                                    }
+                                    onClick={() => handleOnButtonClick(curr)}
                                 >
                                     Delete Player
                                 </Button>
