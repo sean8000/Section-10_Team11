@@ -13,6 +13,19 @@
     color: white;
     margin-left: 50px;
 }
+.userEdited {
+    text-align: justify;
+    float: left;
+    width: 550px;
+    height: auto;
+    min-height: 100px;
+    outline: 1px solid black;
+    background-color: gray;
+    color: white;
+    margin-left: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 
 .player:nth-child(odd) {
     background-color: black;
@@ -146,8 +159,8 @@
 .playerImage {
     float: right;
     display: flex;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin-top: -48px;
 }
 
@@ -160,5 +173,5 @@
 }
 
 .userChangeRatings {
-    float: right;
+    float: left;
 }

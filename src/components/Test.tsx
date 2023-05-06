@@ -108,7 +108,6 @@ function Test({
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
-        console.log(removedPlayer);
         console.log("Player deleted");
         console.log(newList);
         setWidgets(newList);
@@ -170,6 +169,7 @@ function Test({
                     >
                         <div className="playerNameAndPosition">
                             {curr.name} | {curr.position} <br />
+                            Overall: {curr.rating}
                         </div>
                         <img
                             className="playerImage"
@@ -195,11 +195,9 @@ function Test({
                     </div>
                 ))}
             </div>
-            {/*}
             <Button data-testid="stats" onClick={flipVisibility}>
                 STATS
             </Button>
-                            
             <span
                 data-testid="playerCount"
                 style={{ color: "white", fontSize: "20" }}
@@ -207,27 +205,35 @@ function Test({
                 Current player count in the central list is:{" "}
                 {filteredList.length}
             </span>
-                            */}
             {role === "Team Manager" ? (
                 <div
-                    className="user"
+                    className="userEdited"
                     onDrop={handleOnDropAdmin}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">Admin List</h4>
+                    <h4 className="playersTitle">Your Team</h4>
+                    <br></br>
                     {adminWidgets.map((curr, index) => (
-                        <div className="player" key={index}>
-                            {curr.name} | {curr.position} <br /> Rating:{" "}
-                            {curr.rating}
-                            <img
-                                className="playerImage"
-                                src={curr.image}
-                                alt="Image"
-                            />
-                            <Button onClick={() => handleOnButtonClick(curr)}>
+                        <div
+                            className="player"
+                            key={"other" + index}
+                            data-testid={"other" + index}
+                        >
+                            <div className="playerNameAndPosition">
+                                {curr.name} | {curr.position} <br />{" "}
+                                <img
+                                    className="playerImage"
+                                    src={curr.image}
+                                    alt="Image"
+                                />
+                                <span>Overall: {curr.rating}</span>
+                            </div>
+                            {setMyMap(myMap.set(role, [...widgets]))}
+                            <Button
+                                onClick={() => handleOnAdminButtonClick(curr)}
+                            >
                                 Delete Player
                             </Button>
-                            {setMyMap(myMap.set(role, [...widgets]))}
                         </div>
                     ))}
                 </div>
@@ -236,7 +242,7 @@ function Test({
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
                 <div
-                    className="user"
+                    className="userEdited"
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
@@ -248,14 +254,16 @@ function Test({
                             key={"other" + index}
                             data-testid={"other" + index}
                         >
-                            {curr.name} | {curr.position} <br />{" "}
-                            <img
-                                className="playerImage"
-                                src={curr.image}
-                                alt="Image"
-                            />
+                            <div className="playerNameAndPosition">
+                                {curr.name} | {curr.position} <br />{" "}
+                                <img
+                                    className="playerImage"
+                                    src={curr.image}
+                                    alt="Image"
+                                />
+                                <span>Overall: {curr.rating}</span>
+                            </div>
                             <div className="userChangeRatings">
-                                <span>Rating: {curr.rating}</span>
                                 {console.log(widgets.indexOf(curr))}
                                 <UserRating
                                     player={curr}
@@ -264,9 +272,7 @@ function Test({
                                 ></UserRating>
                                 {setMyMap(myMap.set(role, [...widgets]))}
                                 <Button
-                                    onClick={() =>
-                                        handleOnAdminButtonClick(curr)
-                                    }
+                                    onClick={() => handleOnButtonClick(curr)}
                                 >
                                     Delete Player
                                 </Button>

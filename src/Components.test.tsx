@@ -192,8 +192,8 @@ describe("Testing Filter", () => {
         expect(teButton).toBeChecked;
         expect(screen.getByText(/player count in the central list is: 4/));
         //Check if  4 TEs in the list
-        //Add 4 because there is a TE radio button, a TE option, and TEAM is written twice in the App text.
-        expect(screen.queryAllByText(/TE/)).toHaveLength(4 + 4);
+        //Add 2 because there is a TE radio button, a TE option.
+        expect(screen.queryAllByText(/TE/)).toHaveLength(4 + 2);
     });
     test("Testing for filtered by K", () => {
         render(<App />);
