@@ -2,6 +2,7 @@
 import { Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { Player } from "../interfaces/player";
+import "../style.css";
 
 interface Rating {
     player: Player;

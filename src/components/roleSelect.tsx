@@ -1,6 +1,6 @@
-import "./Test.css";
+import "../style.css";
 import React, { useState } from "react";
-import { UserText } from "../UserText";
+import { UserText } from "./UserText";
 import { Form, Button } from "react-bootstrap";
 import { Player } from "../interfaces/player";
 
