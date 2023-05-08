@@ -3,7 +3,7 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import "./Test.css";
+import "../style.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
 import { PositionFilter } from "./PositionFilter";
