@@ -48,7 +48,7 @@ function App(): JSX.Element {
                     setMyMap={setMyMap}
                     setAdminEdit={setAdminEdit}
                 ></RoleSelect>
-                {role === "Team Manager" ? (
+                {role === "Team Manager" && adminEdit === false ? (
                     <div>
                         <Button
                             onClick={() => {
@@ -66,9 +66,34 @@ function App(): JSX.Element {
                             }}
                         >
                             {" "}
-                            Edit Your Admin List
+                            Edit your players
                         </Button>
                     </div>
+                ) : role === "Team Manager" && adminEdit === true ? (
+                    <Button
+                        onClick={() => {
+                            const newList = centralList.map((curr: Player) => {
+                                const foundElem = adminWidgets.find(
+                                    (other: Player): boolean =>
+                                        curr.name === other.name
+                                );
+                                if (foundElem !== undefined) {
+                                    console.log("This elem" + foundElem);
+                                    return foundElem;
+                                } else {
+                                    console.log("Elem not found");
+                                    return curr;
+                                }
+                            });
+                            console.log(newList);
+                            setCentralList([...newList]);
+                            setFilteredList([...newList]);
+                            setAdminEdit(false);
+                        }}
+                    >
+                        {" "}
+                        Save your list to central and backout
+                    </Button>
                 ) : (
                     ""
                 )}
@@ -88,7 +113,11 @@ function App(): JSX.Element {
                     setFilteredList={setFilteredList}
                 ></Test>
             ) : (
-                <AdminEdit role={role} adminWidgets={adminWidgets}></AdminEdit>
+                <AdminEdit
+                    role={role}
+                    adminWidgets={adminWidgets}
+                    setAdminWidgets={setAdminWidgets}
+                ></AdminEdit>
             )}
             {/*}
                         {role !== "League Manager" ? (
