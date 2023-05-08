@@ -186,3 +186,9 @@
     float: left;
     padding-left: 30px;
 }
+
+.roleSelectAndAddUser {
+    top: 0px;
+    position: absolute;
+    margin-left: 1100px;
+}
