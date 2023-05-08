@@ -394,21 +394,6 @@
       at updateSort (src/components/sortSelect.tsx:39:21)
 
   console.log
-    Touch
-
-      at updateSort (src/components/sortSelect.tsx:42:21)
-
-  console.log
-    Touch
-
-      at updateSort (src/components/sortSelect.tsx:42:21)
-
-  console.log
-    None
-
-      at updateSort (src/components/sortSelect.tsx:27:21)
-
-  console.log
     None
 
       at updateSort (src/components/sortSelect.tsx:27:21)
@@ -533,17 +518,17 @@
         rating: 90
       },
       {
-        name: 'Austin Ekeler',
-        description: 'Los Angeles Chargers',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/tl0nhc7kyf4aumbyzs5b',
+        name: 'Saquon Barkley',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/o8tlhps5u1tvnaaxlpjk',
         position: 'RB',
         stats: {
-          touchdowns: 18,
-          receptions: 107,
-          rushAttempts: 204,
-          totalYards: 1637
+          touchdowns: 10,
+          receptions: 57,
+          rushAttempts: 277,
+          totalYards: 1650
         },
-        rating: 94
+        rating: 99
       },
       {
         name: 'Derrick Henry',
@@ -555,6 +540,19 @@
           receptions: 33,
           rushAttempts: 349,
           totalYards: 1936
+        },
+        rating: 99
+      },
+      {
+        name: 'Josh Jacobs',
+        description: 'Las Vegas Raiders',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/sagoqkubeaz5yht01ow7',
+        position: 'RB',
+        stats: {
+          touchdowns: 12,
+          receptions: 53,
+          rushAttempts: 340,
+          totalYards: 2053
         },
         rating: 99
       },
@@ -585,43 +583,30 @@
         rating: 95
       },
       {
-        name: 'Josh Jacobs',
-        description: 'Las Vegas Raiders',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/sagoqkubeaz5yht01ow7',
+        name: 'Austin Ekeler',
+        description: 'Los Angeles Chargers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/tl0nhc7kyf4aumbyzs5b',
         position: 'RB',
         stats: {
-          touchdowns: 12,
-          receptions: 53,
-          rushAttempts: 340,
-          totalYards: 2053
+          touchdowns: 18,
+          receptions: 107,
+          rushAttempts: 204,
+          totalYards: 1637
         },
-        rating: 99
+        rating: 94
       },
       {
-        name: 'Saquon Barkley',
-        description: 'New York Giants',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/o8tlhps5u1tvnaaxlpjk',
+        name: 'Aaron Jones',
+        description: 'Green Bay Packers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/oo8yixhsahh4gznox7th',
         position: 'RB',
         stats: {
-          touchdowns: 10,
-          receptions: 57,
-          rushAttempts: 277,
-          totalYards: 1650
+          touchdowns: 7,
+          receptions: 59,
+          rushAttempts: 213,
+          totalYards: 1516
         },
-        rating: 99
-      },
-      {
-        name: 'Dalvin Cook',
-        description: 'Minnesota Vikings',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/gfwvqolvz9vegp1amhf3',
-        position: 'RB',
-        stats: {
-          touchdowns: 10,
-          receptions: 39,
-          rushAttempts: 264,
-          totalYards: 1468
-        },
-        rating: 86
+        rating: 89
       },
       {
         name: 'Joe Mixon',
@@ -637,17 +622,17 @@
         rating: 88
       },
       {
-        name: 'Aaron Jones',
-        description: 'Green Bay Packers',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/oo8yixhsahh4gznox7th',
+        name: 'Dalvin Cook',
+        description: 'Minnesota Vikings',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/gfwvqolvz9vegp1amhf3',
         position: 'RB',
         stats: {
-          touchdowns: 7,
-          receptions: 59,
-          rushAttempts: 213,
-          totalYards: 1516
+          touchdowns: 10,
+          receptions: 39,
+          rushAttempts: 264,
+          totalYards: 1468
         },
-        rating: 89
+        rating: 86
       },
       {
         name: 'Travis Kelce',
@@ -692,58 +677,6 @@
         rating: 90
       },
       {
-        name: 'Davante Adams',
-        description: 'Las Vegas Raiders',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/jmojceirzhgctrcfi4aw',
-        position: 'WR',
-        stats: {
-          touchdowns: 14,
-          receptions: 100,
-          rushAttempts: 0,
-          totalYards: 1516
-        },
-        rating: 98
-      },
-      {
-        name: 'Stefon Diggs',
-        description: 'Buffalo Bills',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hcvd2avk0kufoli80veb',
-        position: 'WR',
-        stats: {
-          touchdowns: 11,
-          receptions: 108,
-          rushAttempts: 0,
-          totalYards: 1429
-        },
-        rating: 95
-      },
-      {
-        name: "Ja'Marr Chase",
-        description: 'Cincinnati Bengals',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hwrzdfsng9bh4tba7uoe',
-        position: 'WR',
-        stats: {
-          touchdowns: 9,
-          receptions: 87,
-          rushAttempts: 0,
-          totalYards: 1046
-        },
-        rating: 92
-      },
-      {
-        name: 'Amari Cooper',
-        description: 'Cleveland Browns',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/zibbxjtein7gpu5zgcj4',
-        position: 'WR',
-        stats: {
-          touchdowns: 9,
-          receptions: 78,
-          rushAttempts: 0,
-          totalYards: 1160
-        },
-        rating: 88
-      },
-      {
         name: 'Justin Jefferson',
         description: 'Minnesota Vikings',
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/zdstmm4sloqnichybgja',
@@ -770,6 +703,32 @@
         rating: 98
       },
       {
+        name: 'Davante Adams',
+        description: 'Las Vegas Raiders',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/jmojceirzhgctrcfi4aw',
+        position: 'WR',
+        stats: {
+          touchdowns: 14,
+          receptions: 100,
+          rushAttempts: 0,
+          totalYards: 1516
+        },
+        rating: 98
+      },
+      {
+        name: 'Stefon Diggs',
+        description: 'Buffalo Bills',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hcvd2avk0kufoli80veb',
+        position: 'WR',
+        stats: {
+          touchdowns: 11,
+          receptions: 108,
+          rushAttempts: 0,
+          totalYards: 1429
+        },
+        rating: 95
+      },
+      {
         name: 'Mike Evans',
         description: 'Tampa Bay Buccaneers',
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/pyilrqdmfvv1zceem1cg',
@@ -779,6 +738,19 @@
           receptions: 77,
           rushAttempts: 0,
           totalYards: 1124
+        },
+        rating: 92
+      },
+      {
+        name: "Ja'Marr Chase",
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hwrzdfsng9bh4tba7uoe',
+        position: 'WR',
+        stats: {
+          touchdowns: 9,
+          receptions: 87,
+          rushAttempts: 0,
+          totalYards: 1046
         },
         rating: 92
       },
@@ -797,6 +769,19 @@
         position: 'WR',
         stats: { touchdowns: 2, receptions: 56, rushAttempts: 0, totalYards: 632 },
         rating: 89
+      },
+      {
+        name: 'Amari Cooper',
+        description: 'Cleveland Browns',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/zibbxjtein7gpu5zgcj4',
+        position: 'WR',
+        stats: {
+          touchdowns: 9,
+          receptions: 78,
+          rushAttempts: 0,
+          totalYards: 1160
+        },
+        rating: 88
       }
     ]
 
@@ -815,144 +800,144 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToTeam (src/components/Test.tsx:109:17)
+      at addToTeam (src/components/Test.tsx:110:17)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToTeam (src/components/Test.tsx:109:17)
+      at addToTeam (src/components/Test.tsx:110:17)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       },
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToTeam (src/components/Test.tsx:109:17)
+      at addToTeam (src/components/Test.tsx:110:17)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToAdminTeam (src/components/Test.tsx:117:21)
+      at addToAdminTeam (src/components/Test.tsx:118:21)
 
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToTeam (src/components/Test.tsx:109:17)
+      at addToTeam (src/components/Test.tsx:110:17)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sqn9vjapy1d': <ref *2> FiberNode {
+      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -986,7 +971,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 101626,
+          _debugID: 105475,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1020,7 +1005,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 102221,
+          _debugID: 106158,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1054,10 +1039,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 102219,
+        _debugID: 106156,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 308,
+          lineNumber: 323,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -1088,7 +1073,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 99498,
+          _debugID: 102995,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1097,7 +1082,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sqn9vjapy1d': {
+      '__reactProps$sfszzd86h6': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -1109,31 +1094,31 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToTeam (src/components/Test.tsx:109:17)
+      at addToTeam (src/components/Test.tsx:110:17)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sqn9vjapy1d': <ref *2> FiberNode {
+      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1167,7 +1152,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 104408,
+          _debugID: 108697,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1201,7 +1186,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 105003,
+          _debugID: 109380,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1235,10 +1220,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 105001,
+        _debugID: 109378,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 308,
+          lineNumber: 323,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -1269,7 +1254,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 102280,
+          _debugID: 106217,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1278,7 +1263,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sqn9vjapy1d': {
+      '__reactProps$sfszzd86h6': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -1300,15 +1285,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 9
       }
@@ -1319,7 +1304,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1335,15 +1320,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 90
       }
@@ -1354,37 +1339,37 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToTeam (src/components/Test.tsx:109:17)
+      at addToTeam (src/components/Test.tsx:110:17)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sqn9vjapy1d': <ref *2> FiberNode {
+      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1418,7 +1403,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 108315,
+          _debugID: 113220,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1452,7 +1437,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 108910,
+          _debugID: 113903,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1486,10 +1471,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 108908,
+        _debugID: 113901,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 308,
+          lineNumber: 323,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -1520,7 +1505,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 106187,
+          _debugID: 110740,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1529,7 +1514,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sqn9vjapy1d': {
+      '__reactProps$sfszzd86h6': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -1551,15 +1536,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 9
       }
@@ -1570,7 +1555,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1586,15 +1571,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 95
       }
@@ -1605,7 +1590,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1621,15 +1606,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 5
       }
@@ -1640,7 +1625,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1656,15 +1641,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 50
       }
@@ -1675,37 +1660,37 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToTeam (src/components/Test.tsx:109:17)
+      at addToTeam (src/components/Test.tsx:110:17)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sqn9vjapy1d': <ref *2> FiberNode {
+      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1739,7 +1724,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 113322,
+          _debugID: 119019,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1773,7 +1758,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 113917,
+          _debugID: 119702,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1807,10 +1792,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 113915,
+        _debugID: 119700,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 308,
+          lineNumber: 323,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -1841,7 +1826,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 111194,
+          _debugID: 116539,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1850,7 +1835,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sqn9vjapy1d': {
+      '__reactProps$sfszzd86h6': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -1872,15 +1857,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 9
       }
@@ -1891,7 +1876,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1907,15 +1892,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 90
       }
@@ -1926,7 +1911,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1942,15 +1927,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 0
       }
@@ -1961,37 +1946,37 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToTeam (src/components/Test.tsx:109:17)
+      at addToTeam (src/components/Test.tsx:110:17)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sqn9vjapy1d': <ref *2> FiberNode {
+      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2025,7 +2010,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 117779,
+          _debugID: 124180,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -2059,7 +2044,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 118374,
+          _debugID: 124863,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2093,10 +2078,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 118372,
+        _debugID: 124861,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 308,
+          lineNumber: 323,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -2127,7 +2112,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 115651,
+          _debugID: 121700,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2136,7 +2121,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sqn9vjapy1d': {
+      '__reactProps$sfszzd86h6': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -2158,15 +2143,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 9
       }
@@ -2177,7 +2162,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2193,15 +2178,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 91
       }
@@ -2212,7 +2197,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2228,15 +2213,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 1
       }
@@ -2247,7 +2232,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2263,15 +2248,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 10
       }
@@ -2282,7 +2267,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2298,15 +2283,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 100
       }
@@ -2317,37 +2302,37 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 99
       }
     ]
 
-      at addToTeam (src/components/Test.tsx:109:17)
+      at addToTeam (src/components/Test.tsx:110:17)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sqn9vjapy1d': <ref *2> FiberNode {
+      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2381,7 +2366,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 123336,
+          _debugID: 130617,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -2415,7 +2400,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 123931,
+          _debugID: 131300,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2449,10 +2434,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 123929,
+        _debugID: 131298,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 308,
+          lineNumber: 323,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -2483,7 +2468,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 121208,
+          _debugID: 128137,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2492,7 +2477,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sqn9vjapy1d': {
+      '__reactProps$sfszzd86h6': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -2514,15 +2499,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 9
       }
@@ -2533,7 +2518,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2549,15 +2534,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 91
       }
@@ -2568,7 +2553,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2584,15 +2569,15 @@
   console.log
     [
       {
-        name: 'Patrick Mahomes',
-        description: 'Kansas City Chiefs',
-        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
-        position: 'QB',
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
         stats: {
-          touchdowns: 41,
-          receptions: 0,
-          rushAttempts: 61,
-          totalYards: 5250
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
         },
         rating: 1
       }
@@ -2603,77 +2588,487 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:324:42)
+      at map (src/components/Test.tsx:339:42)
           at Array.map (<anonymous>)
 
-PASS src/Components.test.tsx (7.211 s)
+FAIL src/Components.test.tsx (9.995 s)
   Role Tests
-    ✓ Tests that there is a combobox (223 ms)
-    ✓ Tests that the first role value is League Manager (73 ms)
-    ✓ Tests that the changed value is Team Manager (129 ms)
-    ✓ Tests that the changed value is Guest User (93 ms)
-    ✓ Test adding user (148 ms)
+    ✓ Tests that there is a combobox (247 ms)
+    ✓ Tests that the first role value is League Manager (119 ms)
+    ✓ Tests that the changed value is Team Manager (185 ms)
+    ✓ Tests that the changed value is Guest User (158 ms)
+    ✓ Test adding user (281 ms)
   Drag Tests
-    ✓ Testing for original 30 player list (46 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (48 ms)
-    ✓ Testing that draggable list appears when not league manager (160 ms)
-    ✓ Testing that first player is draggable (35 ms)
-    ✓ Testing that first player can be dragged to other list (27 ms)
+    ✓ Testing for original 30 player list (64 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (94 ms)
+    ✓ Testing that draggable list appears when not league manager (209 ms)
+    ✓ Testing that first player is draggable (45 ms)
+    ✓ Testing that first player can be dragged to other list (40 ms)
   Testing Adding players
-    ✓ Testing for original 30 player list, and that league manager can add players (43 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (204 ms)
-    ✓ Testing for adding 1 player, see if list increased in size (196 ms)
-    ✓ Test adding player doesn't appear when not league manager (65 ms)
-    ✓ Test adding player doesn't appear when not league manager (70 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (64 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (312 ms)
+    ✓ Testing for adding 1 player, see if list increased in size (284 ms)
+    ✓ Test adding player doesn't appear when not league manager (115 ms)
+    ✓ Test adding player doesn't appear when not league manager (108 ms)
   Testing Filter
-    ✓ Testing for original 30 player list (37 ms)
-    ✓ Testing no filter (26 ms)
-    ✓ Testing for filtered by QB (36 ms)
-    ✓ Testing for filtered by RB (37 ms)
-    ✓ Testing for filtered by WR (33 ms)
-    ✓ Testing for filtered by TE (38 ms)
-    ✓ Testing for filtered by K (31 ms)
+    ✓ Testing for original 30 player list (52 ms)
+    ✓ Testing no filter (43 ms)
+    ✓ Testing for filtered by QB (47 ms)
+    ✓ Testing for filtered by RB (52 ms)
+    ✓ Testing for filtered by WR (50 ms)
+    ✓ Testing for filtered by TE (47 ms)
+    ✓ Testing for filtered by K (52 ms)
   Testing Sort
-    ✓ Testing for original 30 player list, and that league manager can add players (39 ms)
-    ✓ Testing for sorted by position (90 ms)
-    ✓ Test sorted by Rating (65 ms)
-    ✓ Test sorted by Touchdowns (96 ms)
-    ✓ Test sorted by None (109 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (50 ms)
+    ✓ Testing for sorted by position (127 ms)
+    ✓ Test sorted by Rating (117 ms)
+    ✕ Test sorted by Touchdowns (86 ms)
+    ✕ Test sorted by None (77 ms)
     Testing adding players with filter
-      ✓ Testing for original 30 player list (25 ms)
-      ✓ Testing for adding 1 player, filter is none (184 ms)
-      ✓ Testing for adding 1 player, filter is K, player is a K (187 ms)
-      ✓ Testing for adding 1 player, filter is QB, player is a K (187 ms)
+      ✓ Testing for original 30 player list (35 ms)
+      ✓ Testing for adding 1 player, filter is none (287 ms)
+      ✓ Testing for adding 1 player, filter is K, player is a K (291 ms)
+      ✓ Testing for adding 1 player, filter is QB, player is a K (265 ms)
   Testing adding players with sort
-    ✓ Testing for original 30 player list (23 ms)
-    ✓ Testing for adding player, sort is none (215 ms)
-    ✓ Testing for adding player, sort is Position (222 ms)
-    ✓ Testing for adding player, sort is Rating (224 ms)
-    ✓ Testing for adding player, sort is Touchdowns (209 ms)
+    ✓ Testing for original 30 player list (37 ms)
+    ✓ Testing for adding player, sort is none (316 ms)
+    ✓ Testing for adding player, sort is Position (376 ms)
+    ✓ Testing for adding player, sort is Rating (347 ms)
+    ✓ Testing for adding player, sort is Touchdowns (340 ms)
   Adding Players Using Button
-    ✓ Testing adding player to user list as guest user (83 ms)
-    ✓ Testing adding duplicates Guest User (104 ms)
-    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (74 ms)
+    ✓ Testing adding player to user list as guest user (112 ms)
+    ✓ Testing adding duplicates Guest User (149 ms)
+    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (118 ms)
   Testing User Rating
-    ✓ Testing original rating before change (90 ms)
-    ✓ Testing Changing value from 99 to 90 (150 ms)
-    ✓ Testing Changing value to 50 (185 ms)
-    ✓ Testing Changing value to 0 (151 ms)
-    ✓ Testing Changing value to 101, not possible will stay at 100 (174 ms)
-    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (153 ms)
+    ✓ Testing original rating before change (147 ms)
+    ✓ Testing Changing value from 99 to 90 (188 ms)
+    ✓ Testing Changing value to 50 (235 ms)
+    ✓ Testing Changing value to 0 (259 ms)
+    ✓ Testing Changing value to 101, not possible will stay at 100 (247 ms)
+    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (208 ms)
+
+  ● Testing Sort › Test sorted by Touchdowns
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="stats"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Roles"[39m
+                  [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                [36m>[39m
+                  [0mWhich role[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"UserTextBox"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mYour User Name:[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+        ...
+
+      246 |         render(<App />);
+      247 |         const sortID = screen.getByLabelText(/Sort Select/);
+    > 248 |         const statsButton = screen.getByTestId("stats");
+          |                                    ^
+      249 |         statsButton.click();
+      250 |         userEvent.selectOptions(sortID, "Touchdowns");
+      251 |         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:248:36)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
+
+  ● Testing Sort › Test sorted by None
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="stats"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div[39m
+              [33mclass[39m=[32m"roleSelect"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mfor[39m=[32m"Roles"[39m
+                  [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                [36m>[39m
+                  [0mWhich role[0m
+                [36m</label>[39m
+                [36m<select[39m
+                  [33mclass[39m=[32m"form-select"[39m
+                  [33mid[39m=[32m"Roles"[39m
+                [36m>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"League Manager"[39m
+                  [36m>[39m
+                    [0mLeague Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Team Manager"[39m
+                  [36m>[39m
+                    [0mTeam Manager[0m
+                  [36m</option>[39m
+                  [36m<option[39m
+                    [33mvalue[39m=[32m"Guest User"[39m
+                  [36m>[39m
+                    [0mGuest User[0m
+                  [36m</option>[39m
+                [36m</select>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"AddingAndDeletingUsers"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"addUserBox"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mdata-testid[39m=[32m"usertext"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"UserTextBox"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mYour User Name:[0m
+                  [36m</label>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-control"[39m
+                    [33mid[39m=[32m"UserTextBox"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"addButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mAdd This User[0m
+              [36m</button>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"AddOrDeleteUserButtons btn btn-primary"[39m
+                [33mdata-testid[39m=[32m"delButton"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0mDelete This User[0m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+        ...
+
+      263 |         render(<App />);
+      264 |         const sortID = screen.getByLabelText(/Sort Select/);
+    > 265 |         const statsButton = screen.getByTestId("stats");
+          |                                    ^
+      266 |         statsButton.click();
+      267 |         userEvent.selectOptions(sortID, "Touchdowns");
+      268 |         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/Components.test.tsx:265:36)
+      at TestScheduler.scheduleTests (node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 ---------------------|---------|----------|---------|---------|----------------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
 ---------------------|---------|----------|---------|---------|----------------------------
-All files            |   74.28 |       75 |   65.45 |   73.98 |                            
+All files            |   75.14 |    73.33 |   67.92 |   74.85 |                            
  src                 |     100 |      100 |     100 |     100 |                            
   App.tsx            |     100 |      100 |     100 |     100 |                            
   players.tsx        |     100 |      100 |     100 |     100 |                            
- src/components      |   66.91 |       75 |   64.81 |   66.41 |                            
+ src/components      |   67.91 |    73.33 |    67.3 |   67.42 |                            
   AddPlayers.tsx     |     100 |      100 |     100 |     100 |                            
+  PlayerStats.tsx    |   66.66 |       50 |      50 |   66.66 | 15                         
   PositionFilter.tsx |   88.88 |       50 |     100 |   88.88 | 32                         
-  RenderPlayer.tsx   |       0 |      100 |       0 |       0 | 12-20                      
-  Test.tsx           |   34.69 |    68.18 |   39.13 |   34.69 | 62-102,120-148,210,287,332 
+  Test.tsx           |   31.91 |       65 |   36.36 |   31.91 | 63-103,121-149,212,302,347 
   UserRating.tsx     |     100 |      100 |     100 |     100 |                            
   UserText.tsx       |     100 |      100 |     100 |     100 |                            
   roleSelect.tsx     |   59.09 |     62.5 |   66.66 |   59.09 | 53-63                      
@@ -2681,8 +3076,8 @@ All files            |   74.28 |       75 |   65.45 |   73.98 |
  src/interfaces      |       0 |        0 |       0 |       0 |                            
   player.tsx         |       0 |        0 |       0 |       0 |                            
 ---------------------|---------|----------|---------|---------|----------------------------
-Test Suites: 1 passed, 1 total
-Tests:       45 passed, 45 total
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 43 passed, 45 total
 Snapshots:   0 total
-Time:        8.026 s
+Time:        10.711 s
 Ran all test suites.
