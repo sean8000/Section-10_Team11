@@ -1,4 +1,4 @@
-import "./style.css";
+import "../style.css";
 import React from "react";
 import { Form } from "react-bootstrap";
 import { Player } from "../interfaces/player";
@@ -49,7 +49,7 @@ export function SortSelect({
     return (
         <div className="sortSelect">
             <Form.Group controlId="Sort">
-                <Form.Label>Sort Select</Form.Label>
+                <Form.Label style={{ color: "black" }}>Sort Select</Form.Label>
                 <Form.Select
                     className="sortSelectHeading"
                     value={sortOption}

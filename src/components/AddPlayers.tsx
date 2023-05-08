@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Player, Position } from "../interfaces/player";
 import { Form, Button } from "react-bootstrap";
+import "../style.css";
 interface PlayersToBeAdded {
     centralList: Player[];
     setCentralList: (newStringList: Player[]) => void;
@@ -109,7 +110,7 @@ export function AddPlayers({
                 </Button>
             </div>
             <div className="newPlayerPreview">
-                Put Preview of New Player Here? {">>>>>>>>>>>>>>>>>>>>"}
+                {/*}Put Preview of New Player Here? {">>>>>>>>>>>>>>>>>>>>"} {*/}
             </div>
         </>
     );

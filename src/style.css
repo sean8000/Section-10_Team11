@@ -1,0 +1,188 @@
+.Test {
+    margin-left: 50px;
+}
+
+.user {
+    float: left;
+    text-align: justify;
+    width: 550px;
+    height: auto;
+    min-height: 100px;
+    outline: 1px solid black;
+    background-color: gray;
+    color: white;
+    margin-left: 50px;
+}
+.userEdited {
+    text-align: justify;
+    float: left;
+    width: 550px;
+    height: auto;
+    min-height: 100px;
+    outline: 1px solid black;
+    background-color: gray;
+    color: white;
+    margin-left: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.player:nth-child(odd) {
+    background-color: black;
+    color: white;
+    height: 296px;
+}
+
+.player:nth-child(even) {
+    background-color: gray;
+    color: white;
+    height: 296px;
+}
+.playerWidget:nth-child(odd) {
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+
+.playerWidget:nth-child(even) {
+    background-color: gray;
+    color: white;
+    height: 200px;
+}
+
+.playerNameAndPosition {
+    font-family: "Impact";
+    font-size: xx-large;
+    padding-left: 30px;
+}
+
+.central {
+    text-align: justify;
+    float: left;
+    width: 550px;
+    height: 700px;
+    color: white;
+    background-color: gray;
+    outline: 1px solid black;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.heading {
+    background: rgb(29, 26, 26);
+    color: white;
+    padding: 40px;
+    font-family: "Rockwell";
+    margin: auto;
+    margin-bottom: 50px;
+    padding-left: 100px;
+}
+
+.instructions {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Alkatra";
+    background: rgb(2, 82, 2);
+    color: white;
+    padding: 20px;
+}
+
+.playersTitle {
+    font-family: "Alkatra";
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 550px;
+    position: absolute;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.roleSelect {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    color: black;
+}
+
+.names {
+    position: fixed;
+    color: white;
+    bottom: 0%;
+}
+
+.addUserBox {
+    color: white;
+    margin-top: 5px;
+    float: right;
+    width: 200px;
+}
+
+.AddOrDeleteUserButtons {
+    background-color: #000000;
+}
+
+.AddingAndDeletingUsers {
+    width: 200px;
+}
+
+.padding {
+    padding-bottom: 60px;
+}
+
+.playerNameBox {
+    width: 200px;
+    overflow-x: auto;
+}
+
+.playerRatingBox {
+    width: 70px;
+    overflow-x: auto;
+}
+
+.playerDescriptionBox {
+    width: 200px;
+    overflow-x: auto;
+}
+
+.playerImageBox {
+    width: 200px;
+    overflow-x: auto;
+}
+
+.playerPositionBox {
+    width: 150px;
+    overflow-x: auto;
+}
+
+.addingPlayers {
+    float: left;
+    margin-left: 100px;
+}
+
+.sortSelect {
+    width: 200px;
+    color: white;
+}
+
+.playerImage {
+    float: right;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-top: -48px;
+}
+
+.newPlayerPreview {
+    float: right;
+}
+
+.positionFilter {
+    color: white;
+}
+
+.userChangeRatings {
+    float: left;
+    padding-left: 30px;
+}

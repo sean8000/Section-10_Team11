@@ -2,7 +2,7 @@ import { Player } from "../interfaces/player";
 import React from "react";
 // import React, { useState } from "react";
 // import { Button } from "react-bootstrap";
-import "./Test.css";
+import "../style.css";
 // import { playerList } from "../players";
 // commented out some imports to avoid warnings
 

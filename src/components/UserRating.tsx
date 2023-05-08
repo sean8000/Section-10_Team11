@@ -2,6 +2,7 @@
 import { Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { Player } from "../interfaces/player";
+import "../style.css";
 
 interface Rating {
     player: Player;
@@ -39,7 +40,11 @@ export function UserRating({ widgets, setWidgets, player }: Rating) {
     return (
         <div>
             <Form.Group className="playerRatingBox" controlId="PlayerRating">
-                <Form.Label></Form.Label>
+                <Form.Label
+                    style={{ color: "white", float: "left", fontSize: 14 }}
+                >
+                    Rating Box
+                </Form.Label>
                 <Form.Control
                     type="number"
                     value={rating}
