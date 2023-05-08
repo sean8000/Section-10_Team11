@@ -176,6 +176,8 @@
 
 .newPlayerPreview {
     float: right;
+    color: white;
+    margin-left: 100px;
 }
 
 .positionFilter {

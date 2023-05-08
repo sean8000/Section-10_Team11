@@ -110,7 +110,17 @@ export function AddPlayers({
                 </Button>
             </div>
             <div className="newPlayerPreview">
-                {/*}Put Preview of New Player Here? {">>>>>>>>>>>>>>>>>>>>"} {*/}
+                Name: {playerName}
+                <br></br>
+                Description: {playerDescription}
+                <br></br>
+                <img
+                    src={playerURL}
+                    style={{ width: "200px", height: "200px" }}
+                    alt="Image:"
+                ></img>
+                <br></br>
+                Position: {newPosition}
             </div>
         </>
     );
