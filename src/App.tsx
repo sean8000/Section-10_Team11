@@ -75,7 +75,7 @@ function App(): JSX.Element {
                             const newList = centralList.map((curr: Player) => {
                                 const foundElem = adminWidgets.find(
                                     (other: Player): boolean =>
-                                        curr.name === other.name
+                                        curr.original === other.original
                                 );
                                 if (foundElem !== undefined) {
                                     console.log("This elem" + foundElem);
