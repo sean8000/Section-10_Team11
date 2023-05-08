@@ -10,6 +10,7 @@ import { PositionFilter } from "./PositionFilter";
 import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
+import { PlayerStats } from "./PlayerStats";
 
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
@@ -147,12 +148,13 @@ function Test({
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
     }
-
+    /*
     const [visible, setVisible] = useState<boolean>(false);
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     function flipVisibility(): void {
         setVisible(!visible);
     }
+    */
     /* function updateCentralList(newCentralList: Player[]) {
         setCentralList(newCentralList);
     } */
@@ -178,7 +180,7 @@ function Test({
                 <h4 className="playersTitle">Players</h4>
                 <br></br>
                 <div style={{ background: "red" }}>
-                    <Button
+                    {/*}<Button
                         className="btn btn-primary shadow-none"
                         style={{
                             height: 30,
@@ -191,7 +193,7 @@ function Test({
                         onClick={flipVisibility}
                     >
                         Open Stats For All Players
-                    </Button>
+                    </Button>{*/}
                     <br></br>
                     <span
                         data-testid="playerCount"
@@ -238,7 +240,20 @@ function Test({
                             src={curr.image}
                             alt="Image"
                         />
-                        <div>
+                        <PlayerStats
+                            name={curr.name}
+                            description={curr.description}
+                            image={curr.image}
+                            position={curr.position}
+                            stats={{
+                                touchdowns: curr.stats.touchdowns,
+                                receptions: curr.stats.rushAttempts,
+                                rushAttempts: curr.stats.rushAttempts,
+                                totalYards: curr.stats.totalYards
+                            }}
+                            rating={curr.rating}
+                        ></PlayerStats>
+                        {/*}<div>
                             {visible && (
                                 <div>
                                     Description: {curr.description}
@@ -253,7 +268,7 @@ function Test({
                                     <br />
                                 </div>
                             )}
-                        </div>
+                        </div>{*/}
                     </div>
                 ))}
             </div>
