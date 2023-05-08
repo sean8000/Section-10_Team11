@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
 import { playerList } from "./players";
+import AdminList from "./components/AdminList";
 //import { AddPlayers } from "./components/AddPlayers";
 
 function App(): JSX.Element {
@@ -40,17 +41,32 @@ function App(): JSX.Element {
             <Container>
                 <Row>
                     <Col>
-                        <Test
-                            widgets={widgets}
-                            setWidgets={setWidgets}
-                            role={role}
-                            myMap={myMap}
-                            setMyMap={setMyMap}
-                            centralList={centralList}
-                            setCentralList={setCentralList}
-                            filteredList={filteredList}
-                            setFilteredList={setFilteredList}
-                        ></Test>
+                        {role !== "Team Manager" ? (
+                            <Test
+                                widgets={widgets}
+                                setWidgets={setWidgets}
+                                role={role}
+                                myMap={myMap}
+                                setMyMap={setMyMap}
+                                centralList={centralList}
+                                setCentralList={setCentralList}
+                                filteredList={filteredList}
+                                setFilteredList={setFilteredList}
+                            ></Test>
+                        ) : (
+                            <AdminList
+                                widgets={widgets}
+                                setWidgets={setWidgets}
+                                role={role}
+                                myMap={myMap}
+                                setMyMap={setMyMap}
+                                centralList={centralList}
+                                setCentralList={setCentralList}
+                                filteredList={filteredList}
+                                setFilteredList={setFilteredList}
+                            ></AdminList>
+                        )}
+
                         {/*}
                         {role !== "League Manager" ? (
                             <Test

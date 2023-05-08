@@ -33,13 +33,6 @@ function Test({
     filteredList,
     setFilteredList
 }: Widgets) {
-    /* const players = ["jerry", "terry", "larry"];
-    const player_map: Record<string, string> = {
-        jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
-        terry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn",
-        larry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n"
-    }; */
-
     // YOU CAN ACCESS THE PLAYER LIST THROUGH THE IMPORTED "playerList" VARIABLE
     // IT IS AN ARRAY OF PLAYER OBJECTS
     // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
@@ -206,32 +199,6 @@ function Test({
                                         >
                                             Delete Player
                                         </Button>
-                                        <div>
-                                            {/*}
-                                            <Button onClick={flipVisibility}>
-                                                STATS
-                                            </Button>
-                                            {visible && (
-                                                <div>
-                                                    Description:{" "}
-                                                    {curr.description}
-                                                    <br />
-                                                    Touchdowns:{" "}
-                                                    {curr.stats.touchdowns}
-                                                    <br />
-                                                    Receptions:{" "}
-                                                    {curr.stats.receptions}
-                                                    <br />
-                                                    Rush Attempts:{" "}
-                                                    {curr.stats.rushAttempts}
-                                                    <br />
-                                                    Yards:{" "}
-                                                    {curr.stats.totalYards}
-                                                    <br />
-                                                </div>
-                                            )}
-                                            {*/}
-                                        </div>
                                         {setMyMap(
                                             myMap.set(role, [...widgets])
                                         )}
