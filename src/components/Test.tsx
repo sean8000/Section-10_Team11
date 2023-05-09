@@ -11,6 +11,7 @@ import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
+import { Col, Row, Container } from "react-bootstrap";
 
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
@@ -283,7 +284,7 @@ function Test({
                     <br></br>
                     {adminWidgets.map((curr, index) => (
                         <div
-                            className="playerWidget"
+                            className="playerWidgetAdmin"
                             key={"otherAdmin" + index}
                             data-testid={"otherAdmin" + index}
                         >
@@ -326,16 +327,6 @@ function Test({
                             key={"other" + role + index}
                             data-testid={"other" + role + index}
                         >
-                            <div className="playerNameAndPosition">
-                                {curr.name} | {curr.position} <br />{" "}
-                                <img
-                                    className="playerImage"
-                                    src={curr.image}
-                                    alt="Image"
-                                />
-                                <span>Overall: {curr.rating}</span>
-                            </div>
-                            {/*}{setMyMap(myMap.set(role, [...widgets]))}{*/}
                             <div className="userChangeRatings">
                                 {console.log(widgets.indexOf(curr))}
                                 <UserRating
@@ -343,13 +334,36 @@ function Test({
                                     widgets={widgets}
                                     setWidgets={setWidgets}
                                 ></UserRating>
-
                                 <Button
                                     onClick={() => handleOnButtonClick(curr)}
                                 >
                                     Delete Player
                                 </Button>
                             </div>
+                            <div className="playerNameAndPosition">
+                                {curr.name} | {curr.position} <br />{" "}
+                                <img
+                                    className="playerImageUser"
+                                    src={curr.image}
+                                    alt="Image"
+                                />
+                                <span>Overall: {curr.rating}</span>
+                            </div>
+                            {/*} Needed to make stats button to go on the left {*/}
+                            <PlayerStats
+                                name={curr.name}
+                                description={curr.description}
+                                image={curr.image}
+                                position={curr.position}
+                                stats={{
+                                    touchdowns: curr.stats.touchdowns,
+                                    receptions: curr.stats.rushAttempts,
+                                    rushAttempts: curr.stats.rushAttempts,
+                                    totalYards: curr.stats.totalYards
+                                }}
+                                rating={curr.rating}
+                                original={curr.original}
+                            ></PlayerStats>
                             <div>
                                 {/*}
                                             <Button onClick={flipVisibility}>
