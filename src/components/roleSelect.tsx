@@ -70,7 +70,7 @@ export function RoleSelect({
     // This is the View
     return (
         <>
-            <div className="roleSelectAndAddUser">
+            <div>
                 <div className="roleSelect">
                     <Form.Group controlId="Roles">
                         <Form.Label style={{ fontSize: 15, color: "white" }}>
