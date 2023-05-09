@@ -15,6 +15,7 @@ interface Roles {
     setTotalRoles: (newStringList: string[]) => void;
     myMap: Map<string, Player[]>;
     setMyMap: (newMap: Map<string, Player[]>) => void;
+    setAdminEdit: (newValue: boolean) => void;
 }
 export function RoleSelect({
     setRole,
@@ -26,7 +27,8 @@ export function RoleSelect({
     widgets,
     adminWidgets,
     setAdminWidgets,
-    setMyMap
+    setMyMap,
+    setAdminEdit
 }: Roles): JSX.Element {
     //const [role, setRole] = useState<string>("Super");
     const [userText, setUserText] = useState<string>("");
@@ -43,6 +45,7 @@ export function RoleSelect({
         } else {
             setWidgets(myMap.get(event.target.value) ?? []);
         }
+        setAdminEdit(false);
     }
     function addUser() {
         setTotalRoles([...totalRoles, userText]);

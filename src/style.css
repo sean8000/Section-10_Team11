@@ -173,6 +173,13 @@
     height: 200px;
     margin-top: -48px;
 }
+.playerImageEdit {
+    float: right;
+    display: flex;
+    width: 375px;
+    height: 375px;
+    margin-top: -48px;
+}
 
 .newPlayerPreview {
     float: right;
@@ -185,4 +192,31 @@
 .userChangeRatings {
     float: left;
     padding-left: 30px;
+}
+.playerEdit:nth-child(odd) {
+    background-color: black;
+    color: white;
+    height: 375px;
+}
+
+.playerEdit:nth-child(even) {
+    background-color: gray;
+    color: white;
+    height: 375px;
+}
+.editFontSize {
+    float: left;
+    padding-left: 30px;
+    font-size: large;
+}
+.editText {
+    width: auto;
+    height: auto;
+    color: white;
+}
+.editNums {
+    width: 60;
+    float: left;
+    height: auto;
+    color: white;
 }
