@@ -142,7 +142,7 @@
 }
 
 .playerNameBox {
-    width: 200px;
+    width: 300px;
     overflow-x: auto;
 }
 
@@ -152,23 +152,23 @@
 }
 
 .playerDescriptionBox {
-    width: 200px;
+    width: 300px;
     overflow-x: auto;
 }
 
 .playerImageBox {
-    width: 200px;
+    width: 300px;
     overflow-x: auto;
 }
 
 .playerPositionBox {
-    width: 150px;
+    width: 120px;
     overflow-x: auto;
 }
 
 .addingPlayers {
     float: left;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .sortSelect {
@@ -202,7 +202,10 @@
 .newPlayerPreview {
     float: right;
     color: white;
-    margin-left: 100px;
+    margin-left: 50px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-size: 30px;
 }
 
 .positionFilter {

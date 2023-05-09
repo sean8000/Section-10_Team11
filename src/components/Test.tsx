@@ -396,7 +396,6 @@ function Test({
                 <div className="addingPlayers">
                     <h6
                         style={{
-                            marginLeft: 100,
                             fontSize: 30,
                             color: "white",
                             fontFamily: "Impact"

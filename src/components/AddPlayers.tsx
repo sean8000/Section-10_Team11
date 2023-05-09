@@ -102,12 +102,13 @@ export function AddPlayers({
                         ))}
                     </Form.Select>
                 </Form.Group>
+                <br></br>
                 <Button
                     data-testid="addPlayer"
                     style={{ backgroundColor: "#000000" }}
                     onClick={addNewPlayer}
                 >
-                    Add This New Player:{" "}
+                    Add This New Player{" "}
                 </Button>
             </div>
             <div className="newPlayerPreview">
@@ -115,13 +116,20 @@ export function AddPlayers({
                 <br></br>
                 Description: {playerDescription}
                 <br></br>
-                <img
-                    src={playerURL}
-                    style={{ width: "200px", height: "200px" }}
-                    alt="Image:"
-                ></img>
+                {playerURL !== "" ? (
+                    <img
+                        src={playerURL}
+                        style={{
+                            width: "300px",
+                            height: "300px"
+                        }}
+                        alt="Image:"
+                    ></img>
+                ) : (
+                    <span>Image:</span>
+                )}
                 <br></br>
-                Position: {newPosition}
+                {newPosition}
             </div>
         </>
     );
