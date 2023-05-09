@@ -393,16 +393,7 @@ function Test({
                     ))}
                 </div>
             ) : role === "League Manager" ? (
-                <div className="addingPlayers">
-                    <h6
-                        style={{
-                            fontSize: 30,
-                            color: "white",
-                            fontFamily: "Impact"
-                        }}
-                    >
-                        Add Players Here
-                    </h6>
+                <div>
                     <AddPlayers
                         centralList={centralList}
                         setCentralList={setCentralList}

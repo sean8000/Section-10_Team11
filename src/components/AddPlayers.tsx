@@ -60,6 +60,15 @@ export function AddPlayers({
     return (
         <>
             <div className="addingPlayers">
+                <h6
+                    style={{
+                        fontSize: 30,
+                        color: "white",
+                        fontFamily: "Impact"
+                    }}
+                >
+                    Add Players Here
+                </h6>
                 <Form.Group
                     className="playerNameBox"
                     controlId="PlayerTextName"
