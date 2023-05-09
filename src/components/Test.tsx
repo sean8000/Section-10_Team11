@@ -11,7 +11,6 @@ import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
-import { Col, Row, Container } from "react-bootstrap";
 
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
