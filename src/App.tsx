@@ -32,23 +32,12 @@ function App(): JSX.Element {
     return (
         <div>
             <h1 className="heading">
-                {role === "League Manager" ? (
-                    <>
-                        <br></br>
-                        {"NFL Football TeamBuilder"}
-                        <br></br>
-                        {"Drag or Click Player Icons to Put Them on Your Team"}
-                        <br></br>
-                        <br></br>
-                    </>
-                ) : (
-                    <>
-                        {" "}
-                        {"NFL Football TeamBuilder"}
-                        <br></br>
-                        {"Drag or Click Player Icons to Put Them on Your Team"}
-                    </>
-                )}
+                <>
+                    {" "}
+                    {"NFL Football TeamBuilder"}
+                    <br></br>
+                    {"Drag or Click Player Icons to Put Them on Your Team"}
+                </>
                 <RoleSelect
                     setRole={setRole}
                     role={role}
