@@ -35,7 +35,8 @@ export function AddPlayers({
                 rushAttempts: 1,
                 totalYards: 1
             },
-            rating: 1
+            rating: 1,
+            original: playerName
         };
         setCentralList([...centralList, newPlayer]);
         setFilteredList([...filteredList, newPlayer]);

@@ -1,8 +1,11 @@
+/* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import Test from "./components/Test";
+import { AdminEdit } from "./components/AdminEdit";
 import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
 import { playerList } from "./players";
+import { Button } from "react-bootstrap";
 //import { AddPlayers } from "./components/AddPlayers";
 
 function App(): JSX.Element {
@@ -17,6 +20,7 @@ function App(): JSX.Element {
         "Team Manager",
         "Guest User"
     ]);
+    const [adminEdit, setAdminEdit] = useState<boolean>(false);
     //const [userDict, setDict] = useState<Record<string, string[]>>({});
     {
         /*}
@@ -56,21 +60,79 @@ function App(): JSX.Element {
                     setTotalRoles={setTotalRoles}
                     myMap={myMap}
                     setMyMap={setMyMap}
+                    setAdminEdit={setAdminEdit}
                 ></RoleSelect>
+                {role === "Team Manager" && adminEdit === false ? (
+                    <div>
+                        <Button
+                            onClick={() => {
+                                {
+                                    setMyMap(
+                                        myMap.set("Team Manager", adminWidgets)
+                                    );
+                                    setAdminWidgets(
+                                        myMap.get("Team Manager") ?? []
+                                    );
+                                    console.log("map value below");
+                                    console.log(myMap.get("Team Manager"));
+                                }
+                                setAdminEdit(!adminEdit);
+                            }}
+                        >
+                            {" "}
+                            Edit your players
+                        </Button>
+                    </div>
+                ) : role === "Team Manager" && adminEdit === true ? (
+                    <Button
+                        onClick={() => {
+                            const newList = centralList.map((curr: Player) => {
+                                const foundElem = adminWidgets.find(
+                                    (other: Player): boolean =>
+                                        curr.original === other.original
+                                );
+                                if (foundElem !== undefined) {
+                                    console.log("This elem" + foundElem);
+                                    return foundElem;
+                                } else {
+                                    console.log("Elem not found");
+                                    return curr;
+                                }
+                            });
+                            console.log(newList);
+                            setCentralList([...newList]);
+                            setFilteredList([...newList]);
+                            setAdminEdit(false);
+                        }}
+                    >
+                        {" "}
+                        Save your list to central and backout
+                    </Button>
+                ) : (
+                    ""
+                )}
             </h1>
-            <Test
-                widgets={widgets}
-                setWidgets={setWidgets}
-                role={role}
-                myMap={myMap}
-                setMyMap={setMyMap}
-                centralList={centralList}
-                setCentralList={setCentralList}
-                adminWidgets={adminWidgets}
-                setAdminWidgets={setAdminWidgets}
-                filteredList={filteredList}
-                setFilteredList={setFilteredList}
-            ></Test>
+            {adminEdit !== true ? (
+                <Test
+                    widgets={widgets}
+                    setWidgets={setWidgets}
+                    role={role}
+                    myMap={myMap}
+                    setMyMap={setMyMap}
+                    centralList={centralList}
+                    setCentralList={setCentralList}
+                    adminWidgets={adminWidgets}
+                    setAdminWidgets={setAdminWidgets}
+                    filteredList={filteredList}
+                    setFilteredList={setFilteredList}
+                ></Test>
+            ) : (
+                <AdminEdit
+                    role={role}
+                    adminWidgets={adminWidgets}
+                    setAdminWidgets={setAdminWidgets}
+                ></AdminEdit>
+            )}
             {/*}
                         {role !== "League Manager" ? (
                             <Test

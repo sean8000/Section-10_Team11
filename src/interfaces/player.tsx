@@ -19,4 +19,5 @@ export interface Player {
     };
     // overall rating (1-100)
     rating: number;
+    original: string;
 }

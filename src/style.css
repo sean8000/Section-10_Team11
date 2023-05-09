@@ -18,9 +18,8 @@
     float: left;
     width: 550px;
     height: auto;
-    min-height: 100px;
     outline: 1px solid black;
-    background-color: gray;
+    background: gray;
     color: white;
     margin-left: 50px;
     overflow-y: auto;
@@ -30,21 +29,32 @@
 .player:nth-child(odd) {
     background-color: black;
     color: white;
-    height: 296px;
+    height: 298px;
 }
 
 .player:nth-child(even) {
     background-color: gray;
     color: white;
-    height: 296px;
+    height: 298px;
 }
 .playerWidget:nth-child(odd) {
+    background-color: black;
+    color: white;
+    height: 310px;
+}
+
+.playerWidget:nth-child(even) {
+    background-color: gray;
+    color: white;
+    height: 310px;
+}
+.playerWidgetAdmin:nth-child(odd) {
     background-color: black;
     color: white;
     height: 200px;
 }
 
-.playerWidget:nth-child(even) {
+.playerWidgetAdmin:nth-child(even) {
     background-color: gray;
     color: white;
     height: 200px;
@@ -173,6 +183,21 @@
     height: 200px;
     margin-top: -48px;
 }
+.playerImageUser {
+    float: right;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+    margin-right: -140px;
+}
+.playerImageEdit {
+    float: right;
+    display: flex;
+    width: 375px;
+    height: 375px;
+    margin-top: -48px;
+}
 
 .newPlayerPreview {
     float: right;
@@ -185,8 +210,35 @@
 }
 
 .userChangeRatings {
+    float: right;
+    padding-right: 30px;
+}
+.playerEdit:nth-child(odd) {
+    background-color: black;
+    color: white;
+    height: 375px;
+}
+
+.playerEdit:nth-child(even) {
+    background-color: gray;
+    color: white;
+    height: 375px;
+}
+.editFontSize {
     float: left;
     padding-left: 30px;
+    font-size: large;
+}
+.editText {
+    width: auto;
+    height: auto;
+    color: white;
+}
+.editNums {
+    width: 60;
+    float: left;
+    height: auto;
+    color: white;
 }
 
 .roleSelectAndAddUser {

@@ -17,7 +17,7 @@ export function PlayerStats(player: Player) {
 
     return (
         <>
-            <div>
+            <div style={{ paddingLeft: 30 }}>
                 <Button onClick={flipVisibility}>STATS</Button>
                 {visible && (
                     <div>
