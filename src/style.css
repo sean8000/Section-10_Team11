@@ -118,8 +118,14 @@
 
 .names {
     position: fixed;
-    color: white;
+    text-align: center;
+    color: black;
+    background: white;
     bottom: 0%;
+    width: 100%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .addUserBox {
