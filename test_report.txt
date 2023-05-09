@@ -1004,7 +1004,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$2jk1gewx37v': <ref *2> FiberNode {
+      '__reactFiber$es1qekd57nr': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1038,7 +1038,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 111054,
+          _debugID: 110825,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1072,7 +1072,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 111742,
+          _debugID: 111512,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1106,7 +1106,7 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 111740,
+        _debugID: 111510,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
           lineNumber: 324,
@@ -1140,7 +1140,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 108534,
+          _debugID: 108309,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1149,7 +1149,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$2jk1gewx37v': {
+      '__reactProps$es1qekd57nr': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -1186,7 +1186,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$2jk1gewx37v': <ref *2> FiberNode {
+      '__reactFiber$es1qekd57nr': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1220,7 +1220,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 114329,
+          _debugID: 114095,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1254,7 +1254,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 115017,
+          _debugID: 114782,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1288,7 +1288,7 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 115015,
+        _debugID: 114780,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
           lineNumber: 324,
@@ -1322,7 +1322,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 111809,
+          _debugID: 111579,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1331,7 +1331,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$2jk1gewx37v': {
+      '__reactProps$es1qekd57nr': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -1440,7 +1440,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$2jk1gewx37v': <ref *2> FiberNode {
+      '__reactFiber$es1qekd57nr': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1474,7 +1474,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 118925,
+          _debugID: 118686,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1508,7 +1508,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 119613,
+          _debugID: 119373,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1542,7 +1542,7 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 119611,
+        _debugID: 119371,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
           lineNumber: 324,
@@ -1576,7 +1576,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 116405,
+          _debugID: 116170,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1585,7 +1585,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$2jk1gewx37v': {
+      '__reactProps$es1qekd57nr': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -1766,7 +1766,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$2jk1gewx37v': <ref *2> FiberNode {
+      '__reactFiber$es1qekd57nr': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1800,7 +1800,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 124813,
+          _debugID: 124569,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1834,7 +1834,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 125501,
+          _debugID: 125256,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1868,7 +1868,7 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 125499,
+        _debugID: 125254,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
           lineNumber: 324,
@@ -1902,7 +1902,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 122293,
+          _debugID: 122053,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1911,7 +1911,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$2jk1gewx37v': {
+      '__reactProps$es1qekd57nr': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -2056,7 +2056,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$2jk1gewx37v': <ref *2> FiberNode {
+      '__reactFiber$es1qekd57nr': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2090,7 +2090,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 130055,
+          _debugID: 129806,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -2124,7 +2124,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 130743,
+          _debugID: 130493,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2158,7 +2158,7 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 130741,
+        _debugID: 130491,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
           lineNumber: 324,
@@ -2192,7 +2192,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 127535,
+          _debugID: 127290,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2201,7 +2201,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$2jk1gewx37v': {
+      '__reactProps$es1qekd57nr': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -2418,7 +2418,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$2jk1gewx37v': <ref *2> FiberNode {
+      '__reactFiber$es1qekd57nr': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2452,7 +2452,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 136589,
+          _debugID: 136335,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -2486,7 +2486,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 137277,
+          _debugID: 137022,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2520,7 +2520,7 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 137275,
+        _debugID: 137020,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
           lineNumber: 324,
@@ -2554,7 +2554,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 134069,
+          _debugID: 133819,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2563,7 +2563,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$2jk1gewx37v': {
+      '__reactProps$es1qekd57nr': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -2680,61 +2680,61 @@
       at map (src/components/Test.tsx:330:42)
           at Array.map (<anonymous>)
 
-FAIL src/Components.test.tsx (13.302 s)
+FAIL src/Components.test.tsx (8.47 s)
   Role Tests
-    ✓ Tests that there is a combobox (313 ms)
-    ✓ Tests that the first role value is League Manager (179 ms)
-    ✓ Tests that the changed value is Team Manager (234 ms)
-    ✓ Tests that the changed value is Guest User (202 ms)
-    ✓ Test adding user (280 ms)
+    ✓ Tests that there is a combobox (210 ms)
+    ✓ Tests that the first role value is League Manager (105 ms)
+    ✓ Tests that the changed value is Team Manager (141 ms)
+    ✓ Tests that the changed value is Guest User (120 ms)
+    ✓ Test adding user (189 ms)
   Drag Tests
-    ✓ Testing for original 30 player list (90 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (102 ms)
-    ✓ Testing that draggable list appears when not league manager (306 ms)
-    ✓ Testing that first player is draggable (71 ms)
-    ✓ Testing that first player can be dragged to other list (64 ms)
+    ✓ Testing for original 30 player list (63 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (73 ms)
+    ✓ Testing that draggable list appears when not league manager (189 ms)
+    ✓ Testing that first player is draggable (45 ms)
+    ✓ Testing that first player can be dragged to other list (46 ms)
   Testing Adding players
-    ✕ Testing for original 30 player list, and that league manager can add players (116 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (456 ms)
-    ✓ Testing for adding 1 player, see if list increased in size (393 ms)
-    ✓ Test adding player doesn't appear when not league manager (190 ms)
-    ✓ Test adding player doesn't appear when not league manager (161 ms)
+    ✕ Testing for original 30 player list, and that league manager can add players (69 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (262 ms)
+    ✓ Testing for adding 1 player, see if list increased in size (240 ms)
+    ✓ Test adding player doesn't appear when not league manager (107 ms)
+    ✓ Test adding player doesn't appear when not league manager (100 ms)
   Testing Filter
-    ✕ Testing for original 30 player list (78 ms)
-    ✓ Testing no filter (67 ms)
-    ✕ Testing for filtered by QB (77 ms)
-    ✓ Testing for filtered by RB (78 ms)
-    ✓ Testing for filtered by WR (73 ms)
-    ✓ Testing for filtered by TE (67 ms)
-    ✓ Testing for filtered by K (63 ms)
+    ✕ Testing for original 30 player list (50 ms)
+    ✓ Testing no filter (38 ms)
+    ✕ Testing for filtered by QB (46 ms)
+    ✓ Testing for filtered by RB (49 ms)
+    ✓ Testing for filtered by WR (38 ms)
+    ✓ Testing for filtered by TE (41 ms)
+    ✓ Testing for filtered by K (42 ms)
   Testing Sort
-    ✕ Testing for original 30 player list, and that league manager can add players (73 ms)
-    ✓ Testing for sorted by position (162 ms)
-    ✓ Test sorted by Rating (121 ms)
-    ✕ Test sorted by Touchdowns (103 ms)
-    ✕ Test sorted by None (103 ms)
+    ✕ Testing for original 30 player list, and that league manager can add players (44 ms)
+    ✓ Testing for sorted by position (115 ms)
+    ✓ Test sorted by Rating (79 ms)
+    ✕ Test sorted by Touchdowns (56 ms)
+    ✕ Test sorted by None (90 ms)
     Testing adding players with filter
-      ✓ Testing for original 30 player list (46 ms)
-      ✓ Testing for adding 1 player, filter is none (382 ms)
-      ✓ Testing for adding 1 player, filter is K, player is a K (395 ms)
-      ✕ Testing for adding 1 player, filter is QB, player is a K (383 ms)
+      ✓ Testing for original 30 player list (28 ms)
+      ✓ Testing for adding 1 player, filter is none (229 ms)
+      ✓ Testing for adding 1 player, filter is K, player is a K (229 ms)
+      ✕ Testing for adding 1 player, filter is QB, player is a K (229 ms)
   Testing adding players with sort
-    ✓ Testing for original 30 player list (50 ms)
-    ✓ Testing for adding player, sort is none (446 ms)
-    ✓ Testing for adding player, sort is Position (428 ms)
-    ✓ Testing for adding player, sort is Rating (442 ms)
-    ✓ Testing for adding player, sort is Touchdowns (422 ms)
+    ✓ Testing for original 30 player list (29 ms)
+    ✓ Testing for adding player, sort is none (268 ms)
+    ✓ Testing for adding player, sort is Position (286 ms)
+    ✓ Testing for adding player, sort is Rating (263 ms)
+    ✓ Testing for adding player, sort is Touchdowns (253 ms)
   Adding Players Using Button
-    ✓ Testing adding player to user list as guest user (148 ms)
-    ✓ Testing adding duplicates Guest User (190 ms)
-    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (163 ms)
+    ✓ Testing adding player to user list as guest user (90 ms)
+    ✓ Testing adding duplicates Guest User (120 ms)
+    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (99 ms)
   Testing User Rating
-    ✓ Testing original rating before change (204 ms)
-    ✓ Testing Changing value from 99 to 90 (243 ms)
-    ✓ Testing Changing value to 50 (302 ms)
-    ✓ Testing Changing value to 0 (287 ms)
-    ✓ Testing Changing value to 101, not possible will stay at 100 (321 ms)
-    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (260 ms)
+    ✓ Testing original rating before change (105 ms)
+    ✓ Testing Changing value from 99 to 90 (148 ms)
+    ✓ Testing Changing value to 50 (183 ms)
+    ✓ Testing Changing value to 0 (173 ms)
+    ✓ Testing Changing value to 101, not possible will stay at 100 (208 ms)
+    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (163 ms)
 
   ● Testing Adding players › Testing for original 30 player list, and that league manager can add players
 
@@ -2747,15 +2747,11 @@ FAIL src/Components.test.tsx (13.302 s)
           [36m<h1[39m
             [33mclass[39m=[32m"heading"[39m
           [36m>[39m
-            [36m<br />[39m
+            [0m [0m
             [0mNFL Football TeamBuilder[0m
             [36m<br />[39m
             [0mDrag or Click Player Icons to Put Them on Your Team[0m
-            [36m<br />[39m
-            [36m<br />[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"roleSelectAndAddUser"[39m
-            [36m>[39m
+            [36m<div>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"roleSelect"[39m
               [36m>[39m
@@ -2919,7 +2915,11 @@ FAIL src/Components.test.tsx (13.302 s)
                   [36m<input[39m
                     [33mclass[39m=[32m"form-check-input"[39m
                     [33mdata-testid[39m=[32m"filterTE"[39m
-                    [33mname[39m=[32m"posit...
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+     ...
 
       87 |         render(<App />);
       88 |         expect(screen.getByText(/player count in the central list is: 30/));
@@ -2950,15 +2950,11 @@ FAIL src/Components.test.tsx (13.302 s)
           [36m<h1[39m
             [33mclass[39m=[32m"heading"[39m
           [36m>[39m
-            [36m<br />[39m
+            [0m [0m
             [0mNFL Football TeamBuilder[0m
             [36m<br />[39m
             [0mDrag or Click Player Icons to Put Them on Your Team[0m
-            [36m<br />[39m
-            [36m<br />[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"roleSelectAndAddUser"[39m
-            [36m>[39m
+            [36m<div>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"roleSelect"[39m
               [36m>[39m
@@ -3122,7 +3118,11 @@ FAIL src/Components.test.tsx (13.302 s)
                   [36m<input[39m
                     [33mclass[39m=[32m"form-check-input"[39m
                     [33mdata-testid[39m=[32m"filterTE"[39m
-                    [33mname[39m=[32m"posit...
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+     ...
 
       143 |         render(<App />);
       144 |         expect(screen.getByText(/player count in the central list is: 30/));
@@ -3175,15 +3175,11 @@ FAIL src/Components.test.tsx (13.302 s)
           [36m<h1[39m
             [33mclass[39m=[32m"heading"[39m
           [36m>[39m
-            [36m<br />[39m
+            [0m [0m
             [0mNFL Football TeamBuilder[0m
             [36m<br />[39m
             [0mDrag or Click Player Icons to Put Them on Your Team[0m
-            [36m<br />[39m
-            [36m<br />[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"roleSelectAndAddUser"[39m
-            [36m>[39m
+            [36m<div>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"roleSelect"[39m
               [36m>[39m
@@ -3347,7 +3343,11 @@ FAIL src/Components.test.tsx (13.302 s)
                   [36m<input[39m
                     [33mclass[39m=[32m"form-check-input"[39m
                     [33mdata-testid[39m=[32m"filterTE"[39m
-                    [33mname[39m=[32m"posit...
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+     ...
 
       211 |         render(<App />);
       212 |         expect(screen.getByText(/player count in the central list is: 30/));
@@ -3378,15 +3378,11 @@ FAIL src/Components.test.tsx (13.302 s)
           [36m<h1[39m
             [33mclass[39m=[32m"heading"[39m
           [36m>[39m
-            [36m<br />[39m
+            [0m [0m
             [0mNFL Football TeamBuilder[0m
             [36m<br />[39m
             [0mDrag or Click Player Icons to Put Them on Your Team[0m
-            [36m<br />[39m
-            [36m<br />[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"roleSelectAndAddUser"[39m
-            [36m>[39m
+            [36m<div>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"roleSelect"[39m
               [36m>[39m
@@ -3550,7 +3546,11 @@ FAIL src/Components.test.tsx (13.302 s)
                   [36m<input[39m
                     [33mclass[39m=[32m"form-check-input"[39m
                     [33mdata-testid[39m=[32m"filterTE"[39m
-                    [33mname[39m=[32m"posit...
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+     ...
 
       246 |         render(<App />);
       247 |         const sortID = screen.getByLabelText(/Sort Select/);
@@ -3581,15 +3581,11 @@ FAIL src/Components.test.tsx (13.302 s)
           [36m<h1[39m
             [33mclass[39m=[32m"heading"[39m
           [36m>[39m
-            [36m<br />[39m
+            [0m [0m
             [0mNFL Football TeamBuilder[0m
             [36m<br />[39m
             [0mDrag or Click Player Icons to Put Them on Your Team[0m
-            [36m<br />[39m
-            [36m<br />[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"roleSelectAndAddUser"[39m
-            [36m>[39m
+            [36m<div>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"roleSelect"[39m
               [36m>[39m
@@ -3753,7 +3749,11 @@ FAIL src/Components.test.tsx (13.302 s)
                   [36m<input[39m
                     [33mclass[39m=[32m"form-check-input"[39m
                     [33mdata-testid[39m=[32m"filterTE"[39m
-                    [33mname[39m=[32m"posit...
+                    [33mname[39m=[32m"positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+     ...
 
       263 |         render(<App />);
       264 |         const sortID = screen.getByLabelText(/Sort Select/);
@@ -3798,9 +3798,9 @@ FAIL src/Components.test.tsx (13.302 s)
 -----------------------|---------|----------|---------|---------|----------------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
 -----------------------|---------|----------|---------|---------|----------------------------
-All files              |    45.2 |       55 |   41.37 |   44.82 |                            
- src                   |   70.17 |    56.25 |      20 |   70.17 |                            
-  App.tsx              |   34.61 |    56.25 |      20 |   34.61 | 70-105                     
+All files              |    45.2 |    54.08 |   41.37 |   44.82 |                            
+ src                   |   70.17 |       50 |      20 |   70.17 |                            
+  App.tsx              |   34.61 |       50 |      20 |   34.61 | 59-94                      
   players.tsx          |     100 |      100 |     100 |     100 |                            
  src/components        |   39.14 |    54.76 |   42.68 |   38.62 |                            
   AddPlayers.tsx       |     100 |      100 |     100 |     100 |                            
@@ -3827,5 +3827,5 @@ All files              |    45.2 |       55 |   41.37 |   44.82 |
 Test Suites: 1 failed, 1 total
 Tests:       7 failed, 38 passed, 45 total
 Snapshots:   0 total
-Time:        14.115 s
+Time:        9.248 s
 Ran all test suites.
