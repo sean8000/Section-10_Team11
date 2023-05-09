@@ -252,6 +252,7 @@ function Test({
                                 totalYards: curr.stats.totalYards
                             }}
                             rating={curr.rating}
+                            original={curr.original}
                         ></PlayerStats>
                         {/*}<div>
                             {visible && (
