@@ -5,7 +5,7 @@
   console.log
     Team Manager
 
-      at updateRole (src/components/roleSelect.tsx:35:21)
+      at updateRole (src/components/roleSelect.tsx:37:21)
 
   console.log
     Pos
@@ -25,7 +25,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 96
+        rating: 96,
+        original: 'Harrison Butker'
       },
       {
         name: 'Justin Tucker',
@@ -38,7 +39,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       },
       {
         name: 'Evan McPherson',
@@ -51,7 +53,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 93
+        rating: 93,
+        original: 'Evan McPherson'
       },
       {
         name: 'Younghoe Koo',
@@ -64,7 +67,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 90
+        rating: 90,
+        original: 'Younghoe Koo'
       },
       {
         name: 'Joe Burrow',
@@ -77,7 +81,8 @@
           rushAttempts: 75,
           totalYards: 4475
         },
-        rating: 95
+        rating: 95,
+        original: 'Joe Burrow'
       },
       {
         name: 'Josh Allen',
@@ -90,7 +95,8 @@
           rushAttempts: 124,
           totalYards: 4283
         },
-        rating: 95
+        rating: 95,
+        original: 'Josh Allen'
       },
       {
         name: 'Daniel Jones',
@@ -103,7 +109,8 @@
           rushAttempts: 108,
           totalYards: 3205
         },
-        rating: 90
+        rating: 90,
+        original: 'Daniel Jones'
       },
       {
         name: 'Patrick Mahomes',
@@ -116,7 +123,8 @@
           rushAttempts: 61,
           totalYards: 5250
         },
-        rating: 99
+        rating: 99,
+        original: 'Patrick Mahomes'
       },
       {
         name: 'Christian McCaffrey',
@@ -129,7 +137,8 @@
           rushAttempts: 244,
           totalYards: 1880
         },
-        rating: 95
+        rating: 95,
+        original: 'Christian McCaffrey'
       },
       {
         name: 'Saquon Barkley',
@@ -142,7 +151,8 @@
           rushAttempts: 277,
           totalYards: 1650
         },
-        rating: 99
+        rating: 99,
+        original: 'Saquon Barkley'
       },
       {
         name: 'Austin Ekeler',
@@ -155,7 +165,8 @@
           rushAttempts: 204,
           totalYards: 1637
         },
-        rating: 94
+        rating: 94,
+        original: 'Austin Ekeler'
       },
       {
         name: 'Joe Mixon',
@@ -168,7 +179,8 @@
           rushAttempts: 210,
           totalYards: 1255
         },
-        rating: 88
+        rating: 88,
+        original: 'Joe Mixon'
       },
       {
         name: 'Derrick Henry',
@@ -181,7 +193,8 @@
           rushAttempts: 349,
           totalYards: 1936
         },
-        rating: 99
+        rating: 99,
+        original: 'Derrick Henry'
       },
       {
         name: 'Josh Jacobs',
@@ -194,7 +207,8 @@
           rushAttempts: 340,
           totalYards: 2053
         },
-        rating: 99
+        rating: 99,
+        original: 'Josh Jacobs'
       },
       {
         name: 'Aaron Jones',
@@ -207,7 +221,8 @@
           rushAttempts: 213,
           totalYards: 1516
         },
-        rating: 89
+        rating: 89,
+        original: 'Aaron Jones'
       },
       {
         name: 'Nick Chubb',
@@ -220,7 +235,8 @@
           rushAttempts: 302,
           totalYards: 1764
         },
-        rating: 99
+        rating: 99,
+        original: 'Nick Chubb'
       },
       {
         name: 'Dalvin Cook',
@@ -233,7 +249,8 @@
           rushAttempts: 264,
           totalYards: 1468
         },
-        rating: 86
+        rating: 86,
+        original: 'Dalvin Cook'
       },
       {
         name: 'George Kittle',
@@ -246,7 +263,8 @@
           rushAttempts: 0,
           totalYards: 765
         },
-        rating: 96
+        rating: 96,
+        original: 'George Kittle'
       },
       {
         name: 'Travis Kelce',
@@ -259,7 +277,8 @@
           rushAttempts: 0,
           totalYards: 1338
         },
-        rating: 99
+        rating: 99,
+        original: 'Travis Kelce'
       },
       {
         name: 'Mark Andrews',
@@ -267,7 +286,8 @@
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/m1fmyihulvtdiav4bwxm',
         position: 'TE',
         stats: { touchdowns: 5, receptions: 73, rushAttempts: 0, totalYards: 847 },
-        rating: 94
+        rating: 94,
+        original: 'Mark Andrews'
       },
       {
         name: 'Darren Waller',
@@ -275,7 +295,8 @@
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/c7jaefxw5xiawscvnqc0',
         position: 'TE',
         stats: { touchdowns: 3, receptions: 28, rushAttempts: 0, totalYards: 388 },
-        rating: 90
+        rating: 90,
+        original: 'Darren Waller'
       },
       {
         name: 'Tyreek Hill',
@@ -288,7 +309,8 @@
           rushAttempts: 0,
           totalYards: 1710
         },
-        rating: 98
+        rating: 98,
+        original: 'Tyreek Hill'
       },
       {
         name: 'DeAndre Hopkins',
@@ -296,7 +318,8 @@
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/kikfprn4t5ap1lju4a4k',
         position: 'WR',
         stats: { touchdowns: 3, receptions: 64, rushAttempts: 0, totalYards: 717 },
-        rating: 91
+        rating: 91,
+        original: 'DeAndre Hopkins'
       },
       {
         name: 'Mike Evans',
@@ -309,7 +332,8 @@
           rushAttempts: 0,
           totalYards: 1124
         },
-        rating: 92
+        rating: 92,
+        original: 'Mike Evans'
       },
       {
         name: 'Deebo Samuel',
@@ -317,7 +341,8 @@
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/ciwaktyqewczcquks4wy',
         position: 'WR',
         stats: { touchdowns: 2, receptions: 56, rushAttempts: 0, totalYards: 632 },
-        rating: 89
+        rating: 89,
+        original: 'Deebo Samuel'
       },
       {
         name: 'Stefon Diggs',
@@ -330,7 +355,8 @@
           rushAttempts: 0,
           totalYards: 1429
         },
-        rating: 95
+        rating: 95,
+        original: 'Stefon Diggs'
       },
       {
         name: 'Amari Cooper',
@@ -343,7 +369,8 @@
           rushAttempts: 0,
           totalYards: 1160
         },
-        rating: 88
+        rating: 88,
+        original: 'Amari Cooper'
       },
       {
         name: "Ja'Marr Chase",
@@ -356,7 +383,8 @@
           rushAttempts: 0,
           totalYards: 1046
         },
-        rating: 92
+        rating: 92,
+        original: "Ja'Marr Chase"
       },
       {
         name: 'Justin Jefferson',
@@ -369,7 +397,8 @@
           rushAttempts: 0,
           totalYards: 1809
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Jefferson'
       },
       {
         name: 'Davante Adams',
@@ -382,7 +411,8 @@
           rushAttempts: 0,
           totalYards: 1516
         },
-        rating: 98
+        rating: 98,
+        original: 'Davante Adams'
       }
     ]
 
@@ -416,7 +446,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       },
       {
         name: 'Harrison Butker',
@@ -429,7 +460,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 96
+        rating: 96,
+        original: 'Harrison Butker'
       },
       {
         name: 'Evan McPherson',
@@ -442,7 +474,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 93
+        rating: 93,
+        original: 'Evan McPherson'
       },
       {
         name: 'Younghoe Koo',
@@ -455,7 +488,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 90
+        rating: 90,
+        original: 'Younghoe Koo'
       },
       {
         name: 'Justin Korup',
@@ -463,7 +497,8 @@
         image: 'https://12345',
         position: 'K',
         stats: { touchdowns: 1, receptions: 1, rushAttempts: 1, totalYards: 1 },
-        rating: 1
+        rating: 1,
+        original: 'Justin Korup'
       },
       {
         name: 'Patrick Mahomes',
@@ -476,7 +511,8 @@
           rushAttempts: 61,
           totalYards: 5250
         },
-        rating: 99
+        rating: 99,
+        original: 'Patrick Mahomes'
       },
       {
         name: 'Joe Burrow',
@@ -489,7 +525,8 @@
           rushAttempts: 75,
           totalYards: 4475
         },
-        rating: 95
+        rating: 95,
+        original: 'Joe Burrow'
       },
       {
         name: 'Josh Allen',
@@ -502,7 +539,8 @@
           rushAttempts: 124,
           totalYards: 4283
         },
-        rating: 95
+        rating: 95,
+        original: 'Josh Allen'
       },
       {
         name: 'Daniel Jones',
@@ -515,7 +553,8 @@
           rushAttempts: 108,
           totalYards: 3205
         },
-        rating: 90
+        rating: 90,
+        original: 'Daniel Jones'
       },
       {
         name: 'Saquon Barkley',
@@ -528,7 +567,8 @@
           rushAttempts: 277,
           totalYards: 1650
         },
-        rating: 99
+        rating: 99,
+        original: 'Saquon Barkley'
       },
       {
         name: 'Derrick Henry',
@@ -541,7 +581,8 @@
           rushAttempts: 349,
           totalYards: 1936
         },
-        rating: 99
+        rating: 99,
+        original: 'Derrick Henry'
       },
       {
         name: 'Josh Jacobs',
@@ -554,7 +595,8 @@
           rushAttempts: 340,
           totalYards: 2053
         },
-        rating: 99
+        rating: 99,
+        original: 'Josh Jacobs'
       },
       {
         name: 'Nick Chubb',
@@ -567,7 +609,8 @@
           rushAttempts: 302,
           totalYards: 1764
         },
-        rating: 99
+        rating: 99,
+        original: 'Nick Chubb'
       },
       {
         name: 'Christian McCaffrey',
@@ -580,7 +623,8 @@
           rushAttempts: 244,
           totalYards: 1880
         },
-        rating: 95
+        rating: 95,
+        original: 'Christian McCaffrey'
       },
       {
         name: 'Austin Ekeler',
@@ -593,7 +637,8 @@
           rushAttempts: 204,
           totalYards: 1637
         },
-        rating: 94
+        rating: 94,
+        original: 'Austin Ekeler'
       },
       {
         name: 'Aaron Jones',
@@ -606,7 +651,8 @@
           rushAttempts: 213,
           totalYards: 1516
         },
-        rating: 89
+        rating: 89,
+        original: 'Aaron Jones'
       },
       {
         name: 'Joe Mixon',
@@ -619,7 +665,8 @@
           rushAttempts: 210,
           totalYards: 1255
         },
-        rating: 88
+        rating: 88,
+        original: 'Joe Mixon'
       },
       {
         name: 'Dalvin Cook',
@@ -632,7 +679,8 @@
           rushAttempts: 264,
           totalYards: 1468
         },
-        rating: 86
+        rating: 86,
+        original: 'Dalvin Cook'
       },
       {
         name: 'Travis Kelce',
@@ -645,7 +693,8 @@
           rushAttempts: 0,
           totalYards: 1338
         },
-        rating: 99
+        rating: 99,
+        original: 'Travis Kelce'
       },
       {
         name: 'George Kittle',
@@ -658,7 +707,8 @@
           rushAttempts: 0,
           totalYards: 765
         },
-        rating: 96
+        rating: 96,
+        original: 'George Kittle'
       },
       {
         name: 'Mark Andrews',
@@ -666,7 +716,8 @@
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/m1fmyihulvtdiav4bwxm',
         position: 'TE',
         stats: { touchdowns: 5, receptions: 73, rushAttempts: 0, totalYards: 847 },
-        rating: 94
+        rating: 94,
+        original: 'Mark Andrews'
       },
       {
         name: 'Darren Waller',
@@ -674,7 +725,8 @@
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/c7jaefxw5xiawscvnqc0',
         position: 'TE',
         stats: { touchdowns: 3, receptions: 28, rushAttempts: 0, totalYards: 388 },
-        rating: 90
+        rating: 90,
+        original: 'Darren Waller'
       },
       {
         name: 'Justin Jefferson',
@@ -687,7 +739,8 @@
           rushAttempts: 0,
           totalYards: 1809
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Jefferson'
       },
       {
         name: 'Tyreek Hill',
@@ -700,7 +753,8 @@
           rushAttempts: 0,
           totalYards: 1710
         },
-        rating: 98
+        rating: 98,
+        original: 'Tyreek Hill'
       },
       {
         name: 'Davante Adams',
@@ -713,7 +767,8 @@
           rushAttempts: 0,
           totalYards: 1516
         },
-        rating: 98
+        rating: 98,
+        original: 'Davante Adams'
       },
       {
         name: 'Stefon Diggs',
@@ -726,7 +781,8 @@
           rushAttempts: 0,
           totalYards: 1429
         },
-        rating: 95
+        rating: 95,
+        original: 'Stefon Diggs'
       },
       {
         name: 'Mike Evans',
@@ -739,7 +795,8 @@
           rushAttempts: 0,
           totalYards: 1124
         },
-        rating: 92
+        rating: 92,
+        original: 'Mike Evans'
       },
       {
         name: "Ja'Marr Chase",
@@ -752,7 +809,8 @@
           rushAttempts: 0,
           totalYards: 1046
         },
-        rating: 92
+        rating: 92,
+        original: "Ja'Marr Chase"
       },
       {
         name: 'DeAndre Hopkins',
@@ -760,7 +818,8 @@
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/kikfprn4t5ap1lju4a4k',
         position: 'WR',
         stats: { touchdowns: 3, receptions: 64, rushAttempts: 0, totalYards: 717 },
-        rating: 91
+        rating: 91,
+        original: 'DeAndre Hopkins'
       },
       {
         name: 'Deebo Samuel',
@@ -768,7 +827,8 @@
         image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/ciwaktyqewczcquks4wy',
         position: 'WR',
         stats: { touchdowns: 2, receptions: 56, rushAttempts: 0, totalYards: 632 },
-        rating: 89
+        rating: 89,
+        original: 'Deebo Samuel'
       },
       {
         name: 'Amari Cooper',
@@ -781,7 +841,8 @@
           rushAttempts: 0,
           totalYards: 1160
         },
-        rating: 88
+        rating: 88,
+        original: 'Amari Cooper'
       }
     ]
 
@@ -810,7 +871,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -819,7 +881,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -835,7 +897,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -844,7 +907,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -860,7 +923,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       },
       {
         name: 'Justin Tucker',
@@ -873,7 +937,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -882,13 +947,13 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -904,7 +969,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -923,7 +989,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -932,12 +999,12 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
+      '__reactFiber$1ha15q3gewi': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -971,7 +1038,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 105475,
+          _debugID: 105659,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1005,7 +1072,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 106158,
+          _debugID: 106343,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1039,10 +1106,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 106156,
+        _debugID: 106341,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 323,
+          lineNumber: 324,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -1073,7 +1140,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 102995,
+          _debugID: 103175,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1082,7 +1149,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sfszzd86h6': {
+      '__reactProps$1ha15q3gewi': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -1104,7 +1171,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1113,12 +1181,12 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
+      '__reactFiber$1ha15q3gewi': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1152,7 +1220,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 108697,
+          _debugID: 108886,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1186,7 +1254,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 109380,
+          _debugID: 109570,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1220,10 +1288,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 109378,
+        _debugID: 109568,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 323,
+          lineNumber: 324,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -1254,7 +1322,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 106217,
+          _debugID: 106402,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1263,7 +1331,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sfszzd86h6': {
+      '__reactProps$1ha15q3gewi': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -1295,7 +1363,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 9
+        rating: 9,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1304,7 +1373,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1330,7 +1399,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 90
+        rating: 90,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1339,7 +1409,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1355,7 +1425,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1364,12 +1435,12 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
+      '__reactFiber$1ha15q3gewi': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1403,7 +1474,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 113220,
+          _debugID: 113416,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1437,7 +1508,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 113903,
+          _debugID: 114100,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1471,10 +1542,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 113901,
+        _debugID: 114098,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 323,
+          lineNumber: 324,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -1505,7 +1576,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 110740,
+          _debugID: 110932,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1514,7 +1585,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sfszzd86h6': {
+      '__reactProps$1ha15q3gewi': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -1546,7 +1617,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 9
+        rating: 9,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1555,7 +1627,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1581,7 +1653,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 95
+        rating: 95,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1590,7 +1663,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1616,7 +1689,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 5
+        rating: 5,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1625,7 +1699,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1651,7 +1725,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 50
+        rating: 50,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1660,7 +1735,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1676,7 +1751,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1685,12 +1761,12 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
+      '__reactFiber$1ha15q3gewi': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1724,7 +1800,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 119019,
+          _debugID: 119224,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -1758,7 +1834,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 119702,
+          _debugID: 119908,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1792,10 +1868,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 119700,
+        _debugID: 119906,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 323,
+          lineNumber: 324,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -1826,7 +1902,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 116539,
+          _debugID: 116740,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -1835,7 +1911,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sfszzd86h6': {
+      '__reactProps$1ha15q3gewi': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -1867,7 +1943,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 9
+        rating: 9,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1876,7 +1953,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1902,7 +1979,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 90
+        rating: 90,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1911,7 +1989,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1937,7 +2015,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 0
+        rating: 0,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1946,7 +2025,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -1962,7 +2041,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -1971,12 +2051,12 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
+      '__reactFiber$1ha15q3gewi': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2010,7 +2090,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 124180,
+          _debugID: 124393,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -2044,7 +2124,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 124863,
+          _debugID: 125077,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2078,10 +2158,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 124861,
+        _debugID: 125075,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 323,
+          lineNumber: 324,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -2112,7 +2192,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 121700,
+          _debugID: 121909,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2121,7 +2201,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sfszzd86h6': {
+      '__reactProps$1ha15q3gewi': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -2153,7 +2233,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 9
+        rating: 9,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -2162,7 +2243,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2188,7 +2269,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 91
+        rating: 91,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -2197,7 +2279,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2223,7 +2305,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 1
+        rating: 1,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -2232,7 +2315,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2258,7 +2341,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 10
+        rating: 10,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -2267,7 +2351,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2293,7 +2377,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 100
+        rating: 100,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -2302,7 +2387,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2318,7 +2403,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 99
+        rating: 99,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -2327,12 +2413,12 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$sfszzd86h6': <ref *2> FiberNode {
+      '__reactFiber$1ha15q3gewi': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2366,7 +2452,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 130617,
+          _debugID: 130840,
           _debugSource: null,
           _debugOwner: null,
           _debugNeedsRemount: false,
@@ -2400,7 +2486,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 131300,
+          _debugID: 131524,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2434,10 +2520,10 @@
         actualStartTime: -1,
         selfBaseDuration: 0,
         treeBaseDuration: 0,
-        _debugID: 131298,
+        _debugID: 131522,
         _debugSource: {
           fileName: '/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/Test.tsx',
-          lineNumber: 323,
+          lineNumber: 324,
           columnNumber: 25
         },
         _debugOwner: FiberNode {
@@ -2468,7 +2554,7 @@
           actualStartTime: -1,
           selfBaseDuration: 0,
           treeBaseDuration: 0,
-          _debugID: 128137,
+          _debugID: 128356,
           _debugSource: [Object],
           _debugOwner: [FiberNode],
           _debugNeedsRemount: false,
@@ -2477,7 +2563,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$sfszzd86h6': {
+      '__reactProps$1ha15q3gewi': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object] ]
@@ -2509,7 +2595,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 9
+        rating: 9,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -2518,7 +2605,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2544,7 +2631,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 91
+        rating: 91,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -2553,7 +2641,7 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
   console.log
@@ -2579,7 +2667,8 @@
           rushAttempts: -1,
           totalYards: -1
         },
-        rating: 1
+        rating: 1,
+        original: 'Justin Tucker'
       }
     ]
 
@@ -2588,64 +2677,64 @@
   console.log
     0
 
-      at map (src/components/Test.tsx:339:42)
+      at map (src/components/Test.tsx:340:42)
           at Array.map (<anonymous>)
 
-FAIL src/Components.test.tsx (9.995 s)
+FAIL src/Components.test.tsx (9.671 s)
   Role Tests
-    ✓ Tests that there is a combobox (247 ms)
-    ✓ Tests that the first role value is League Manager (119 ms)
-    ✓ Tests that the changed value is Team Manager (185 ms)
-    ✓ Tests that the changed value is Guest User (158 ms)
-    ✓ Test adding user (281 ms)
+    ✓ Tests that there is a combobox (229 ms)
+    ✓ Tests that the first role value is League Manager (112 ms)
+    ✓ Tests that the changed value is Team Manager (192 ms)
+    ✓ Tests that the changed value is Guest User (148 ms)
+    ✓ Test adding user (205 ms)
   Drag Tests
-    ✓ Testing for original 30 player list (64 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (94 ms)
-    ✓ Testing that draggable list appears when not league manager (209 ms)
-    ✓ Testing that first player is draggable (45 ms)
-    ✓ Testing that first player can be dragged to other list (40 ms)
+    ✓ Testing for original 30 player list (54 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (81 ms)
+    ✓ Testing that draggable list appears when not league manager (201 ms)
+    ✓ Testing that first player is draggable (44 ms)
+    ✓ Testing that first player can be dragged to other list (43 ms)
   Testing Adding players
-    ✓ Testing for original 30 player list, and that league manager can add players (64 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (312 ms)
-    ✓ Testing for adding 1 player, see if list increased in size (284 ms)
-    ✓ Test adding player doesn't appear when not league manager (115 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (62 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (296 ms)
+    ✓ Testing for adding 1 player, see if list increased in size (268 ms)
     ✓ Test adding player doesn't appear when not league manager (108 ms)
+    ✓ Test adding player doesn't appear when not league manager (95 ms)
   Testing Filter
-    ✓ Testing for original 30 player list (52 ms)
-    ✓ Testing no filter (43 ms)
-    ✓ Testing for filtered by QB (47 ms)
+    ✓ Testing for original 30 player list (45 ms)
+    ✓ Testing no filter (44 ms)
+    ✓ Testing for filtered by QB (40 ms)
     ✓ Testing for filtered by RB (52 ms)
-    ✓ Testing for filtered by WR (50 ms)
-    ✓ Testing for filtered by TE (47 ms)
-    ✓ Testing for filtered by K (52 ms)
+    ✓ Testing for filtered by WR (48 ms)
+    ✓ Testing for filtered by TE (36 ms)
+    ✓ Testing for filtered by K (48 ms)
   Testing Sort
-    ✓ Testing for original 30 player list, and that league manager can add players (50 ms)
-    ✓ Testing for sorted by position (127 ms)
-    ✓ Test sorted by Rating (117 ms)
-    ✕ Test sorted by Touchdowns (86 ms)
-    ✕ Test sorted by None (77 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (49 ms)
+    ✓ Testing for sorted by position (126 ms)
+    ✓ Test sorted by Rating (95 ms)
+    ✕ Test sorted by Touchdowns (88 ms)
+    ✕ Test sorted by None (73 ms)
     Testing adding players with filter
-      ✓ Testing for original 30 player list (35 ms)
-      ✓ Testing for adding 1 player, filter is none (287 ms)
-      ✓ Testing for adding 1 player, filter is K, player is a K (291 ms)
-      ✓ Testing for adding 1 player, filter is QB, player is a K (265 ms)
+      ✓ Testing for original 30 player list (41 ms)
+      ✓ Testing for adding 1 player, filter is none (271 ms)
+      ✓ Testing for adding 1 player, filter is K, player is a K (289 ms)
+      ✓ Testing for adding 1 player, filter is QB, player is a K (264 ms)
   Testing adding players with sort
-    ✓ Testing for original 30 player list (37 ms)
-    ✓ Testing for adding player, sort is none (316 ms)
-    ✓ Testing for adding player, sort is Position (376 ms)
-    ✓ Testing for adding player, sort is Rating (347 ms)
-    ✓ Testing for adding player, sort is Touchdowns (340 ms)
+    ✓ Testing for original 30 player list (33 ms)
+    ✓ Testing for adding player, sort is none (306 ms)
+    ✓ Testing for adding player, sort is Position (318 ms)
+    ✓ Testing for adding player, sort is Rating (312 ms)
+    ✓ Testing for adding player, sort is Touchdowns (296 ms)
   Adding Players Using Button
-    ✓ Testing adding player to user list as guest user (112 ms)
-    ✓ Testing adding duplicates Guest User (149 ms)
-    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (118 ms)
+    ✓ Testing adding player to user list as guest user (106 ms)
+    ✓ Testing adding duplicates Guest User (133 ms)
+    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (121 ms)
   Testing User Rating
-    ✓ Testing original rating before change (147 ms)
-    ✓ Testing Changing value from 99 to 90 (188 ms)
-    ✓ Testing Changing value to 50 (235 ms)
-    ✓ Testing Changing value to 0 (259 ms)
-    ✓ Testing Changing value to 101, not possible will stay at 100 (247 ms)
-    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (208 ms)
+    ✓ Testing original rating before change (125 ms)
+    ✓ Testing Changing value from 99 to 90 (172 ms)
+    ✓ Testing Changing value to 50 (205 ms)
+    ✓ Testing Changing value to 0 (209 ms)
+    ✓ Testing Changing value to 101, not possible will stay at 100 (240 ms)
+    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (196 ms)
 
   ● Testing Sort › Test sorted by Touchdowns
 
@@ -2732,6 +2821,7 @@ FAIL src/Components.test.tsx (9.995 s)
                 [0mDelete This User[0m
               [36m</button>[39m
             [36m</div>[39m
+            [0m[0m
           [36m</h1>[39m
           [36m<div[39m
             [33mclass[39m=[32m"Test"[39m
@@ -2831,8 +2921,7 @@ FAIL src/Components.test.tsx (9.995 s)
                     [33mtitle[39m=[32m""[39m
                   [36m>[39m
                     [0mTE[0m
-                  [36m</label>[39m
-        ...
+                  [36m<...
 
       246 |         render(<App />);
       247 |         const sortID = screen.getByLabelText(/Sort Select/);
@@ -2937,6 +3026,7 @@ FAIL src/Components.test.tsx (9.995 s)
                 [0mDelete This User[0m
               [36m</button>[39m
             [36m</div>[39m
+            [0m[0m
           [36m</h1>[39m
           [36m<div[39m
             [33mclass[39m=[32m"Test"[39m
@@ -3036,8 +3126,7 @@ FAIL src/Components.test.tsx (9.995 s)
                     [33mtitle[39m=[32m""[39m
                   [36m>[39m
                     [0mTE[0m
-                  [36m</label>[39m
-        ...
+                  [36m<...
 
       263 |         render(<App />);
       264 |         const sortID = screen.getByLabelText(/Sort Select/);
@@ -3057,27 +3146,37 @@ FAIL src/Components.test.tsx (9.995 s)
       at _run10000 (node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
----------------------|---------|----------|---------|---------|----------------------------
-File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
----------------------|---------|----------|---------|---------|----------------------------
-All files            |   75.14 |    73.33 |   67.92 |   74.85 |                            
- src                 |     100 |      100 |     100 |     100 |                            
-  App.tsx            |     100 |      100 |     100 |     100 |                            
-  players.tsx        |     100 |      100 |     100 |     100 |                            
- src/components      |   67.91 |    73.33 |    67.3 |   67.42 |                            
-  AddPlayers.tsx     |     100 |      100 |     100 |     100 |                            
-  PlayerStats.tsx    |   66.66 |       50 |      50 |   66.66 | 15                         
-  PositionFilter.tsx |   88.88 |       50 |     100 |   88.88 | 32                         
-  Test.tsx           |   31.91 |       65 |   36.36 |   31.91 | 63-103,121-149,212,302,347 
-  UserRating.tsx     |     100 |      100 |     100 |     100 |                            
-  UserText.tsx       |     100 |      100 |     100 |     100 |                            
-  roleSelect.tsx     |   59.09 |     62.5 |   66.66 |   59.09 | 53-63                      
-  sortSelect.tsx     |     100 |    92.85 |     100 |     100 | 41                         
- src/interfaces      |       0 |        0 |       0 |       0 |                            
-  player.tsx         |       0 |        0 |       0 |       0 |                            
----------------------|---------|----------|---------|---------|----------------------------
+-----------------------|---------|----------|---------|---------|----------------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
+-----------------------|---------|----------|---------|---------|----------------------------
+All files              |    45.2 |    53.12 |   41.37 |   44.82 |                            
+ src                   |   70.17 |       50 |      20 |   70.17 |                            
+  App.tsx              |   34.61 |       50 |      20 |   34.61 | 56-91                      
+  players.tsx          |     100 |      100 |     100 |     100 |                            
+ src/components        |   39.14 |    53.65 |   42.68 |   38.62 |                            
+  AddPlayers.tsx       |     100 |      100 |     100 |     100 |                            
+  AdminEdit.tsx        |       0 |      100 |       0 |       0 | 39-42                      
+  EditDescription.tsx  |       0 |      100 |       0 |       0 | 16-35                      
+  EditImage.tsx        |       0 |      100 |       0 |       0 | 12-31                      
+  EditName.tsx         |       0 |      100 |       0 |       0 | 12-31                      
+  EditPosition.tsx     |       0 |      100 |       0 |       0 | 16-42                      
+  EditRating.tsx       |       0 |        0 |       0 |       0 | 15-40                      
+  EditReceptions.tsx   |       0 |        0 |       0 |       0 | 15-41                      
+  EditRushAttempts.tsx |       0 |        0 |       0 |       0 | 15-41                      
+  EditTotalYards.tsx   |       0 |        0 |       0 |       0 | 15-41                      
+  EditTouchdowns.tsx   |       0 |        0 |       0 |       0 | 15-41                      
+  PlayerStats.tsx      |   66.66 |       50 |      50 |   66.66 | 15                         
+  PositionFilter.tsx   |   88.88 |       50 |     100 |   88.88 | 32                         
+  Test.tsx             |   31.91 |       65 |   36.36 |   31.91 | 63-103,121-149,212,303,348 
+  UserRating.tsx       |     100 |      100 |     100 |     100 |                            
+  UserText.tsx         |     100 |      100 |     100 |     100 |                            
+  roleSelect.tsx       |   60.86 |     62.5 |   66.66 |   60.86 | 56-66                      
+  sortSelect.tsx       |     100 |    92.85 |     100 |     100 | 41                         
+ src/interfaces        |       0 |        0 |       0 |       0 |                            
+  player.tsx           |       0 |        0 |       0 |       0 |                            
+-----------------------|---------|----------|---------|---------|----------------------------
 Test Suites: 1 failed, 1 total
 Tests:       2 failed, 43 passed, 45 total
 Snapshots:   0 total
-Time:        10.711 s
+Time:        10.359 s
 Ran all test suites.
