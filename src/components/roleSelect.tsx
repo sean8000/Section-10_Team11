@@ -70,50 +70,52 @@ export function RoleSelect({
     // This is the View
     return (
         <>
-            <div className="roleSelect">
-                <Form.Group controlId="Roles">
-                    <Form.Label style={{ fontSize: 15, color: "white" }}>
-                        Which role
-                    </Form.Label>
-                    <Form.Select value={role} onChange={updateRole}>
-                        {totalRoles.map((role: string) => (
-                            <option key={role} value={role}>
-                                {role}
-                            </option>
-                        ))}
-                        {/*}
+            <div className="roleSelectAndAddUser">
+                <div className="roleSelect">
+                    <Form.Group controlId="Roles">
+                        <Form.Label style={{ fontSize: 15, color: "white" }}>
+                            Which role
+                        </Form.Label>
+                        <Form.Select value={role} onChange={updateRole}>
+                            {totalRoles.map((role: string) => (
+                                <option key={role} value={role}>
+                                    {role}
+                                </option>
+                            ))}
+                            {/*}
                     <option value="Super">Super</option>
                     <option value="Admin">Admin</option>
                     <option value="User1">User1</option>
                     <option value="User2">User2</option>
                     {*/}
-                    </Form.Select>
-                </Form.Group>
-            </div>
-            {role === "League Manager" ? (
-                <div className="AddingAndDeletingUsers">
-                    <UserText
-                        userText={userText}
-                        setUserText={setUserText}
-                    ></UserText>
-                    <Button
-                        className="AddOrDeleteUserButtons"
-                        data-testid="addButton"
-                        onClick={addUser}
-                    >
-                        Add This User
-                    </Button>
-                    <Button
-                        className="AddOrDeleteUserButtons"
-                        data-testid="delButton"
-                        onClick={removeUser}
-                    >
-                        Delete This User
-                    </Button>
+                        </Form.Select>
+                    </Form.Group>
                 </div>
-            ) : (
-                <span></span>
-            )}
+                {role === "League Manager" ? (
+                    <div className="AddingAndDeletingUsers">
+                        <UserText
+                            userText={userText}
+                            setUserText={setUserText}
+                        ></UserText>
+                        <Button
+                            className="AddOrDeleteUserButtons"
+                            data-testid="addButton"
+                            onClick={addUser}
+                        >
+                            Add This User
+                        </Button>
+                        <Button
+                            className="AddOrDeleteUserButtons"
+                            data-testid="delButton"
+                            onClick={removeUser}
+                        >
+                            Delete This User
+                        </Button>
+                    </div>
+                ) : (
+                    <span></span>
+                )}
+            </div>
         </>
     );
 }

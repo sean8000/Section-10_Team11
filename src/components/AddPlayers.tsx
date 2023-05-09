@@ -60,6 +60,15 @@ export function AddPlayers({
     return (
         <>
             <div className="addingPlayers">
+                <h6
+                    style={{
+                        fontSize: 30,
+                        color: "white",
+                        fontFamily: "Impact"
+                    }}
+                >
+                    Add Players Here
+                </h6>
                 <Form.Group
                     className="playerNameBox"
                     controlId="PlayerTextName"
@@ -102,16 +111,34 @@ export function AddPlayers({
                         ))}
                     </Form.Select>
                 </Form.Group>
+                <br></br>
                 <Button
                     data-testid="addPlayer"
                     style={{ backgroundColor: "#000000" }}
                     onClick={addNewPlayer}
                 >
-                    Add This New Player:{" "}
+                    Add This New Player{" "}
                 </Button>
             </div>
             <div className="newPlayerPreview">
-                {/*}Put Preview of New Player Here? {">>>>>>>>>>>>>>>>>>>>"} {*/}
+                Name: {playerName}
+                <br></br>
+                Description: {playerDescription}
+                <br></br>
+                {playerURL !== "" ? (
+                    <img
+                        src={playerURL}
+                        style={{
+                            width: "300px",
+                            height: "300px"
+                        }}
+                        alt="Image:"
+                    ></img>
+                ) : (
+                    <span>Image:</span>
+                )}
+                <br></br>
+                {newPosition}
             </div>
         </>
     );
