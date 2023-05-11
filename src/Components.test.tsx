@@ -683,3 +683,53 @@ describe("Testing User Rating", () => {
         expect(player1).toHaveTextContent("Overall: 1");
     });
 });
+describe("Testing Edit Players From Admin", () => {
+    test("Testing That this object doesn't exist in the edit list if not placed there by user", () => {
+        render(<App />);
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Team Manager");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+
+        const editButton = screen.getByTestId("adminEditButton");
+        editButton.click();
+
+        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
+    });
+    test("Testing That Player can be added and then displayed after in the edit component", () => {
+        render(<App />);
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Team Manager");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+
+        const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
+        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
+        addFirstPlayerButton.click();
+
+        const editButton = screen.getByTestId("adminEditButton");
+        editButton.click();
+
+        expect(screen.getByTestId("otherTeam Manager0")).toBeInTheDocument;
+    });
+    test("Testing That Player can be edited after the edit is clicked", () => {
+        render(<App />);
+        const selectRole = screen.getByLabelText("Which role", {});
+        userEvent.selectOptions(selectRole, "Team Manager");
+        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+
+        const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
+        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
+        addFirstPlayerButton.click();
+
+        const editButton = screen.getByTestId("adminEditButton");
+        editButton.click();
+
+        expect(screen.getByTestId("otherTeam Manager0")).toBeInTheDocument;
+
+        const changeName = screen.getByLabelText("Name");
+        userEvent.type(changeName, "{selectall}{backspace}");
+        userEvent.type(changeName, "Sean");
+        expect(changeName).toHaveValue("Sean");
+        //For the text in the box, and the name actually being rendered on the screen
+        //expect(screen.queryAllByAltText(/Sean/)).toHaveLength(2);
+    });
+});
