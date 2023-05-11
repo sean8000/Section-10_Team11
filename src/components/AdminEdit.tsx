@@ -2,16 +2,16 @@
 import React from "react";
 import { Player } from "../interfaces/player";
 import "../style.css";
-import { EditName } from "./EditName";
+import { EditName } from "./subComponentsEdit/EditName";
 import { Col, Row, Container } from "react-bootstrap";
-import { EditDescription } from "./EditDescription";
-import { EditImage } from "./EditImage";
-import { EditPosition } from "./EditPosition";
-import { EditTouchdowns } from "./EditTouchdowns";
-import { EditReceptions } from "./EditReceptions";
-import { EditRushAttempts } from "./EditRushAttempts";
-import { EditTotalYards } from "./EditTotalYards";
-import { EditRating } from "./EditRating";
+import { EditDescription } from "./subComponentsEdit/EditDescription";
+import { EditImage } from "./subComponentsEdit/EditImage";
+import { EditPosition } from "./subComponentsEdit/EditPosition";
+import { EditTouchdowns } from "./subComponentsEdit/EditTouchdowns";
+import { EditReceptions } from "./subComponentsEdit/EditReceptions";
+import { EditRushAttempts } from "./subComponentsEdit/EditRushAttempts";
+import { EditTotalYards } from "./subComponentsEdit/EditTotalYards";
+import { EditRating } from "./subComponentsEdit/EditRating";
 interface Edits {
     //editAdmin: boolean;
     role: string;

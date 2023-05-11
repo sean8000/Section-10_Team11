@@ -1,7 +1,7 @@
 //import { Player, Position } from "../interfaces/player";
 import { Form } from "react-bootstrap";
 import React, { useState } from "react";
-import { Player } from "../interfaces/player";
+import { Player } from "../../interfaces/player";
 import "../style.css";
 
 interface Rating {
