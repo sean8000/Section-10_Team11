@@ -241,18 +241,12 @@ function Test({
                             alt="Image"
                         />
                         <PlayerStats
-                            name={curr.name}
+                            index={index}
                             description={curr.description}
-                            image={curr.image}
-                            position={curr.position}
-                            stats={{
-                                touchdowns: curr.stats.touchdowns,
-                                receptions: curr.stats.rushAttempts,
-                                rushAttempts: curr.stats.rushAttempts,
-                                totalYards: curr.stats.totalYards
-                            }}
-                            rating={curr.rating}
-                            original={curr.original}
+                            touchdowns={curr.stats.touchdowns}
+                            receptions={curr.stats.rushAttempts}
+                            rushAttempts={curr.stats.rushAttempts}
+                            totalYards={curr.stats.totalYards}
                         ></PlayerStats>
                         {/*}<div>
                             {visible && (
@@ -350,18 +344,12 @@ function Test({
                             </div>
                             {/*} Needed to make stats button to go on the left {*/}
                             <PlayerStats
-                                name={curr.name}
+                                index={index}
                                 description={curr.description}
-                                image={curr.image}
-                                position={curr.position}
-                                stats={{
-                                    touchdowns: curr.stats.touchdowns,
-                                    receptions: curr.stats.rushAttempts,
-                                    rushAttempts: curr.stats.rushAttempts,
-                                    totalYards: curr.stats.totalYards
-                                }}
-                                rating={curr.rating}
-                                original={curr.original}
+                                touchdowns={curr.stats.touchdowns}
+                                receptions={curr.stats.rushAttempts}
+                                rushAttempts={curr.stats.rushAttempts}
+                                totalYards={curr.stats.totalYards}
                             ></PlayerStats>
                             <div>
                                 {/*}

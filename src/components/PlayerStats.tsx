@@ -1,4 +1,3 @@
-import { Player } from "../interfaces/player";
 //import React from "react";
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
@@ -7,8 +6,22 @@ import "../style.css";
 // commented out some imports to avoid warnings
 
 // FOR FUTURE USE SO WE CAN PASS PLAYERS TO THIS FUNCTION TO AUTO RENDER THEM
-
-export function PlayerStats(player: Player) {
+export interface playerAtts {
+    index: number;
+    description: string;
+    touchdowns: number;
+    receptions: number;
+    rushAttempts: number;
+    totalYards: number;
+}
+export function PlayerStats({
+    index,
+    description,
+    touchdowns,
+    receptions,
+    rushAttempts,
+    totalYards
+}: playerAtts) {
     const [visible, setVisible] = useState<boolean>(false);
 
     function flipVisibility(): void {
@@ -18,18 +31,23 @@ export function PlayerStats(player: Player) {
     return (
         <>
             <div style={{ paddingLeft: 30 }}>
-                <Button onClick={flipVisibility}>STATS</Button>
+                <Button
+                    data-testid={"statsButton" + index}
+                    onClick={flipVisibility}
+                >
+                    STATS
+                </Button>
                 {visible && (
                     <div>
-                        Description: {player.description}
+                        Description: {description}
                         <br />
-                        Touchdowns: {player.stats.touchdowns}
+                        Touchdowns: {touchdowns}
                         <br />
-                        Receptions: {player.stats.receptions}
+                        Receptions: {receptions}
                         <br />
-                        Rush Attempts: {player.stats.rushAttempts}
+                        Rush Attempts: {rushAttempts}
                         <br />
-                        Yards: {player.stats.totalYards}
+                        Yards: {totalYards}
                         <br />
                     </div>
                 )}
