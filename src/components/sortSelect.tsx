@@ -6,7 +6,7 @@ import { Player } from "../interfaces/player";
 export interface Sort {
     sortOption: string;
     setSortOption: (newString: string) => void;
-    playerList: Player[];
+    playerList: Player[] | undefined;
     setPlayerList: (newPlayerList: Player[]) => void;
 }
 export function SortSelect({
@@ -23,28 +23,25 @@ export function SortSelect({
 
         const tempPlayerList = playerList;
 
-        if (newSort === "None") {
+        if (newSort === "None" || tempPlayerList == undefined) {
             console.log("None");
             // Does nothing
         } else if (newSort === "Position") {
             console.log("Pos");
             tempPlayerList.sort((a, b) => (a.position < b.position ? -1 : 1));
-            /*
-            tempPlayerList = tempPlayerList.filter(
-                (player: Player): boolean => player.position === "QB"
-            );
-            */
+            setPlayerList(tempPlayerList);
             console.log(tempPlayerList);
         } else if (newSort === "Rating") {
             console.log("Rat");
             tempPlayerList.sort((a, b) => (a.rating > b.rating ? -1 : 1));
+            setPlayerList(tempPlayerList);
         } else if (newSort === "Touchdowns") {
             console.log("Touch");
             tempPlayerList.sort((a, b) =>
                 a.stats.touchdowns > b.stats.touchdowns ? -1 : 1
             );
+            setPlayerList(tempPlayerList);
         }
-        setPlayerList(tempPlayerList);
     }
     return (
         <div className="sortSelect">
