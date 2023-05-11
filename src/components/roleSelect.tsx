@@ -48,8 +48,12 @@ export function RoleSelect({
         setAdminEdit(false);
     }
     function addUser() {
-        setTotalRoles([...totalRoles, userText]);
-        setUserText("");
+        if (totalRoles.includes(userText) || /^\s*$/.test(userText)) {
+            return;
+        } else {
+            setTotalRoles([...totalRoles, userText]);
+            setUserText("");
+        }
     }
 
     function removeUser() {
