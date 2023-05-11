@@ -27,7 +27,7 @@ interface Widgets {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-function Test({
+function DragAndDisplay({
     role,
     widgets,
     setWidgets,
@@ -396,4 +396,4 @@ function Test({
     );
 }
 
-export default Test;
+export default DragAndDisplay;
