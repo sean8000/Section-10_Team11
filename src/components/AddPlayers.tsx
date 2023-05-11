@@ -17,7 +17,9 @@ export function AddPlayers({
 }: PlayersToBeAdded) {
     const [playerName, setPlayerName] = useState<string>("");
     const [playerDescription, setPlayerDescription] = useState<string>("");
-    const [playerURL, setPlayerURL] = useState<string>("");
+    const [playerURL, setPlayerURL] = useState<string>(
+        "https://www.ucl.ac.uk/research/domains/sites/research_domains/files/styles/medium_image/public/blank-headshot_0.jpg?itok=X_PPFx5E"
+    );
     const [newPosition, setNewPosition] = useState<Position>("QB");
     const totalPositions = ["QB", "RB", "WR", "TE", "K"];
 
@@ -121,10 +123,6 @@ export function AddPlayers({
                 </Button>
             </div>
             <div className="newPlayerPreview">
-                Name: {playerName}
-                <br></br>
-                Description: {playerDescription}
-                <br></br>
                 {playerURL !== "" ? (
                     <img
                         src={playerURL}
@@ -132,11 +130,15 @@ export function AddPlayers({
                             width: "300px",
                             height: "300px"
                         }}
-                        alt="Image:"
+                        alt=""
                     ></img>
                 ) : (
-                    <span>Image:</span>
+                    <span></span>
                 )}
+                <br></br>
+                Name: {playerName}
+                <br></br>
+                Description: {playerDescription}
                 <br></br>
                 {newPosition}
             </div>
