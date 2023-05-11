@@ -57,7 +57,6 @@ Edits) {
                             <Row>
                                 <Col>
                                     <Row>
-                                        Name:
                                         <EditName
                                             player={curr}
                                             widgets={adminWidgets}
@@ -65,7 +64,6 @@ Edits) {
                                         ></EditName>
                                     </Row>
                                     <Row>
-                                        Description:
                                         <EditDescription
                                             player={curr}
                                             widgets={adminWidgets}
@@ -73,7 +71,6 @@ Edits) {
                                         ></EditDescription>
                                     </Row>
                                     <Row>
-                                        Image:{" "}
                                         <EditImage
                                             player={curr}
                                             widgets={adminWidgets}
@@ -81,7 +78,6 @@ Edits) {
                                         ></EditImage>
                                     </Row>
                                     <Row>
-                                        Position:{" "}
                                         <EditPosition
                                             player={curr}
                                             widgets={adminWidgets}
@@ -92,7 +88,6 @@ Edits) {
                                 <Col></Col>
                                 <Col>
                                     <Row>
-                                        Touchdowns:{" "}
                                         <EditTouchdowns
                                             player={curr}
                                             widgets={adminWidgets}
@@ -100,7 +95,6 @@ Edits) {
                                         ></EditTouchdowns>
                                     </Row>
                                     <Row>
-                                        Receptions:{" "}
                                         <EditReceptions
                                             player={curr}
                                             widgets={adminWidgets}
@@ -108,7 +102,6 @@ Edits) {
                                         ></EditReceptions>
                                     </Row>
                                     <Row>
-                                        Rush Attempts:
                                         <EditRushAttempts
                                             player={curr}
                                             widgets={adminWidgets}
@@ -116,7 +109,6 @@ Edits) {
                                         ></EditRushAttempts>
                                     </Row>
                                     <Row>
-                                        Total Yards:{" "}
                                         <EditTotalYards
                                             player={curr}
                                             widgets={adminWidgets}
@@ -124,7 +116,6 @@ Edits) {
                                         ></EditTotalYards>
                                     </Row>
                                     <Row>
-                                        Overall Rating:{" "}
                                         <EditRating
                                             player={curr}
                                             widgets={adminWidgets}

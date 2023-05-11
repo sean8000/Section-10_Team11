@@ -2,7 +2,7 @@
 import { Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { Player } from "../../interfaces/player";
-import "../style.css";
+import "./edit.css";
 
 interface Rating {
     player: Player;
@@ -40,8 +40,10 @@ export function EditRushAttempts({ widgets, setWidgets, player }: Rating) {
 
     return (
         <div>
-            <Form.Group className="playerRatingBox" controlId="PlayerRating">
+            <Form.Group className="editNums" controlId="PlayerRating">
+                <Form.Label>Rush Attempts</Form.Label>
                 <Form.Control
+                    data-testid={"rushAttempts" + getPlayerIndex()}
                     type="number"
                     value={rushAttempts}
                     onChange={updateRushAttempts}

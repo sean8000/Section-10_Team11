@@ -2,7 +2,7 @@
 import { Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { Player } from "../../interfaces/player";
-import "../style.css";
+import "./edit.css";
 
 interface Rating {
     player: Player;
@@ -42,10 +42,12 @@ export function EditTotalYards({ widgets, setWidgets, player }: Rating) {
         <div>
             <Form.Group
                 style={{ width: 90 }}
-                className="playerRatingBox"
+                className="editNums"
                 controlId="PlayerRating"
             >
+                <Form.Label>Total Yards</Form.Label>
                 <Form.Control
+                    data-testid={"totalYards" + getPlayerIndex()}
                     type="number"
                     value={totalYards}
                     onChange={updateTotalYards}

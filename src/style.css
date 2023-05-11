@@ -218,13 +218,13 @@
 .playerEdit:nth-child(odd) {
     background-color: black;
     color: white;
-    height: 375px;
+    height: 400px;
 }
 
 .playerEdit:nth-child(even) {
     background-color: gray;
     color: white;
-    height: 375px;
+    height: 400px;
 }
 .editFontSize {
     float: left;

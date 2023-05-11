@@ -36,7 +36,11 @@ export function EditPosition({
     // This is the View
     return (
         <div className="editText">
-            <Form.Group controlId="Roles">
+            <Form.Group
+                data-testid={"position" + getPlayerIndex()}
+                controlId="Roles"
+            >
+                <Form.Label>Position</Form.Label>
                 <Form.Select value={pos} onChange={updatePos}>
                     {OPTIONS.map((pos: string) => (
                         <option key={pos} value={pos}>

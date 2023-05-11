@@ -30,7 +30,11 @@ export function EditImage({ player, widgets, setWidgets }: Edit): JSX.Element {
     // This is the View
     return (
         <div className="editText">
-            <Form.Group data-testid="usertext" controlId="UserTextBox">
+            <Form.Group
+                data-testid={"image" + getPlayerIndex()}
+                controlId="UserTextBox"
+            >
+                <Form.Label>Image</Form.Label>
                 <Form.Control value={image} onChange={updateImage} />
             </Form.Group>
         </div>
