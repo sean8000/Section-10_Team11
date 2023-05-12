@@ -56,6 +56,8 @@ function Test({
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
     const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
+    const [pageUpdateCounter, setPageUpdateCounter] = useState<number>(0);
+    const [tempWidgetLength, setTempWidgetLength] = useState<number>(0);
     //const [pos, setPosition] = useState<string>("None");
     //const filterBoolean = [false, false, false, false, false];
 
@@ -76,6 +78,9 @@ function Test({
 
         // add the player to the list
         if (newPlayer !== undefined) {
+            filteredList.map((p1: Player) =>
+                p1.name === newPlayer.name ? p1.count++ : 0
+            );
             setWidgets([...widgets, newPlayer]);
         }
     }
@@ -124,6 +129,9 @@ function Test({
     function handleOnButtonClick(removedPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
+        filteredList.map((p1: Player) =>
+            p1.name === removedPlayer.name ? p1.count-- : 0
+        );
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
@@ -148,16 +156,6 @@ function Test({
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
     }
-    /*
-    const [visible, setVisible] = useState<boolean>(false);
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    function flipVisibility(): void {
-        setVisible(!visible);
-    }
-    */
-    /* function updateCentralList(newCentralList: Player[]) {
-        setCentralList(newCentralList);
-    } */
 
     // the curr in the both maps below now represents players,
     // you can access its attributes with dot notation
@@ -180,20 +178,6 @@ function Test({
                 <h4 className="playersTitle">Players</h4>
                 <br></br>
                 <div style={{ background: "red" }}>
-                    {/*}<Button
-                        className="btn btn-primary shadow-none"
-                        style={{
-                            height: 30,
-                            width: 200,
-                            fontSize: 15,
-                            color: "black",
-                            background: "white"
-                        }}
-                        data-testid="stats"
-                        onClick={flipVisibility}
-                    >
-                        Open Stats For All Players
-                    </Button>{*/}
                     <br></br>
                     <span
                         data-testid="playerCount"
@@ -224,15 +208,10 @@ function Test({
                                         Add Player to Your Team
                                     </Button>
                                 ) : (
-                                    <Button
-                                        data-testid={"userButton" + index}
-                                        onClick={() => addToTeam(curr)}
-                                    >
-                                        Add Player to Your Team
-                                    </Button>
+                                    ""
                                 )
                             ) : (
-                                ""
+                                "Total Player Use: " + curr.count
                             )}
                         </div>
                         <img
@@ -253,7 +232,9 @@ function Test({
                             }}
                             rating={curr.rating}
                             original={curr.original}
+                            count={curr.count}
                         ></PlayerStats>
+
                         {/*}<div>
                             {visible && (
                                 <div>
@@ -348,7 +329,9 @@ function Test({
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
-                            {/*} Needed to make stats button to go on the left {*/}
+                            {/*centralList.map((player: Player): number =>
+                                player.name === curr.name ? player.count++ : 0
+                    )*/}
                             <PlayerStats
                                 name={curr.name}
                                 description={curr.description}
@@ -362,7 +345,9 @@ function Test({
                                 }}
                                 rating={curr.rating}
                                 original={curr.original}
+                                count={curr.count}
                             ></PlayerStats>
+
                             <div>
                                 {/*}
                                             <Button onClick={flipVisibility}>

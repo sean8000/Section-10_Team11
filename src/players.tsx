@@ -15,7 +15,8 @@ const pMahomes: Player = {
         totalYards: 5250
     },
     rating: 99,
-    original: "Patrick Mahomes"
+    original: "Patrick Mahomes",
+    count: 0
 };
 
 const jBurrow: Player = {
@@ -30,7 +31,8 @@ const jBurrow: Player = {
         totalYards: 4475
     },
     rating: 95,
-    original: "Joe Burrow"
+    original: "Joe Burrow",
+    count: 0
 };
 
 const jAllen: Player = {
@@ -45,7 +47,8 @@ const jAllen: Player = {
         totalYards: 4283
     },
     rating: 95,
-    original: "Josh Allen"
+    original: "Josh Allen",
+    count: 0
 };
 
 const dJones: Player = {
@@ -60,7 +63,8 @@ const dJones: Player = {
         totalYards: 3205
     },
     rating: 90,
-    original: "Daniel Jones"
+    original: "Daniel Jones",
+    count: 0
 };
 
 //RUNNING BACKS
@@ -77,7 +81,8 @@ const sBarkley: Player = {
         totalYards: 1650
     },
     rating: 99,
-    original: "Saquon Barkley"
+    original: "Saquon Barkley",
+    count: 0
 };
 
 const cMcCaffrey: Player = {
@@ -92,7 +97,8 @@ const cMcCaffrey: Player = {
         totalYards: 1880
     },
     rating: 95,
-    original: "Christian McCaffrey"
+    original: "Christian McCaffrey",
+    count: 0
 };
 
 const aEkeler: Player = {
@@ -107,7 +113,8 @@ const aEkeler: Player = {
         totalYards: 1637
     },
     rating: 94,
-    original: "Austin Ekeler"
+    original: "Austin Ekeler",
+    count: 0
 };
 
 const jMixon: Player = {
@@ -122,7 +129,8 @@ const jMixon: Player = {
         totalYards: 1255
     },
     rating: 88,
-    original: "Joe Mixon"
+    original: "Joe Mixon",
+    count: 0
 };
 
 const dHenry: Player = {
@@ -137,7 +145,8 @@ const dHenry: Player = {
         totalYards: 1936
     },
     rating: 99,
-    original: "Derrick Henry"
+    original: "Derrick Henry",
+    count: 0
 };
 
 const jJacobs: Player = {
@@ -152,7 +161,8 @@ const jJacobs: Player = {
         totalYards: 2053
     },
     rating: 99,
-    original: "Josh Jacobs"
+    original: "Josh Jacobs",
+    count: 0
 };
 
 const nChubb: Player = {
@@ -167,7 +177,8 @@ const nChubb: Player = {
         totalYards: 1764
     },
     rating: 99,
-    original: "Nick Chubb"
+    original: "Nick Chubb",
+    count: 0
 };
 
 const dCook: Player = {
@@ -182,7 +193,8 @@ const dCook: Player = {
         totalYards: 1468
     },
     rating: 86,
-    original: "Dalvin Cook"
+    original: "Dalvin Cook",
+    count: 0
 };
 
 const aJones: Player = {
@@ -197,7 +209,8 @@ const aJones: Player = {
         totalYards: 1516
     },
     rating: 89,
-    original: "Aaron Jones"
+    original: "Aaron Jones",
+    count: 0
 };
 
 //WIDE RECIEVERS
@@ -214,7 +227,8 @@ const jJefferson: Player = {
         totalYards: 1809
     },
     rating: 99,
-    original: "Justin Jefferson"
+    original: "Justin Jefferson",
+    count: 0
 };
 
 const dAdams: Player = {
@@ -229,7 +243,8 @@ const dAdams: Player = {
         totalYards: 1516
     },
     rating: 98,
-    original: "Davante Adams"
+    original: "Davante Adams",
+    count: 0
 };
 
 const jChase: Player = {
@@ -244,7 +259,8 @@ const jChase: Player = {
         totalYards: 1046
     },
     rating: 92,
-    original: "Ja'Marr Chase"
+    original: "Ja'Marr Chase",
+    count: 0
 };
 
 const mEvans: Player = {
@@ -259,7 +275,8 @@ const mEvans: Player = {
         totalYards: 1124
     },
     rating: 92,
-    original: "Mike Evans"
+    original: "Mike Evans",
+    count: 0
 };
 
 const dHopkins: Player = {
@@ -274,7 +291,8 @@ const dHopkins: Player = {
         totalYards: 717
     },
     rating: 91,
-    original: "DeAndre Hopkins"
+    original: "DeAndre Hopkins",
+    count: 0
 };
 
 const tHill: Player = {
@@ -289,7 +307,8 @@ const tHill: Player = {
         totalYards: 1710
     },
     rating: 98,
-    original: "Tyreek Hill"
+    original: "Tyreek Hill",
+    count: 0
 };
 
 const sDiggs: Player = {
@@ -304,7 +323,8 @@ const sDiggs: Player = {
         totalYards: 1429
     },
     rating: 95,
-    original: "Stefon Diggs"
+    original: "Stefon Diggs",
+    count: 0
 };
 
 const dSamuel: Player = {
@@ -319,7 +339,8 @@ const dSamuel: Player = {
         totalYards: 632
     },
     rating: 89,
-    original: "Deebo Samuel"
+    original: "Deebo Samuel",
+    count: 0
 };
 
 const aCooper: Player = {
@@ -334,7 +355,8 @@ const aCooper: Player = {
         totalYards: 1160
     },
     rating: 88,
-    original: "Amari Cooper"
+    original: "Amari Cooper",
+    count: 0
 };
 
 //TIGHT ENDS
@@ -351,7 +373,8 @@ const tKelce: Player = {
         totalYards: 1338
     },
     rating: 99,
-    original: "Travis Kelce"
+    original: "Travis Kelce",
+    count: 0
 };
 
 const mAndrews: Player = {
@@ -366,7 +389,8 @@ const mAndrews: Player = {
         totalYards: 847
     },
     rating: 94,
-    original: "Mark Andrews"
+    original: "Mark Andrews",
+    count: 0
 };
 
 const dWaller: Player = {
@@ -381,7 +405,8 @@ const dWaller: Player = {
         totalYards: 388
     },
     rating: 90,
-    original: "Darren Waller"
+    original: "Darren Waller",
+    count: 0
 };
 
 const gKittle: Player = {
@@ -396,7 +421,8 @@ const gKittle: Player = {
         totalYards: 765
     },
     rating: 96,
-    original: "George Kittle"
+    original: "George Kittle",
+    count: 0
 };
 
 //KICKERS
@@ -413,7 +439,8 @@ const jTucker: Player = {
         totalYards: -1
     },
     rating: 99,
-    original: "Justin Tucker"
+    original: "Justin Tucker",
+    count: 0
 };
 
 const hButker: Player = {
@@ -428,7 +455,8 @@ const hButker: Player = {
         totalYards: -1
     },
     rating: 96,
-    original: "Harrison Butker"
+    original: "Harrison Butker",
+    count: 0
 };
 
 const eMcPherson: Player = {
@@ -443,7 +471,8 @@ const eMcPherson: Player = {
         totalYards: -1
     },
     rating: 93,
-    original: "Evan McPherson"
+    original: "Evan McPherson",
+    count: 0
 };
 
 const yKoo: Player = {
@@ -458,7 +487,8 @@ const yKoo: Player = {
         totalYards: -1
     },
     rating: 90,
-    original: "Younghoe Koo"
+    original: "Younghoe Koo",
+    count: 0
 };
 
 // can import this list to any file to access all the players
