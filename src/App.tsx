@@ -31,6 +31,10 @@ function App(): JSX.Element {
     }
     return (
         <div>
+            <span className="names">
+                by Alexander Marshall, Michael Murphy, Sean Johnson, Michael
+                Lorang, Dean Turner
+            </span>
             <h1 className="heading">
                 <>
                     {" "}
@@ -156,10 +160,6 @@ function App(): JSX.Element {
                         {/*}<Button onClick={() => addUser()}>Add User</Button>{
                     </Col>
                     */}
-            <span className="names">
-                Alexander Marshall, Michael Murphy, Sean Johnson, Michael
-                Lorang, Dean Turner
-            </span>
             <div className="padding"></div>
         </div>
     );
