@@ -1019,7 +1019,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
+      '__reactFiber$7bxo9absoi3': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1164,7 +1164,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$27w373m80ej': {
+      '__reactProps$7bxo9absoi3': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -1201,7 +1201,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
+      '__reactFiber$7bxo9absoi3': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1346,7 +1346,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$27w373m80ej': {
+      '__reactProps$7bxo9absoi3': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -1455,7 +1455,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
+      '__reactFiber$7bxo9absoi3': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1600,7 +1600,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$27w373m80ej': {
+      '__reactProps$7bxo9absoi3': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -1781,7 +1781,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
+      '__reactFiber$7bxo9absoi3': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1926,7 +1926,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$27w373m80ej': {
+      '__reactProps$7bxo9absoi3': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -2071,7 +2071,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
+      '__reactFiber$7bxo9absoi3': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2216,7 +2216,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$27w373m80ej': {
+      '__reactProps$7bxo9absoi3': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -2433,7 +2433,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
+      '__reactFiber$7bxo9absoi3': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2578,7 +2578,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$27w373m80ej': {
+      '__reactProps$7bxo9absoi3': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -2695,72 +2695,3295 @@
       at map (src/components/DragAndDisplay.tsx:324:42)
           at Array.map (<anonymous>)
 
-PASS src/Components.test.tsx (8.796 s)
+  console.log
+    for merge, can be deleted after
+
+      at Object.<anonymous> (src/Components.test.tsx:681:17)
+
+  console.log
+    map value below
+
+      at onClick (src/App.tsx:70:45)
+
+  console.log
+    []
+
+      at onClick (src/App.tsx:71:45)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at addToAdminTeam (src/components/DragAndDisplay.tsx:118:21)
+
+  console.log
+    map value below
+
+      at onClick (src/App.tsx:70:45)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at onClick (src/App.tsx:71:45)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at addToAdminTeam (src/components/DragAndDisplay.tsx:118:21)
+
+  console.log
+    map value below
+
+      at onClick (src/App.tsx:70:45)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at onClick (src/App.tsx:71:45)
+
+  console.log
+
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: '',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    N
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'N',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    NO
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'NO',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at addToAdminTeam (src/components/DragAndDisplay.tsx:118:21)
+
+  console.log
+    map value below
+
+      at onClick (src/App.tsx:70:45)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at onClick (src/App.tsx:71:45)
+
+  console.log
+
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: '',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    R
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'R',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    Ri
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'Ri',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    Ric
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'Ric',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    Rick
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'Rick',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickG
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickG',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGr
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGr',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGri
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGri',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGrim
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrim',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGrime
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrime',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGrimes
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    This elem[object Object]
+
+      at map (src/App.tsx:90:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      },
+      {
+        name: 'Joe Burrow',
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn',
+        position: 'QB',
+        stats: {
+          touchdowns: 40,
+          receptions: 0,
+          rushAttempts: 75,
+          totalYards: 4475
+        },
+        rating: 95,
+        original: 'Joe Burrow'
+      },
+      {
+        name: 'Josh Allen',
+        description: 'Buffalo Bulls',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n',
+        position: 'QB',
+        stats: {
+          touchdowns: 35,
+          receptions: 0,
+          rushAttempts: 124,
+          totalYards: 4283
+        },
+        rating: 95,
+        original: 'Josh Allen'
+      },
+      {
+        name: 'Austin Ekeler',
+        description: 'Los Angeles Chargers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/tl0nhc7kyf4aumbyzs5b',
+        position: 'RB',
+        stats: {
+          touchdowns: 18,
+          receptions: 107,
+          rushAttempts: 204,
+          totalYards: 1637
+        },
+        rating: 94,
+        original: 'Austin Ekeler'
+      },
+      {
+        name: 'Daniel Jones',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/af6nbjqa6qubnu8oi4ms',
+        position: 'QB',
+        stats: {
+          touchdowns: 15,
+          receptions: 0,
+          rushAttempts: 108,
+          totalYards: 3205
+        },
+        rating: 90,
+        original: 'Daniel Jones'
+      },
+      {
+        name: 'Davante Adams',
+        description: 'Las Vegas Raiders',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/jmojceirzhgctrcfi4aw',
+        position: 'WR',
+        stats: {
+          touchdowns: 14,
+          receptions: 100,
+          rushAttempts: 0,
+          totalYards: 1516
+        },
+        rating: 98,
+        original: 'Davante Adams'
+      },
+      {
+        name: 'Derrick Henry',
+        description: 'Tennesse Titans',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/lvdvmkqltz7zz7fjtopr',
+        position: 'RB',
+        stats: {
+          touchdowns: 13,
+          receptions: 33,
+          rushAttempts: 349,
+          totalYards: 1936
+        },
+        rating: 99,
+        original: 'Derrick Henry'
+      },
+      {
+        name: 'Nick Chubb',
+        description: 'Cleveland Browns',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/a8ib0haur75wrhqrbtyo',
+        position: 'RB',
+        stats: {
+          touchdowns: 13,
+          receptions: 27,
+          rushAttempts: 302,
+          totalYards: 1764
+        },
+        rating: 99,
+        original: 'Nick Chubb'
+      },
+      {
+        name: 'Christian McCaffrey',
+        description: 'San Francisco 49ers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+        position: 'RB',
+        stats: {
+          touchdowns: 13,
+          receptions: 85,
+          rushAttempts: 244,
+          totalYards: 1880
+        },
+        rating: 95,
+        original: 'Christian McCaffrey'
+      },
+      {
+        name: 'Josh Jacobs',
+        description: 'Las Vegas Raiders',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/sagoqkubeaz5yht01ow7',
+        position: 'RB',
+        stats: {
+          touchdowns: 12,
+          receptions: 53,
+          rushAttempts: 340,
+          totalYards: 2053
+        },
+        rating: 99,
+        original: 'Josh Jacobs'
+      },
+      {
+        name: 'Travis Kelce',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/gorkhvipsk0gdqb6bo34',
+        position: 'TE',
+        stats: {
+          touchdowns: 12,
+          receptions: 110,
+          rushAttempts: 0,
+          totalYards: 1338
+        },
+        rating: 99,
+        original: 'Travis Kelce'
+      },
+      {
+        name: 'George Kittle',
+        description: 'San Francisco 49ers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/znlqhc55l9zwi0euf1mk',
+        position: 'TE',
+        stats: {
+          touchdowns: 11,
+          receptions: 60,
+          rushAttempts: 0,
+          totalYards: 765
+        },
+        rating: 96,
+        original: 'George Kittle'
+      },
+      {
+        name: 'Stefon Diggs',
+        description: 'Buffalo Bills',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hcvd2avk0kufoli80veb',
+        position: 'WR',
+        stats: {
+          touchdowns: 11,
+          receptions: 108,
+          rushAttempts: 0,
+          totalYards: 1429
+        },
+        rating: 95,
+        original: 'Stefon Diggs'
+      },
+      {
+        name: 'Saquon Barkley',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/o8tlhps5u1tvnaaxlpjk',
+        position: 'RB',
+        stats: {
+          touchdowns: 10,
+          receptions: 57,
+          rushAttempts: 277,
+          totalYards: 1650
+        },
+        rating: 99,
+        original: 'Saquon Barkley'
+      },
+      {
+        name: 'Dalvin Cook',
+        description: 'Minnesota Vikings',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/gfwvqolvz9vegp1amhf3',
+        position: 'RB',
+        stats: {
+          touchdowns: 10,
+          receptions: 39,
+          rushAttempts: 264,
+          totalYards: 1468
+        },
+        rating: 86,
+        original: 'Dalvin Cook'
+      },
+      {
+        name: "Ja'Marr Chase",
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hwrzdfsng9bh4tba7uoe',
+        position: 'WR',
+        stats: {
+          touchdowns: 9,
+          receptions: 87,
+          rushAttempts: 0,
+          totalYards: 1046
+        },
+        rating: 92,
+        original: "Ja'Marr Chase"
+      },
+      {
+        name: 'Joe Mixon',
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rd210pq6ch22vpoygtfn',
+        position: 'RB',
+        stats: {
+          touchdowns: 9,
+          receptions: 60,
+          rushAttempts: 210,
+          totalYards: 1255
+        },
+        rating: 88,
+        original: 'Joe Mixon'
+      },
+      {
+        name: 'Amari Cooper',
+        description: 'Cleveland Browns',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/zibbxjtein7gpu5zgcj4',
+        position: 'WR',
+        stats: {
+          touchdowns: 9,
+          receptions: 78,
+          rushAttempts: 0,
+          totalYards: 1160
+        },
+        rating: 88,
+        original: 'Amari Cooper'
+      },
+      {
+        name: 'Justin Jefferson',
+        description: 'Minnesota Vikings',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/zdstmm4sloqnichybgja',
+        position: 'WR',
+        stats: {
+          touchdowns: 8,
+          receptions: 128,
+          rushAttempts: 0,
+          totalYards: 1809
+        },
+        rating: 99,
+        original: 'Justin Jefferson'
+      },
+      {
+        name: 'Tyreek Hill',
+        description: 'Miami Dolphins',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/lsszbdnkusxc7mduw5be',
+        position: 'WR',
+        stats: {
+          touchdowns: 7,
+          receptions: 119,
+          rushAttempts: 0,
+          totalYards: 1710
+        },
+        rating: 98,
+        original: 'Tyreek Hill'
+      },
+      {
+        name: 'Aaron Jones',
+        description: 'Green Bay Packers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/oo8yixhsahh4gznox7th',
+        position: 'RB',
+        stats: {
+          touchdowns: 7,
+          receptions: 59,
+          rushAttempts: 213,
+          totalYards: 1516
+        },
+        rating: 89,
+        original: 'Aaron Jones'
+      },
+      {
+        name: 'Mike Evans',
+        description: 'Tampa Bay Buccaneers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/pyilrqdmfvv1zceem1cg',
+        position: 'WR',
+        stats: {
+          touchdowns: 6,
+          receptions: 77,
+          rushAttempts: 0,
+          totalYards: 1124
+        },
+        rating: 92,
+        original: 'Mike Evans'
+      },
+      {
+        name: 'Mark Andrews',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/m1fmyihulvtdiav4bwxm',
+        position: 'TE',
+        stats: { touchdowns: 5, receptions: 73, rushAttempts: 0, totalYards: 847 },
+        rating: 94,
+        original: 'Mark Andrews'
+      },
+      {
+        name: 'DeAndre Hopkins',
+        description: 'Arizona Cardinals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/kikfprn4t5ap1lju4a4k',
+        position: 'WR',
+        stats: { touchdowns: 3, receptions: 64, rushAttempts: 0, totalYards: 717 },
+        rating: 91,
+        original: 'DeAndre Hopkins'
+      },
+      {
+        name: 'Darren Waller',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/c7jaefxw5xiawscvnqc0',
+        position: 'TE',
+        stats: { touchdowns: 3, receptions: 28, rushAttempts: 0, totalYards: 388 },
+        rating: 90,
+        original: 'Darren Waller'
+      },
+      {
+        name: 'Deebo Samuel',
+        description: 'San Francisco 49ers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/ciwaktyqewczcquks4wy',
+        position: 'WR',
+        stats: { touchdowns: 2, receptions: 56, rushAttempts: 0, totalYards: 632 },
+        rating: 89,
+        original: 'Deebo Samuel'
+      },
+      {
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 99,
+        original: 'Justin Tucker'
+      },
+      {
+        name: 'Harrison Butker',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/snhlmpr5wfw1t8w1yqgu',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 96,
+        original: 'Harrison Butker'
+      },
+      {
+        name: 'Evan McPherson',
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/qxyqg1xibovrlkhebks2',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 93,
+        original: 'Evan McPherson'
+      },
+      {
+        name: 'Younghoe Koo',
+        description: 'Atlanta Falcons',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/nvtusyryw9cpf6p8tz8n',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 90,
+        original: 'Younghoe Koo'
+      }
+    ]
+
+      at onClick (src/App.tsx:97:37)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at addToAdminTeam (src/components/DragAndDisplay.tsx:118:21)
+
+  console.log
+    map value below
+
+      at onClick (src/App.tsx:70:45)
+
+  console.log
+    [
+      {
+        name: 'Patrick Mahomes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at onClick (src/App.tsx:71:45)
+
+  console.log
+
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: '',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    R
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'R',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    Ri
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'Ri',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    Ric
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'Ric',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    Rick
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'Rick',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickG
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickG',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGr
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGr',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGri
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGri',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGrim
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrim',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGrime
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrime',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+    RickGrimes
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateName (src/components/subComponentsEdit/EditName.tsx:27:17)
+
+  console.log
+
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: '',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    T
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'T',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    Th
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'Th',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The ',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The W
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The W',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Wa
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Wa',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Wal
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Wal',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Walk
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walk',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Walki
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walki',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Walkin
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walkin',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Walking
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Walking
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking ',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Walking D
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking D',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Walking De
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking De',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Walking Dea
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dea',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+    The Walking Dead
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:24:17)
+
+  console.log
+    Player index is0
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:25:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateDesc (src/components/subComponentsEdit/EditDescription.tsx:31:17)
+
+  console.log
+
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: '',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:27:17)
+
+  console.log
+    h
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'h',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:27:17)
+
+  console.log
+    ht
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'ht',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:27:17)
+
+  console.log
+    htt
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'htt',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:27:17)
+
+  console.log
+    http
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'http',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:27:17)
+
+  console.log
+    https
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:27:17)
+
+  console.log
+    https:
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https:',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:27:17)
+
+  console.log
+    https:/
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https:/',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:27:17)
+
+  console.log
+    https://
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:20:17)
+
+  console.log
+    Player index is0
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:21:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'QB',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateImage (src/components/subComponentsEdit/EditImage.tsx:27:17)
+
+  console.log
+    TE
+
+      at updatePos (src/components/subComponentsEdit/EditPosition.tsx:25:17)
+
+  console.log
+    Player index is0
+
+      at updatePos (src/components/subComponentsEdit/EditPosition.tsx:26:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: {
+          touchdowns: 41,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updatePos (src/components/subComponentsEdit/EditPosition.tsx:33:17)
+
+  console.log
+
+
+      at updateTouchdowns (src/components/subComponentsEdit/EditTouchdowns.tsx:26:17)
+
+  console.log
+    Player index is0
+
+      at updateTouchdowns (src/components/subComponentsEdit/EditTouchdowns.tsx:27:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: {
+          touchdowns: 0,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateTouchdowns (src/components/subComponentsEdit/EditTouchdowns.tsx:37:17)
+
+  console.log
+    01
+
+      at updateTouchdowns (src/components/subComponentsEdit/EditTouchdowns.tsx:26:17)
+
+  console.log
+    Player index is0
+
+      at updateTouchdowns (src/components/subComponentsEdit/EditTouchdowns.tsx:27:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: {
+          touchdowns: 1,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateTouchdowns (src/components/subComponentsEdit/EditTouchdowns.tsx:37:17)
+
+  console.log
+
+
+      at updateReceptions (src/components/subComponentsEdit/EditReceptions.tsx:26:17)
+
+  console.log
+    Player index is0
+
+      at updateReceptions (src/components/subComponentsEdit/EditReceptions.tsx:27:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: {
+          touchdowns: 1,
+          receptions: 0,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateReceptions (src/components/subComponentsEdit/EditReceptions.tsx:37:17)
+
+  console.log
+    02
+
+      at updateReceptions (src/components/subComponentsEdit/EditReceptions.tsx:26:17)
+
+  console.log
+    Player index is0
+
+      at updateReceptions (src/components/subComponentsEdit/EditReceptions.tsx:27:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: {
+          touchdowns: 1,
+          receptions: 2,
+          rushAttempts: 61,
+          totalYards: 5250
+        },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateReceptions (src/components/subComponentsEdit/EditReceptions.tsx:37:17)
+
+  console.log
+
+
+      at updateRushAttempts (src/components/subComponentsEdit/EditRushAttempts.tsx:26:17)
+
+  console.log
+    Player index is0
+
+      at updateRushAttempts (src/components/subComponentsEdit/EditRushAttempts.tsx:27:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: { touchdowns: 1, receptions: 2, rushAttempts: 0, totalYards: 5250 },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateRushAttempts (src/components/subComponentsEdit/EditRushAttempts.tsx:37:17)
+
+  console.log
+    03
+
+      at updateRushAttempts (src/components/subComponentsEdit/EditRushAttempts.tsx:26:17)
+
+  console.log
+    Player index is0
+
+      at updateRushAttempts (src/components/subComponentsEdit/EditRushAttempts.tsx:27:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: { touchdowns: 1, receptions: 2, rushAttempts: 3, totalYards: 5250 },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateRushAttempts (src/components/subComponentsEdit/EditRushAttempts.tsx:37:17)
+
+  console.log
+
+
+      at updateTotalYards (src/components/subComponentsEdit/EditTotalYards.tsx:26:17)
+
+  console.log
+    Player index is0
+
+      at updateTotalYards (src/components/subComponentsEdit/EditTotalYards.tsx:27:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: { touchdowns: 1, receptions: 2, rushAttempts: 3, totalYards: 0 },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateTotalYards (src/components/subComponentsEdit/EditTotalYards.tsx:37:17)
+
+  console.log
+    04
+
+      at updateTotalYards (src/components/subComponentsEdit/EditTotalYards.tsx:26:17)
+
+  console.log
+    Player index is0
+
+      at updateTotalYards (src/components/subComponentsEdit/EditTotalYards.tsx:27:17)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: { touchdowns: 1, receptions: 2, rushAttempts: 3, totalYards: 4 },
+        rating: 99,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateTotalYards (src/components/subComponentsEdit/EditTotalYards.tsx:37:17)
+
+  console.log
+    9
+
+      at updateNumber (src/components/subComponentsEdit/EditRating.tsx:28:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/subComponentsEdit/EditRating.tsx:29:21)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: { touchdowns: 1, receptions: 2, rushAttempts: 3, totalYards: 4 },
+        rating: 9,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateNumber (src/components/subComponentsEdit/EditRating.tsx:35:21)
+
+  console.log
+    95
+
+      at updateNumber (src/components/subComponentsEdit/EditRating.tsx:28:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/subComponentsEdit/EditRating.tsx:29:21)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: { touchdowns: 1, receptions: 2, rushAttempts: 3, totalYards: 4 },
+        rating: 95,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateNumber (src/components/subComponentsEdit/EditRating.tsx:35:21)
+
+  console.log
+    5
+
+      at updateNumber (src/components/subComponentsEdit/EditRating.tsx:28:21)
+
+  console.log
+    Player index is0
+
+      at updateNumber (src/components/subComponentsEdit/EditRating.tsx:29:21)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: { touchdowns: 1, receptions: 2, rushAttempts: 3, totalYards: 4 },
+        rating: 5,
+        original: 'Patrick Mahomes'
+      }
+    ]
+
+      at updateNumber (src/components/subComponentsEdit/EditRating.tsx:35:21)
+
+  console.log
+    This elem[object Object]
+
+      at map (src/App.tsx:90:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    Elem not found
+
+      at map (src/App.tsx:93:45)
+          at Array.map (<anonymous>)
+
+  console.log
+    [
+      {
+        name: 'RickGrimes',
+        description: 'The Walking Dead',
+        image: 'https://',
+        position: 'TE',
+        stats: { touchdowns: 1, receptions: 2, rushAttempts: 3, totalYards: 4 },
+        rating: 5,
+        original: 'Patrick Mahomes'
+      },
+      {
+        name: 'Joe Burrow',
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn',
+        position: 'QB',
+        stats: {
+          touchdowns: 40,
+          receptions: 0,
+          rushAttempts: 75,
+          totalYards: 4475
+        },
+        rating: 95,
+        original: 'Joe Burrow'
+      },
+      {
+        name: 'Josh Allen',
+        description: 'Buffalo Bulls',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n',
+        position: 'QB',
+        stats: {
+          touchdowns: 35,
+          receptions: 0,
+          rushAttempts: 124,
+          totalYards: 4283
+        },
+        rating: 95,
+        original: 'Josh Allen'
+      },
+      {
+        name: 'Austin Ekeler',
+        description: 'Los Angeles Chargers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/tl0nhc7kyf4aumbyzs5b',
+        position: 'RB',
+        stats: {
+          touchdowns: 18,
+          receptions: 107,
+          rushAttempts: 204,
+          totalYards: 1637
+        },
+        rating: 94,
+        original: 'Austin Ekeler'
+      },
+      {
+        name: 'Daniel Jones',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/af6nbjqa6qubnu8oi4ms',
+        position: 'QB',
+        stats: {
+          touchdowns: 15,
+          receptions: 0,
+          rushAttempts: 108,
+          totalYards: 3205
+        },
+        rating: 90,
+        original: 'Daniel Jones'
+      },
+      {
+        name: 'Davante Adams',
+        description: 'Las Vegas Raiders',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/jmojceirzhgctrcfi4aw',
+        position: 'WR',
+        stats: {
+          touchdowns: 14,
+          receptions: 100,
+          rushAttempts: 0,
+          totalYards: 1516
+        },
+        rating: 98,
+        original: 'Davante Adams'
+      },
+      {
+        name: 'Derrick Henry',
+        description: 'Tennesse Titans',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/lvdvmkqltz7zz7fjtopr',
+        position: 'RB',
+        stats: {
+          touchdowns: 13,
+          receptions: 33,
+          rushAttempts: 349,
+          totalYards: 1936
+        },
+        rating: 99,
+        original: 'Derrick Henry'
+      },
+      {
+        name: 'Nick Chubb',
+        description: 'Cleveland Browns',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/a8ib0haur75wrhqrbtyo',
+        position: 'RB',
+        stats: {
+          touchdowns: 13,
+          receptions: 27,
+          rushAttempts: 302,
+          totalYards: 1764
+        },
+        rating: 99,
+        original: 'Nick Chubb'
+      },
+      {
+        name: 'Christian McCaffrey',
+        description: 'San Francisco 49ers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+        position: 'RB',
+        stats: {
+          touchdowns: 13,
+          receptions: 85,
+          rushAttempts: 244,
+          totalYards: 1880
+        },
+        rating: 95,
+        original: 'Christian McCaffrey'
+      },
+      {
+        name: 'Josh Jacobs',
+        description: 'Las Vegas Raiders',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/sagoqkubeaz5yht01ow7',
+        position: 'RB',
+        stats: {
+          touchdowns: 12,
+          receptions: 53,
+          rushAttempts: 340,
+          totalYards: 2053
+        },
+        rating: 99,
+        original: 'Josh Jacobs'
+      },
+      {
+        name: 'Travis Kelce',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/gorkhvipsk0gdqb6bo34',
+        position: 'TE',
+        stats: {
+          touchdowns: 12,
+          receptions: 110,
+          rushAttempts: 0,
+          totalYards: 1338
+        },
+        rating: 99,
+        original: 'Travis Kelce'
+      },
+      {
+        name: 'George Kittle',
+        description: 'San Francisco 49ers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/znlqhc55l9zwi0euf1mk',
+        position: 'TE',
+        stats: {
+          touchdowns: 11,
+          receptions: 60,
+          rushAttempts: 0,
+          totalYards: 765
+        },
+        rating: 96,
+        original: 'George Kittle'
+      },
+      {
+        name: 'Stefon Diggs',
+        description: 'Buffalo Bills',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hcvd2avk0kufoli80veb',
+        position: 'WR',
+        stats: {
+          touchdowns: 11,
+          receptions: 108,
+          rushAttempts: 0,
+          totalYards: 1429
+        },
+        rating: 95,
+        original: 'Stefon Diggs'
+      },
+      {
+        name: 'Saquon Barkley',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/o8tlhps5u1tvnaaxlpjk',
+        position: 'RB',
+        stats: {
+          touchdowns: 10,
+          receptions: 57,
+          rushAttempts: 277,
+          totalYards: 1650
+        },
+        rating: 99,
+        original: 'Saquon Barkley'
+      },
+      {
+        name: 'Dalvin Cook',
+        description: 'Minnesota Vikings',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/gfwvqolvz9vegp1amhf3',
+        position: 'RB',
+        stats: {
+          touchdowns: 10,
+          receptions: 39,
+          rushAttempts: 264,
+          totalYards: 1468
+        },
+        rating: 86,
+        original: 'Dalvin Cook'
+      },
+      {
+        name: "Ja'Marr Chase",
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/hwrzdfsng9bh4tba7uoe',
+        position: 'WR',
+        stats: {
+          touchdowns: 9,
+          receptions: 87,
+          rushAttempts: 0,
+          totalYards: 1046
+        },
+        rating: 92,
+        original: "Ja'Marr Chase"
+      },
+      {
+        name: 'Joe Mixon',
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rd210pq6ch22vpoygtfn',
+        position: 'RB',
+        stats: {
+          touchdowns: 9,
+          receptions: 60,
+          rushAttempts: 210,
+          totalYards: 1255
+        },
+        rating: 88,
+        original: 'Joe Mixon'
+      },
+      {
+        name: 'Amari Cooper',
+        description: 'Cleveland Browns',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/zibbxjtein7gpu5zgcj4',
+        position: 'WR',
+        stats: {
+          touchdowns: 9,
+          receptions: 78,
+          rushAttempts: 0,
+          totalYards: 1160
+        },
+        rating: 88,
+        original: 'Amari Cooper'
+      },
+      {
+        name: 'Justin Jefferson',
+        description: 'Minnesota Vikings',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/zdstmm4sloqnichybgja',
+        position: 'WR',
+        stats: {
+          touchdowns: 8,
+          receptions: 128,
+          rushAttempts: 0,
+          totalYards: 1809
+        },
+        rating: 99,
+        original: 'Justin Jefferson'
+      },
+      {
+        name: 'Tyreek Hill',
+        description: 'Miami Dolphins',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/lsszbdnkusxc7mduw5be',
+        position: 'WR',
+        stats: {
+          touchdowns: 7,
+          receptions: 119,
+          rushAttempts: 0,
+          totalYards: 1710
+        },
+        rating: 98,
+        original: 'Tyreek Hill'
+      },
+      {
+        name: 'Aaron Jones',
+        description: 'Green Bay Packers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/oo8yixhsahh4gznox7th',
+        position: 'RB',
+        stats: {
+          touchdowns: 7,
+          receptions: 59,
+          rushAttempts: 213,
+          totalYards: 1516
+        },
+        rating: 89,
+        original: 'Aaron Jones'
+      },
+      {
+        name: 'Mike Evans',
+        description: 'Tampa Bay Buccaneers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/pyilrqdmfvv1zceem1cg',
+        position: 'WR',
+        stats: {
+          touchdowns: 6,
+          receptions: 77,
+          rushAttempts: 0,
+          totalYards: 1124
+        },
+        rating: 92,
+        original: 'Mike Evans'
+      },
+      {
+        name: 'Mark Andrews',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/m1fmyihulvtdiav4bwxm',
+        position: 'TE',
+        stats: { touchdowns: 5, receptions: 73, rushAttempts: 0, totalYards: 847 },
+        rating: 94,
+        original: 'Mark Andrews'
+      },
+      {
+        name: 'DeAndre Hopkins',
+        description: 'Arizona Cardinals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/kikfprn4t5ap1lju4a4k',
+        position: 'WR',
+        stats: { touchdowns: 3, receptions: 64, rushAttempts: 0, totalYards: 717 },
+        rating: 91,
+        original: 'DeAndre Hopkins'
+      },
+      {
+        name: 'Darren Waller',
+        description: 'New York Giants',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/c7jaefxw5xiawscvnqc0',
+        position: 'TE',
+        stats: { touchdowns: 3, receptions: 28, rushAttempts: 0, totalYards: 388 },
+        rating: 90,
+        original: 'Darren Waller'
+      },
+      {
+        name: 'Deebo Samuel',
+        description: 'San Francisco 49ers',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/ciwaktyqewczcquks4wy',
+        position: 'WR',
+        stats: { touchdowns: 2, receptions: 56, rushAttempts: 0, totalYards: 632 },
+        rating: 89,
+        original: 'Deebo Samuel'
+      },
+      {
+        name: 'Justin Tucker',
+        description: 'Baltimore Ravens',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/rktidvinrkjwf6swzpnf',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 99,
+        original: 'Justin Tucker'
+      },
+      {
+        name: 'Harrison Butker',
+        description: 'Kansas City Chiefs',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/snhlmpr5wfw1t8w1yqgu',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 96,
+        original: 'Harrison Butker'
+      },
+      {
+        name: 'Evan McPherson',
+        description: 'Cincinnati Bengals',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/qxyqg1xibovrlkhebks2',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 93,
+        original: 'Evan McPherson'
+      },
+      {
+        name: 'Younghoe Koo',
+        description: 'Atlanta Falcons',
+        image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/nvtusyryw9cpf6p8tz8n',
+        position: 'K',
+        stats: {
+          touchdowns: -1,
+          receptions: -1,
+          rushAttempts: -1,
+          totalYards: -1
+        },
+        rating: 90,
+        original: 'Younghoe Koo'
+      }
+    ]
+
+      at onClick (src/App.tsx:97:37)
+
+PASS src/Components.test.tsx (12.608 s)
   Role Tests
-    ✓ Tests that there is a combobox (209 ms)
-    ✓ Tests that the first role value is League Manager (101 ms)
-    ✓ Tests that the changed value is Team Manager (148 ms)
-    ✓ Tests that the changed value is Guest User (144 ms)
-    ✓ Test adding user (192 ms)
+    ✓ Tests that there is a combobox (261 ms)
+    ✓ Tests that the first role value is League Manager (136 ms)
+    ✓ Tests that the changed value is Team Manager (179 ms)
+    ✓ Tests that the changed value is Guest User (149 ms)
+    ✓ Test adding user (245 ms)
   Drag Tests
-    ✓ Testing for original 30 player list (97 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (83 ms)
-    ✓ Testing that draggable list appears when not league manager (206 ms)
-    ✓ Testing that first player is draggable (42 ms)
-    ✓ Testing that first player can be dragged to other list (44 ms)
+    ✓ Testing for original 30 player list (70 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (75 ms)
+    ✓ Testing that draggable list appears when not league manager (250 ms)
+    ✓ Testing that first player is draggable (57 ms)
+    ✓ Testing that first player can be dragged to other list (52 ms)
   Testing Adding players
-    ✓ Testing for original 30 player list, and that league manager can add players (61 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (275 ms)
-    ✓ Testing for adding 1 player, see if list increased in size (266 ms)
-    ✓ Test adding player doesn't appear when not league manager (106 ms)
-    ✓ Test adding player doesn't appear when not league manager (96 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (70 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (309 ms)
+    ✓ Testing for adding 1 player, see if list increased in size (289 ms)
+    ✓ Test adding player doesn't appear when not league manager (131 ms)
+    ✓ Test adding player doesn't appear when not league manager (127 ms)
   Testing Filter
-    ✓ Testing for original 30 player list (42 ms)
-    ✓ Testing no filter (38 ms)
-    ✓ Testing for filtered by QB (39 ms)
+    ✓ Testing for original 30 player list (58 ms)
+    ✓ Testing no filter (45 ms)
+    ✓ Testing for filtered by QB (60 ms)
     ✓ Testing for filtered by RB (52 ms)
-    ✓ Testing for filtered by WR (43 ms)
+    ✓ Testing for filtered by WR (52 ms)
     ✓ Testing for filtered by TE (53 ms)
-    ✓ Testing for filtered by K (37 ms)
+    ✓ Testing for filtered by K (44 ms)
   Testing Sort
-    ✓ Testing for original 30 player list, and that league manager can add players (42 ms)
-    ✓ Testing for sorted by position (105 ms)
-    ✓ Test sorted by Rating (76 ms)
-    ✓ Test sorted by Touchdowns (93 ms)
-    ✓ Test sorted by None (117 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (50 ms)
+    ✓ Testing for sorted by position (112 ms)
+    ✓ Test sorted by Rating (92 ms)
+    ✓ Test sorted by Touchdowns (111 ms)
+    ✓ Test sorted by None (147 ms)
     Testing adding players with filter
-      ✓ Testing for original 30 player list (29 ms)
-      ✓ Testing for adding 1 player, filter is none (240 ms)
-      ✓ Testing for adding 1 player, filter is K, player is a K (239 ms)
-      ✓ Testing for adding 1 player, filter is QB, player is a K (234 ms)
+      ✓ Testing for original 30 player list (36 ms)
+      ✓ Testing for adding 1 player, filter is none (285 ms)
+      ✓ Testing for adding 1 player, filter is K, player is a K (298 ms)
+      ✓ Testing for adding 1 player, filter is QB, player is a K (282 ms)
   Testing adding players with sort
-    ✓ Testing for original 30 player list (33 ms)
-    ✓ Testing for adding player, sort is none (296 ms)
-    ✓ Testing for adding player, sort is Position (282 ms)
-    ✓ Testing for adding player, sort is Rating (275 ms)
-    ✓ Testing for adding player, sort is Touchdowns (261 ms)
+    ✓ Testing for original 30 player list (42 ms)
+    ✓ Testing for adding player, sort is none (366 ms)
+    ✓ Testing for adding player, sort is Position (338 ms)
+    ✓ Testing for adding player, sort is Rating (322 ms)
+    ✓ Testing for adding player, sort is Touchdowns (314 ms)
   Adding Players Using Button
-    ✓ Testing adding player to user list as guest user (112 ms)
-    ✓ Testing adding duplicates Guest User (140 ms)
-    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (100 ms)
+    ✓ Testing adding player to user list as guest user (123 ms)
+    ✓ Testing adding duplicates Guest User (150 ms)
+    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (112 ms)
   Testing User Rating
-    ✓ Testing original rating before change (114 ms)
-    ✓ Testing Changing value from 99 to 90 (159 ms)
-    ✓ Testing Changing value to 50 (190 ms)
-    ✓ Testing Changing value to 0 (200 ms)
-    ✓ Testing Changing value to 101, not possible will stay at 100 (212 ms)
-    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (174 ms)
+    ✓ Testing original rating before change (141 ms)
+    ✓ Testing Changing value from 99 to 90 (188 ms)
+    ✓ Testing Changing value to 50 (234 ms)
+    ✓ Testing Changing value to 0 (220 ms)
+    ✓ Testing Changing value to 101, not possible will stay at 100 (248 ms)
+    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (208 ms)
+  Testing Edit Players From Admin
+    ✓ Testing That this object doesn't exist in the edit list if not placed there by user (100 ms)
+    ✓ Testing That Player can be added and then displayed after in the edit component (132 ms)
+    ✓ Testing That Player can be edited after the edit is clicked (256 ms)
+    ✓ Testing That Edited player is in central list after leaving edit mode (429 ms)
+    ✓ Testing every field and returning to central list to check if changed (1172 ms)
 
 ----------------------------------|---------|----------|---------|---------|----------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
 ----------------------------------|---------|----------|---------|---------|----------------------------
-All files                         |   45.57 |    55.88 |   42.52 |    45.2 |                            
- src                              |   70.17 |       50 |      20 |   70.17 |                            
-  App.tsx                         |   34.61 |       50 |      20 |   34.61 | 63-98                      
+All files                         |   85.37 |    81.37 |    81.6 |   85.27 |                            
+ src                              |     100 |    92.85 |     100 |     100 |                            
+  App.tsx                         |     100 |    92.85 |     100 |     100 | 68                         
   players.tsx                     |     100 |      100 |     100 |     100 |                            
- src/components                   |   67.62 |    75.75 |   66.66 |   67.15 |                            
+ src/components                   |   69.06 |    75.75 |   70.37 |   68.61 |                            
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                            
-  AdminEdit.tsx                   |       0 |      100 |       0 |       0 | 39-42                      
+  AdminEdit.tsx                   |     100 |      100 |     100 |     100 |                            
   DragAndDisplay.tsx              |   31.91 |       65 |   36.36 |   31.91 | 63-103,121-149,212,297,331 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                            
   PositionFilter.tsx              |   88.88 |       50 |     100 |   88.88 | 32                         
@@ -2768,21 +5991,21 @@ All files                         |   45.57 |    55.88 |   42.52 |    45.2 |
   UserText.tsx                    |     100 |      100 |     100 |     100 |                            
   roleSelect.tsx                  |      60 |       65 |   66.66 |      60 | 52,60-70                   
   sortSelect.tsx                  |     100 |    92.85 |     100 |     100 | 41                         
- src/components/subComponentsEdit |       0 |        0 |       0 |       0 |                            
-  EditDescription.tsx             |       0 |      100 |       0 |       0 | 16-35                      
-  EditImage.tsx                   |       0 |      100 |       0 |       0 | 12-31                      
-  EditName.tsx                    |       0 |      100 |       0 |       0 | 12-31                      
-  EditPosition.tsx                |       0 |      100 |       0 |       0 | 16-42                      
-  EditRating.tsx                  |       0 |        0 |       0 |       0 | 15-40                      
-  EditReceptions.tsx              |       0 |        0 |       0 |       0 | 15-41                      
-  EditRushAttempts.tsx            |       0 |        0 |       0 |       0 | 15-41                      
-  EditTotalYards.tsx              |       0 |        0 |       0 |       0 | 15-41                      
-  EditTouchdowns.tsx              |       0 |        0 |       0 |       0 | 15-41                      
+ src/components/subComponentsEdit |     100 |     90.9 |     100 |     100 |                            
+  EditDescription.tsx             |     100 |      100 |     100 |     100 |                            
+  EditImage.tsx                   |     100 |      100 |     100 |     100 |                            
+  EditName.tsx                    |     100 |      100 |     100 |     100 |                            
+  EditPosition.tsx                |     100 |      100 |     100 |     100 |                            
+  EditRating.tsx                  |     100 |    66.66 |     100 |     100 | 23,27                      
+  EditReceptions.tsx              |     100 |      100 |     100 |     100 |                            
+  EditRushAttempts.tsx            |     100 |      100 |     100 |     100 |                            
+  EditTotalYards.tsx              |     100 |      100 |     100 |     100 |                            
+  EditTouchdowns.tsx              |     100 |      100 |     100 |     100 |                            
  src/interfaces                   |       0 |        0 |       0 |       0 |                            
   player.tsx                      |       0 |        0 |       0 |       0 |                            
 ----------------------------------|---------|----------|---------|---------|----------------------------
 Test Suites: 1 passed, 1 total
-Tests:       45 passed, 45 total
+Tests:       50 passed, 50 total
 Snapshots:   0 total
-Time:        9.386 s
+Time:        13.288 s
 Ran all test suites.
