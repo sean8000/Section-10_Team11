@@ -36,8 +36,7 @@ export function AddPlayers({
                 totalYards: 1
             },
             rating: 1,
-            original: playerName,
-            count: 0
+            original: playerName
         };
         setCentralList([...centralList, newPlayer]);
         setFilteredList([...filteredList, newPlayer]);

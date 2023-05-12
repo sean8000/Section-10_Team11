@@ -26,6 +26,7 @@ interface Widgets {
     setFilteredList: (newPlayerList: Player[]) => void;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function DragAndDisplay({
     role,
     widgets,
@@ -55,7 +56,6 @@ function DragAndDisplay({
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
     const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
-    
     //const [pos, setPosition] = useState<string>("None");
     //const filterBoolean = [false, false, false, false, false];
 
@@ -76,9 +76,6 @@ function DragAndDisplay({
 
         // add the player to the list
         if (newPlayer !== undefined) {
-            filteredList.map((p1: Player) =>
-                p1.name === newPlayer.name ? p1.count++ : 0
-            );
             setWidgets([...widgets, newPlayer]);
         }
     }
@@ -127,10 +124,6 @@ function DragAndDisplay({
     function handleOnButtonClick(removedPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
-        filteredList.map((p1: Player) =>
-            p1.name === removedPlayer.name ? p1.count-- : 0
-        );
-
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
@@ -201,7 +194,6 @@ function DragAndDisplay({
                     >
                         Open Stats For All Players
                     </Button>{*/}
-
                     <br></br>
                     <span
                         data-testid="playerCount"
@@ -232,10 +224,6 @@ function DragAndDisplay({
                                         Add Player to Your Team
                                     </Button>
                                 ) : (
-                                    ""
-                                )
-                            ) : (
-                                "Total Player Use: " + curr.count
                                     <Button
                                         data-testid={"userButton" + index}
                                         onClick={() => addToTeam(curr)}
@@ -253,21 +241,6 @@ function DragAndDisplay({
                             alt="Image"
                         />
                         <PlayerStats
-                            name={curr.name}
-                            description={curr.description}
-                            image={curr.image}
-                            position={curr.position}
-                            stats={{
-                                touchdowns: curr.stats.touchdowns,
-                                receptions: curr.stats.rushAttempts,
-                                rushAttempts: curr.stats.rushAttempts,
-                                totalYards: curr.stats.totalYards
-                            }}
-                            rating={curr.rating}
-                            original={curr.original}
-                            count={curr.count}
-                        ></PlayerStats>
-
                             index={index}
                             description={curr.description}
                             touchdowns={curr.stats.touchdowns}
@@ -369,25 +342,6 @@ function DragAndDisplay({
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
-                            {/*centralList.map((player: Player): number =>
-                                player.name === curr.name ? player.count++ : 0
-                    )*/}
-                            <PlayerStats
-                                name={curr.name}
-                                description={curr.description}
-                                image={curr.image}
-                                position={curr.position}
-                                stats={{
-                                    touchdowns: curr.stats.touchdowns,
-                                    receptions: curr.stats.rushAttempts,
-                                    rushAttempts: curr.stats.rushAttempts,
-                                    totalYards: curr.stats.totalYards
-                                }}
-                                rating={curr.rating}
-                                original={curr.original}
-                                count={curr.count}
-                            ></PlayerStats>
-
                             {/*} Needed to make stats button to go on the left {*/}
                             <PlayerStats
                                 index={index}
@@ -441,6 +395,5 @@ function DragAndDisplay({
         </div>
     );
 }
-
 
 export default DragAndDisplay;
