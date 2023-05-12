@@ -40,7 +40,7 @@ export function EditTouchdowns({ widgets, setWidgets, player }: Rating) {
 
     return (
         <div>
-            <Form.Group className="editNums" controlId="PlayerRating">
+            <Form.Group className="editNums" controlId="TouchdownsBox">
                 <Form.Label>Touchdowns</Form.Label>
                 <Form.Control
                     type="number"

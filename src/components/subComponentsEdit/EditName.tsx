@@ -30,7 +30,7 @@ export function EditName({ player, widgets, setWidgets }: Edit): JSX.Element {
     // This is the View
     return (
         <div className="editText">
-            <Form.Group controlId="UserTextBox">
+            <Form.Group controlId="NameBox">
                 <Form.Label>Name</Form.Label>
                 <Form.Control value={name} onChange={updateName} />
             </Form.Group>

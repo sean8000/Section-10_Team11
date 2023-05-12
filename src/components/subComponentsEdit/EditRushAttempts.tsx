@@ -40,7 +40,7 @@ export function EditRushAttempts({ widgets, setWidgets, player }: Rating) {
 
     return (
         <div>
-            <Form.Group className="editNums" controlId="PlayerRating">
+            <Form.Group className="editNums" controlId="RushAttemptsBox">
                 <Form.Label>Rush Attempts</Form.Label>
                 <Form.Control
                     data-testid={"rushAttempts" + getPlayerIndex()}

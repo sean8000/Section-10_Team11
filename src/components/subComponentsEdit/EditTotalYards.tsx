@@ -40,11 +40,7 @@ export function EditTotalYards({ widgets, setWidgets, player }: Rating) {
 
     return (
         <div>
-            <Form.Group
-                style={{ width: 90 }}
-                className="editNums"
-                controlId="PlayerRating"
-            >
+            <Form.Group className="editNums" controlId="TotalYardsBox">
                 <Form.Label>Total Yards</Form.Label>
                 <Form.Control
                     data-testid={"totalYards" + getPlayerIndex()}

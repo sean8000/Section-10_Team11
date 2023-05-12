@@ -34,10 +34,7 @@ export function EditDescription({
     // This is the View
     return (
         <div className="editText">
-            <Form.Group
-                data-testid={"description" + getPlayerIndex()}
-                controlId="UserTextBox"
-            >
+            <Form.Group controlId="DescriptionBox">
                 <Form.Label>Description</Form.Label>
                 <Form.Control value={desc} onChange={updateDesc} />
             </Form.Group>
