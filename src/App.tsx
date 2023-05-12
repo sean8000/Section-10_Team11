@@ -126,7 +126,8 @@ function App(): JSX.Element {
                     setAdminWidgets={setAdminWidgets}
                 ></AdminEdit>
             )}
-            {/*}
+            <div>
+                {/*}
                         {role !== "League Manager" ? (
                             <DragAndDisplay
                                 widgets={widgets}
@@ -142,7 +143,7 @@ function App(): JSX.Element {
                             </span>
                         )}
                         {*/}
-            {/*}
+                {/*}
                     <Col>
                         <h4>Role Select</h4>
                         <RoleSelect
@@ -158,6 +159,12 @@ function App(): JSX.Element {
                         {/*}<Button onClick={() => addUser()}>Add User</Button>{
                     </Col>
                     */}
+            </div>
+            <span className="names">
+                Alexander Marshall, Michael Murphy, Sean Johnson, Michael
+                Lorang, Dean Turner
+            </span>
+
             <div className="padding"></div>
         </div>
     );
