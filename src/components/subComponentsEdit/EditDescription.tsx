@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 import "../style.css";
-import { Player } from "../interfaces/player";
+import { Player } from "../../interfaces/player";
 interface Edit {
     player: Player;
     widgets: Player[];

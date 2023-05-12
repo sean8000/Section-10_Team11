@@ -1,6 +1,6 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
-import Test from "./components/Test";
+import DragAndDisplay from "./components/DragAndDisplay";
 import { AdminEdit } from "./components/AdminEdit";
 import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
@@ -31,6 +31,10 @@ function App(): JSX.Element {
     }
     return (
         <div>
+            <span className="names">
+                by Alexander Marshall, Michael Murphy, Sean Johnson, Michael
+                Lorang, Dean Turner
+            </span>
             <h1 className="heading">
                 <>
                     {" "}
@@ -102,7 +106,7 @@ function App(): JSX.Element {
                 )}
             </h1>
             {adminEdit !== true ? (
-                <Test
+                <DragAndDisplay
                     widgets={widgets}
                     setWidgets={setWidgets}
                     role={role}
@@ -114,7 +118,7 @@ function App(): JSX.Element {
                     setAdminWidgets={setAdminWidgets}
                     filteredList={filteredList}
                     setFilteredList={setFilteredList}
-                ></Test>
+                ></DragAndDisplay>
             ) : (
                 <AdminEdit
                     role={role}
@@ -125,13 +129,13 @@ function App(): JSX.Element {
             <div>
                 {/*}
                         {role !== "League Manager" ? (
-                            <Test
+                            <DragAndDisplay
                                 widgets={widgets}
                                 setWidgets={setWidgets}
                                 role={role}
                                 myMap={myMap}
                                 setMyMap={setMyMap}
-                            ></Test>
+                            ></DragAndDisplay>
                         ) : (
                             <span>
                                 Central List, Added later when player list
@@ -160,6 +164,7 @@ function App(): JSX.Element {
                 Alexander Marshall, Michael Murphy, Sean Johnson, Michael
                 Lorang, Dean Turner
             </span>
+
             <div className="padding"></div>
         </div>
     );

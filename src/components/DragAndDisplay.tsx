@@ -26,8 +26,7 @@ interface Widgets {
     setFilteredList: (newPlayerList: Player[]) => void;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-function Test({
+function DragAndDisplay({
     role,
     widgets,
     setWidgets,
@@ -56,8 +55,7 @@ function Test({
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
     const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
-    const [pageUpdateCounter, setPageUpdateCounter] = useState<number>(0);
-    const [tempWidgetLength, setTempWidgetLength] = useState<number>(0);
+    
     //const [pos, setPosition] = useState<string>("None");
     //const filterBoolean = [false, false, false, false, false];
 
@@ -132,6 +130,7 @@ function Test({
         filteredList.map((p1: Player) =>
             p1.name === removedPlayer.name ? p1.count-- : 0
         );
+
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
@@ -156,6 +155,16 @@ function Test({
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
     }
+    /*
+    const [visible, setVisible] = useState<boolean>(false);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    function flipVisibility(): void {
+        setVisible(!visible);
+    }
+    */
+    /* function updateCentralList(newCentralList: Player[]) {
+        setCentralList(newCentralList);
+    } */
 
     // the curr in the both maps below now represents players,
     // you can access its attributes with dot notation
@@ -178,6 +187,21 @@ function Test({
                 <h4 className="playersTitle">Players</h4>
                 <br></br>
                 <div style={{ background: "red" }}>
+                    {/*}<Button
+                        className="btn btn-primary shadow-none"
+                        style={{
+                            height: 30,
+                            width: 200,
+                            fontSize: 15,
+                            color: "black",
+                            background: "white"
+                        }}
+                        data-testid="stats"
+                        onClick={flipVisibility}
+                    >
+                        Open Stats For All Players
+                    </Button>{*/}
+
                     <br></br>
                     <span
                         data-testid="playerCount"
@@ -212,6 +236,15 @@ function Test({
                                 )
                             ) : (
                                 "Total Player Use: " + curr.count
+                                    <Button
+                                        data-testid={"userButton" + index}
+                                        onClick={() => addToTeam(curr)}
+                                    >
+                                        Add Player to Your Team
+                                    </Button>
+                                )
+                            ) : (
+                                ""
                             )}
                         </div>
                         <img
@@ -235,6 +268,13 @@ function Test({
                             count={curr.count}
                         ></PlayerStats>
 
+                            index={index}
+                            description={curr.description}
+                            touchdowns={curr.stats.touchdowns}
+                            receptions={curr.stats.rushAttempts}
+                            rushAttempts={curr.stats.rushAttempts}
+                            totalYards={curr.stats.totalYards}
+                        ></PlayerStats>
                         {/*}<div>
                             {visible && (
                                 <div>
@@ -348,6 +388,15 @@ function Test({
                                 count={curr.count}
                             ></PlayerStats>
 
+                            {/*} Needed to make stats button to go on the left {*/}
+                            <PlayerStats
+                                index={index}
+                                description={curr.description}
+                                touchdowns={curr.stats.touchdowns}
+                                receptions={curr.stats.rushAttempts}
+                                rushAttempts={curr.stats.rushAttempts}
+                                totalYards={curr.stats.totalYards}
+                            ></PlayerStats>
                             <div>
                                 {/*}
                                             <Button onClick={flipVisibility}>
@@ -393,4 +442,5 @@ function Test({
     );
 }
 
-export default Test;
+
+export default DragAndDisplay;

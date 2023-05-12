@@ -86,7 +86,7 @@ describe("Testing Adding players", () => {
     test("Testing for original 30 player list, and that league manager can add players", () => {
         render(<App />);
         expect(screen.getByText(/player count in the central list is: 30/));
-        expect(screen.getByText(/Add This New Player:/)).toBeInTheDocument;
+        expect(screen.getByText(/Add Players Here/)).toBeInTheDocument;
     });
     test("Testing for adding 1 player, see if name exists in list", () => {
         render(<App />);
@@ -126,14 +126,14 @@ describe("Testing Adding players", () => {
         const selectRole = screen.getByLabelText("Which role", {});
         userEvent.selectOptions(selectRole, "Team Manager");
         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
-        expect(screen.queryByText(/Add This New Player:/)).toBeNull();
+        expect(screen.queryByText(/Add Players Here/)).toBeNull();
     });
     test("Test adding player doesn't appear when not league manager", () => {
         render(<App />);
         const selectRole = screen.getByLabelText("Which role", {});
         userEvent.selectOptions(selectRole, "Guest User");
         expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
-        expect(screen.queryByText(/Add This New Player:/)).toBeNull();
+        expect(screen.queryByText(/Add Players Here/)).toBeNull();
     });
 });
 
@@ -142,7 +142,7 @@ describe("Testing Filter", () => {
     test("Testing for original 30 player list", () => {
         render(<App />);
         expect(screen.getByText(/player count in the central list is: 30/));
-        expect(screen.getByText(/Add This New Player:/)).toBeInTheDocument;
+        expect(screen.getByText(/Add Players Here/)).toBeInTheDocument;
     });
     test("Testing no filter", () => {
         render(<App />);
@@ -158,8 +158,8 @@ describe("Testing Filter", () => {
         expect(qbButton).toBeChecked;
         expect(screen.getByText(/player count in the central list is: 4/));
         //Check if  4 QBs in the list
-        //Add 2 because there is a QB radio button, and a combobox initially displaying QB.
-        expect(screen.queryAllByText(/QB/i)).toHaveLength(4 + 2);
+        //Add 2 because there is a QB radio button, and a combobox initially displaying QB, QB option in add player.
+        expect(screen.queryAllByText(/QB/i)).toHaveLength(4 + 3);
     });
     test("Testing for filtered by RB", () => {
         render(<App />);
@@ -210,7 +210,7 @@ describe("Testing Sort", () => {
     test("Testing for original 30 player list, and that league manager can add players", () => {
         render(<App />);
         expect(screen.getByText(/player count in the central list is: 30/));
-        expect(screen.getByText(/Add This New Player:/)).toBeInTheDocument;
+        expect(screen.getByText(/Add Players Here/)).toBeInTheDocument;
     });
     test("Testing for sorted by position", () => {
         render(<App />);
@@ -245,34 +245,46 @@ describe("Testing Sort", () => {
     test("Test sorted by Touchdowns", () => {
         render(<App />);
         const sortID = screen.getByLabelText(/Sort Select/);
-        const statsButton = screen.getByTestId("stats");
-        statsButton.click();
         userEvent.selectOptions(sortID, "Touchdowns");
         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
         const firstRated = screen.getByTestId(0);
+        const statsButton1 = screen.getByTestId("statsButton0");
+        statsButton1.click();
         expect(firstRated).toHaveTextContent("41");
         const SecondRated = screen.getByTestId(1);
+        const statsButton2 = screen.getByTestId("statsButton1");
+        statsButton2.click();
         expect(SecondRated).toHaveTextContent("40");
         const eighteen = screen.getByTestId(8);
+        const statsButton3 = screen.getByTestId("statsButton8");
+        statsButton3.click();
         expect(eighteen).toHaveTextContent("13");
         const last = screen.getByTestId(29);
+        const statsButton4 = screen.getByTestId("statsButton29");
+        statsButton4.click();
         expect(last).toHaveTextContent("-1");
     });
     test("Test sorted by None", () => {
         //After the sort is changed back to none, it will retain the same ordering as the previous sort
         render(<App />);
         const sortID = screen.getByLabelText(/Sort Select/);
-        const statsButton = screen.getByTestId("stats");
-        statsButton.click();
         userEvent.selectOptions(sortID, "Touchdowns");
         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
         const firstRated = screen.getByTestId(0);
+        const statsButton1 = screen.getByTestId("statsButton0");
+        statsButton1.click();
         expect(firstRated).toHaveTextContent("41");
         const SecondRated = screen.getByTestId(1);
+        const statsButton2 = screen.getByTestId("statsButton1");
+        statsButton2.click();
         expect(SecondRated).toHaveTextContent("40");
         const eighteen = screen.getByTestId(8);
+        const statsButton3 = screen.getByTestId("statsButton8");
+        statsButton3.click();
         expect(eighteen).toHaveTextContent("13");
         const last = screen.getByTestId(29);
+        const statsButton4 = screen.getByTestId("statsButton29");
+        statsButton4.click();
         expect(last).toHaveTextContent("-1");
 
         userEvent.selectOptions(sortID, "None");
@@ -358,8 +370,8 @@ describe("Testing Sort", () => {
             expect(qbButton).toBeChecked;
             //player not displayed since they're a K
             expect(screen.getByText(/player count in the central list is: 4/));
-            //Check if  4 QBs in the list +2 because of radio button and QB option
-            expect(screen.queryAllByText(/QB/i)).toHaveLength(4 + 2);
+            //Check if  4 QBs in the list +2 because of radio button and QB option, QB option in add player
+            expect(screen.queryAllByText(/QB/i)).toHaveLength(4 + 3);
         });
     });
 });
