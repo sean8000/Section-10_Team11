@@ -1019,7 +1019,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$y9359j5da5': <ref *2> FiberNode {
+      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1164,7 +1164,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$y9359j5da5': {
+      '__reactProps$27w373m80ej': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -1201,7 +1201,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$y9359j5da5': <ref *2> FiberNode {
+      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1346,7 +1346,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$y9359j5da5': {
+      '__reactProps$27w373m80ej': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -1455,7 +1455,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$y9359j5da5': <ref *2> FiberNode {
+      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1600,7 +1600,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$y9359j5da5': {
+      '__reactProps$27w373m80ej': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -1781,7 +1781,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$y9359j5da5': <ref *2> FiberNode {
+      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -1926,7 +1926,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$y9359j5da5': {
+      '__reactProps$27w373m80ej': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -2071,7 +2071,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$y9359j5da5': <ref *2> FiberNode {
+      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2216,7 +2216,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$y9359j5da5': {
+      '__reactProps$27w373m80ej': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -2433,7 +2433,7 @@
 
   console.log
     <ref *1> HTMLDivElement {
-      '__reactFiber$y9359j5da5': <ref *2> FiberNode {
+      '__reactFiber$27w373m80ej': <ref *2> FiberNode {
         tag: 5,
         key: 'otherGuest User0',
         elementType: 'div',
@@ -2578,7 +2578,7 @@
         _debugNeedsRemount: false,
         _debugHookTypes: null
       },
-      '__reactProps$y9359j5da5': {
+      '__reactProps$27w373m80ej': {
         className: 'playerWidget',
         'data-testid': 'otherGuest User0',
         children: [ [Object], [Object], [Object], [Object] ]
@@ -2695,61 +2695,61 @@
       at map (src/components/DragAndDisplay.tsx:324:42)
           at Array.map (<anonymous>)
 
-PASS src/Components.test.tsx (12.349 s)
+PASS src/Components.test.tsx (8.796 s)
   Role Tests
-    ✓ Tests that there is a combobox (285 ms)
-    ✓ Tests that the first role value is League Manager (149 ms)
-    ✓ Tests that the changed value is Team Manager (205 ms)
-    ✓ Tests that the changed value is Guest User (178 ms)
-    ✓ Test adding user (247 ms)
+    ✓ Tests that there is a combobox (209 ms)
+    ✓ Tests that the first role value is League Manager (101 ms)
+    ✓ Tests that the changed value is Team Manager (148 ms)
+    ✓ Tests that the changed value is Guest User (144 ms)
+    ✓ Test adding user (192 ms)
   Drag Tests
-    ✓ Testing for original 30 player list (96 ms)
-    ✓ Testing that draggable list doesn't exist when league manager (92 ms)
-    ✓ Testing that draggable list appears when not league manager (264 ms)
-    ✓ Testing that first player is draggable (66 ms)
-    ✓ Testing that first player can be dragged to other list (58 ms)
+    ✓ Testing for original 30 player list (97 ms)
+    ✓ Testing that draggable list doesn't exist when league manager (83 ms)
+    ✓ Testing that draggable list appears when not league manager (206 ms)
+    ✓ Testing that first player is draggable (42 ms)
+    ✓ Testing that first player can be dragged to other list (44 ms)
   Testing Adding players
-    ✓ Testing for original 30 player list, and that league manager can add players (87 ms)
-    ✓ Testing for adding 1 player, see if name exists in list (410 ms)
-    ✓ Testing for adding 1 player, see if list increased in size (390 ms)
-    ✓ Test adding player doesn't appear when not league manager (167 ms)
-    ✓ Test adding player doesn't appear when not league manager (164 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (61 ms)
+    ✓ Testing for adding 1 player, see if name exists in list (275 ms)
+    ✓ Testing for adding 1 player, see if list increased in size (266 ms)
+    ✓ Test adding player doesn't appear when not league manager (106 ms)
+    ✓ Test adding player doesn't appear when not league manager (96 ms)
   Testing Filter
-    ✓ Testing for original 30 player list (56 ms)
-    ✓ Testing no filter (55 ms)
-    ✓ Testing for filtered by QB (57 ms)
-    ✓ Testing for filtered by RB (76 ms)
-    ✓ Testing for filtered by WR (69 ms)
-    ✓ Testing for filtered by TE (84 ms)
-    ✓ Testing for filtered by K (52 ms)
+    ✓ Testing for original 30 player list (42 ms)
+    ✓ Testing no filter (38 ms)
+    ✓ Testing for filtered by QB (39 ms)
+    ✓ Testing for filtered by RB (52 ms)
+    ✓ Testing for filtered by WR (43 ms)
+    ✓ Testing for filtered by TE (53 ms)
+    ✓ Testing for filtered by K (37 ms)
   Testing Sort
-    ✓ Testing for original 30 player list, and that league manager can add players (76 ms)
-    ✓ Testing for sorted by position (150 ms)
-    ✓ Test sorted by Rating (116 ms)
-    ✓ Test sorted by Touchdowns (134 ms)
-    ✓ Test sorted by None (180 ms)
+    ✓ Testing for original 30 player list, and that league manager can add players (42 ms)
+    ✓ Testing for sorted by position (105 ms)
+    ✓ Test sorted by Rating (76 ms)
+    ✓ Test sorted by Touchdowns (93 ms)
+    ✓ Test sorted by None (117 ms)
     Testing adding players with filter
-      ✓ Testing for original 30 player list (44 ms)
-      ✓ Testing for adding 1 player, filter is none (338 ms)
-      ✓ Testing for adding 1 player, filter is K, player is a K (361 ms)
-      ✓ Testing for adding 1 player, filter is QB, player is a K (348 ms)
+      ✓ Testing for original 30 player list (29 ms)
+      ✓ Testing for adding 1 player, filter is none (240 ms)
+      ✓ Testing for adding 1 player, filter is K, player is a K (239 ms)
+      ✓ Testing for adding 1 player, filter is QB, player is a K (234 ms)
   Testing adding players with sort
-    ✓ Testing for original 30 player list (54 ms)
-    ✓ Testing for adding player, sort is none (426 ms)
-    ✓ Testing for adding player, sort is Position (425 ms)
-    ✓ Testing for adding player, sort is Rating (422 ms)
-    ✓ Testing for adding player, sort is Touchdowns (390 ms)
+    ✓ Testing for original 30 player list (33 ms)
+    ✓ Testing for adding player, sort is none (296 ms)
+    ✓ Testing for adding player, sort is Position (282 ms)
+    ✓ Testing for adding player, sort is Rating (275 ms)
+    ✓ Testing for adding player, sort is Touchdowns (261 ms)
   Adding Players Using Button
-    ✓ Testing adding player to user list as guest user (153 ms)
-    ✓ Testing adding duplicates Guest User (179 ms)
-    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (149 ms)
+    ✓ Testing adding player to user list as guest user (112 ms)
+    ✓ Testing adding duplicates Guest User (140 ms)
+    ✓ Testing adding duplicates as Team Manger / Admin, shouldn't work (100 ms)
   Testing User Rating
-    ✓ Testing original rating before change (171 ms)
-    ✓ Testing Changing value from 99 to 90 (233 ms)
-    ✓ Testing Changing value to 50 (272 ms)
-    ✓ Testing Changing value to 0 (277 ms)
-    ✓ Testing Changing value to 101, not possible will stay at 100 (281 ms)
-    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (253 ms)
+    ✓ Testing original rating before change (114 ms)
+    ✓ Testing Changing value from 99 to 90 (159 ms)
+    ✓ Testing Changing value to 50 (190 ms)
+    ✓ Testing Changing value to 0 (200 ms)
+    ✓ Testing Changing value to 101, not possible will stay at 100 (212 ms)
+    ✓ Testing Changing value to -1, not possible since - is not a number, stays at 1 (174 ms)
 
 ----------------------------------|---------|----------|---------|---------|----------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
@@ -2784,5 +2784,5 @@ All files                         |   45.57 |    55.88 |   42.52 |    45.2 |
 Test Suites: 1 passed, 1 total
 Tests:       45 passed, 45 total
 Snapshots:   0 total
-Time:        13.157 s
+Time:        9.386 s
 Ran all test suites.
