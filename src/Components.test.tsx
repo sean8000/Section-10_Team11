@@ -678,6 +678,7 @@ describe("Testing User Rating", () => {
         const ratingBox = screen.getByLabelText(/Rating Box/);
         userEvent.type(ratingBox, "{backspace}1{arrowleft}{backspace}-");
         expect(ratingBox).toHaveValue(1);
+        console.log("for merge, can be deleted after");
         //This is his actual rating as a player in the list(The player list we fed it originally,
         //not what is displayed), which the rating box changes
         expect(player1).toHaveTextContent("Overall: 1");
