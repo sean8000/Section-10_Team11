@@ -244,7 +244,7 @@ function DragAndDisplay({
                             index={index}
                             description={curr.description}
                             touchdowns={curr.stats.touchdowns}
-                            receptions={curr.stats.rushAttempts}
+                            receptions={curr.stats.receptions}
                             rushAttempts={curr.stats.rushAttempts}
                             totalYards={curr.stats.totalYards}
                         ></PlayerStats>
@@ -347,7 +347,7 @@ function DragAndDisplay({
                                 index={index}
                                 description={curr.description}
                                 touchdowns={curr.stats.touchdowns}
-                                receptions={curr.stats.rushAttempts}
+                                receptions={curr.stats.receptions}
                                 rushAttempts={curr.stats.rushAttempts}
                                 totalYards={curr.stats.totalYards}
                             ></PlayerStats>

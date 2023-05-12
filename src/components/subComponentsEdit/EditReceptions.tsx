@@ -40,7 +40,8 @@ export function EditReceptions({ widgets, setWidgets, player }: Rating) {
 
     return (
         <div>
-            <Form.Group className="playerRatingBox" controlId="PlayerRating">
+            <Form.Group className="editNums" controlId="ReceptionBox">
+                <Form.Label>Receptions</Form.Label>
                 <Form.Control
                     type="number"
                     value={receptions}

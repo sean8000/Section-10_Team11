@@ -58,6 +58,7 @@ function App(): JSX.Element {
                 {role === "Team Manager" && adminEdit === false ? (
                     <div>
                         <Button
+                            data-testid="adminEditButton"
                             onClick={() => {
                                 {
                                     setMyMap(
@@ -78,6 +79,7 @@ function App(): JSX.Element {
                     </div>
                 ) : role === "Team Manager" && adminEdit === true ? (
                     <Button
+                        data-testid="adminLeaveEditButton"
                         onClick={() => {
                             const newList = centralList.map((curr: Player) => {
                                 const foundElem = adminWidgets.find(
