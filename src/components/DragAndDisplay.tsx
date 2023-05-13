@@ -98,16 +98,23 @@ function DragAndDisplay({
         ) {
             setAdminWidgets([...adminWidgets, oldPlayer]);
         }
-
+        {
+            /*}
         console.log(oldPlayer);
         console.log([...adminWidgets, oldPlayer]);
+        {*/
+        }
     }
 
     function addToTeam(newPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
         const newList = [...widgets, newPlayer];
+        {
+            /*}
         console.log(newList);
+    {*/
+        }
         setWidgets(newList);
     }
     function addToAdminTeam(newPlayer: Player) {
@@ -115,10 +122,16 @@ function DragAndDisplay({
         // delete other players with the same name
         if (!adminWidgets.includes(newPlayer)) {
             const newList = [...adminWidgets, newPlayer];
-            console.log(newList);
+            {
+                /*}console.log(newList);{*/
+            }
             setAdminWidgets(newList);
         } else {
+            {
+                /*}
             console.log("player already in list");
+        {*/
+            }
         }
     }
     function handleOnButtonClick(removedPlayer: Player) {
@@ -127,8 +140,12 @@ function DragAndDisplay({
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
+        {
+            /*}
         console.log("Player deleted");
         console.log(newList);
+        {*/
+        }
         setWidgets(newList);
         setMyMap(myMap.set(role, newList));
     }
@@ -137,10 +154,13 @@ function DragAndDisplay({
         const newList = adminWidgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
-
+        {
+            /*}
         console.log(removedPlayer);
         console.log("Player deleted");
         console.log(newList);
+        {*/
+        }
 
         setAdminWidgets(newList);
     }
@@ -321,7 +341,7 @@ function DragAndDisplay({
                             data-testid={"other" + role + index}
                         >
                             <div className="userChangeRatings">
-                                {console.log(widgets.indexOf(curr))}
+                                {/*}{console.log(widgets.indexOf(curr))}{*/}
                                 <UserRating
                                     player={curr}
                                     widgets={widgets}

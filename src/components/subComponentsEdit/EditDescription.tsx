@@ -21,14 +21,20 @@ export function EditDescription({
 
     function updateDesc(event: React.ChangeEvent<HTMLInputElement>) {
         setDesc(event.target.value);
+        {
+            /*}
         console.log(event.target.value);
         console.log("Player index is" + getPlayerIndex());
+    {*/
+        }
         const widgetList = widgets;
         widgetList.splice(getPlayerIndex(), 1, {
             ...player,
             description: event.target.value
         });
-        console.log(widgetList);
+        {
+            /*}console.log(widgetList);{*/
+        }
         setWidgets([...widgetList]);
     }
     // This is the View

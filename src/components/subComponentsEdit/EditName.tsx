@@ -17,14 +17,20 @@ export function EditName({ player, widgets, setWidgets }: Edit): JSX.Element {
 
     function updateName(event: React.ChangeEvent<HTMLInputElement>) {
         setName(event.target.value);
+        {
+            /*}
         console.log(event.target.value);
         console.log("Player index is" + getPlayerIndex());
+    {*/
+        }
         const widgetList = widgets;
         widgetList.splice(getPlayerIndex(), 1, {
             ...player,
             name: event.target.value
         });
-        console.log(widgetList);
+        {
+            /*}console.log(widgetList);{*/
+        }
         setWidgets([...widgetList]);
     }
     // This is the View

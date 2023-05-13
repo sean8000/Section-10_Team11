@@ -68,7 +68,9 @@ function App(): JSX.Element {
                                         myMap.get("Team Manager") ?? []
                                     );
                                     console.log("map value below");
-                                    console.log(myMap.get("Team Manager"));
+                                    {
+                                        /*}console.log(myMap.get("Team Manager"));{*/
+                                    }
                                 }
                                 setAdminEdit(!adminEdit);
                             }}
@@ -87,14 +89,22 @@ function App(): JSX.Element {
                                         curr.original === other.original
                                 );
                                 if (foundElem !== undefined) {
+                                    {
+                                        /*}
                                     console.log("This elem" + foundElem);
+                                {*/
+                                    }
                                     return foundElem;
                                 } else {
-                                    console.log("Elem not found");
+                                    {
+                                        /*}console.log("Elem not found");{*/
+                                    }
                                     return curr;
                                 }
                             });
-                            console.log(newList);
+                            {
+                                /*}console.log(newList);{*/
+                            }
                             setCentralList([...newList]);
                             setFilteredList([...newList]);
                             setAdminEdit(false);
