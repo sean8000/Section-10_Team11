@@ -25,14 +25,20 @@ export function EditRating({ widgets, setWidgets, player }: Rating) {
             parseInt(event.target.value) <= 100
         ) {
             setRating(parseInt(event.target.value) || 0);
+            {
+                /*}
             console.log(event.target.value);
             console.log("Player index is" + getPlayerIndex());
+            {*/
+            }
             const widgetList = widgets;
             widgetList.splice(getPlayerIndex(), 1, {
                 ...player,
                 rating: parseInt(event.target.value)
             });
-            console.log(widgetList);
+            {
+                /*}console.log(widgetList);{*/
+            }
             setWidgets([...widgetList]);
         }
     }

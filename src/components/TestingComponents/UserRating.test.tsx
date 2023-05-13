@@ -19,7 +19,7 @@ describe("Testing User Rating", () => {
         //Now Added player is in the other list, index 0 in the draggable list
         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
         const player1 = screen.getByTestId("otherGuest User" + 0);
-        console.log(screen.getByTestId("otherGuest User" + 0));
+        //console.log(screen.getByTestId("otherGuest User" + 0));
 
         const ratingBox = screen.getByLabelText(/Rating Box/);
         //The first player in the list has an initial rating of 95
@@ -42,7 +42,7 @@ describe("Testing User Rating", () => {
         //Now Added player is in the other list, index 0 in the draggable list
         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
         const player1 = screen.getByTestId("otherGuest User" + 0);
-        console.log(screen.getByTestId("otherGuest User" + 0));
+        //console.log(screen.getByTestId("otherGuest User" + 0));
 
         const ratingBox = screen.getByLabelText(/Rating Box/);
         userEvent.type(ratingBox, "{backspace}0");
@@ -66,7 +66,7 @@ describe("Testing User Rating", () => {
         //Now Added player is in the other list, index 0 in the draggable list
         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
         const player1 = screen.getByTestId("otherGuest User" + 0);
-        console.log(screen.getByTestId("otherGuest User" + 0));
+        //console.log(screen.getByTestId("otherGuest User" + 0));
 
         const ratingBox = screen.getByLabelText(/Rating Box/);
         userEvent.type(
@@ -93,7 +93,7 @@ describe("Testing User Rating", () => {
         //Now Added player is in the other list, index 0 in the draggable list
         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
         const player1 = screen.getByTestId("otherGuest User" + 0);
-        console.log(screen.getByTestId("otherGuest User" + 0));
+        //console.log(screen.getByTestId("otherGuest User" + 0));
 
         const ratingBox = screen.getByLabelText(/Rating Box/);
         userEvent.type(ratingBox, "{backspace}0{arrowleft}{backspace}");
@@ -117,7 +117,7 @@ describe("Testing User Rating", () => {
         //Now Added player is in the other list, index 0 in the draggable list
         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
         const player1 = screen.getByTestId("otherGuest User" + 0);
-        console.log(screen.getByTestId("otherGuest User" + 0));
+        //console.log(screen.getByTestId("otherGuest User" + 0));
 
         const ratingBox = screen.getByLabelText(/Rating Box/);
         userEvent.type(
@@ -144,12 +144,12 @@ describe("Testing User Rating", () => {
         //Now Added player is in the other list, index 0 in the draggable list
         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
         const player1 = screen.getByTestId("otherGuest User" + 0);
-        console.log(screen.getByTestId("otherGuest User" + 0));
+        //console.log(screen.getByTestId("otherGuest User" + 0));
 
         const ratingBox = screen.getByLabelText(/Rating Box/);
         userEvent.type(ratingBox, "{backspace}1{arrowleft}{backspace}-");
         expect(ratingBox).toHaveValue(1);
-        console.log("for merge, can be deleted after");
+        //console.log("for merge, can be deleted after");
         //This is his actual rating as a player in the list(The player list we fed it originally,
         //not what is displayed), which the rating box changes
         expect(player1).toHaveTextContent("Overall: 1");

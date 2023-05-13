@@ -23,8 +23,12 @@ export function EditRushAttempts({ widgets, setWidgets, player }: Rating) {
     }
     function updateRushAttempts(event: React.ChangeEvent<HTMLInputElement>) {
         setRushAttempts(parseInt(event.target.value) || 0);
+        {
+            /*}
         console.log(event.target.value);
         console.log("Player index is" + getPlayerIndex());
+    {*/
+        }
         const widgetList = widgets;
         const newStats = {
             ...player.stats,
@@ -34,7 +38,9 @@ export function EditRushAttempts({ widgets, setWidgets, player }: Rating) {
             ...player,
             stats: newStats
         });
-        console.log(widgetList);
+        {
+            /*}console.log(widgetList);{*/
+        }
         setWidgets([...widgetList]);
     }
 

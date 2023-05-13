@@ -22,15 +22,21 @@ export function EditPosition({
 
     function updatePos(event: React.ChangeEvent<HTMLSelectElement>) {
         setPos(event.target.value);
+        {
+            /*}
         console.log(event.target.value);
         console.log("Player index is" + getPlayerIndex());
+    {*/
+        }
         const widgetList = widgets;
         const newPos = event.target.value as Position;
         widgetList.splice(getPlayerIndex(), 1, {
             ...player,
             position: newPos
         });
-        console.log(widgetList);
+        {
+            /*}console.log(widgetList);{*/
+        }
         setWidgets([...widgetList]);
     }
     // This is the View
