@@ -10,7 +10,7 @@ describe("Testing Edit Players From Admin", () => {
         userEvent.selectOptions(selectRole, "Team Manager");
         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
 
-        const editButton = screen.getByTestId("adminEditButton");
+        const editButton = screen.getByTestId("Team ManagerEditButton");
         editButton.click();
 
         expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
@@ -25,7 +25,7 @@ describe("Testing Edit Players From Admin", () => {
         expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
         addFirstPlayerButton.click();
 
-        const editButton = screen.getByTestId("adminEditButton");
+        const editButton = screen.getByTestId("Team ManagerEditButton");
         editButton.click();
         //This is the testid to the div of the rendered player component in edit
         expect(screen.getByTestId("otherTeam Manager0")).toBeInTheDocument();
@@ -40,7 +40,7 @@ describe("Testing Edit Players From Admin", () => {
         expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
         addFirstPlayerButton.click();
 
-        const editButton = screen.getByTestId("adminEditButton");
+        const editButton = screen.getByTestId("Team ManagerEditButton");
         editButton.click();
 
         expect(screen.getByTestId("otherTeam Manager0")).toBeInTheDocument();
@@ -63,7 +63,7 @@ describe("Testing Edit Players From Admin", () => {
         expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
         addFirstPlayerButton.click();
 
-        const editButton = screen.getByTestId("adminEditButton");
+        const editButton = screen.getByTestId("Team ManagerEditButton");
         editButton.click();
 
         expect(screen.getByTestId("otherTeam Manager0")).toBeInTheDocument();
@@ -74,7 +74,7 @@ describe("Testing Edit Players From Admin", () => {
         expect(changeName).toHaveValue("RickGrimes");
         //For the text now displayed to the screen
         expect(screen.getByText(/RickGrimes/)).toBeInTheDocument();
-        const leaveButton = screen.getByTestId("adminLeaveEditButton");
+        const leaveButton = screen.getByTestId("Team ManagerLeaveEditButton");
         leaveButton.click();
         //For the Sean rendered in the central list and the sean rendered in the admin list
         expect(screen.queryAllByText(/RickGrimes/)).toHaveLength(2);
@@ -89,7 +89,7 @@ describe("Testing Edit Players From Admin", () => {
         expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
         addFirstPlayerButton.click();
 
-        const editButton = screen.getByTestId("adminEditButton");
+        const editButton = screen.getByTestId("Team ManagerEditButton");
         editButton.click();
 
         expect(screen.getByTestId("otherTeam Manager0")).toBeInTheDocument();
@@ -134,7 +134,7 @@ describe("Testing Edit Players From Admin", () => {
         userEvent.type(changeRating, "{backspace}5{arrowleft}{backspace}");
         expect(changeRating).toHaveValue(5);
 
-        const leaveButton = screen.getByTestId("adminLeaveEditButton");
+        const leaveButton = screen.getByTestId("Team ManagerLeaveEditButton");
         leaveButton.click();
         //For the RickGrimes rendered in the central list and the sean rendered in the admin list
         const statsButton1 = screen.getByTestId("statsButton0");

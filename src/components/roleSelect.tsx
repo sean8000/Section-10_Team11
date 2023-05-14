@@ -16,6 +16,8 @@ interface Roles {
     myMap: Map<string, Player[]>;
     setMyMap: (newMap: Map<string, Player[]>) => void;
     setAdminEdit: (newValue: boolean) => void;
+    setSuperEdit: (newValue: boolean) => void;
+    setUserEdit: (newValue: boolean) => void;
 }
 export function RoleSelect({
     setRole,
@@ -28,7 +30,9 @@ export function RoleSelect({
     adminWidgets,
     setAdminWidgets,
     setMyMap,
-    setAdminEdit
+    setAdminEdit,
+    setSuperEdit,
+    setUserEdit
 }: Roles): JSX.Element {
     //const [role, setRole] = useState<string>("Super");
     const [userText, setUserText] = useState<string>("");
@@ -46,6 +50,8 @@ export function RoleSelect({
             setWidgets(myMap.get(event.target.value) ?? []);
         }
         setAdminEdit(false);
+        setSuperEdit(false);
+        setUserEdit(false);
     }
     function addUser() {
         if (totalRoles.includes(userText) || /^\s*$/.test(userText)) {

@@ -1,11 +1,15 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import DragAndDisplay from "./components/DragAndDisplay";
-import { AdminEdit } from "./components/AdminEdit";
+import { SuperAdminEdit } from "./components/SuperAdminEdit";
+import { UserEdit } from "./components/UserEdit";
 import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
 import { playerList } from "./players";
-import { Button } from "react-bootstrap";
+//import { Button } from "react-bootstrap";
+import { EditAdminButton } from "./components/visibilityButtons/EditAdminButton";
+import { EditSuperButton } from "./components/visibilityButtons/EditSuperButton";
+import { EditUserButton } from "./components/visibilityButtons/EditUserButton";
 //import { AddPlayers } from "./components/AddPlayers";
 
 function App(): JSX.Element {
@@ -21,6 +25,8 @@ function App(): JSX.Element {
         "Guest User"
     ]);
     const [adminEdit, setAdminEdit] = useState<boolean>(false);
+    const [superEdit, setSuperEdit] = useState<boolean>(false);
+    const [userEdit, setUserEdit] = useState<boolean>(false);
     //const [userDict, setDict] = useState<Record<string, string[]>>({});
     {
         /*}
@@ -54,70 +60,33 @@ function App(): JSX.Element {
                     myMap={myMap}
                     setMyMap={setMyMap}
                     setAdminEdit={setAdminEdit}
+                    setSuperEdit={setSuperEdit}
+                    setUserEdit={setUserEdit}
                 ></RoleSelect>
-                {role === "Team Manager" && adminEdit === false ? (
-                    <div>
-                        <Button
-                            data-testid="adminEditButton"
-                            onClick={() => {
-                                {
-                                    setMyMap(
-                                        myMap.set("Team Manager", adminWidgets)
-                                    );
-                                    setAdminWidgets(
-                                        myMap.get("Team Manager") ?? []
-                                    );
-                                    console.log("map value below");
-                                    {
-                                        /*}console.log(myMap.get("Team Manager"));{*/
-                                    }
-                                }
-                                setAdminEdit(!adminEdit);
-                            }}
-                        >
-                            {" "}
-                            Edit your players
-                        </Button>
-                    </div>
-                ) : role === "Team Manager" && adminEdit === true ? (
-                    <Button
-                        data-testid="adminLeaveEditButton"
-                        onClick={() => {
-                            const newList = centralList.map((curr: Player) => {
-                                const foundElem = adminWidgets.find(
-                                    (other: Player): boolean =>
-                                        curr.original === other.original
-                                );
-                                if (foundElem !== undefined) {
-                                    {
-                                        /*}
-                                    console.log("This elem" + foundElem);
-                                {*/
-                                    }
-                                    return foundElem;
-                                } else {
-                                    {
-                                        /*}console.log("Elem not found");{*/
-                                    }
-                                    return curr;
-                                }
-                            });
-                            {
-                                /*}console.log(newList);{*/
-                            }
-                            setCentralList([...newList]);
-                            setFilteredList([...newList]);
-                            setAdminEdit(false);
-                        }}
-                    >
-                        {" "}
-                        Save your list to central and backout
-                    </Button>
-                ) : (
-                    ""
-                )}
+                <EditAdminButton
+                    visibilty={adminEdit}
+                    setVisibility={setAdminEdit}
+                    role={role}
+                    widgets={adminWidgets}
+                    centralList={centralList}
+                    setCentralList={setCentralList}
+                    filteredList={filteredList}
+                    setFilteredList={setFilteredList}
+                ></EditAdminButton>
+                <EditSuperButton
+                    visibilty={superEdit}
+                    setVisibility={setSuperEdit}
+                    role={role}
+                    setFilteredList={setFilteredList}
+                    centralList={centralList}
+                ></EditSuperButton>
+                <EditUserButton
+                    visibilty={userEdit}
+                    setVisibility={setUserEdit}
+                    role={role}
+                ></EditUserButton>
             </h1>
-            {adminEdit !== true ? (
+            {adminEdit !== true && superEdit !== true && userEdit !== true ? (
                 <DragAndDisplay
                     widgets={widgets}
                     setWidgets={setWidgets}
@@ -131,12 +100,26 @@ function App(): JSX.Element {
                     filteredList={filteredList}
                     setFilteredList={setFilteredList}
                 ></DragAndDisplay>
-            ) : (
-                <AdminEdit
+            ) : adminEdit === true ? (
+                <SuperAdminEdit
                     role={role}
                     adminWidgets={adminWidgets}
                     setAdminWidgets={setAdminWidgets}
-                ></AdminEdit>
+                ></SuperAdminEdit>
+            ) : superEdit === true ? (
+                <SuperAdminEdit
+                    role={role}
+                    adminWidgets={centralList}
+                    setAdminWidgets={setCentralList}
+                ></SuperAdminEdit>
+            ) : userEdit === true ? (
+                <UserEdit
+                    role={role}
+                    adminWidgets={widgets}
+                    setAdminWidgets={setWidgets}
+                ></UserEdit>
+            ) : (
+                ""
             )}
             {/*}
                         {role !== "League Manager" ? (
