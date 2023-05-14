@@ -11,7 +11,6 @@ import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
-
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
     widgets: Player[];
@@ -314,14 +313,19 @@ function DragAndDisplay({
                             </div>
                             {/*}{setMyMap(myMap.set(role, [...adminWidgets]))}{*/}
                             <div className="userChangeRatings">
-                                <Button
-                                    draggable="false"
-                                    onClick={() =>
-                                        handleOnAdminButtonClick(curr)
-                                    }
-                                >
-                                    Delete Player
-                                </Button>
+                                <div style={{ paddingRight: 70 }}>
+                                    <Button
+                                        className="trashcan"
+                                        style={{
+                                            backgroundImage:
+                                                "url('https://cdn.icon-icons.com/icons2/1808/PNG/512/trash-can_115312.png')"
+                                        }}
+                                        draggable="false"
+                                        onClick={() =>
+                                            handleOnAdminButtonClick(curr)
+                                        }
+                                    ></Button>
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -351,12 +355,6 @@ function DragAndDisplay({
                                     widgets={widgets}
                                     setWidgets={setWidgets}
                                 ></UserRating>
-                                <Button
-                                    draggable="false"
-                                    onClick={() => handleOnButtonClick(curr)}
-                                >
-                                    Delete Player
-                                </Button>
                             </div>
                             <div className="playerNameAndPosition">
                                 {curr.name} | {curr.position} <br />{" "}
@@ -377,6 +375,17 @@ function DragAndDisplay({
                                 rushAttempts={curr.stats.rushAttempts}
                                 totalYards={curr.stats.totalYards}
                             ></PlayerStats>
+                            <div style={{ paddingLeft: 30 }}>
+                                <Button
+                                    className="trashcan"
+                                    style={{
+                                        backgroundImage:
+                                            "url('https://cdn.icon-icons.com/icons2/1808/PNG/512/trash-can_115312.png')"
+                                    }}
+                                    draggable="false"
+                                    onClick={() => handleOnButtonClick(curr)}
+                                ></Button>
+                            </div>
                             <div>
                                 {/*}
                                             <Button onClick={flipVisibility}>
