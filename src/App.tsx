@@ -60,6 +60,8 @@ function App(): JSX.Element {
                     myMap={myMap}
                     setMyMap={setMyMap}
                     setAdminEdit={setAdminEdit}
+                    setSuperEdit={setSuperEdit}
+                    setUserEdit={setUserEdit}
                 ></RoleSelect>
                 <EditAdminButton
                     visibilty={adminEdit}

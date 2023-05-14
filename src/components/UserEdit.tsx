@@ -38,6 +38,11 @@ Edits) {
     // And also a button to append the movie
     return (
         <div>
+            <h1 style={{ color: "white" }}>
+                You Can Only Edit The Dictionary Stats as a User
+                <br></br>
+                These Changes Will Not Affect The Central List
+            </h1>
             {adminWidgets.map((curr, index) => (
                 <div
                     className="playerEdit"
@@ -51,9 +56,6 @@ Edits) {
                             src={curr.image}
                             alt="Image"
                         />
-                        You Can Only Edit The Dictionary Stats as a User
-                        <br></br>
-                        These Changes Will Not Affect The Central List
                     </div>
                     <div className="editFontSize">
                         <Container>
