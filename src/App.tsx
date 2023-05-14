@@ -1,7 +1,8 @@
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import DragAndDisplay from "./components/DragAndDisplay";
-import { AdminEdit } from "./components/AdminEdit";
+import { SuperAdminEdit } from "./components/SuperAdminEdit";
+import { UserEdit } from "./components/UserEdit";
 import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
 import { playerList } from "./players";
@@ -98,23 +99,23 @@ function App(): JSX.Element {
                     setFilteredList={setFilteredList}
                 ></DragAndDisplay>
             ) : adminEdit === true ? (
-                <AdminEdit
+                <SuperAdminEdit
                     role={role}
                     adminWidgets={adminWidgets}
                     setAdminWidgets={setAdminWidgets}
-                ></AdminEdit>
+                ></SuperAdminEdit>
             ) : superEdit === true ? (
-                <AdminEdit
+                <SuperAdminEdit
                     role={role}
                     adminWidgets={centralList}
                     setAdminWidgets={setCentralList}
-                ></AdminEdit>
+                ></SuperAdminEdit>
             ) : userEdit === true ? (
-                <AdminEdit
+                <UserEdit
                     role={role}
                     adminWidgets={widgets}
                     setAdminWidgets={setWidgets}
-                ></AdminEdit>
+                ></UserEdit>
             ) : (
                 ""
             )}
