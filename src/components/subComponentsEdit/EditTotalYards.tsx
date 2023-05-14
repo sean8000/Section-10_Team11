@@ -22,7 +22,12 @@ export function EditTotalYards({ widgets, setWidgets, player }: Rating) {
         return widgets.indexOf(player);
     }
     function updateTotalYards(event: React.ChangeEvent<HTMLInputElement>) {
-        setTotalYards(parseInt(event.target.value) || 0);
+        if (
+            parseInt(event.target.value) >= 0 ||
+            isNaN(parseInt(event.target.value))
+        ) {
+            setTotalYards(parseInt(event.target.value) || 0);
+        }
         {
             /*}
         console.log(event.target.value);

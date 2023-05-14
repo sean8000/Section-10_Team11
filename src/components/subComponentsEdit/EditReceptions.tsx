@@ -22,7 +22,12 @@ export function EditReceptions({ widgets, setWidgets, player }: Rating) {
         return widgets.indexOf(player);
     }
     function updateReceptions(event: React.ChangeEvent<HTMLInputElement>) {
-        setReceptions(parseInt(event.target.value) || 0);
+        if (
+            parseInt(event.target.value) >= 0 ||
+            isNaN(parseInt(event.target.value))
+        ) {
+            setReceptions(parseInt(event.target.value) || 0);
+        }
         {
             /*}
         console.log(event.target.value);

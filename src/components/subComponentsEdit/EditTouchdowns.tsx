@@ -22,7 +22,12 @@ export function EditTouchdowns({ widgets, setWidgets, player }: Rating) {
         return widgets.indexOf(player);
     }
     function updateTouchdowns(event: React.ChangeEvent<HTMLInputElement>) {
-        setTouchdowns(parseInt(event.target.value) || 0);
+        if (
+            parseInt(event.target.value) >= 0 ||
+            isNaN(parseInt(event.target.value))
+        ) {
+            setTouchdowns(parseInt(event.target.value) || 0);
+        }
         {
             /*}
         console.log(event.target.value);

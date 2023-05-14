@@ -21,8 +21,9 @@ export function EditRating({ widgets, setWidgets, player }: Rating) {
     }
     function updateNumber(event: React.ChangeEvent<HTMLInputElement>) {
         if (
-            parseInt(event.target.value) >= 0 &&
-            parseInt(event.target.value) <= 100
+            (parseInt(event.target.value) >= 0 &&
+                parseInt(event.target.value) <= 100) ||
+            isNaN(parseInt(event.target.value))
         ) {
             setRating(parseInt(event.target.value) || 0);
             {
@@ -31,10 +32,11 @@ export function EditRating({ widgets, setWidgets, player }: Rating) {
             console.log("Player index is" + getPlayerIndex());
             {*/
             }
+
             const widgetList = widgets;
             widgetList.splice(getPlayerIndex(), 1, {
                 ...player,
-                rating: parseInt(event.target.value)
+                rating: parseInt(event.target.value) || 0
             });
             {
                 /*}console.log(widgetList);{*/
