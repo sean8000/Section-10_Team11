@@ -38,7 +38,7 @@ export function EditAdminButton({
                 </div>
             ) : role === "Team Manager" && visibilty === true ? (
                 <Button
-                    data-testid="adminLeaveEditButton"
+                    data-testid={role + "LeaveEditButton"}
                     onClick={() => {
                         const newList = centralList.map((curr: Player) => {
                             const foundElem = widgets.find(
