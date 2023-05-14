@@ -74,6 +74,8 @@ function App(): JSX.Element {
                     visibilty={superEdit}
                     setVisibility={setSuperEdit}
                     role={role}
+                    setFilteredList={setFilteredList}
+                    centralList={centralList}
                 ></EditSuperButton>
                 <EditUserButton
                     visibilty={userEdit}
@@ -81,7 +83,7 @@ function App(): JSX.Element {
                     role={role}
                 ></EditUserButton>
             </h1>
-            {adminEdit !== true ? (
+            {adminEdit !== true && superEdit !== true && userEdit !== true ? (
                 <DragAndDisplay
                     widgets={widgets}
                     setWidgets={setWidgets}
@@ -95,12 +97,26 @@ function App(): JSX.Element {
                     filteredList={filteredList}
                     setFilteredList={setFilteredList}
                 ></DragAndDisplay>
-            ) : (
+            ) : adminEdit === true ? (
                 <AdminEdit
                     role={role}
                     adminWidgets={adminWidgets}
                     setAdminWidgets={setAdminWidgets}
                 ></AdminEdit>
+            ) : superEdit === true ? (
+                <AdminEdit
+                    role={role}
+                    adminWidgets={centralList}
+                    setAdminWidgets={setCentralList}
+                ></AdminEdit>
+            ) : userEdit === true ? (
+                <AdminEdit
+                    role={role}
+                    adminWidgets={widgets}
+                    setAdminWidgets={setWidgets}
+                ></AdminEdit>
+            ) : (
+                ""
             )}
             {/*}
                         {role !== "League Manager" ? (
