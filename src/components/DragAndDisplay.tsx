@@ -300,6 +300,7 @@ function DragAndDisplay({
                             className="playerWidgetAdmin"
                             key={"otherAdmin" + index}
                             data-testid={"otherAdmin" + index}
+                            draggable="false"
                         >
                             <div className="playerNameAndPosition">
                                 {curr.name} | {curr.position} <br />{" "}
@@ -307,12 +308,14 @@ function DragAndDisplay({
                                     className="playerImage"
                                     src={curr.image}
                                     alt="Image"
+                                    draggable="false"
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
                             {/*}{setMyMap(myMap.set(role, [...adminWidgets]))}{*/}
                             <div className="userChangeRatings">
                                 <Button
+                                    draggable="false"
                                     onClick={() =>
                                         handleOnAdminButtonClick(curr)
                                     }
@@ -339,6 +342,7 @@ function DragAndDisplay({
                             className="playerWidget"
                             key={"other" + role + index}
                             data-testid={"other" + role + index}
+                            draggable="false"
                         >
                             <div className="userChangeRatings">
                                 {/*}{console.log(widgets.indexOf(curr))}{*/}
@@ -348,6 +352,7 @@ function DragAndDisplay({
                                     setWidgets={setWidgets}
                                 ></UserRating>
                                 <Button
+                                    draggable="false"
                                     onClick={() => handleOnButtonClick(curr)}
                                 >
                                     Delete Player
@@ -359,6 +364,7 @@ function DragAndDisplay({
                                     className="playerImageUser"
                                     src={curr.image}
                                     alt="Image"
+                                    draggable="false"
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
