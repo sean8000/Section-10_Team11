@@ -84,13 +84,13 @@ PASS src/components/TestingComponents/Roles.test.tsx
 ----------------------------------|---------|----------|---------|---------|----------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
 ----------------------------------|---------|----------|---------|---------|----------------------------
-All files                         |   81.61 |    74.67 |   74.74 |   81.48 |                            
+All files                         |   81.75 |       75 |      75 |   81.61 |                            
  src                              |     100 |    54.54 |     100 |     100 |                            
   App.tsx                         |     100 |    54.54 |     100 |     100 | 103-115                    
   players.tsx                     |     100 |      100 |     100 |     100 |                            
- src/components                   |   67.15 |    70.27 |    64.4 |   66.66 |                            
+ src/components                   |   67.62 |    71.05 |      65 |   67.15 |                            
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                            
-  DragAndDisplay.tsx              |    31.7 |    54.16 |   33.33 |    31.7 | 70-109,150-182,245,339,400 
+  DragAndDisplay.tsx              |   34.88 |    57.69 |      36 |   34.88 | 70-109,153-185,248,342,403 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                            
   PositionFilter.tsx              |   61.53 |       50 |      80 |   61.53 | 34-40                      
   SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                            
@@ -120,5 +120,5 @@ All files                         |   81.61 |    74.67 |   74.74 |   81.48 |
 Test Suites: 11 passed, 11 total
 Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        17.977 s
+Time:        20.504 s
 Ran all test suites.
