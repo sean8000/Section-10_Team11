@@ -7,7 +7,6 @@
     float: left;
     width: 550px;
     height: auto;
-    min-height: 200px;
     outline: 1px solid black;
     background: gray;
     color: white;
@@ -31,23 +30,27 @@
     background-color: black;
     color: white;
     height: 310px;
+    border-bottom: 2px solid black;
 }
 
 .playerWidget:nth-child(even) {
     background-color: gray;
     color: white;
     height: 310px;
+    border-bottom: 2px solid black;
 }
 .playerWidgetAdmin:nth-child(odd) {
     background-color: black;
     color: white;
     height: 200px;
+    border-bottom: 2px solid black;
 }
 
 .playerWidgetAdmin:nth-child(even) {
     background-color: gray;
     color: white;
     height: 200px;
+    border-bottom: 2px solid black;
 }
 
 .playerNameAndPosition {
@@ -247,5 +250,6 @@
     font-size: 60px;
     font-family: "Impact";
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
+    height: 150px;
 }
