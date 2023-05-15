@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/UserRating.test.tsx (5.205 s)
+PASS src/components/TestingComponents/UserRating.test.tsx
 PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
 PASS src/components/TestingComponents/RoleSave.test.tsx
   ● Console
@@ -84,13 +84,13 @@ PASS src/components/TestingComponents/Roles.test.tsx
 ----------------------------------|---------|----------|---------|---------|----------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
 ----------------------------------|---------|----------|---------|---------|----------------------------
-All files                         |   82.83 |    76.66 |   76.28 |    82.7 |                            
+All files                         |   81.61 |    74.67 |   74.74 |   81.48 |                            
  src                              |     100 |    54.54 |     100 |     100 |                            
   App.tsx                         |     100 |    54.54 |     100 |     100 | 103-115                    
   players.tsx                     |     100 |      100 |     100 |     100 |                            
- src/components                   |   69.17 |    74.28 |   66.66 |    68.7 |                            
+ src/components                   |   67.15 |    70.27 |    64.4 |   66.66 |                            
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                            
-  DragAndDisplay.tsx              |   35.13 |       65 |   36.36 |   35.13 | 70-106,147-176,239,333,394 
+  DragAndDisplay.tsx              |    31.7 |    54.16 |   33.33 |    31.7 | 70-109,150-182,245,339,400 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                            
   PositionFilter.tsx              |   61.53 |       50 |      80 |   61.53 | 34-40                      
   SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                            
@@ -120,5 +120,5 @@ All files                         |   82.83 |    76.66 |   76.28 |    82.7 |
 Test Suites: 11 passed, 11 total
 Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        24.226 s
+Time:        17.977 s
 Ran all test suites.
