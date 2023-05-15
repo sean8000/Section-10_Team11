@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/UserRating.test.tsx
+PASS src/components/TestingComponents/UserRating.test.tsx (5.205 s)
 PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
 PASS src/components/TestingComponents/RoleSave.test.tsx
   ● Console
@@ -81,44 +81,44 @@ PASS src/components/TestingComponents/IsDraggable.test.tsx
       at updateRole (src/components/roleSelect.tsx:41:21)
 
 PASS src/components/TestingComponents/Roles.test.tsx
-----------------------------------|---------|----------|---------|---------|---------------------------
-File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s         
-----------------------------------|---------|----------|---------|---------|---------------------------
-All files                         |   84.09 |    77.39 |   77.08 |   83.96 |                           
- src                              |     100 |    54.54 |     100 |     100 |                           
-  App.tsx                         |     100 |    54.54 |     100 |     100 | 103-115                   
-  players.tsx                     |     100 |      100 |     100 |     100 |                           
- src/components                   |   71.31 |    75.75 |   67.85 |   70.86 |                           
-  AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                           
-  DragAndDisplay.tsx              |   35.13 |       65 |   36.36 |   35.13 | 62-98,139-168,231,325,386 
-  PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                           
-  PositionFilter.tsx              |   88.88 |       50 |     100 |   88.88 | 32                        
-  SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                           
-  UserEdit.tsx                    |       0 |      100 |       0 |       0 | 39-47                     
-  UserRating.tsx                  |     100 |      100 |     100 |     100 |                           
-  UserText.tsx                    |     100 |      100 |     100 |     100 |                           
-  roleSelect.tsx                  |   62.96 |       65 |   66.66 |   62.96 | 58,66-76                  
-  sortSelect.tsx                  |     100 |    92.85 |     100 |     100 | 43                        
- src/components/subComponentsEdit |     100 |    80.48 |     100 |     100 |                           
-  EditDescription.tsx             |     100 |      100 |     100 |     100 |                           
-  EditImage.tsx                   |     100 |      100 |     100 |     100 |                           
-  EditName.tsx                    |     100 |      100 |     100 |     100 |                           
-  EditPosition.tsx                |     100 |      100 |     100 |     100 |                           
-  EditRating.tsx                  |     100 |    55.55 |     100 |     100 | 23-39                     
-  EditReceptions.tsx              |     100 |     87.5 |     100 |     100 | 25                        
-  EditRushAttempts.tsx            |     100 |     87.5 |     100 |     100 | 25                        
-  EditTotalYards.tsx              |     100 |     87.5 |     100 |     100 | 25                        
-  EditTouchdowns.tsx              |     100 |     87.5 |     100 |     100 | 25                        
- src/components/visibilityButtons |   72.22 |    85.71 |   63.63 |   72.22 |                           
-  EditAdminButton.tsx             |     100 |      100 |     100 |     100 |                           
-  EditSuperButton.tsx             |      25 |       75 |   33.33 |      25 | 28-40                     
-  EditUserButton.tsx              |   33.33 |       80 |   33.33 |   33.33 | 26-39                     
- src/interfaces                   |       0 |        0 |       0 |       0 |                           
-  player.tsx                      |       0 |        0 |       0 |       0 |                           
-----------------------------------|---------|----------|---------|---------|---------------------------
+----------------------------------|---------|----------|---------|---------|----------------------------
+File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
+----------------------------------|---------|----------|---------|---------|----------------------------
+All files                         |   82.83 |    76.66 |   76.28 |    82.7 |                            
+ src                              |     100 |    54.54 |     100 |     100 |                            
+  App.tsx                         |     100 |    54.54 |     100 |     100 | 103-115                    
+  players.tsx                     |     100 |      100 |     100 |     100 |                            
+ src/components                   |   69.17 |    74.28 |   66.66 |    68.7 |                            
+  AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                            
+  DragAndDisplay.tsx              |   35.13 |       65 |   36.36 |   35.13 | 70-106,147-176,239,333,394 
+  PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                            
+  PositionFilter.tsx              |   61.53 |       50 |      80 |   61.53 | 34-40                      
+  SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                            
+  UserEdit.tsx                    |       0 |      100 |       0 |       0 | 39-47                      
+  UserRating.tsx                  |     100 |      100 |     100 |     100 |                            
+  UserText.tsx                    |     100 |      100 |     100 |     100 |                            
+  roleSelect.tsx                  |   62.96 |       65 |   66.66 |   62.96 | 58,66-76                   
+  sortSelect.tsx                  |     100 |    92.85 |     100 |     100 | 43                         
+ src/components/subComponentsEdit |     100 |    80.48 |     100 |     100 |                            
+  EditDescription.tsx             |     100 |      100 |     100 |     100 |                            
+  EditImage.tsx                   |     100 |      100 |     100 |     100 |                            
+  EditName.tsx                    |     100 |      100 |     100 |     100 |                            
+  EditPosition.tsx                |     100 |      100 |     100 |     100 |                            
+  EditRating.tsx                  |     100 |    55.55 |     100 |     100 | 23-39                      
+  EditReceptions.tsx              |     100 |     87.5 |     100 |     100 | 25                         
+  EditRushAttempts.tsx            |     100 |     87.5 |     100 |     100 | 25                         
+  EditTotalYards.tsx              |     100 |     87.5 |     100 |     100 | 25                         
+  EditTouchdowns.tsx              |     100 |     87.5 |     100 |     100 | 25                         
+ src/components/visibilityButtons |   72.22 |    85.71 |   63.63 |   72.22 |                            
+  EditAdminButton.tsx             |     100 |      100 |     100 |     100 |                            
+  EditSuperButton.tsx             |      25 |       75 |   33.33 |      25 | 28-40                      
+  EditUserButton.tsx              |   33.33 |       80 |   33.33 |   33.33 | 26-39                      
+ src/interfaces                   |       0 |        0 |       0 |       0 |                            
+  player.tsx                      |       0 |        0 |       0 |       0 |                            
+----------------------------------|---------|----------|---------|---------|----------------------------
 
 Test Suites: 11 passed, 11 total
 Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        17.062 s
+Time:        24.226 s
 Ran all test suites.
