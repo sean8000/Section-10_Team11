@@ -22,10 +22,18 @@ export function PositionFilter({
 
     function updateFilter(event: React.ChangeEvent<HTMLInputElement>) {
         setFilter(event.target.value);
-        if (event.target.value !== "None") {
+        if (
+            event.target.value !== "None" &&
+            event.target.value !== "Rating > 90"
+        ) {
             const tempPlayerList = playerList.filter(
                 (player: Player): boolean =>
                     player.position === event.target.value
+            );
+            setFilteredList(tempPlayerList);
+        } else if (event.target.value === "Rating > 90") {
+            const tempPlayerList = playerList.filter(
+                (player: Player): boolean => player.rating >= 90
             );
             setFilteredList(tempPlayerList);
         } else {
