@@ -118,7 +118,7 @@
 
 .names {
     position: fixed;
-    color: white;
+    color: black;
     bottom: 0%;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .padding {
-    padding-bottom: 60px;
+    padding-bottom: 200px;
 }
 
 .playerNameBox {
