@@ -17,20 +17,28 @@ export function EditImage({ player, widgets, setWidgets }: Edit): JSX.Element {
 
     function updateImage(event: React.ChangeEvent<HTMLInputElement>) {
         setImage(event.target.value);
+        {
+            /*}
         console.log(event.target.value);
         console.log("Player index is" + getPlayerIndex());
+    {*/
+        }
         const widgetList = widgets;
         widgetList.splice(getPlayerIndex(), 1, {
             ...player,
             image: event.target.value
         });
-        console.log(widgetList);
+
+        {
+            /*}console.log(widgetList);{*/
+        }
         setWidgets([...widgetList]);
     }
     // This is the View
     return (
         <div className="editText">
-            <Form.Group data-testid="usertext" controlId="UserTextBox">
+            <Form.Group controlId="ImageBox">
+                <Form.Label>Image</Form.Label>
                 <Form.Control value={image} onChange={updateImage} />
             </Form.Group>
         </div>

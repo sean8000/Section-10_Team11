@@ -2,7 +2,7 @@
 import { Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { Player } from "../../interfaces/player";
-import "../style.css";
+import "./edit.css";
 
 interface Rating {
     player: Player;
@@ -22,9 +22,18 @@ export function EditTouchdowns({ widgets, setWidgets, player }: Rating) {
         return widgets.indexOf(player);
     }
     function updateTouchdowns(event: React.ChangeEvent<HTMLInputElement>) {
-        setTouchdowns(parseInt(event.target.value) || 0);
+        if (
+            parseInt(event.target.value) >= 0 ||
+            isNaN(parseInt(event.target.value))
+        ) {
+            setTouchdowns(parseInt(event.target.value) || 0);
+        }
+        {
+            /*}
         console.log(event.target.value);
         console.log("Player index is" + getPlayerIndex());
+        {*/
+        }
         const widgetList = widgets;
         const newStats = {
             ...player.stats,
@@ -34,13 +43,16 @@ export function EditTouchdowns({ widgets, setWidgets, player }: Rating) {
             ...player,
             stats: newStats
         });
-        console.log(widgetList);
+        {
+            /*}console.log(widgetList);{*/
+        }
         setWidgets([...widgetList]);
     }
 
     return (
         <div>
-            <Form.Group className="playerRatingBox" controlId="PlayerRating">
+            <Form.Group className="editNums" controlId="TouchdownsBox">
+                <Form.Label>Touchdowns</Form.Label>
                 <Form.Control
                     type="number"
                     value={touchdowns}

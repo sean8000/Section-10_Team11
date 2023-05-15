@@ -11,7 +11,6 @@ import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
-
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
     widgets: Player[];
@@ -55,7 +54,15 @@ function DragAndDisplay({
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
-    const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
+    const filterPositions = [
+        "None",
+        "QB",
+        "RB",
+        "WR",
+        "TE",
+        "K",
+        "Rating > 90"
+    ];
     //const [pos, setPosition] = useState<string>("None");
     //const filterBoolean = [false, false, false, false, false];
 
@@ -76,6 +83,9 @@ function DragAndDisplay({
 
         // add the player to the list
         if (newPlayer !== undefined) {
+            filteredList.map((p1: Player) =>
+                p1.original === newPlayer.original ? p1.count++ : 0
+            );
             setWidgets([...widgets, newPlayer]);
         }
     }
@@ -98,16 +108,26 @@ function DragAndDisplay({
         ) {
             setAdminWidgets([...adminWidgets, oldPlayer]);
         }
-
+        {
+            /*}
         console.log(oldPlayer);
         console.log([...adminWidgets, oldPlayer]);
+        {*/
+        }
     }
 
     function addToTeam(newPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
+        filteredList.map((p1: Player) =>
+            p1.original === newPlayer.original ? p1.count++ : 0
+        );
         const newList = [...widgets, newPlayer];
+        {
+            /*}
         console.log(newList);
+    {*/
+        }
         setWidgets(newList);
     }
     function addToAdminTeam(newPlayer: Player) {
@@ -115,20 +135,33 @@ function DragAndDisplay({
         // delete other players with the same name
         if (!adminWidgets.includes(newPlayer)) {
             const newList = [...adminWidgets, newPlayer];
-            console.log(newList);
+            {
+                /*}console.log(newList);{*/
+            }
             setAdminWidgets(newList);
         } else {
+            {
+                /*}
             console.log("player already in list");
+        {*/
+            }
         }
     }
     function handleOnButtonClick(removedPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
+        filteredList.map((p1: Player) =>
+            p1.original === removedPlayer.original ? p1.count-- : 0
+        );
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
+        {
+            /*}
         console.log("Player deleted");
         console.log(newList);
+        {*/
+        }
         setWidgets(newList);
         setMyMap(myMap.set(role, newList));
     }
@@ -137,10 +170,13 @@ function DragAndDisplay({
         const newList = adminWidgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
-
+        {
+            /*}
         console.log(removedPlayer);
         console.log("Player deleted");
         console.log(newList);
+        {*/
+        }
 
         setAdminWidgets(newList);
     }
@@ -232,7 +268,7 @@ function DragAndDisplay({
                                     </Button>
                                 )
                             ) : (
-                                ""
+                                "Count: " + curr.count
                             )}
                         </div>
                         <img
@@ -244,7 +280,7 @@ function DragAndDisplay({
                             index={index}
                             description={curr.description}
                             touchdowns={curr.stats.touchdowns}
-                            receptions={curr.stats.rushAttempts}
+                            receptions={curr.stats.receptions}
                             rushAttempts={curr.stats.rushAttempts}
                             totalYards={curr.stats.totalYards}
                         ></PlayerStats>
@@ -280,6 +316,7 @@ function DragAndDisplay({
                             className="playerWidgetAdmin"
                             key={"otherAdmin" + index}
                             data-testid={"otherAdmin" + index}
+                            draggable="false"
                         >
                             <div className="playerNameAndPosition">
                                 {curr.name} | {curr.position} <br />{" "}
@@ -287,18 +324,25 @@ function DragAndDisplay({
                                     className="playerImage"
                                     src={curr.image}
                                     alt="Image"
+                                    draggable="false"
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
                             {/*}{setMyMap(myMap.set(role, [...adminWidgets]))}{*/}
                             <div className="userChangeRatings">
-                                <Button
-                                    onClick={() =>
-                                        handleOnAdminButtonClick(curr)
-                                    }
-                                >
-                                    Delete Player
-                                </Button>
+                                <div style={{ paddingRight: 70 }}>
+                                    <Button
+                                        className="trashcan"
+                                        style={{
+                                            backgroundImage:
+                                                "url('https://cdn.icon-icons.com/icons2/1808/PNG/512/trash-can_115312.png')"
+                                        }}
+                                        draggable="false"
+                                        onClick={() =>
+                                            handleOnAdminButtonClick(curr)
+                                        }
+                                    ></Button>
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -320,19 +364,15 @@ function DragAndDisplay({
                             className="playerWidget"
                             key={"other" + role + index}
                             data-testid={"other" + role + index}
+                            draggable="false"
                         >
                             <div className="userChangeRatings">
-                                {console.log(widgets.indexOf(curr))}
+                                {/*}{console.log(widgets.indexOf(curr))}{*/}
                                 <UserRating
                                     player={curr}
                                     widgets={widgets}
                                     setWidgets={setWidgets}
                                 ></UserRating>
-                                <Button
-                                    onClick={() => handleOnButtonClick(curr)}
-                                >
-                                    Delete Player
-                                </Button>
                             </div>
                             <div className="playerNameAndPosition">
                                 {curr.name} | {curr.position} <br />{" "}
@@ -340,6 +380,7 @@ function DragAndDisplay({
                                     className="playerImageUser"
                                     src={curr.image}
                                     alt="Image"
+                                    draggable="false"
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
@@ -348,10 +389,21 @@ function DragAndDisplay({
                                 index={index}
                                 description={curr.description}
                                 touchdowns={curr.stats.touchdowns}
-                                receptions={curr.stats.rushAttempts}
+                                receptions={curr.stats.receptions}
                                 rushAttempts={curr.stats.rushAttempts}
                                 totalYards={curr.stats.totalYards}
                             ></PlayerStats>
+                            <div style={{ paddingLeft: 30 }}>
+                                <Button
+                                    className="trashcan"
+                                    style={{
+                                        backgroundImage:
+                                            "url('https://cdn.icon-icons.com/icons2/1808/PNG/512/trash-can_115312.png')"
+                                    }}
+                                    draggable="false"
+                                    onClick={() => handleOnButtonClick(curr)}
+                                ></Button>
+                            </div>
                             <div>
                                 {/*}
                                             <Button onClick={flipVisibility}>

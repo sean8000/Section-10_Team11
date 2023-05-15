@@ -2,16 +2,16 @@
 import React from "react";
 import { Player } from "../interfaces/player";
 import "../style.css";
-import { EditName } from "./subComponentsEdit/EditName";
+//import { EditName } from "./subComponentsEdit/EditName";
 import { Col, Row, Container } from "react-bootstrap";
-import { EditDescription } from "./subComponentsEdit/EditDescription";
-import { EditImage } from "./subComponentsEdit/EditImage";
-import { EditPosition } from "./subComponentsEdit/EditPosition";
+//import { EditDescription } from "./subComponentsEdit/EditDescription";
+//import { EditImage } from "./subComponentsEdit/EditImage";
+//import { EditPosition } from "./subComponentsEdit/EditPosition";
 import { EditTouchdowns } from "./subComponentsEdit/EditTouchdowns";
 import { EditReceptions } from "./subComponentsEdit/EditReceptions";
 import { EditRushAttempts } from "./subComponentsEdit/EditRushAttempts";
 import { EditTotalYards } from "./subComponentsEdit/EditTotalYards";
-import { EditRating } from "./subComponentsEdit/EditRating";
+//import { EditRating } from "./subComponentsEdit/EditRating";
 interface Edits {
     //editAdmin: boolean;
     role: string;
@@ -23,7 +23,7 @@ interface Edits {
     //myMap: Map<string, Player[]>;
 }
 
-export function AdminEdit({
+export function UserEdit({
     role,
     //editAdmin,
     //setAdminEdit,
@@ -38,6 +38,11 @@ Edits) {
     // And also a button to append the movie
     return (
         <div>
+            <h1 style={{ color: "white" }}>
+                You Can Only Edit The Dictionary Stats as a User
+                <br></br>
+                These Changes Will Not Affect The Central List
+            </h1>
             {adminWidgets.map((curr, index) => (
                 <div
                     className="playerEdit"
@@ -57,42 +62,6 @@ Edits) {
                             <Row>
                                 <Col>
                                     <Row>
-                                        Name:
-                                        <EditName
-                                            player={curr}
-                                            widgets={adminWidgets}
-                                            setWidgets={setAdminWidgets}
-                                        ></EditName>
-                                    </Row>
-                                    <Row>
-                                        Description:
-                                        <EditDescription
-                                            player={curr}
-                                            widgets={adminWidgets}
-                                            setWidgets={setAdminWidgets}
-                                        ></EditDescription>
-                                    </Row>
-                                    <Row>
-                                        Image:{" "}
-                                        <EditImage
-                                            player={curr}
-                                            widgets={adminWidgets}
-                                            setWidgets={setAdminWidgets}
-                                        ></EditImage>
-                                    </Row>
-                                    <Row>
-                                        Position:{" "}
-                                        <EditPosition
-                                            player={curr}
-                                            widgets={adminWidgets}
-                                            setWidgets={setAdminWidgets}
-                                        ></EditPosition>
-                                    </Row>
-                                </Col>
-                                <Col></Col>
-                                <Col>
-                                    <Row>
-                                        Touchdowns:{" "}
                                         <EditTouchdowns
                                             player={curr}
                                             widgets={adminWidgets}
@@ -100,7 +69,6 @@ Edits) {
                                         ></EditTouchdowns>
                                     </Row>
                                     <Row>
-                                        Receptions:{" "}
                                         <EditReceptions
                                             player={curr}
                                             widgets={adminWidgets}
@@ -108,7 +76,6 @@ Edits) {
                                         ></EditReceptions>
                                     </Row>
                                     <Row>
-                                        Rush Attempts:
                                         <EditRushAttempts
                                             player={curr}
                                             widgets={adminWidgets}
@@ -116,20 +83,11 @@ Edits) {
                                         ></EditRushAttempts>
                                     </Row>
                                     <Row>
-                                        Total Yards:{" "}
                                         <EditTotalYards
                                             player={curr}
                                             widgets={adminWidgets}
                                             setWidgets={setAdminWidgets}
                                         ></EditTotalYards>
-                                    </Row>
-                                    <Row>
-                                        Overall Rating:{" "}
-                                        <EditRating
-                                            player={curr}
-                                            widgets={adminWidgets}
-                                            setWidgets={setAdminWidgets}
-                                        ></EditRating>
                                     </Row>
                                 </Col>
                             </Row>

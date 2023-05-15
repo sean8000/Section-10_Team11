@@ -22,9 +22,18 @@ export function EditReceptions({ widgets, setWidgets, player }: Rating) {
         return widgets.indexOf(player);
     }
     function updateReceptions(event: React.ChangeEvent<HTMLInputElement>) {
-        setReceptions(parseInt(event.target.value) || 0);
+        if (
+            parseInt(event.target.value) >= 0 ||
+            isNaN(parseInt(event.target.value))
+        ) {
+            setReceptions(parseInt(event.target.value) || 0);
+        }
+        {
+            /*}
         console.log(event.target.value);
         console.log("Player index is" + getPlayerIndex());
+        {*/
+        }
         const widgetList = widgets;
         const newStats = {
             ...player.stats,
@@ -34,13 +43,16 @@ export function EditReceptions({ widgets, setWidgets, player }: Rating) {
             ...player,
             stats: newStats
         });
-        console.log(widgetList);
+        {
+            /*}console.log(widgetList);{*/
+        }
         setWidgets([...widgetList]);
     }
 
     return (
         <div>
-            <Form.Group className="playerRatingBox" controlId="PlayerRating">
+            <Form.Group className="editNums" controlId="ReceptionBox">
+                <Form.Label>Receptions</Form.Label>
                 <Form.Control
                     type="number"
                     value={receptions}

@@ -34,7 +34,9 @@ export function SortSelect({
                 (player: Player): boolean => player.position === "QB"
             );
             */
-            console.log(tempPlayerList);
+            {
+                /*}console.log(tempPlayerList);{*/
+            }
         } else if (newSort === "Rating") {
             console.log("Rat");
             tempPlayerList.sort((a, b) => (a.rating > b.rating ? -1 : 1));

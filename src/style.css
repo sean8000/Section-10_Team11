@@ -217,14 +217,15 @@
 .playerEdit:nth-child(odd) {
     background-color: black;
     color: white;
-    height: 375px;
+    height: 400px;
 }
 
 .playerEdit:nth-child(even) {
     background-color: gray;
     color: white;
-    height: 375px;
+    height: 400px;
 }
+
 .editFontSize {
     float: left;
     padding-left: 30px;
@@ -244,6 +245,20 @@
 
 .roleSelectAndAddUser {
     width: 1000px;
+}
+:focus:not(:focus-visible) {
+    outline: 0;
+    box-shadow: none;
+}
+
+.trashcan {
+    background-size: cover;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    outline-color: transparent;
+    width: 50px;
+    height: 50px;
 }
 
 .addPlayerInListText {

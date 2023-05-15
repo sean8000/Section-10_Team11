@@ -2,7 +2,7 @@
 import { Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { Player } from "../../interfaces/player";
-import "../style.css";
+import "./edit.css";
 
 interface Rating {
     player: Player;
@@ -22,9 +22,18 @@ export function EditTotalYards({ widgets, setWidgets, player }: Rating) {
         return widgets.indexOf(player);
     }
     function updateTotalYards(event: React.ChangeEvent<HTMLInputElement>) {
-        setTotalYards(parseInt(event.target.value) || 0);
+        if (
+            parseInt(event.target.value) >= 0 ||
+            isNaN(parseInt(event.target.value))
+        ) {
+            setTotalYards(parseInt(event.target.value) || 0);
+        }
+        {
+            /*}
         console.log(event.target.value);
         console.log("Player index is" + getPlayerIndex());
+        {*/
+        }
         const widgetList = widgets;
         const newStats = {
             ...player.stats,
@@ -34,18 +43,18 @@ export function EditTotalYards({ widgets, setWidgets, player }: Rating) {
             ...player,
             stats: newStats
         });
-        console.log(widgetList);
+        {
+            /*}console.log(widgetList);{*/
+        }
         setWidgets([...widgetList]);
     }
 
     return (
         <div>
-            <Form.Group
-                style={{ width: 90 }}
-                className="playerRatingBox"
-                controlId="PlayerRating"
-            >
+            <Form.Group className="editNums" controlId="TotalYardsBox">
+                <Form.Label>Total Yards</Form.Label>
                 <Form.Control
+                    data-testid={"totalYards" + getPlayerIndex()}
                     type="number"
                     value={totalYards}
                     onChange={updateTotalYards}
