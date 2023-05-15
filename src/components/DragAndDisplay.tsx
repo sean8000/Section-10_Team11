@@ -54,7 +54,15 @@ function DragAndDisplay({
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
-    const filterPositions = ["None", "QB", "RB", "WR", "TE", "K"];
+    const filterPositions = [
+        "None",
+        "QB",
+        "RB",
+        "WR",
+        "TE",
+        "K",
+        "Rating > 90"
+    ];
     //const [pos, setPosition] = useState<string>("None");
     //const filterBoolean = [false, false, false, false, false];
 
