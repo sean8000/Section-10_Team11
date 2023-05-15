@@ -83,6 +83,9 @@ function DragAndDisplay({
 
         // add the player to the list
         if (newPlayer !== undefined) {
+            filteredList.map((p1: Player) =>
+                p1.name === newPlayer.name ? p1.count++ : 0
+            );
             setWidgets([...widgets, newPlayer]);
         }
     }
@@ -144,6 +147,9 @@ function DragAndDisplay({
     function handleOnButtonClick(removedPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
+        filteredList.map((p1: Player) =>
+            p1.name === removedPlayer.name ? p1.count-- : 0
+        );
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
@@ -259,7 +265,7 @@ function DragAndDisplay({
                                     </Button>
                                 )
                             ) : (
-                                ""
+                                "Count: " + curr.count
                             )}
                         </div>
                         <img
