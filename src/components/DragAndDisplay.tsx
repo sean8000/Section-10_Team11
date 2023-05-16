@@ -6,7 +6,8 @@ import { Button } from "react-bootstrap";
 import "../style.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
-import { PositionFilter } from "./PositionFilter";
+import { CentralPositionFilter } from "./CentralPositionFilter";
+import { UserPositionFilter } from "./UserPositionFilter";
 import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
@@ -220,11 +221,11 @@ function DragAndDisplay({
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
-            <PositionFilter
+            <CentralPositionFilter
                 filterPosition={filterPositions}
                 playerList={centralList}
                 setFilteredList={setFilteredList}
-            ></PositionFilter>
+            ></CentralPositionFilter>
             <SortSelect
                 sortOption={centralSort}
                 setSortOption={setCentralSort}
@@ -396,6 +397,11 @@ function DragAndDisplay({
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
+                    <UserPositionFilter
+                        filterPosition={filterPositions}
+                        playerList={widgets}
+                        setFilteredList={setUserFilteredList}
+                    ></UserPositionFilter>
                     <SortSelect
                         sortOption={userSort}
                         setSortOption={setUserSort}
@@ -404,7 +410,7 @@ function DragAndDisplay({
                     ></SortSelect>
                     <h4 className="playersTitle">Build Your Team</h4>
                     <br></br>
-                    {widgets.map((curr, index) => (
+                    {userFilteredList?.map((curr: Player, index: number) => (
                         <div
                             className="playerWidget"
                             key={"other" + role + index}
