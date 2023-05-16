@@ -49,18 +49,7 @@ function DragAndDisplay({
     searchText,
     setSearchText
 }: Widgets) {
-    /* const players = ["jerry", "terry", "larry"];
-    const player_map: Record<string, string> = {
-        jerry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/vs40h82nvqaqvyephwwu",
-        terry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/pbl27kxsr5ulgxmvtvfn",
-        larry: "https://static.www.nfl.com/image/private/t_headshot_desktop/league/btfnqtymqsqgybnv4u6n"
-    }; */
-
-    // YOU CAN ACCESS THE PLAYER LIST THROUGH THE IMPORTED "playerList" VARIABLE
-    // IT IS AN ARRAY OF PLAYER OBJECTS
-    // BELOW IS AN ARRAY FOR THE CENTRAL LIST USING STATE
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    //const [centralList, setCentralList] = useState<Player[]>(playerList);
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
@@ -135,11 +124,6 @@ function DragAndDisplay({
             p1.original === newPlayer.original ? p1.count++ : 0
         );
         const newList = [...widgets, newPlayer];
-        {
-            /*}
-        console.log(newList);
-    {*/
-        }
         setWidgets(newList);
         setUserFilteredList([...widgets, newPlayer]);
     }
@@ -172,12 +156,7 @@ function DragAndDisplay({
         const newFilteredList = userFilteredList.filter(
             (player: Player): boolean => player !== removedPlayer
         );
-        {
-            /*}
-        console.log("Player deleted");
-        console.log(newList);
-        {*/
-        }
+
         setWidgets(newList);
         setUserFilteredList(newFilteredList);
         setMyMap(myMap.set(role, newList));
@@ -187,13 +166,6 @@ function DragAndDisplay({
         const newList = adminWidgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
-        {
-            /*}
-        console.log(removedPlayer);
-        console.log("Player deleted");
-        console.log(newList);
-        {*/
-        }
 
         setAdminWidgets(newList);
     }
@@ -206,12 +178,6 @@ function DragAndDisplay({
         const newListFilter = filteredList.filter(
             (player: Player): boolean => player !== removedPlayer
         );
-        {
-            /*}
-        console.log("Player deleted");
-        console.log(newList);
-        {*/
-        }
         setCentralList(newCentralList);
         setFilteredList(newListFilter);
     }
@@ -219,16 +185,6 @@ function DragAndDisplay({
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
     }
-    /*
-    const [visible, setVisible] = useState<boolean>(false);
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    function flipVisibility(): void {
-        setVisible(!visible);
-    }
-    */
-    /* function updateCentralList(newCentralList: Player[]) {
-        setCentralList(newCentralList);
-    } */
 
     // the curr in the both maps below now represents players,
     // you can access its attributes with dot notation
@@ -251,20 +207,6 @@ function DragAndDisplay({
                 <h4 className="playersTitle">Players</h4>
                 <br></br>
                 <div style={{ background: "red" }}>
-                    {/*}<Button
-                        className="btn btn-primary shadow-none"
-                        style={{
-                            height: 30,
-                            width: 200,
-                            fontSize: 15,
-                            color: "black",
-                            background: "white"
-                        }}
-                        data-testid="stats"
-                        onClick={flipVisibility}
-                    >
-                        Open Stats For All Players
-                    </Button>{*/}
                     <br></br>
                     <span
                         data-testid="playerCount"
@@ -340,22 +282,6 @@ function DragAndDisplay({
                             rushAttempts={curr.stats.rushAttempts}
                             totalYards={curr.stats.totalYards}
                         ></PlayerStats>
-                        {/*}<div>
-                            {visible && (
-                                <div>
-                                    Description: {curr.description}
-                                    <br />
-                                    Touchdowns: {curr.stats.touchdowns}
-                                    <br />
-                                    Receptions: {curr.stats.receptions}
-                                    <br />
-                                    Rush Attempts: {curr.stats.rushAttempts}
-                                    <br />
-                                    Yards: {curr.stats.totalYards}
-                                    <br />
-                                </div>
-                            )}
-                        </div>{*/}
                     </div>
                 ))}
             </div>
@@ -456,7 +382,6 @@ function DragAndDisplay({
                                     draggable="false"
                                 >
                                     <div className="userChangeRatings">
-                                        {/*}{console.log(widgets.indexOf(curr))}{*/}
                                         <UserRating
                                             player={curr}
                                             widgets={widgets}
@@ -500,32 +425,7 @@ function DragAndDisplay({
                                             }
                                         ></Button>
                                     </div>
-                                    <div>
-                                        {/*}
-                                            <Button onClick={flipVisibility}>
-                                                STATS
-                                            </Button>
-                                            {visible && (
-                                                <div>
-                                                    Description:{" "}
-                                                    {curr.description}
-                                                    <br />
-                                                    Touchdowns:{" "}
-                                                    {curr.stats.touchdowns}
-                                                    <br />
-                                                    Receptions:{" "}
-                                                    {curr.stats.receptions}
-                                                    <br />
-                                                    Rush Attempts:{" "}
-                                                    {curr.stats.rushAttempts}
-                                                    <br />
-                                                    Yards:{" "}
-                                                    {curr.stats.totalYards}
-                                                    <br />
-                                                </div>
-                                            )}
-                                            {*/}
-                                    </div>
+                                    <div></div>
                                 </div>
                             )
                         )}
