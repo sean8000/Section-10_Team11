@@ -2,7 +2,536 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/UserRating.test.tsx
+PASS src/components/TestingComponents/UserRating.test.tsx (6.486 s)
+  ● Console
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 9,
+          original: 'Christian McCaffrey',
+          count: 2
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 90,
+          original: 'Christian McCaffrey',
+          count: 2
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 9,
+          original: 'Christian McCaffrey',
+          count: 3
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 95,
+          original: 'Christian McCaffrey',
+          count: 3
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 5,
+          original: 'Christian McCaffrey',
+          count: 3
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 50,
+          original: 'Christian McCaffrey',
+          count: 3
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 9,
+          original: 'Christian McCaffrey',
+          count: 4
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 90,
+          original: 'Christian McCaffrey',
+          count: 4
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 0,
+          original: 'Christian McCaffrey',
+          count: 4
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 9,
+          original: 'Christian McCaffrey',
+          count: 5
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 91,
+          original: 'Christian McCaffrey',
+          count: 5
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 1,
+          original: 'Christian McCaffrey',
+          count: 5
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 10,
+          original: 'Christian McCaffrey',
+          count: 5
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 100,
+          original: 'Christian McCaffrey',
+          count: 5
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 9,
+          original: 'Christian McCaffrey',
+          count: 6
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 91,
+          original: 'Christian McCaffrey',
+          count: 6
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
+    console.log
+      widget index: 0
+
+      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+
+    console.log
+      userFiltered index: 0
+
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+
+    console.log
+      [
+        {
+          name: 'Christian McCaffrey',
+          description: 'San Francisco 49ers',
+          image: 'https://static.www.nfl.com/image/private/t_headshot_desktop/league/navqer4chxxut5povzzw',
+          position: 'RB',
+          stats: {
+            touchdowns: 13,
+            receptions: 85,
+            rushAttempts: 244,
+            totalYards: 1880
+          },
+          rating: 1,
+          original: 'Christian McCaffrey',
+          count: 6
+        }
+      ]
+
+      at updateNumber (src/components/UserRating.tsx:58:21)
+
 PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
 PASS src/components/TestingComponents/RoleSave.test.tsx
   ● Console
@@ -84,11 +613,11 @@ PASS src/components/TestingComponents/Roles.test.tsx
 ----------------------------------|---------|----------|---------|---------|--------------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
 ----------------------------------|---------|----------|---------|---------|--------------------------------
-All files                         |   76.29 |    71.51 |   70.83 |   76.14 |                                
+All files                         |   76.64 |    71.51 |   71.07 |    76.5 |                                
  src                              |     100 |    54.54 |     100 |     100 |                                
   App.tsx                         |     100 |    54.54 |     100 |     100 | 112-124                        
   players.tsx                     |     100 |      100 |     100 |     100 |                                
- src/components                   |    62.3 |    65.21 |   61.25 |    61.9 |                                
+ src/components                   |   63.26 |    65.21 |   61.72 |   62.88 |                                
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                                
   CentralPositionFilter.tsx       |   61.53 |       50 |      80 |   61.53 | 34-40                          
   DragAndDisplay.tsx              |   30.35 |    59.37 |      30 |   30.35 | 70-110,150-186,225,266,330,432 
@@ -123,5 +652,5 @@ All files                         |   76.29 |    71.51 |   70.83 |   76.14 |
 Test Suites: 11 passed, 11 total
 Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        21.148 s
+Time:        28.363 s
 Ran all test suites.
