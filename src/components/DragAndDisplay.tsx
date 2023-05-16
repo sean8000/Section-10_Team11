@@ -89,6 +89,7 @@ function DragAndDisplay({
                 p1.original === newPlayer.original ? p1.count++ : 0
             );
             setWidgets([...widgets, newPlayer]);
+            setUserFilteredList([...widgets, newPlayer]);
         }
     }
 
