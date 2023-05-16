@@ -400,7 +400,7 @@ function DragAndDisplay({
                 <div></div>
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
-                <div style={{ float: "right" }}>
+                <div style={{ float: "right", marginRight: 60 }}>
                     <div style={{ paddingLeft: 50 }}>
                         <UserPositionFilter
                             filterPosition={filterPositions}
