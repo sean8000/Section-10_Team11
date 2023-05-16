@@ -11,6 +11,7 @@ import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
+import { TeamRoster } from "./TeamRoster";
 import { SearchTextBox } from "./SearchTextBox";
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
@@ -413,6 +414,7 @@ function DragAndDisplay({
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
                 <div style={{ float: "right", marginRight: 60 }}>
+                    <TeamRoster playerList={widgets}></TeamRoster>
                     <div style={{ paddingLeft: 50 }}>
                         <SearchTextBox
                             searchText={searchText}
