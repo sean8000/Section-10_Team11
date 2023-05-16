@@ -7,12 +7,14 @@
     float: left;
     width: 550px;
     height: auto;
+    max-height: 700px;
     outline: 1px solid black;
     background: gray;
     color: white;
     margin-left: 50px;
     overflow-y: auto;
     overflow-x: hidden;
+    margin-bottom: 80px;
 }
 
 .player:nth-child(odd) {
@@ -43,14 +45,12 @@
     background-color: black;
     color: white;
     height: 200px;
-    border-bottom: 2px solid black;
 }
 
 .playerWidgetAdmin:nth-child(even) {
     background-color: gray;
     color: white;
     height: 200px;
-    border-bottom: 2px solid black;
 }
 
 .playerNameAndPosition {
@@ -284,4 +284,14 @@ div#content:active {
     text-align: center;
     margin-top: 40px;
     height: 150px;
+}
+
+.teamRoster {
+    color: white;
+    background: black;
+    width: 33px;
+    margin-top: 72px;
+    margin-bottom: 0px;
+    overflow: auto;
+    float: right;
 }

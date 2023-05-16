@@ -299,6 +299,7 @@ function DragAndDisplay({
                         <br></br>
                         <br></br>
                     </div>
+                    <div style={{ backgroundColor: "white" }}></div>
                     {adminWidgets.map((curr, index) => (
                         <div
                             className="playerWidgetAdmin"
@@ -334,7 +335,6 @@ function DragAndDisplay({
                             </div>
                         </div>
                     ))}
-                    <div className="addPlayerInListText">ADD A PLAYER HERE</div>
                 </div>
             ) : (
                 <div></div>

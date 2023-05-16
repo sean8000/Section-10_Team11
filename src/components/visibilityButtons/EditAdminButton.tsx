@@ -1,4 +1,4 @@
-import "../style.css";
+import "../../style.css";
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Player } from "../../interfaces/player";
