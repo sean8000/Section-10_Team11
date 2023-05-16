@@ -44,7 +44,7 @@ export function CentralPositionFilter({
     return (
         <div className="positionFilter">
             <Form.Group>
-                <Form.Label style={{ color: "black" }}>
+                <Form.Label style={{ color: "white" }}>
                     Filter Buttons
                 </Form.Label>
                 <br></br>
