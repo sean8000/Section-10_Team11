@@ -54,6 +54,9 @@ function DragAndDisplay({
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
+    const [userSort, setUserSort] = useState<string>("None"); // state to keep track of user sorting
+    const [userFilteredList, setUserFilteredList] = useState<Player[]>(); // state to hold user filtered list
+
     const filterPositions = [
         "None",
         "QB",
@@ -63,8 +66,6 @@ function DragAndDisplay({
         "K",
         "Rating > 90"
     ];
-    //const [pos, setPosition] = useState<string>("None");
-    //const filterBoolean = [false, false, false, false, false];
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
@@ -356,9 +357,20 @@ function DragAndDisplay({
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
+                    <PositionFilter
+                        filterPosition={filterPositions}
+                        playerList={widgets}
+                        setFilteredList={setUserFilteredList}
+                    ></PositionFilter>
+                    <SortSelect
+                        sortOption={userSort}
+                        setSortOption={setUserSort}
+                        playerList={widgets}
+                        setPlayerList={setWidgets}
+                    ></SortSelect>
                     <h4 className="playersTitle">Build Your Team</h4>
                     <br></br>
-                    {widgets.map((curr, index) => (
+                    {userFilteredList.map((curr, index) => (
                         <div
                             className="playerWidget"
                             key={"other" + role + index}
