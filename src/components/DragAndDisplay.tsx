@@ -245,7 +245,7 @@ function DragAndDisplay({
                                     </Button>
                                 )
                             ) : (
-                                "Count: " + curr.count
+                                "No. In Use: " + curr.count
                             )}
                         </div>
                         {role === "League Manager" ? (
