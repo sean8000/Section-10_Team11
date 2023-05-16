@@ -182,6 +182,24 @@ function DragAndDisplay({
 
         setAdminWidgets(newList);
     }
+    function deleteAsSuper(removedPlayer: Player) {
+        // modified because now widgets are players, so when you delete one player it doesnt
+        // delete other players with the same name
+        const newCentralList = centralList.filter(
+            (player: Player): boolean => player !== removedPlayer
+        );
+        const newListFilter = filteredList.filter(
+            (player: Player): boolean => player !== removedPlayer
+        );
+        {
+            /*}
+        console.log("Player deleted");
+        console.log(newList);
+        {*/
+        }
+        setCentralList(newCentralList);
+        setFilteredList(newListFilter);
+    }
 
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
@@ -273,6 +291,27 @@ function DragAndDisplay({
                                 "Count: " + curr.count
                             )}
                         </div>
+                        {role === "League Manager" ? (
+                            <div
+                                style={{
+                                    float: "right",
+                                    paddingRight: 70,
+                                    marginTop: -130
+                                }}
+                            >
+                                <Button
+                                    className="trashcan"
+                                    style={{
+                                        backgroundImage:
+                                            "url('https://cdn.icon-icons.com/icons2/1808/PNG/512/trash-can_115312.png')"
+                                    }}
+                                    draggable="false"
+                                    onClick={() => deleteAsSuper(curr)}
+                                ></Button>
+                            </div>
+                        ) : (
+                            ""
+                        )}
                         <img
                             className="playerImage"
                             src={curr.image}
