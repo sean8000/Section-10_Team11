@@ -224,9 +224,12 @@
 
 .teamRoster {
     color: white;
-    float: right;
     background: black;
-    width: 35px;
+    width: 33px;
+    margin-top: 72px;
+    margin-bottom: 0px;
+    overflow: auto;
+    float: right;
 }
 
 .userChangeRatings {

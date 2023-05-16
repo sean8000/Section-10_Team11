@@ -23,15 +23,16 @@ export function TeamRoster({ playerList }: TeamRoster): JSX.Element {
         (player: Player): boolean => player.position === "K"
     ).length;
 
+    // apologies this componant is butt ugly
     return (
         <div className="teamRoster">
             QB <br></br> ({num_QB}/1)
-            <br></br> ___ <br></br> RB <br></br> ({num_RB}/2) <br></br>
-            ___<br></br> WR <br></br> ({num_WR}
+            <br></br> _____ <br></br> RB <br></br> ({num_RB}/2) <br></br>
+            _____<br></br> WR <br></br> ({num_WR}
             /2) <br></br>
-            ___<br></br>
+            _____<br></br>
             TE <br></br> ({num_TE}/1) <br></br>
-            ___ <br></br> K <br></br>({num_K}/1)
+            _____ <br></br> K <br></br>({num_K}/1)
         </div>
     );
 }
