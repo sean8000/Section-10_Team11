@@ -7,6 +7,7 @@ import "../style.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
 import { CentralPositionFilter } from "./CentralPositionFilter";
+import { UserPositionFilter } from "./UserPositionFilter";
 import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
@@ -357,11 +358,11 @@ function DragAndDisplay({
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
-                    <CentralPositionFilter
+                    <UserPositionFilter
                         filterPosition={filterPositions}
                         playerList={widgets}
                         setFilteredList={setUserFilteredList}
-                    ></CentralPositionFilter>
+                    ></UserPositionFilter>
                     <SortSelect
                         sortOption={userSort}
                         setSortOption={setUserSort}
