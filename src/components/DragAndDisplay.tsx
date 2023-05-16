@@ -348,10 +348,10 @@ function DragAndDisplay({
                     onDrop={handleOnDropAdmin}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">
-                        Manage Your Team<br></br> Drag Here <br></br>
+                    <h4 className="playersTitleRevised">
+                        Manage Your Team<br></br> Drag Here<br></br>
                     </h4>
-                    <div style={{ backgroundColor: "black" }}>
+                    <div style={{ backgroundColor: "white" }}>
                         <br></br>
                         <br></br>
                         <br></br>
@@ -401,10 +401,10 @@ function DragAndDisplay({
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">
+                    <h4 className="playersTitleRevised">
                         Build Your Team <br></br> Drag Here <br></br>
                     </h4>
-                    <div style={{ backgroundColor: "black" }}>
+                    <div style={{ backgroundColor: "white" }}>
                         <br></br>
                         <br></br>
                         <br></br>

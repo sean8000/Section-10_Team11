@@ -107,6 +107,16 @@
     text-decoration: underline;
     text-decoration-color: white;
 }
+.playersTitleRevised {
+    font-family: "Alkatra";
+    color: black;
+    text-align: center;
+    background-color: white;
+    width: 550px;
+    position: absolute;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
 
 .roleSelect {
     justify-content: center;
