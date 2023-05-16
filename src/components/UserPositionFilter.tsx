@@ -26,17 +26,20 @@ export function UserPositionFilter({
             event.target.value !== "None" &&
             event.target.value !== "Rating > 90"
         ) {
+            // if being filtered by a position
             const tempPlayerList = playerList.filter(
                 (player: Player): boolean =>
                     player.position === event.target.value
             );
             setFilteredList(tempPlayerList);
         } else if (event.target.value === "Rating > 90") {
+            // if being filtered by rating
             const tempPlayerList = playerList.filter(
                 (player: Player): boolean => player.rating >= 90
             );
             setFilteredList(tempPlayerList);
         } else {
+            // if not being filtered by anything (resets lis)
             setFilteredList(playerList);
         }
     }
