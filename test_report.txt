@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/UserRating.test.tsx (6.233 s)
+PASS src/components/TestingComponents/UserRating.test.tsx
 PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
 PASS src/components/TestingComponents/RoleSave.test.tsx
   ● Console
@@ -84,15 +84,16 @@ PASS src/components/TestingComponents/Roles.test.tsx
 ----------------------------------|---------|----------|---------|---------|--------------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
 ----------------------------------|---------|----------|---------|---------|--------------------------------
-All files                         |   76.77 |    72.35 |   70.27 |   76.62 |                                
+All files                         |   75.47 |    71.51 |   69.29 |   75.31 |                                
  src                              |     100 |    54.54 |     100 |     100 |                                
-  App.tsx                         |     100 |    54.54 |     100 |     100 | 109-121                        
+  App.tsx                         |     100 |    54.54 |     100 |     100 | 112-124                        
   players.tsx                     |     100 |      100 |     100 |     100 |                                
- src/components                   |   61.84 |    66.66 |   59.15 |    61.4 |                                
+ src/components                   |      60 |    65.21 |    58.1 |   59.55 |                                
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                                
   CentralPositionFilter.tsx       |   61.53 |       50 |      80 |   61.53 | 34-40                          
-  DragAndDisplay.tsx              |   30.35 |    59.37 |      30 |   30.35 | 75-115,160-214,277,318,398,486 
+  DragAndDisplay.tsx              |   30.35 |    59.37 |      30 |   30.35 | 80-120,165-219,282,323,403,498 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                                
+  SearchTextBox.tsx               |   14.28 |        0 |   33.33 |   14.28 | 21-29                          
   SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                                
   UserEdit.tsx                    |       0 |      100 |       0 |       0 | 39-47                          
   UserPositionFilter.tsx          |   23.07 |        0 |      40 |   23.07 | 24-43                          
@@ -121,5 +122,5 @@ All files                         |   76.77 |    72.35 |   70.27 |   76.62 |
 Test Suites: 11 passed, 11 total
 Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        28.7 s
+Time:        20.668 s
 Ran all test suites.
