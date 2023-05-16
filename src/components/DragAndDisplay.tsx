@@ -1,5 +1,4 @@
 /* eslint-disable indent */
-// had to disable this sorry gang
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
@@ -55,6 +54,7 @@ function DragAndDisplay({
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
     const [userSort, setUserSort] = useState<string>("None"); // state to keep track of user sorting
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [userFilteredList, setUserFilteredList] = useState<Player[]>(); // state to hold user filtered list
 
     const filterPositions = [
