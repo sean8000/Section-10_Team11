@@ -447,6 +447,7 @@ function DragAndDisplay({
                                         {curr.name} | {curr.position} <br />{" "}
                                         <img
                                             className="playerImageUser"
+                                            style={{ marginRight: -100 }}
                                             src={curr.image}
                                             alt="Image"
                                             draggable="false"
