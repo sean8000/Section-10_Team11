@@ -34,6 +34,14 @@ export function SortFilterBox({
 }: SortFilter): JSX.Element {
     return (
         <div className="sortFilterBox">
+            <SearchTextBox
+                searchText={searchText}
+                setSearchText={setSearchText}
+                userFilteredList={filteredList}
+                setUserFilteredList={setFilteredList}
+                widgetList={playerList}
+                name={name}
+            ></SearchTextBox>
             <UserPositionFilter
                 filterPosition={filterPositions}
                 playerList={playerList}
@@ -46,14 +54,6 @@ export function SortFilterBox({
                 playerList={filteredList ?? []}
                 setPlayerList={setFilteredList ?? []}
             ></SortSelect>
-            <SearchTextBox
-                searchText={searchText}
-                setSearchText={setSearchText}
-                userFilteredList={filteredList}
-                setUserFilteredList={setFilteredList}
-                widgetList={playerList}
-                name={name}
-            ></SearchTextBox>
         </div>
     );
 }
