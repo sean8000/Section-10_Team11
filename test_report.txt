@@ -2,20 +2,2028 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/UserRating.test.tsx (5.314 s)
+FAIL src/components/TestingComponents/UserRating.test.tsx
+  ● Testing User Rating › Testing original rating before change
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      18 |         addFirstPlayerButton.click();
+      19 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 20 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      21 |         const player1 = screen.getByTestId("otherGuest User" + 0);
+      22 |         //console.log(screen.getByTestId("otherGuest User" + 0));
+      23 |
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:20:23)
+
+  ● Testing User Rating › Testing Changing value from 95 to 90
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      41 |         addFirstPlayerButton.click();
+      42 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 43 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      44 |         const player1 = screen.getByTestId("otherGuest User" + 0);
+      45 |         //console.log(screen.getByTestId("otherGuest User" + 0));
+      46 |
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:43:23)
+
+  ● Testing User Rating › Testing Changing value to 50
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      65 |         addFirstPlayerButton.click();
+      66 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 67 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      68 |         const player1 = screen.getByTestId("otherGuest User" + 0);
+      69 |         //console.log(screen.getByTestId("otherGuest User" + 0));
+      70 |
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:67:23)
+
+  ● Testing User Rating › Testing Changing value to 0
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      92 |         addFirstPlayerButton.click();
+      93 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 94 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      95 |         const player1 = screen.getByTestId("otherGuest User" + 0);
+      96 |         //console.log(screen.getByTestId("otherGuest User" + 0));
+      97 |
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:94:23)
+
+  ● Testing User Rating › Testing Changing value to 101, not possible will stay at 100
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      116 |         addFirstPlayerButton.click();
+      117 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 118 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+          |                       ^
+      119 |         const player1 = screen.getByTestId("otherGuest User" + 0);
+      120 |         //console.log(screen.getByTestId("otherGuest User" + 0));
+      121 |
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:118:23)
+
+  ● Testing User Rating › Testing Changing value to -1, not possible since - is not a number, stays at 1
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      143 |         addFirstPlayerButton.click();
+      144 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 145 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+          |                       ^
+      146 |         const player1 = screen.getByTestId("otherGuest User" + 0);
+      147 |         //console.log(screen.getByTestId("otherGuest User" + 0));
+      148 |
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:145:23)
+
 PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
-PASS src/components/TestingComponents/RoleSave.test.tsx
-  ● Console
+FAIL src/components/TestingComponents/RoleSave.test.tsx
+  ● Testing that list is saved upon role switch › Testing adding player to user list as guest user
 
-    console.log
-      Team Manager
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
 
-      at updateRole (src/components/roleSelect.tsx:41:21)
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
 
-    console.log
-      Team Manager
+      33 |         addFirstPlayerButton.click();
+      34 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 35 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      36 |     });
+      37 |     test("Testing adding player to user list as guest user, admin list should be empty", () => {
+      38 |         render(<App />);
 
-      at updateRole (src/components/roleSelect.tsx:41:21)
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/RoleSave.test.tsx:35:23)
+
+  ● Testing that list is saved upon role switch › Testing adding player to user list as guest user, admin list should be empty
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      48 |         addFirstPlayerButton.click();
+      49 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 50 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      51 |         userEvent.selectOptions(selectRole, "Team Manager");
+      52 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+      53 |         //data test id for admin list elements
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/RoleSave.test.tsx:50:23)
+
+  ● Testing that list is saved upon role switch › Testing adding player to user list as guest user, admin list should be empty, switch back to Guest User
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      68 |         addFirstPlayerButton.click();
+      69 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 70 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      71 |         userEvent.selectOptions(selectRole, "Team Manager");
+      72 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+      73 |         //data test id for admin list elements
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/RoleSave.test.tsx:70:23)
+
+  ● Testing that list is saved upon role switch › Testing adding players to 2 roles, switching back and forth between them 
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      93 |         addFirstPlayerButton.click();
+      94 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 95 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      96 |         userEvent.selectOptions(selectRole, "Team Manager");
+      97 |         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+      98 |         //data test id for admin list elements
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/RoleSave.test.tsx:95:23)
 
 PASS src/components/TestingComponents/AddingAndSorting.test.tsx
   ● Console
@@ -71,7 +2079,411 @@ PASS src/components/TestingComponents/CentralSort.test.tsx
 PASS src/components/TestingComponents/AddingAndFiltering.test.tsx
 PASS src/components/TestingComponents/CentralFilter.test.tsx
 PASS src/components/TestingComponents/AddingNewPlayers.test.tsx
-PASS src/components/TestingComponents/AddingByClickButton.test.tsx
+FAIL src/components/TestingComponents/AddingByClickButton.test.tsx
+  ● Adding Players Using Button › Testing adding player to user list as guest user
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      18 |         addFirstPlayerButton.click();
+      19 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 20 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      21 |     });
+      22 |     test("Testing adding duplicates Guest User", () => {
+      23 |         render(<App />);
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/AddingByClickButton.test.tsx:20:23)
+
+  ● Adding Players Using Button › Testing adding duplicates Guest User
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="otherGuest User0"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div>[39m
+          [36m<span[39m
+            [33mclass[39m=[32m"names"[39m
+          [36m>[39m
+            [0mby Alexander Marshall, Michael Murphy, Sean Johnson, Michael Lorang, Dean Turner[0m
+          [36m</span>[39m
+          [36m<h1[39m
+            [33mclass[39m=[32m"heading"[39m
+          [36m>[39m
+            [0m [0m
+            [0mNFL Football TeamBuilder[0m
+            [36m<br />[39m
+            [0mDrag or Click Player Icons to Put Them on Your Team[0m
+            [36m<div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"roleSelect"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-label"[39m
+                    [33mfor[39m=[32m"Roles"[39m
+                    [33mstyle[39m=[32m"font-size: 15px; color: white;"[39m
+                  [36m>[39m
+                    [0mWhich role[0m
+                  [36m</label>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"form-select"[39m
+                    [33mid[39m=[32m"Roles"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"League Manager"[39m
+                    [36m>[39m
+                      [0mLeague Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Team Manager"[39m
+                    [36m>[39m
+                      [0mTeam Manager[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"Guest User"[39m
+                    [36m>[39m
+                      [0mGuest User[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<span />[39m
+            [36m</div>[39m
+            [36m<div>[39m
+              [36m<div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mdata-testid[39m=[32m"Guest UserEditButton"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m [0m
+                  [0mEdit your players[0m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</h1>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"Test"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"positionFilter"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"form-label"[39m
+                  [33mstyle[39m=[32m"color: black;"[39m
+                [36m>[39m
+                  [0mFilter Buttons[0m
+                [36m</label>[39m
+                [36m<br />[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mchecked[39m=[32m""[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterNone"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"None"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mNone[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterQB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"QB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mQB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterRB"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"RB"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mRB[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterWR"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"WR"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mWR[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterTE"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"TE"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"form-check-label"[39m
+                    [33mtitle[39m=[32m""[39m
+                  [36m>[39m
+                    [0mTE[0m
+                  [36m</label>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"form-check form-check-inline"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"form-check-input"[39m
+                    [33mdata-testid[39m=[32m"filterK"[39m
+                    [33mname[39m=[32m"central-positions"[39m
+                    [33mtype[39m=[32m"radio"[39m
+                    [33mvalue[39m=[32m"K"[39m
+                  [36m/>[39m
+                  [36m<label[39m
+                ...
+
+      33 |         addFirstPlayerButton.click();
+      34 |         //Now Added player is in the other list, index 0 in the draggable list
+    > 35 |         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
+         |                       ^
+      36 |         addFirstPlayerButton.click();
+      37 |         //Player is added to the list again, now in the first index too
+      38 |         expect(screen.getByTestId("otherGuest User" + 1)).toBeInTheDocument();
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/TestingComponents/AddingByClickButton.test.tsx:35:23)
+
 PASS src/components/TestingComponents/IsDraggable.test.tsx
   ● Console
 
@@ -84,18 +2496,19 @@ PASS src/components/TestingComponents/Roles.test.tsx
 ----------------------------------|---------|----------|---------|---------|--------------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
 ----------------------------------|---------|----------|---------|---------|--------------------------------
-All files                         |      80 |    75.31 |   72.38 |   79.85 |                                
+All files                         |   74.66 |     68.9 |   67.27 |   74.49 |                                
  src                              |     100 |    54.54 |     100 |     100 |                                
   App.tsx                         |     100 |    54.54 |     100 |     100 | 103-115                        
   players.tsx                     |     100 |      100 |     100 |     100 |                                
- src/components                   |   65.33 |    71.79 |   61.53 |   64.86 |                                
+ src/components                   |   56.96 |    59.52 |   54.28 |   56.44 |                                
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                                
-  DragAndDisplay.tsx              |      30 |    60.71 |   31.03 |      30 | 70-109,153-203,266,307,381,442 
+  CentralPositionFilter.tsx       |   61.53 |       50 |      80 |   61.53 | 34-40                          
+  DragAndDisplay.tsx              |   30.76 |    60.71 |   27.58 |   30.76 | 72-111,155-205,268,309,383-455 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                                
-  PositionFilter.tsx              |   61.53 |       50 |      80 |   61.53 | 34-40                          
   SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                                
   UserEdit.tsx                    |       0 |      100 |       0 |       0 | 39-47                          
-  UserRating.tsx                  |     100 |      100 |     100 |     100 |                                
+  UserPositionFilter.tsx          |   23.07 |        0 |      40 |   23.07 | 24-43                          
+  UserRating.tsx                  |       0 |        0 |       0 |       0 | 15-46                          
   UserText.tsx                    |     100 |      100 |     100 |     100 |                                
   roleSelect.tsx                  |   62.96 |       65 |   66.66 |   62.96 | 58,66-76                       
   sortSelect.tsx                  |     100 |    92.85 |     100 |     100 | 43                             
@@ -117,8 +2530,8 @@ All files                         |      80 |    75.31 |   72.38 |   79.85 |
   player.tsx                      |       0 |        0 |       0 |       0 |                                
 ----------------------------------|---------|----------|---------|---------|--------------------------------
 
-Test Suites: 11 passed, 11 total
-Tests:       55 passed, 55 total
+Test Suites: 3 failed, 8 passed, 11 total
+Tests:       12 failed, 43 passed, 55 total
 Snapshots:   0 total
-Time:        25.408 s
+Time:        18.734 s
 Ran all test suites.
