@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/UserRating.test.tsx (5.772 s)
+PASS src/components/TestingComponents/UserRating.test.tsx
   ● Console
 
     console.log
@@ -653,5 +653,5 @@ All files                         |   75.89 |    71.51 |   69.67 |   75.74 |
 Test Suites: 11 passed, 11 total
 Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        25.211 s
+Time:        18.93 s
 Ran all test suites.
