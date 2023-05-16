@@ -244,7 +244,7 @@ function DragAndDisplay({
                                     </Button>
                                 )
                             ) : (
-                                "Count: " + curr.count
+                                "No. In Use: " + curr.count
                             )}
                         </div>
                         {role === "League Manager" ? (
@@ -333,23 +333,25 @@ function DragAndDisplay({
                             </div>
                         </div>
                     ))}
+                    <div className="addPlayerInListText">ADD A PLAYER HERE</div>
                 </div>
             ) : (
                 <div></div>
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
-                <div style={{ float: "right", marginRight: 60 }}>
+                <div
+                    style={{
+                        float: "right",
+                        marginRight: 150,
+                        marginTop: -135
+                    }}
+                >
                     <div style={{ paddingLeft: 50 }}>
                         <SortFilterBox
                             playerList={widgets}
                             filteredList={userFilteredList}
                             setFilteredList={setUserFilteredList}
                             filterPositions={filterPositions}
-                            sortOption={userSort}
-                            setSortOption={setUserSort}
-                            searchText={userSearchText}
-                            setSearchText={setUserSearchText}
-                            name="user-box"
                         ></SortFilterBox>
                     </div>
                     <div
