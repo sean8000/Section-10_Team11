@@ -1,5 +1,4 @@
 /* eslint-disable indent */
-// had to disable this sorry gang
 /* eslint-disable no-extra-parens */
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
@@ -54,6 +53,10 @@ function DragAndDisplay({
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
+    const [userSort, setUserSort] = useState<string>("None"); // state to keep track of user sorting
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [userFilteredList, setUserFilteredList] = useState<Player[]>(); // state to hold user filtered list
+
     const filterPositions = [
         "None",
         "QB",
@@ -63,8 +66,6 @@ function DragAndDisplay({
         "K",
         "Rating > 90"
     ];
-    //const [pos, setPosition] = useState<string>("None");
-    //const filterBoolean = [false, false, false, false, false];
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
@@ -396,69 +397,82 @@ function DragAndDisplay({
                 <div></div>
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
-                <div
-                    className="userEdited"
-                    onDrop={handleOnDrop}
-                    onDragOver={handleDragOver}
-                >
-                    <h4 className="playersTitleRevised">
-                        Build Your Team <br></br> Drag Here <br></br>
-                    </h4>
-                    <div style={{ backgroundColor: "white" }}>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                    </div>
-                    {widgets.map((curr, index) => (
+                <>
+                    <div style={{ float: "right" }}>
+                        <div style={{ paddingLeft: 50 }}>
+                            <SortSelect
+                                sortOption={userSort}
+                                setSortOption={setUserSort}
+                                playerList={widgets}
+                                setPlayerList={setWidgets}
+                            ></SortSelect>
+                        </div>
                         <div
-                            className="playerWidget"
-                            key={"other" + role + index}
-                            data-testid={"other" + role + index}
-                            draggable="false"
+                            className="userEdited"
+                            onDrop={handleOnDrop}
+                            onDragOver={handleDragOver}
                         >
-                            <div className="userChangeRatings">
-                                {/*}{console.log(widgets.indexOf(curr))}{*/}
-                                <UserRating
-                                    player={curr}
-                                    widgets={widgets}
-                                    setWidgets={setWidgets}
-                                ></UserRating>
+                            <h4 className="playersTitleRevised">
+                                Build Your Team <br></br> Drag Here <br></br>
+                            </h4>
+                            <div style={{ backgroundColor: "white" }}>
+                                <br></br>
+                                <br></br>
+                                <br></br>
                             </div>
-                            <div className="playerNameAndPosition">
-                                {curr.name} | {curr.position} <br />{" "}
-                                <img
-                                    className="playerImageUser"
-                                    style={{
-                                        marginRight: -100
-                                    }}
-                                    src={curr.image}
-                                    alt="Image"
+                            <br></br>
+                            {widgets.map((curr, index) => (
+                                <div
+                                    className="playerWidget"
+                                    key={"other" + role + index}
+                                    data-testid={"other" + role + index}
                                     draggable="false"
-                                />
-                                <span>Overall: {curr.rating}</span>
-                            </div>
-                            {/*} Needed to make stats button to go on the left {*/}
-                            <PlayerStats
-                                index={index}
-                                description={curr.description}
-                                touchdowns={curr.stats.touchdowns}
-                                receptions={curr.stats.receptions}
-                                rushAttempts={curr.stats.rushAttempts}
-                                totalYards={curr.stats.totalYards}
-                            ></PlayerStats>
-                            <div style={{ paddingLeft: 30 }}>
-                                <Button
-                                    className="trashcan"
-                                    style={{
-                                        backgroundImage:
-                                            "url('https://cdn.icon-icons.com/icons2/1808/PNG/512/trash-can_115312.png')"
-                                    }}
-                                    draggable="false"
-                                    onClick={() => handleOnButtonClick(curr)}
-                                ></Button>
-                            </div>
-                            <div>
-                                {/*}
+                                >
+                                    <div className="userChangeRatings">
+                                        {/*}{console.log(widgets.indexOf(curr))}{*/}
+                                        <UserRating
+                                            player={curr}
+                                            widgets={widgets}
+                                            setWidgets={setWidgets}
+                                        ></UserRating>
+                                    </div>
+                                    <div className="playerNameAndPosition">
+                                        {curr.name} | {curr.position} <br />{" "}
+                                        <img
+                                            className="playerImageUser"
+                                            style={{
+                                                marginRight: -100
+                                            }}
+                                            src={curr.image}
+                                            alt="Image"
+                                            draggable="false"
+                                        />
+                                        <span>Overall: {curr.rating}</span>
+                                    </div>
+                                    {/*} Needed to make stats button to go on the left {*/}
+                                    <PlayerStats
+                                        index={index}
+                                        description={curr.description}
+                                        touchdowns={curr.stats.touchdowns}
+                                        receptions={curr.stats.receptions}
+                                        rushAttempts={curr.stats.rushAttempts}
+                                        totalYards={curr.stats.totalYards}
+                                    ></PlayerStats>
+                                    <div style={{ paddingLeft: 30 }}>
+                                        <Button
+                                            className="trashcan"
+                                            style={{
+                                                backgroundImage:
+                                                    "url('https://cdn.icon-icons.com/icons2/1808/PNG/512/trash-can_115312.png')"
+                                            }}
+                                            draggable="false"
+                                            onClick={() =>
+                                                handleOnButtonClick(curr)
+                                            }
+                                        ></Button>
+                                    </div>
+                                    <div>
+                                        {/*}
                                             <Button onClick={flipVisibility}>
                                                 STATS
                                             </Button>
@@ -482,10 +496,12 @@ function DragAndDisplay({
                                                 </div>
                                             )}
                                             {*/}
-                            </div>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
+                    </div>
+                </>
             ) : role === "League Manager" ? (
                 <div>
                     <AddPlayers
