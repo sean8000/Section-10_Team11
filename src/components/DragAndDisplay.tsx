@@ -293,7 +293,7 @@ function DragAndDisplay({
                             <div
                                 style={{
                                     float: "right",
-                                    paddingRight: 65,
+                                    paddingRight: 70,
                                     marginTop: -130
                                 }}
                             >
