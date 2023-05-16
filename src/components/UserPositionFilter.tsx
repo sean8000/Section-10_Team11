@@ -58,6 +58,7 @@ export function UserPositionFilter({
                         name="user-positions"
                         onChange={updateFilter}
                         key={choice}
+                        style={{ color: "white" }}
                         label={choice}
                         value={choice}
                         checked={choice === filter}
