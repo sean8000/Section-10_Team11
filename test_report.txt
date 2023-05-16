@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/UserRating.test.tsx
+PASS src/components/TestingComponents/UserRating.test.tsx (5.314 s)
 PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
 PASS src/components/TestingComponents/RoleSave.test.tsx
   ● Console
@@ -84,11 +84,11 @@ PASS src/components/TestingComponents/Roles.test.tsx
 ----------------------------------|---------|----------|---------|---------|--------------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
 ----------------------------------|---------|----------|---------|---------|--------------------------------
-All files                         |   79.71 |    75.31 |   72.11 |   79.56 |                                
+All files                         |      80 |    75.31 |   72.38 |   79.85 |                                
  src                              |     100 |    54.54 |     100 |     100 |                                
   App.tsx                         |     100 |    54.54 |     100 |     100 | 103-115                        
   players.tsx                     |     100 |      100 |     100 |     100 |                                
- src/components                   |   64.38 |    71.79 |   60.93 |   63.88 |                                
+ src/components                   |   65.33 |    71.79 |   61.53 |   64.86 |                                
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                                
   DragAndDisplay.tsx              |      30 |    60.71 |   31.03 |      30 | 70-109,153-203,266,307,381,442 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                                
@@ -120,5 +120,5 @@ All files                         |   79.71 |    75.31 |   72.11 |   79.56 |
 Test Suites: 11 passed, 11 total
 Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        20.012 s
+Time:        25.408 s
 Ran all test suites.
