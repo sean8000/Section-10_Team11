@@ -414,7 +414,6 @@ function DragAndDisplay({
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
                 <div style={{ float: "right", marginRight: 60 }}>
-                    <TeamRoster playerList={widgets}></TeamRoster>
                     <div style={{ paddingLeft: 50 }}>
                         <SearchTextBox
                             searchText={searchText}
@@ -531,6 +530,7 @@ function DragAndDisplay({
                             )
                         )}
                     </div>
+                    <TeamRoster playerList={widgets}></TeamRoster>
                 </div>
             ) : role === "League Manager" ? (
                 <div>

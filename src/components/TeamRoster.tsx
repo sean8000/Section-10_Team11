@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Player } from "../interfaces/player";
 import "../style.css";
 
@@ -24,9 +24,14 @@ export function TeamRoster({ playerList }: TeamRoster): JSX.Element {
     ).length;
 
     return (
-        <div>
-            QB:({num_QB}/1) | RB: ({num_RB}/2) | WR: ({num_WR}/2) | TE: (
-            {num_TE}/1) | K: ({num_K}/1)
+        <div className="teamRoster">
+            QB <br></br> ({num_QB}/1)
+            <br></br> ___ <br></br> RB <br></br> ({num_RB}/2) <br></br>
+            ___<br></br> WR <br></br> ({num_WR}
+            /2) <br></br>
+            ___<br></br>
+            TE <br></br> ({num_TE}/1) <br></br>
+            ___ <br></br> K <br></br>({num_K}/1)
         </div>
     );
 }
