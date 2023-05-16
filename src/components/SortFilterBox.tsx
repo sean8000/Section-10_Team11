@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { SortSelect } from "./sortSelect";
 import { UserPositionFilter } from "./UserPositionFilter";
 import { SearchTextBox } from "./SearchTextBox";
 import { Player } from "../interfaces/player";
+import "../style.css";
 
 interface SortFilter {
     playerList: Player[];
@@ -32,15 +33,7 @@ export function SortFilterBox({
     name
 }: SortFilter): JSX.Element {
     return (
-        <div style={{ background: "grey", width: "525px" }}>
-            <SearchTextBox
-                searchText={searchText}
-                setSearchText={setSearchText}
-                userFilteredList={filteredList}
-                setUserFilteredList={setFilteredList}
-                widgetList={playerList}
-                name={name}
-            ></SearchTextBox>
+        <div className="sortFilterBox">
             <UserPositionFilter
                 filterPosition={filterPositions}
                 playerList={playerList}
@@ -53,6 +46,14 @@ export function SortFilterBox({
                 playerList={filteredList ?? []}
                 setPlayerList={setFilteredList ?? []}
             ></SortSelect>
+            <SearchTextBox
+                searchText={searchText}
+                setSearchText={setSearchText}
+                userFilteredList={filteredList}
+                setUserFilteredList={setFilteredList}
+                widgetList={playerList}
+                name={name}
+            ></SearchTextBox>
         </div>
     );
 }

@@ -5,14 +5,14 @@ import { Button } from "react-bootstrap";
 import "../style.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
-import { CentralPositionFilter } from "./CentralPositionFilter";
-import { UserPositionFilter } from "./UserPositionFilter";
-import { SortSelect } from "./sortSelect";
+// import { CentralPositionFilter } from "./CentralPositionFilter";
+// import { UserPositionFilter } from "./UserPositionFilter";
+// import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
 import { TeamRoster } from "./TeamRoster";
-import { SearchTextBox } from "./SearchTextBox";
+// import { SearchTextBox } from "./SearchTextBox";
 import { SortFilterBox } from "./SortFilterBox";
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
@@ -202,17 +202,6 @@ function DragAndDisplay({
                 setSearchText={setCentralSearchText}
                 name="central-box"
             ></SortFilterBox>
-            <CentralPositionFilter
-                filterPosition={filterPositions}
-                playerList={centralList}
-                setFilteredList={setFilteredList}
-            ></CentralPositionFilter>
-            <SortSelect
-                sortOption={centralSort}
-                setSortOption={setCentralSort}
-                playerList={filteredList}
-                setPlayerList={setFilteredList}
-            ></SortSelect>
             <div className="central">
                 <h4 className="playersTitle">Players</h4>
                 <br></br>
@@ -350,38 +339,18 @@ function DragAndDisplay({
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
                 <div style={{ float: "right", marginRight: 60 }}>
-                    <SortFilterBox
-                        playerList={widgets}
-                        filteredList={userFilteredList}
-                        setFilteredList={setUserFilteredList}
-                        filterPositions={filterPositions}
-                        sortOption={userSort}
-                        setSortOption={setUserSort}
-                        searchText={userSearchText}
-                        setSearchText={setUserSearchText}
-                        name="user-box"
-                    ></SortFilterBox>
                     <div style={{ paddingLeft: 50 }}>
-                        <SearchTextBox
-                            searchText={userSearchText}
-                            setSearchText={setUserSearchText}
-                            userFilteredList={userFilteredList}
-                            setUserFilteredList={setUserFilteredList}
-                            widgetList={widgets}
-                            name="user-box"
-                        ></SearchTextBox>
-                        <UserPositionFilter
-                            filterPosition={filterPositions}
+                        <SortFilterBox
                             playerList={widgets}
+                            filteredList={userFilteredList}
                             setFilteredList={setUserFilteredList}
-                            name="user-filter"
-                        ></UserPositionFilter>
-                        <SortSelect
+                            filterPositions={filterPositions}
                             sortOption={userSort}
                             setSortOption={setUserSort}
-                            playerList={userFilteredList ?? []}
-                            setPlayerList={setUserFilteredList ?? []}
-                        ></SortSelect>
+                            searchText={userSearchText}
+                            setSearchText={setUserSearchText}
+                            name="user-box"
+                        ></SortFilterBox>
                     </div>
                     <div
                         className="userEdited"

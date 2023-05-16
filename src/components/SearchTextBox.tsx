@@ -34,8 +34,8 @@ export function SearchTextBox({
 
     // This is the View
     return (
-        <div className="addUserBox">
-            <Form.Group data-testid={name} controlId={name}>
+        <div className="filterTextBox">
+            <Form.Group data-testid="StringSearch" controlId="String Search">
                 <Form.Label style={{ color: "white" }}>
                     Filter by description:
                 </Form.Label>

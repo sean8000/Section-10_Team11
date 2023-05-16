@@ -140,8 +140,21 @@
     width: 200px;
 }
 
+.filterTextBox {
+    color: white;
+    margin-top: 0px;
+    float: right;
+    width: 150px;
+}
+
 .AddOrDeleteUserButtons {
     background-color: #000000;
+}
+
+.sortFilterBox {
+    color: white;
+    background: grey;
+    width: 525px;
 }
 
 .AddingAndDeletingUsers {
@@ -183,7 +196,7 @@
 }
 
 .sortSelect {
-    width: 200px;
+    width: 150px;
     color: white;
 }
 
