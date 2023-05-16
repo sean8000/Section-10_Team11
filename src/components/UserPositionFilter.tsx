@@ -10,13 +10,15 @@ export interface Filter {
     filterPosition: string[];
     playerList: Player[];
     setFilteredList: (newPlayerList: Player[]) => void;
+    name: string;
 }
 
 export function UserPositionFilter({
     filterPosition,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     playerList,
-    setFilteredList
+    setFilteredList,
+    name
 }: Filter): JSX.Element {
     const [filter, setFilter] = useState<string>("None");
 
@@ -55,7 +57,7 @@ export function UserPositionFilter({
                     <Form.Check
                         inline
                         type="radio"
-                        name="user-positions"
+                        name={name}
                         onChange={updateFilter}
                         key={choice}
                         style={{ color: "white" }}

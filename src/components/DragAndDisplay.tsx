@@ -13,6 +13,7 @@ import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
 import { TeamRoster } from "./TeamRoster";
 import { SearchTextBox } from "./SearchTextBox";
+import { SortFilterBox } from "./SortFilterBox";
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
     widgets: Player[];
@@ -192,6 +193,17 @@ function DragAndDisplay({
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
+            <SortFilterBox
+                playerList={centralList}
+                filteredList={filteredList}
+                setFilteredList={setFilteredList}
+                filterPositions={filterPositions}
+                sortOption={centralSort}
+                setSortOption={setCentralSort}
+                searchText={searchText}
+                setSearchText={setSearchText}
+                name="central-box"
+            ></SortFilterBox>
             <CentralPositionFilter
                 filterPosition={filterPositions}
                 playerList={centralList}
@@ -340,6 +352,17 @@ function DragAndDisplay({
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
                 <div style={{ float: "right", marginRight: 60 }}>
+                    <SortFilterBox
+                        playerList={widgets}
+                        filteredList={userFilteredList}
+                        setFilteredList={setUserFilteredList}
+                        filterPositions={filterPositions}
+                        sortOption={userSort}
+                        setSortOption={setUserSort}
+                        searchText={searchText}
+                        setSearchText={setSearchText}
+                        name="user-box"
+                    ></SortFilterBox>
                     <div style={{ paddingLeft: 50 }}>
                         <SearchTextBox
                             searchText={searchText}
@@ -352,6 +375,7 @@ function DragAndDisplay({
                             filterPosition={filterPositions}
                             playerList={widgets}
                             setFilteredList={setUserFilteredList}
+                            name="user-filter"
                         ></UserPositionFilter>
                         <SortSelect
                             sortOption={userSort}
