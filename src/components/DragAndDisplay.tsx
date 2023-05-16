@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 import "../style.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
-import { PositionFilter } from "./PositionFilter";
+import { CentralPositionFilter } from "./CentralPositionFilter";
 import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
@@ -202,11 +202,11 @@ function DragAndDisplay({
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
-            <PositionFilter
+            <CentralPositionFilter
                 filterPosition={filterPositions}
                 playerList={centralList}
                 setFilteredList={setFilteredList}
-            ></PositionFilter>
+            ></CentralPositionFilter>
             <SortSelect
                 sortOption={centralSort}
                 setSortOption={setCentralSort}
@@ -357,11 +357,11 @@ function DragAndDisplay({
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
-                    <PositionFilter
+                    <CentralPositionFilter
                         filterPosition={filterPositions}
                         playerList={widgets}
                         setFilteredList={setUserFilteredList}
-                    ></PositionFilter>
+                    ></CentralPositionFilter>
                     <SortSelect
                         sortOption={userSort}
                         setSortOption={setUserSort}

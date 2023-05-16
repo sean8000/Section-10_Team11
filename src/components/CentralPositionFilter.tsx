@@ -12,7 +12,7 @@ export interface Filter {
     setFilteredList: (newPlayerList: Player[]) => void;
 }
 
-export function PositionFilter({
+export function CentralPositionFilter({
     filterPosition,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     playerList,
@@ -66,4 +66,4 @@ export function PositionFilter({
     );
 }
 
-export default PositionFilter;
+export default CentralPositionFilter;
