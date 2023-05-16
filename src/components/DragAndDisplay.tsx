@@ -163,6 +163,9 @@ function DragAndDisplay({
         const newList = widgets.filter(
             (player: Player): boolean => player !== removedPlayer
         );
+        const newFilteredList = userFilteredList.filter(
+            (player: Player): boolean => player !== removedPlayer
+        );
         {
             /*}
         console.log("Player deleted");
@@ -170,6 +173,7 @@ function DragAndDisplay({
         {*/
         }
         setWidgets(newList);
+        setUserFilteredList(newFilteredList);
         setMyMap(myMap.set(role, newList));
     }
 
