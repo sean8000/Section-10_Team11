@@ -39,12 +39,18 @@ export function AddPlayers({
             original: playerName,
             count: 0
         };
-        setCentralList([...centralList, newPlayer]);
-        setFilteredList([...filteredList, newPlayer]);
-        setPlayerName("");
-        setPlayerDescription("");
-        setPlayerURL("");
-        setNewPosition("QB");
+        const foundElem = centralList.find(
+            (player: Player): boolean => player.original === newPlayer.original
+        );
+        console.log(foundElem);
+        if (foundElem === undefined) {
+            setCentralList([...centralList, newPlayer]);
+            setFilteredList([...filteredList, newPlayer]);
+            setPlayerName("");
+            setPlayerDescription("");
+            setPlayerURL("");
+            setNewPosition("QB");
+        }
     }
     function updateName(event: React.ChangeEvent<HTMLInputElement>) {
         setPlayerName(event.target.value);
