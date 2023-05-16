@@ -51,7 +51,7 @@ export function SortSelect({
     return (
         <div className="sortSelect">
             <Form.Group controlId="Sort">
-                <Form.Label style={{ color: "black" }}>Sort Select</Form.Label>
+                <Form.Label style={{ color: "white" }}>Sort Select</Form.Label>
                 <Form.Select
                     className="sortSelectHeading"
                     value={sortOption}

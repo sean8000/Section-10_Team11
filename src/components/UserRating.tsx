@@ -8,9 +8,17 @@ interface Rating {
     player: Player;
     widgets: Player[];
     setWidgets: (newPlayerList: Player[]) => void;
+    userFilteredList: Player[];
+    setUserFilteredList: (newPlayerList: Player[]) => void;
 }
 
-export function UserRating({ widgets, setWidgets, player }: Rating) {
+export function UserRating({
+    widgets,
+    setWidgets,
+    player,
+    userFilteredList,
+    setUserFilteredList
+}: Rating) {
     //Stats all automatically 1, rating automatically 1 considering they're a new player
     const [rating, setRating] = useState<number>(player.rating);
     // Provide forms for editing the new movie
@@ -36,10 +44,16 @@ export function UserRating({ widgets, setWidgets, player }: Rating) {
                 ...player,
                 rating: parseInt(event.target.value)
             });
+            const widgetFilteredList = userFilteredList;
+            widgetFilteredList.splice(getPlayerIndex(), 1, {
+                ...player,
+                rating: parseInt(event.target.value)
+            });
             {
                 /*}console.log(widgetList);{*/
             }
             setWidgets([...widgetList]);
+            setUserFilteredList([...widgetFilteredList]);
         }
     }
 

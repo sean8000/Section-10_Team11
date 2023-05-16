@@ -12,7 +12,7 @@ export interface Filter {
     setFilteredList: (newPlayerList: Player[]) => void;
 }
 
-export function PositionFilter({
+export function CentralPositionFilter({
     filterPosition,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     playerList,
@@ -44,15 +44,16 @@ export function PositionFilter({
     return (
         <div className="positionFilter">
             <Form.Group>
-                <Form.Label style={{ color: "black" }}>
+                <Form.Label style={{ color: "white" }}>
                     Filter Buttons
                 </Form.Label>
                 <br></br>
                 {filterPosition.map((choice: string) => (
                     <Form.Check
+                        style={{ color: "white" }}
                         inline
                         type="radio"
-                        name="positions"
+                        name="central-positions"
                         onChange={updateFilter}
                         key={choice}
                         label={choice}
@@ -66,4 +67,4 @@ export function PositionFilter({
     );
 }
 
-export default PositionFilter;
+export default CentralPositionFilter;
