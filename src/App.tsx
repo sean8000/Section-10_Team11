@@ -18,6 +18,7 @@ function App(): JSX.Element {
     const [centralList, setCentralList] = useState<Player[]>(playerList);
     const [filteredList, setFilteredList] = useState<Player[]>(playerList);
     const [widgets, setWidgets] = useState<Player[]>([]);
+    const [userFilteredList, setUserFilteredList] = useState<Player[]>([]);
     const [adminWidgets, setAdminWidgets] = useState<Player[]>([]);
     const [totalRoles, setTotalRoles] = useState<string[]>([
         "League Manager",
@@ -62,6 +63,7 @@ function App(): JSX.Element {
                     setAdminEdit={setAdminEdit}
                     setSuperEdit={setSuperEdit}
                     setUserEdit={setUserEdit}
+                    setUserFilteredList={setUserFilteredList}
                 ></RoleSelect>
                 <EditAdminButton
                     visibilty={adminEdit}
@@ -84,6 +86,8 @@ function App(): JSX.Element {
                     visibilty={userEdit}
                     setVisibility={setUserEdit}
                     role={role}
+                    setUserFilteredList={setUserFilteredList}
+                    widgetList={widgets}
                 ></EditUserButton>
             </h1>
             {adminEdit !== true && superEdit !== true && userEdit !== true ? (
@@ -99,6 +103,8 @@ function App(): JSX.Element {
                     setAdminWidgets={setAdminWidgets}
                     filteredList={filteredList}
                     setFilteredList={setFilteredList}
+                    userFilteredList={userFilteredList}
+                    setUserFilteredList={setUserFilteredList}
                 ></DragAndDisplay>
             ) : adminEdit === true ? (
                 <SuperAdminEdit
