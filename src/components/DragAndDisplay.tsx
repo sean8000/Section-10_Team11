@@ -290,7 +290,13 @@ function DragAndDisplay({
                             )}
                         </div>
                         {role === "League Manager" ? (
-                            <div style={{ float: "right" }}>
+                            <div
+                                style={{
+                                    float: "right",
+                                    paddingRight: 65,
+                                    marginTop: -130
+                                }}
+                            >
                                 <Button
                                     className="trashcan"
                                     style={{
