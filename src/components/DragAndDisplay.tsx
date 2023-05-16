@@ -54,6 +54,9 @@ function DragAndDisplay({
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
+    const [userSort, setUserSort] = useState<string>("None");
+    const [userFilteredList, setUserFilteredList] = useState<Player[]>();
+
     const filterPositions = [
         "None",
         "QB",
@@ -356,6 +359,12 @@ function DragAndDisplay({
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
+                    <SortSelect
+                        sortOption={userSort}
+                        setSortOption={setUserSort}
+                        playerList={widgets}
+                        setPlayerList={setWidgets}
+                    ></SortSelect>
                     <h4 className="playersTitle">Build Your Team</h4>
                     <br></br>
                     {widgets.map((curr, index) => (
