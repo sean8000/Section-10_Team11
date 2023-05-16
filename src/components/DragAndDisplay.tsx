@@ -54,8 +54,8 @@ function DragAndDisplay({
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
-    const [userSort, setUserSort] = useState<string>("None");
-    const [userFilteredList, setUserFilteredList] = useState<Player[]>();
+    const [userSort, setUserSort] = useState<string>("None"); // state to keep track of user sorting
+    const [userFilteredList, setUserFilteredList] = useState<Player[]>(); // state to hold user filtered list
 
     const filterPositions = [
         "None",
@@ -66,8 +66,6 @@ function DragAndDisplay({
         "K",
         "Rating > 90"
     ];
-    //const [pos, setPosition] = useState<string>("None");
-    //const filterBoolean = [false, false, false, false, false];
 
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
