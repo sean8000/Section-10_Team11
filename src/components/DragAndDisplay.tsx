@@ -132,6 +132,7 @@ function DragAndDisplay({
     {*/
         }
         setWidgets(newList);
+        setUserFilteredList([...widgets, newPlayer]);
     }
     function addToAdminTeam(newPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
