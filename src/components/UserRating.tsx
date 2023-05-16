@@ -25,7 +25,12 @@ export function UserRating({
     // And also a button to append the movie
 
     function getPlayerIndex() {
+        console.log("widget index: " + widgets.indexOf(player));
         return widgets.indexOf(player);
+    }
+    function getPlayerFilteredIndex() {
+        console.log("userFiltered index: " + userFilteredList.indexOf(player));
+        return userFilteredList.indexOf(player);
     }
     function updateNumber(event: React.ChangeEvent<HTMLInputElement>) {
         if (
@@ -39,19 +44,18 @@ export function UserRating({
             console.log("Player index is" + getPlayerIndex());
             {*/
             }
+            const newPlayer = {
+                ...player,
+                rating: parseInt(event.target.value)
+            };
             const widgetList = widgets;
-            widgetList.splice(getPlayerIndex(), 1, {
-                ...player,
-                rating: parseInt(event.target.value)
-            });
+            widgetList.splice(getPlayerIndex(), 1, newPlayer);
             const widgetFilteredList = userFilteredList;
-            widgetFilteredList.splice(getPlayerIndex(), 1, {
-                ...player,
-                rating: parseInt(event.target.value)
-            });
+            widgetFilteredList.splice(getPlayerFilteredIndex(), 1, newPlayer);
             {
                 /*}console.log(widgetList);{*/
             }
+            console.log(widgetList);
             setWidgets([...widgetList]);
             setUserFilteredList([...widgetFilteredList]);
         }
