@@ -32,13 +32,14 @@ export function SortFilterBox({
     name
 }: SortFilter): JSX.Element {
     return (
-        <div style={{ background: "black" }}>
+        <div style={{ background: "grey", width: "525px" }}>
             <SearchTextBox
                 searchText={searchText}
                 setSearchText={setSearchText}
                 userFilteredList={filteredList}
                 setUserFilteredList={setFilteredList}
                 widgetList={playerList}
+                name={name}
             ></SearchTextBox>
             <UserPositionFilter
                 filterPosition={filterPositions}

@@ -28,8 +28,6 @@ interface Widgets {
     setFilteredList: (newPlayerList: Player[]) => void;
     userFilteredList: Player[];
     setUserFilteredList: (newPlayerList: Player[]) => void;
-    searchText: string;
-    setSearchText: (newString: string) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -46,15 +44,15 @@ function DragAndDisplay({
     filteredList,
     setFilteredList,
     userFilteredList,
-    setUserFilteredList,
-    searchText,
-    setSearchText
+    setUserFilteredList
 }: Widgets) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
     const [userSort, setUserSort] = useState<string>("None"); // state to keep track of user sorting
+    const [centralSearchText, setCentralSearchText] = useState<string>("");
+    const [userSearchText, setUserSearchText] = useState<string>("");
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
     const filterPositions = [
@@ -200,8 +198,8 @@ function DragAndDisplay({
                 filterPositions={filterPositions}
                 sortOption={centralSort}
                 setSortOption={setCentralSort}
-                searchText={searchText}
-                setSearchText={setSearchText}
+                searchText={centralSearchText}
+                setSearchText={setCentralSearchText}
                 name="central-box"
             ></SortFilterBox>
             <CentralPositionFilter
@@ -359,17 +357,18 @@ function DragAndDisplay({
                         filterPositions={filterPositions}
                         sortOption={userSort}
                         setSortOption={setUserSort}
-                        searchText={searchText}
-                        setSearchText={setSearchText}
+                        searchText={userSearchText}
+                        setSearchText={setUserSearchText}
                         name="user-box"
                     ></SortFilterBox>
                     <div style={{ paddingLeft: 50 }}>
                         <SearchTextBox
-                            searchText={searchText}
-                            setSearchText={setSearchText}
+                            searchText={userSearchText}
+                            setSearchText={setUserSearchText}
                             userFilteredList={userFilteredList}
                             setUserFilteredList={setUserFilteredList}
                             widgetList={widgets}
+                            name="user-box"
                         ></SearchTextBox>
                         <UserPositionFilter
                             filterPosition={filterPositions}
