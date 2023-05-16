@@ -12,7 +12,10 @@
     background-color: gray;
     color: white;
     margin-left: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+
 .userEdited {
     text-align: justify;
     float: left;
@@ -22,6 +25,7 @@
     background: gray;
     color: white;
     margin-left: 50px;
+    min-height: 330px;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -29,13 +33,13 @@
 .player:nth-child(odd) {
     background-color: black;
     color: white;
-    height: 298px;
+    height: 310px;
 }
 
 .player:nth-child(even) {
     background-color: gray;
     color: white;
-    height: 298px;
+    height: 310px;
 }
 .playerWidget:nth-child(odd) {
     background-color: black;
@@ -51,13 +55,13 @@
 .playerWidgetAdmin:nth-child(odd) {
     background-color: black;
     color: white;
-    height: 200px;
+    height: 310px;
 }
 
 .playerWidgetAdmin:nth-child(even) {
     background-color: gray;
     color: white;
-    height: 200px;
+    height: 310px;
 }
 
 .playerNameAndPosition {
@@ -106,6 +110,8 @@
     position: absolute;
     text-decoration: underline;
     text-decoration-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .roleSelect {
