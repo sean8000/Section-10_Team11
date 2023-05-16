@@ -39,8 +39,16 @@ export function AddPlayers({
             original: playerName,
             count: 0
         };
-        setCentralList([...centralList, newPlayer]);
-        setFilteredList([...filteredList, newPlayer]);
+        const listOfSamePlayerNames = centralList.filter(
+            (player: Player): boolean => player.name === newPlayer.name
+        );
+        const lengthOfList = listOfSamePlayerNames.length;
+        const addedPlayer = {
+            ...newPlayer,
+            original: newPlayer.original + lengthOfList
+        };
+        setCentralList([...centralList, addedPlayer]);
+        setFilteredList([...filteredList, addedPlayer]);
         setPlayerName("");
         setPlayerDescription("");
         setPlayerURL("");
