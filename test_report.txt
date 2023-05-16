@@ -2,102 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-FAIL src/components/TestingComponents/UserRating.test.tsx (5.129 s)
-  ● Testing User Rating › Testing Changing value from 95 to 90
-
-    expect(element).toHaveTextContent()
-
-    Expected element to have text content:
-      Overall: 90
-    Received:
-      Rating BoxChristian McCaffrey | RB Overall: 95STATS
-
-      50 |         //This is his actual rating as a player in the list(The player list we fed it originally,
-      51 |         //not what is displayed), which the rating box changes
-    > 52 |         expect(player1).toHaveTextContent("Overall: 90");
-         |                         ^
-      53 |     });
-      54 |     test("Testing Changing value to 50", () => {
-      55 |         render(<App />);
-
-      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:52:25)
-
-  ● Testing User Rating › Testing Changing value to 50
-
-    expect(element).toHaveTextContent()
-
-    Expected element to have text content:
-      Overall: 50
-    Received:
-      Rating BoxChristian McCaffrey | RB Overall: 95STATS
-
-      77 |         //This is his actual rating as a player in the list(The player list we fed it originally,
-      78 |         //not what is displayed), which the rating box changes
-    > 79 |         expect(player1).toHaveTextContent("Overall: 50");
-         |                         ^
-      80 |     });
-      81 |     test("Testing Changing value to 0", () => {
-      82 |         render(<App />);
-
-      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:79:25)
-
-  ● Testing User Rating › Testing Changing value to 0
-
-    expect(element).toHaveTextContent()
-
-    Expected element to have text content:
-      Overall: 0
-    Received:
-      Rating BoxChristian McCaffrey | RB Overall: 95STATS
-
-      101 |         //This is his actual rating as a player in the list(The player list we fed it originally,
-      102 |         //not what is displayed), which the rating box changes
-    > 103 |         expect(player1).toHaveTextContent("Overall: 0");
-          |                         ^
-      104 |     });
-      105 |     test("Testing Changing value to 101, not possible will stay at 100", () => {
-      106 |         render(<App />);
-
-      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:103:25)
-
-  ● Testing User Rating › Testing Changing value to 101, not possible will stay at 100
-
-    expect(element).toHaveTextContent()
-
-    Expected element to have text content:
-      Overall: 100
-    Received:
-      Rating BoxChristian McCaffrey | RB Overall: 95STATS
-
-      128 |         //This is his actual rating as a player in the list(The player list we fed it originally,
-      129 |         //not what is displayed), which the rating box changes
-    > 130 |         expect(player1).toHaveTextContent("Overall: 100");
-          |                         ^
-      131 |     });
-      132 |     test("Testing Changing value to -1, not possible since - is not a number, stays at 1", () => {
-      133 |         render(<App />);
-
-      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:130:25)
-
-  ● Testing User Rating › Testing Changing value to -1, not possible since - is not a number, stays at 1
-
-    expect(element).toHaveTextContent()
-
-    Expected element to have text content:
-      Overall: 1
-    Received:
-      Rating BoxChristian McCaffrey | RB Overall: 95STATS
-
-      153 |         //This is his actual rating as a player in the list(The player list we fed it originally,
-      154 |         //not what is displayed), which the rating box changes
-    > 155 |         expect(player1).toHaveTextContent("Overall: 1");
-          |                         ^
-      156 |     });
-      157 | });
-      158 |
-
-      at Object.<anonymous> (src/components/TestingComponents/UserRating.test.tsx:155:25)
-
+PASS src/components/TestingComponents/UserRating.test.tsx (6.233 s)
 PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
 PASS src/components/TestingComponents/RoleSave.test.tsx
   ● Console
@@ -105,12 +10,12 @@ PASS src/components/TestingComponents/RoleSave.test.tsx
     console.log
       Team Manager
 
-      at updateRole (src/components/roleSelect.tsx:41:21)
+      at updateRole (src/components/roleSelect.tsx:43:21)
 
     console.log
       Team Manager
 
-      at updateRole (src/components/roleSelect.tsx:41:21)
+      at updateRole (src/components/roleSelect.tsx:43:21)
 
 PASS src/components/TestingComponents/AddingAndSorting.test.tsx
   ● Console
@@ -173,27 +78,27 @@ PASS src/components/TestingComponents/IsDraggable.test.tsx
     console.log
       Team Manager
 
-      at updateRole (src/components/roleSelect.tsx:41:21)
+      at updateRole (src/components/roleSelect.tsx:43:21)
 
 PASS src/components/TestingComponents/Roles.test.tsx
 ----------------------------------|---------|----------|---------|---------|--------------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
 ----------------------------------|---------|----------|---------|---------|--------------------------------
-All files                         |   77.48 |    72.61 |    70.9 |   77.33 |                                
+All files                         |   76.77 |    72.35 |   70.27 |   76.62 |                                
  src                              |     100 |    54.54 |     100 |     100 |                                
-  App.tsx                         |     100 |    54.54 |     100 |     100 | 103-115                        
+  App.tsx                         |     100 |    54.54 |     100 |     100 | 109-121                        
   players.tsx                     |     100 |      100 |     100 |     100 |                                
- src/components                   |   62.27 |    67.04 |      60 |   61.81 |                                
+ src/components                   |   61.84 |    66.66 |   59.15 |    61.4 |                                
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                                
   CentralPositionFilter.tsx       |   61.53 |       50 |      80 |   61.53 | 34-40                          
-  DragAndDisplay.tsx              |   33.33 |     62.5 |   31.03 |   33.33 | 72-112,157-207,270,311,385,469 
+  DragAndDisplay.tsx              |   30.35 |    59.37 |      30 |   30.35 | 75-115,160-214,277,318,398,486 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                                
   SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                                
   UserEdit.tsx                    |       0 |      100 |       0 |       0 | 39-47                          
   UserPositionFilter.tsx          |   23.07 |        0 |      40 |   23.07 | 24-43                          
   UserRating.tsx                  |     100 |      100 |     100 |     100 |                                
   UserText.tsx                    |     100 |      100 |     100 |     100 |                                
-  roleSelect.tsx                  |   62.96 |       65 |   66.66 |   62.96 | 58,66-76                       
+  roleSelect.tsx                  |   64.28 |    68.18 |   66.66 |   64.28 | 61,69-79                       
   sortSelect.tsx                  |     100 |    92.85 |     100 |     100 | 43                             
  src/components/subComponentsEdit |     100 |    80.48 |     100 |     100 |                                
   EditDescription.tsx             |     100 |      100 |     100 |     100 |                                
@@ -205,16 +110,16 @@ All files                         |   77.48 |    72.61 |    70.9 |   77.33 |
   EditRushAttempts.tsx            |     100 |     87.5 |     100 |     100 | 25                             
   EditTotalYards.tsx              |     100 |     87.5 |     100 |     100 | 25                             
   EditTouchdowns.tsx              |     100 |     87.5 |     100 |     100 | 25                             
- src/components/visibilityButtons |   72.22 |    85.71 |   63.63 |   72.22 |                                
+ src/components/visibilityButtons |   68.42 |    85.71 |   63.63 |   68.42 |                                
   EditAdminButton.tsx             |     100 |      100 |     100 |     100 |                                
   EditSuperButton.tsx             |      25 |       75 |   33.33 |      25 | 28-40                          
-  EditUserButton.tsx              |   33.33 |       80 |   33.33 |   33.33 | 26-39                          
+  EditUserButton.tsx              |      25 |       80 |   33.33 |      25 | 30-44                          
  src/interfaces                   |       0 |        0 |       0 |       0 |                                
   player.tsx                      |       0 |        0 |       0 |       0 |                                
 ----------------------------------|---------|----------|---------|---------|--------------------------------
 
-Test Suites: 1 failed, 10 passed, 11 total
-Tests:       5 failed, 50 passed, 55 total
+Test Suites: 11 passed, 11 total
+Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        22.919 s
+Time:        28.7 s
 Ran all test suites.
