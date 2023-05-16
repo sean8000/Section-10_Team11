@@ -2,17 +2,21 @@
 import "../style.css";
 import React from "react";
 import { Button } from "react-bootstrap";
-//import { Player } from "../../interfaces/player";
+import { Player } from "../../interfaces/player";
 
 export interface Edit {
     visibilty: boolean;
     setVisibility: (newBool: boolean) => void;
     role: string;
+    widgetList: Player[];
+    setUserFilteredList: (newPlayerList: Player[]) => void;
 }
 export function EditUserButton({
     visibilty,
     setVisibility,
-    role
+    role,
+    widgetList,
+    setUserFilteredList
 }: Edit): JSX.Element {
     return (
         <div>
@@ -36,6 +40,7 @@ export function EditUserButton({
                 <Button
                     data-testid={role + "LeaveEditButton"}
                     onClick={() => {
+                        setUserFilteredList([...widgetList]);
                         setVisibility(false);
                     }}
                 >

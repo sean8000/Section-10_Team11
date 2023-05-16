@@ -86,6 +86,8 @@ function App(): JSX.Element {
                     visibilty={userEdit}
                     setVisibility={setUserEdit}
                     role={role}
+                    setUserFilteredList={setUserFilteredList}
+                    widgetList={widgets}
                 ></EditUserButton>
             </h1>
             {adminEdit !== true && superEdit !== true && userEdit !== true ? (
