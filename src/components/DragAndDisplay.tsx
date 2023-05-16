@@ -404,8 +404,8 @@ function DragAndDisplay({
                         <SortSelect
                             sortOption={userSort}
                             setSortOption={setUserSort}
-                            playerList={widgets}
-                            setPlayerList={setWidgets}
+                            playerList={userFilteredList ?? []}
+                            setPlayerList={setUserFilteredList ?? []}
                         ></SortSelect>
                     </div>
                     <div
