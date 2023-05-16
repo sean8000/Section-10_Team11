@@ -39,18 +39,20 @@ export function AddPlayers({
             original: playerName,
             count: 0
         };
-        const foundElem = centralList.find(
-            (player: Player): boolean => player.original === newPlayer.original
+        const listOfSamePlayerNames = centralList.filter(
+            (player: Player): boolean => player.name === newPlayer.name
         );
-        console.log(foundElem);
-        if (foundElem === undefined) {
-            setCentralList([...centralList, newPlayer]);
-            setFilteredList([...filteredList, newPlayer]);
-            setPlayerName("");
-            setPlayerDescription("");
-            setPlayerURL("");
-            setNewPosition("QB");
-        }
+        const lengthOfList = listOfSamePlayerNames.length;
+        const addedPlayer = {
+            ...newPlayer,
+            original: newPlayer.original + lengthOfList
+        };
+        setCentralList([...centralList, addedPlayer]);
+        setFilteredList([...filteredList, addedPlayer]);
+        setPlayerName("");
+        setPlayerDescription("");
+        setPlayerURL("");
+        setNewPosition("QB");
     }
     function updateName(event: React.ChangeEvent<HTMLInputElement>) {
         setPlayerName(event.target.value);
