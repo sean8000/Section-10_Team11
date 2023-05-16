@@ -11,6 +11,7 @@ import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
+import { SearchTextBox } from "./SearchTextBox";
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
     widgets: Player[];
@@ -25,6 +26,8 @@ interface Widgets {
     setFilteredList: (newPlayerList: Player[]) => void;
     userFilteredList: Player[];
     setUserFilteredList: (newPlayerList: Player[]) => void;
+    searchText: string;
+    setSearchText: (newString: string) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -41,7 +44,9 @@ function DragAndDisplay({
     filteredList,
     setFilteredList,
     userFilteredList,
-    setUserFilteredList
+    setUserFilteredList,
+    searchText,
+    setSearchText
 }: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
@@ -409,6 +414,13 @@ function DragAndDisplay({
             {role !== "League Manager" && role !== "Team Manager" ? (
                 <div style={{ float: "right", marginRight: 60 }}>
                     <div style={{ paddingLeft: 50 }}>
+                        <SearchTextBox
+                            searchText={searchText}
+                            setSearchText={setSearchText}
+                            userFilteredList={userFilteredList}
+                            setUserFilteredList={setUserFilteredList}
+                            widgetList={widgets}
+                        ></SearchTextBox>
                         <UserPositionFilter
                             filterPosition={filterPositions}
                             playerList={widgets}
