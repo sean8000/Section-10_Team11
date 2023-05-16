@@ -339,8 +339,19 @@ function DragAndDisplay({
                 <div></div>
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
-                <div style={{ float: "right", marginRight: 60 }}>
+                <div
+                    style={{
+                        float: "right",
+                        marginRight: 150,
+                        marginTop: -155
+                    }}
+                >
                     <div style={{ paddingLeft: 50 }}>
+                        <UserPositionFilter
+                            filterPosition={filterPositions}
+                            playerList={widgets}
+                            setFilteredList={setUserFilteredList}
+                        ></UserPositionFilter>
                         <SearchTextBox
                             searchText={searchText}
                             setSearchText={setSearchText}
@@ -348,11 +359,6 @@ function DragAndDisplay({
                             setUserFilteredList={setUserFilteredList}
                             widgetList={widgets}
                         ></SearchTextBox>
-                        <UserPositionFilter
-                            filterPosition={filterPositions}
-                            playerList={widgets}
-                            setFilteredList={setUserFilteredList}
-                        ></UserPositionFilter>
                         <SortSelect
                             sortOption={userSort}
                             setSortOption={setUserSort}
@@ -360,6 +366,7 @@ function DragAndDisplay({
                             setPlayerList={setUserFilteredList ?? []}
                         ></SortSelect>
                     </div>
+
                     <div
                         className="userEdited"
                         onDrop={handleOnDrop}
