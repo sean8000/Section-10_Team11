@@ -28,6 +28,7 @@ function App(): JSX.Element {
     const [adminEdit, setAdminEdit] = useState<boolean>(false);
     const [superEdit, setSuperEdit] = useState<boolean>(false);
     const [userEdit, setUserEdit] = useState<boolean>(false);
+    const [searchText, setSearchText] = useState<string>("");
     //const [userDict, setDict] = useState<Record<string, string[]>>({});
     {
         /*}
@@ -105,6 +106,8 @@ function App(): JSX.Element {
                     setFilteredList={setFilteredList}
                     userFilteredList={userFilteredList}
                     setUserFilteredList={setUserFilteredList}
+                    searchText={searchText}
+                    setSearchText={setSearchText}
                 ></DragAndDisplay>
             ) : adminEdit === true ? (
                 <SuperAdminEdit
