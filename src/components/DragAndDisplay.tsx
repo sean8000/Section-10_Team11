@@ -23,6 +23,8 @@ interface Widgets {
     setAdminWidgets: (newPlayerList: Player[]) => void;
     filteredList: Player[];
     setFilteredList: (newPlayerList: Player[]) => void;
+    userFilteredList: Player[];
+    setUserFilteredList: (newPlayerList: Player[]) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -37,7 +39,9 @@ function DragAndDisplay({
     adminWidgets,
     setAdminWidgets,
     filteredList,
-    setFilteredList
+    setFilteredList,
+    userFilteredList,
+    setUserFilteredList
 }: Widgets) {
     /* const players = ["jerry", "terry", "larry"];
     const player_map: Record<string, string> = {
@@ -56,7 +60,6 @@ function DragAndDisplay({
     const [centralSort, setCentralSort] = useState<string>("None");
     const [userSort, setUserSort] = useState<string>("None"); // state to keep track of user sorting
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [userFilteredList, setUserFilteredList] = useState<Player[]>(); // state to hold user filtered list
 
     const filterPositions = [
         "None",

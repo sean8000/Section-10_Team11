@@ -18,6 +18,7 @@ interface Roles {
     setAdminEdit: (newValue: boolean) => void;
     setSuperEdit: (newValue: boolean) => void;
     setUserEdit: (newValue: boolean) => void;
+    setUserFilteredList: (newValue: Player[]) => void;
 }
 export function RoleSelect({
     setRole,
@@ -32,7 +33,8 @@ export function RoleSelect({
     setMyMap,
     setAdminEdit,
     setSuperEdit,
-    setUserEdit
+    setUserEdit,
+    setUserFilteredList
 }: Roles): JSX.Element {
     //const [role, setRole] = useState<string>("Super");
     const [userText, setUserText] = useState<string>("");
@@ -47,6 +49,7 @@ export function RoleSelect({
         if (event.target.value === "Team Manager") {
             setAdminWidgets(myMap.get(event.target.value) ?? []);
         } else {
+            setUserFilteredList(myMap.get(event.target.value) ?? []);
             setWidgets(myMap.get(event.target.value) ?? []);
         }
         setAdminEdit(false);
