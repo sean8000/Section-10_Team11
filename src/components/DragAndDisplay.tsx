@@ -352,14 +352,8 @@ function DragAndDisplay({
                     onDrop={handleOnDropAdmin}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitleRevised">
-                        Manage Your Team<br></br> Drag Here<br></br>
-                    </h4>
-                    <div style={{ backgroundColor: "white" }}>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                    </div>
+                    <h4 className="playersTitle">Manage Your Team</h4>
+                    <br></br>
                     {adminWidgets.map((curr, index) => (
                         <div
                             className="playerWidgetAdmin"
@@ -400,36 +394,36 @@ function DragAndDisplay({
                 <div></div>
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
-                <>
-                    <div style={{ float: "right" }}>
-                        <div style={{ paddingLeft: 50 }}>
-                            <UserPositionFilter
-                                filterPosition={filterPositions}
-                                playerList={widgets}
-                                setFilteredList={setUserFilteredList}
-                            ></UserPositionFilter>
-                            <SortSelect
-                                sortOption={userSort}
-                                setSortOption={setUserSort}
-                                playerList={widgets}
-                                setPlayerList={setWidgets}
-                            ></SortSelect>
-                        </div>
-                        <div
-                            className="userEdited"
-                            onDrop={handleOnDrop}
-                            onDragOver={handleDragOver}
-                        >
-                            <h4 className="playersTitleRevised">
-                                Build Your Team <br></br> Drag Here <br></br>
-                            </h4>
-                            <div style={{ backgroundColor: "white" }}>
-                                <br></br>
-                                <br></br>
-                                <br></br>
-                            </div>
+                <div style={{ float: "right" }}>
+                    <div style={{ paddingLeft: 50 }}>
+                        <UserPositionFilter
+                            filterPosition={filterPositions}
+                            playerList={widgets}
+                            setFilteredList={setUserFilteredList}
+                        ></UserPositionFilter>
+                        <SortSelect
+                            sortOption={userSort}
+                            setSortOption={setUserSort}
+                            playerList={widgets}
+                            setPlayerList={setWidgets}
+                        ></SortSelect>
+                    </div>
+                    <div
+                        className="userEdited"
+                        onDrop={handleOnDrop}
+                        onDragOver={handleDragOver}
+                    >
+                        <h4 className="playersTitleRevised">
+                            Build Your Team <br></br> Drag Here <br></br>
+                        </h4>
+                        <div style={{ backgroundColor: "white" }}>
                             <br></br>
-                            {widgets.map((curr, index) => (
+                            <br></br>
+                            <br></br>
+                        </div>
+                        <br></br>
+                        {userFilteredList?.map(
+                            (curr: Player, index: number) => (
                                 <div
                                     className="playerWidget"
                                     key={"other" + role + index}
@@ -448,9 +442,6 @@ function DragAndDisplay({
                                         {curr.name} | {curr.position} <br />{" "}
                                         <img
                                             className="playerImageUser"
-                                            style={{
-                                                marginRight: -100
-                                            }}
                                             src={curr.image}
                                             alt="Image"
                                             draggable="false"
@@ -506,10 +497,10 @@ function DragAndDisplay({
                                             {*/}
                                     </div>
                                 </div>
-                            ))}
-                        </div>
+                            )
+                        )}
                     </div>
-                </>
+                </div>
             ) : role === "League Manager" ? (
                 <div>
                     <AddPlayers

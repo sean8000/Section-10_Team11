@@ -50,6 +50,7 @@ export function CentralPositionFilter({
                 <br></br>
                 {filterPosition.map((choice: string) => (
                     <Form.Check
+                        style={{ color: "white" }}
                         inline
                         type="radio"
                         name="central-positions"
