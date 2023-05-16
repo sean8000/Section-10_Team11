@@ -8,13 +8,15 @@ interface Users {
     widgetList: Player[];
     userFilteredList: Player[];
     setUserFilteredList: (newPlayerList: Player[]) => void;
+    name: string;
 }
 export function SearchTextBox({
     searchText,
     setSearchText,
     userFilteredList,
     setUserFilteredList,
-    widgetList
+    widgetList,
+    name
 }: Users): JSX.Element {
     // This is the Control
     function updateText(event: React.ChangeEvent<HTMLInputElement>) {
@@ -32,12 +34,16 @@ export function SearchTextBox({
 
     // This is the View
     return (
-        <div className="addUserBox">
+        <div className="filterTextBox">
             <Form.Group data-testid="StringSearch" controlId="String Search">
                 <Form.Label style={{ color: "white" }}>
                     Filter by description:
                 </Form.Label>
-                <Form.Control value={searchText} onChange={updateText} />
+                <Form.Control
+                    value={searchText}
+                    onChange={updateText}
+                    name={name}
+                />
             </Form.Group>
         </div>
     );
