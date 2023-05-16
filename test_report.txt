@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-FAIL src/components/TestingComponents/UserRating.test.tsx
+FAIL src/components/TestingComponents/UserRating.test.tsx (5.129 s)
   ● Testing User Rating › Testing Changing value from 95 to 90
 
     expect(element).toHaveTextContent()
@@ -179,14 +179,14 @@ PASS src/components/TestingComponents/Roles.test.tsx
 ----------------------------------|---------|----------|---------|---------|--------------------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
 ----------------------------------|---------|----------|---------|---------|--------------------------------
-All files                         |   77.48 |    72.56 |    70.9 |   77.33 |                                
+All files                         |   77.48 |    72.61 |    70.9 |   77.33 |                                
  src                              |     100 |    54.54 |     100 |     100 |                                
   App.tsx                         |     100 |    54.54 |     100 |     100 | 103-115                        
   players.tsx                     |     100 |      100 |     100 |     100 |                                
- src/components                   |   62.27 |    66.66 |      60 |   61.81 |                                
+ src/components                   |   62.27 |    67.04 |      60 |   61.81 |                                
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                                
   CentralPositionFilter.tsx       |   61.53 |       50 |      80 |   61.53 | 34-40                          
-  DragAndDisplay.tsx              |   33.33 |    60.71 |   31.03 |   33.33 | 72-112,157-207,270,311,385,469 
+  DragAndDisplay.tsx              |   33.33 |     62.5 |   31.03 |   33.33 | 72-112,157-207,270,311,385,469 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                                
   SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                                
   UserEdit.tsx                    |       0 |      100 |       0 |       0 | 39-47                          
@@ -216,5 +216,5 @@ All files                         |   77.48 |    72.56 |    70.9 |   77.33 |
 Test Suites: 1 failed, 10 passed, 11 total
 Tests:       5 failed, 50 passed, 55 total
 Snapshots:   0 total
-Time:        19.863 s
+Time:        22.919 s
 Ran all test suites.
