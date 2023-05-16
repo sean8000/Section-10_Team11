@@ -334,6 +334,7 @@ function DragAndDisplay({
                             </div>
                         </div>
                     ))}
+                    <div className="addPlayerInListText">ADD A PLAYER HERE</div>
                 </div>
             ) : (
                 <div></div>
