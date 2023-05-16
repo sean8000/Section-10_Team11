@@ -448,6 +448,10 @@ function DragAndDisplay({
                                             player={curr}
                                             widgets={widgets}
                                             setWidgets={setWidgets}
+                                            setUserFilteredList={
+                                                setUserFilteredList
+                                            }
+                                            userFilteredList={userFilteredList}
                                         ></UserRating>
                                     </div>
                                     <div className="playerNameAndPosition">
