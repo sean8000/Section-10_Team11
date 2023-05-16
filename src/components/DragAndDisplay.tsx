@@ -348,8 +348,14 @@ function DragAndDisplay({
                     onDrop={handleOnDropAdmin}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">Manage Your Team</h4>
-                    <br></br>
+                    <h4 className="playersTitle">
+                        Manage Your Team<br></br> Drag Here <br></br>
+                    </h4>
+                    <div style={{ backgroundColor: "black" }}>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                    </div>
                     {adminWidgets.map((curr, index) => (
                         <div
                             className="playerWidgetAdmin"
@@ -395,8 +401,14 @@ function DragAndDisplay({
                     onDrop={handleOnDrop}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitle">Build Your Team</h4>
-                    <br></br>
+                    <h4 className="playersTitle">
+                        Build Your Team <br></br> Drag Here <br></br>
+                    </h4>
+                    <div style={{ backgroundColor: "black" }}>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                    </div>
                     {widgets.map((curr, index) => (
                         <div
                             className="playerWidget"
