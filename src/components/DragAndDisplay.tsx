@@ -352,6 +352,11 @@ function DragAndDisplay({
                             filteredList={userFilteredList}
                             setFilteredList={setUserFilteredList}
                             filterPositions={filterPositions}
+                            sortOption={userSort}
+                            setSortOption={setUserSort}
+                            searchText={userSearchText}
+                            setSearchText={setUserSearchText}
+                            name="user-box"
                         ></SortFilterBox>
                     </div>
                     <div
