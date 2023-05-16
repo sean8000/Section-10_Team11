@@ -91,7 +91,7 @@ All files                         |   76.29 |    71.51 |   70.83 |   76.14 |
  src/components                   |    62.3 |    65.21 |   61.25 |    61.9 |                                
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                                
   CentralPositionFilter.tsx       |   61.53 |       50 |      80 |   61.53 | 34-40                          
-  DragAndDisplay.tsx              |   30.35 |    59.37 |      30 |   30.35 | 70-110,150-186,225,266,330,425 
+  DragAndDisplay.tsx              |   30.35 |    59.37 |      30 |   30.35 | 70-110,150-186,225,266,330,432 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                                
   SearchTextBox.tsx               |   14.28 |        0 |   33.33 |   14.28 | 21-29                          
   SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                                
@@ -123,5 +123,5 @@ All files                         |   76.29 |    71.51 |   70.83 |   76.14 |
 Test Suites: 11 passed, 11 total
 Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        20.943 s
+Time:        21.148 s
 Ran all test suites.
