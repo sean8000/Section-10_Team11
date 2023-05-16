@@ -370,7 +370,7 @@ function DragAndDisplay({
                     ></SortSelect>
                     <h4 className="playersTitle">Build Your Team</h4>
                     <br></br>
-                    {userFilteredList.map((curr, index) => (
+                    {userFilteredList?.map((curr: Player, index: number) => (
                         <div
                             className="playerWidget"
                             key={"other" + role + index}
