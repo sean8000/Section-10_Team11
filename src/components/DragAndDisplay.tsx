@@ -5,7 +5,8 @@ import { Button } from "react-bootstrap";
 import "../style.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
-import { PositionFilter } from "./PositionFilter";
+import { CentralPositionFilter } from "./CentralPositionFilter";
+import { UserPositionFilter } from "./UserPositionFilter";
 import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
@@ -88,6 +89,7 @@ function DragAndDisplay({
                 p1.original === newPlayer.original ? p1.count++ : 0
             );
             setWidgets([...widgets, newPlayer]);
+            setUserFilteredList([...widgets, newPlayer]);
         }
     }
 
@@ -130,6 +132,7 @@ function DragAndDisplay({
     {*/
         }
         setWidgets(newList);
+        setUserFilteredList([...widgets, newPlayer]);
     }
     function addToAdminTeam(newPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
@@ -220,11 +223,11 @@ function DragAndDisplay({
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
-            <PositionFilter
+            <CentralPositionFilter
                 filterPosition={filterPositions}
                 playerList={centralList}
                 setFilteredList={setFilteredList}
-            ></PositionFilter>
+            ></CentralPositionFilter>
             <SortSelect
                 sortOption={centralSort}
                 setSortOption={setCentralSort}
@@ -400,6 +403,11 @@ function DragAndDisplay({
                 <>
                     <div style={{ float: "right" }}>
                         <div style={{ paddingLeft: 50 }}>
+                            <UserPositionFilter
+                                filterPosition={filterPositions}
+                                playerList={widgets}
+                                setFilteredList={setUserFilteredList}
+                            ></UserPositionFilter>
                             <SortSelect
                                 sortOption={userSort}
                                 setSortOption={setUserSort}

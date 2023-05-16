@@ -12,7 +12,7 @@ export interface Filter {
     setFilteredList: (newPlayerList: Player[]) => void;
 }
 
-export function PositionFilter({
+export function UserPositionFilter({
     filterPosition,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     playerList,
@@ -26,23 +26,26 @@ export function PositionFilter({
             event.target.value !== "None" &&
             event.target.value !== "Rating > 90"
         ) {
+            // if being filtered by a position
             const tempPlayerList = playerList.filter(
                 (player: Player): boolean =>
                     player.position === event.target.value
             );
             setFilteredList(tempPlayerList);
         } else if (event.target.value === "Rating > 90") {
+            // if being filtered by rating
             const tempPlayerList = playerList.filter(
                 (player: Player): boolean => player.rating >= 90
             );
             setFilteredList(tempPlayerList);
         } else {
+            // if not being filtered by anything (resets lis)
             setFilteredList(playerList);
         }
     }
 
     return (
-        <div className="positionFilter">
+        <div className="userPositionFilter">
             <Form.Group>
                 <Form.Label style={{ color: "black" }}>
                     Filter Buttons
@@ -52,7 +55,7 @@ export function PositionFilter({
                     <Form.Check
                         inline
                         type="radio"
-                        name="positions"
+                        name="user-positions"
                         onChange={updateFilter}
                         key={choice}
                         label={choice}
@@ -66,4 +69,4 @@ export function PositionFilter({
     );
 }
 
-export default PositionFilter;
+export default UserPositionFilter;
