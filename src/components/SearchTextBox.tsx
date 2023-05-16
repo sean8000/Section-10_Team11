@@ -34,7 +34,7 @@ export function SearchTextBox({
     return (
         <div className="addUserBox">
             <Form.Group data-testid="StringSearch" controlId="String Search">
-                <Form.Label style={{ color: "black" }}>
+                <Form.Label style={{ color: "white" }}>
                     Filter by description:
                 </Form.Label>
                 <Form.Control value={searchText} onChange={updateText} />

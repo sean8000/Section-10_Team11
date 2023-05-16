@@ -47,7 +47,7 @@ export function UserPositionFilter({
     return (
         <div className="userPositionFilter">
             <Form.Group>
-                <Form.Label style={{ color: "black" }}>
+                <Form.Label style={{ color: "white" }}>
                     Filter Buttons
                 </Form.Label>
                 <br></br>
