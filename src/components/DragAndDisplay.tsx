@@ -290,11 +290,8 @@ function DragAndDisplay({
                     onDrop={handleOnDropAdmin}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitleRevised">
-                        Manage Your Team <br></br> Drag Here <br></br>
-                    </h4>
-                    <div style={{ backgroundColor: "white" }}>
-                        <br></br>
+                    <h4 className="playersTitleRevised">Manage Your Team</h4>
+                    <div style={{ background: "white" }}>
                         <br></br>
                         <br></br>
                     </div>
@@ -333,7 +330,10 @@ function DragAndDisplay({
                             </div>
                         </div>
                     ))}
-                    <div className="addPlayerInListText">ADD A PLAYER HERE</div>
+                    <div className="addPlayerInListText">
+                        <br></br>
+                        Drag Here
+                    </div>
                 </div>
             ) : (
                 <div></div>
@@ -364,11 +364,8 @@ function DragAndDisplay({
                         onDrop={handleOnDrop}
                         onDragOver={handleDragOver}
                     >
-                        <h4 className="playersTitleRevised">
-                            Build Your Team <br></br> Drag Here <br></br>
-                        </h4>
-                        <div style={{ backgroundColor: "white" }}>
-                            <br></br>
+                        <h4 className="playersTitleRevised">Build Your Team</h4>
+                        <div style={{ background: "white" }}>
                             <br></br>
                             <br></br>
                         </div>
@@ -428,6 +425,10 @@ function DragAndDisplay({
                                 </div>
                             )
                         )}
+                        <div className="addPlayerInListText">
+                            <br></br>
+                            Drag Here
+                        </div>
                     </div>
                     <TeamRoster playerList={widgets}></TeamRoster>
                 </div>
