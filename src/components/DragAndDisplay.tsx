@@ -5,14 +5,15 @@ import { Button } from "react-bootstrap";
 import "../style.css";
 //import { playerList } from "../players";
 import { Player } from "../interfaces/player";
-import { CentralPositionFilter } from "./CentralPositionFilter";
-import { UserPositionFilter } from "./UserPositionFilter";
-import { SortSelect } from "./sortSelect";
+// import { CentralPositionFilter } from "./CentralPositionFilter";
+// import { UserPositionFilter } from "./UserPositionFilter";
+// import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
 import { TeamRoster } from "./TeamRoster";
-import { SearchTextBox } from "./SearchTextBox";
+// import { SearchTextBox } from "./SearchTextBox";
+import { SortFilterBox } from "./SortFilterBox";
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
     widgets: Player[];
@@ -27,8 +28,6 @@ interface Widgets {
     setFilteredList: (newPlayerList: Player[]) => void;
     userFilteredList: Player[];
     setUserFilteredList: (newPlayerList: Player[]) => void;
-    searchText: string;
-    setSearchText: (newString: string) => void;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -45,15 +44,15 @@ function DragAndDisplay({
     filteredList,
     setFilteredList,
     userFilteredList,
-    setUserFilteredList,
-    searchText,
-    setSearchText
+    setUserFilteredList
 }: Widgets) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
     // hold current sorting method of central list
     const [centralSort, setCentralSort] = useState<string>("None");
     const [userSort, setUserSort] = useState<string>("None"); // state to keep track of user sorting
+    const [centralSearchText, setCentralSearchText] = useState<string>("");
+    const [userSearchText, setUserSearchText] = useState<string>("");
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
     const filterPositions = [
@@ -192,17 +191,17 @@ function DragAndDisplay({
     // cards separatly and clean up the code a little
     return (
         <div className="Test">
-            <CentralPositionFilter
-                filterPosition={filterPositions}
+            <SortFilterBox
                 playerList={centralList}
+                filteredList={filteredList}
                 setFilteredList={setFilteredList}
-            ></CentralPositionFilter>
-            <SortSelect
+                filterPositions={filterPositions}
                 sortOption={centralSort}
                 setSortOption={setCentralSort}
-                playerList={filteredList}
-                setPlayerList={setFilteredList}
-            ></SortSelect>
+                searchText={centralSearchText}
+                setSearchText={setCentralSearchText}
+                name="central-box"
+            ></SortFilterBox>
             <div className="central">
                 <h4 className="playersTitle">Players</h4>
                 <br></br>
@@ -291,15 +290,11 @@ function DragAndDisplay({
                     onDrop={handleOnDropAdmin}
                     onDragOver={handleDragOver}
                 >
-                    <h4 className="playersTitleRevised">
-                        Manage Your Team <br></br> Drag Here <br></br>
-                    </h4>
-                    <div style={{ backgroundColor: "white" }}>
-                        <br></br>
+                    <h4 className="playersTitleRevised">Manage Your Team</h4>
+                    <div style={{ background: "white" }}>
                         <br></br>
                         <br></br>
                     </div>
-                    <div style={{ backgroundColor: "white" }}></div>
                     {adminWidgets.map((curr, index) => (
                         <div
                             className="playerWidgetAdmin"
@@ -335,42 +330,42 @@ function DragAndDisplay({
                             </div>
                         </div>
                     ))}
+                    <div className="addPlayerInListText">
+                        <br></br>
+                        Drag Here
+                    </div>
                 </div>
             ) : (
                 <div></div>
             )}
             {role !== "League Manager" && role !== "Team Manager" ? (
-                <div style={{ float: "right", marginRight: 60 }}>
+                <div
+                    style={{
+                        float: "right",
+                        marginRight: 50,
+                        marginTop: -155
+                    }}
+                >
                     <div style={{ paddingLeft: 50 }}>
-                        <SearchTextBox
-                            searchText={searchText}
-                            setSearchText={setSearchText}
-                            userFilteredList={userFilteredList}
-                            setUserFilteredList={setUserFilteredList}
-                            widgetList={widgets}
-                        ></SearchTextBox>
-                        <UserPositionFilter
-                            filterPosition={filterPositions}
+                        <SortFilterBox
                             playerList={widgets}
+                            filteredList={userFilteredList}
                             setFilteredList={setUserFilteredList}
-                        ></UserPositionFilter>
-                        <SortSelect
+                            filterPositions={filterPositions}
                             sortOption={userSort}
                             setSortOption={setUserSort}
-                            playerList={userFilteredList ?? []}
-                            setPlayerList={setUserFilteredList ?? []}
-                        ></SortSelect>
+                            searchText={userSearchText}
+                            setSearchText={setUserSearchText}
+                            name="user-box"
+                        ></SortFilterBox>
                     </div>
                     <div
                         className="userEdited"
                         onDrop={handleOnDrop}
                         onDragOver={handleDragOver}
                     >
-                        <h4 className="playersTitleRevised">
-                            Build Your Team <br></br> Drag Here <br></br>
-                        </h4>
-                        <div style={{ backgroundColor: "white" }}>
-                            <br></br>
+                        <h4 className="playersTitleRevised">Build Your Team</h4>
+                        <div style={{ background: "white" }}>
                             <br></br>
                             <br></br>
                         </div>
@@ -430,6 +425,10 @@ function DragAndDisplay({
                                 </div>
                             )
                         )}
+                        <div className="addPlayerInListText">
+                            <br></br>
+                            Drag Here
+                        </div>
                     </div>
                     <TeamRoster playerList={widgets}></TeamRoster>
                 </div>
