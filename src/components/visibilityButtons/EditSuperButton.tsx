@@ -19,7 +19,7 @@ export function EditSuperButton({
     centralList
 }: Edit): JSX.Element {
     return (
-        <div>
+        <div className="headingButton">
             {role === "League Manager" && visibilty === false ? (
                 <div>
                     <Button

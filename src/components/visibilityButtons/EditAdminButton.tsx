@@ -23,7 +23,7 @@ export function EditAdminButton({
     centralList
 }: Edit): JSX.Element {
     return (
-        <div>
+        <div className="headingButton">
             {role === "Team Manager" && visibilty === false ? (
                 <div>
                     <Button

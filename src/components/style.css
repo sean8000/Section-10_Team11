@@ -88,6 +88,7 @@
     font-family: "Rockwell";
     margin: auto;
     margin-bottom: 50px;
+    padding-bottom: 10px;
     padding-left: 100px;
 }
 
@@ -131,6 +132,7 @@
     text-align: center;
     width: 200px;
     color: black;
+    margin-top: 50px;
 }
 
 .names {
@@ -165,6 +167,8 @@
 
 .AddingAndDeletingUsers {
     width: 200px;
+    float: right;
+    margin-top: -140px;
 }
 
 .padding {
@@ -285,4 +289,7 @@
 
 .roleSelectAndAddUser {
     width: 1000px;
+}
+
+.headingButton {
 }
