@@ -17,7 +17,7 @@ describe("Testing that list is saved upon role switch", () => {
 
         //addFirstPlayerButton.click();
         //Now Added player is in the other list, index 0 in the draggable list
-        expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull;
+        expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
     });
     test("Testing adding player to user list as guest user", () => {
         render(<App />);

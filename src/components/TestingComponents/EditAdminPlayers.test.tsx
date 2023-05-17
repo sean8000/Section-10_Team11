@@ -13,7 +13,7 @@ describe("Testing Edit Players From Admin", () => {
         const editButton = screen.getByTestId("Team ManagerEditButton");
         editButton.click();
 
-        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
+        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull();
     });
     test("Testing That Player can be added and then displayed after in the edit component", () => {
         render(<App />);
@@ -22,7 +22,7 @@ describe("Testing Edit Players From Admin", () => {
         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
 
         const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
-        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
+        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull();
         addFirstPlayerButton.click();
 
         const editButton = screen.getByTestId("Team ManagerEditButton");
@@ -37,7 +37,7 @@ describe("Testing Edit Players From Admin", () => {
         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
 
         const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
-        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
+        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull();
         addFirstPlayerButton.click();
 
         const editButton = screen.getByTestId("Team ManagerEditButton");
@@ -60,7 +60,7 @@ describe("Testing Edit Players From Admin", () => {
         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
 
         const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
-        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
+        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull();
         addFirstPlayerButton.click();
 
         const editButton = screen.getByTestId("Team ManagerEditButton");
@@ -86,7 +86,7 @@ describe("Testing Edit Players From Admin", () => {
         expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
 
         const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
-        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull;
+        expect(screen.queryByTestId("otherTeam Manager0")).toBeNull();
         addFirstPlayerButton.click();
 
         const editButton = screen.getByTestId("Team ManagerEditButton");
