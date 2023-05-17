@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/UserRating.test.tsx (6.671 s)
+PASS src/components/TestingComponents/UserRating.test.tsx
   ● Console
 
     console.log
@@ -620,7 +620,7 @@ All files                         |   75.89 |    71.51 |   69.67 |   75.74 |
  src/components                   |   62.31 |    65.21 |   59.75 |   61.92 |                                
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                                
   CentralPositionFilter.tsx       |       0 |        0 |       0 |       0 | 21-52                          
-  DragAndDisplay.tsx              |   32.75 |    60.71 |      30 |   32.75 | 69-109,149-185,224,265,329,423 
+  DragAndDisplay.tsx              |   32.75 |    60.71 |      30 |   32.75 | 69-109,149-185,224,265,326,420 
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                                
   SearchTextBox.tsx               |   14.28 |        0 |   33.33 |   14.28 | 23-31                          
   SortFilterBox.tsx               |     100 |       50 |     100 |     100 | 54-55                          
@@ -653,5 +653,5 @@ All files                         |   75.89 |    71.51 |   69.67 |   75.74 |
 Test Suites: 11 passed, 11 total
 Tests:       55 passed, 55 total
 Snapshots:   0 total
-Time:        30.562 s
+Time:        20.63 s
 Ran all test suites.
