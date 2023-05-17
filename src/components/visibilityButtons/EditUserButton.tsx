@@ -19,7 +19,7 @@ export function EditUserButton({
     setUserFilteredList
 }: Edit): JSX.Element {
     return (
-        <div>
+        <div className="headingButton">
             {role !== "Team Manager" &&
             role !== "League Manager" &&
             visibilty === false ? (
