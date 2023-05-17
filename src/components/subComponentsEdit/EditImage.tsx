@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-import "../style.css";
+import "./edit.css";
 import { Player } from "../../interfaces/player";
 interface Edit {
     player: Player;
