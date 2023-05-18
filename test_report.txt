@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/RoleSave.test.tsx (6.448 s)
+PASS src/components/TestingComponents/RoleSave.test.tsx (7.098 s)
   ● Console
 
     console.log
@@ -667,11 +667,11 @@ All files                         |   83.92 |    73.83 |   81.14 |   83.83 |
   EditImage.tsx                   |     100 |      100 |     100 |     100 |                   
   EditName.tsx                    |     100 |      100 |     100 |     100 |                   
   EditPosition.tsx                |     100 |      100 |     100 |     100 |                   
-  EditRating.tsx                  |     100 |    55.55 |     100 |     100 | 23-39             
-  EditReceptions.tsx              |     100 |     87.5 |     100 |     100 | 25                
-  EditRushAttempts.tsx            |     100 |     87.5 |     100 |     100 | 25                
-  EditTotalYards.tsx              |     100 |     87.5 |     100 |     100 | 25                
-  EditTouchdowns.tsx              |     100 |     87.5 |     100 |     100 | 25                
+  EditRating.tsx                  |     100 |    55.55 |     100 |     100 | 24-40             
+  EditReceptions.tsx              |     100 |     87.5 |     100 |     100 | 26                
+  EditRushAttempts.tsx            |     100 |     87.5 |     100 |     100 | 26                
+  EditTotalYards.tsx              |     100 |     87.5 |     100 |     100 | 26                
+  EditTouchdowns.tsx              |     100 |     87.5 |     100 |     100 | 26                
  src/components/visibilityButtons |   68.42 |    85.71 |   63.63 |   68.42 |                   
   EditAdminButton.tsx             |     100 |      100 |     100 |     100 |                   
   EditSuperButton.tsx             |      25 |       75 |   33.33 |      25 | 28-40             
@@ -683,5 +683,5 @@ All files                         |   83.92 |    73.83 |   81.14 |   83.83 |
 Test Suites: 13 passed, 13 total
 Tests:       64 passed, 64 total
 Snapshots:   0 total
-Time:        33.133 s
+Time:        37.946 s
 Ran all test suites.
