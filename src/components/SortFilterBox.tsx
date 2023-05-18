@@ -71,24 +71,3 @@ export function SortFilterBox({
         </div>
     );
 }
-
-{
-    /* <SearchTextBox
-                            searchText={searchText}
-                            setSearchText={setSearchText}
-                            userFilteredList={userFilteredList}
-                            setUserFilteredList={setUserFilteredList}
-                            widgetList={widgets}
-                        ></SearchTextBox>
-                        <CentralPositionFilter
-                            filterPosition={filterPositions}
-                            playerList={widgets}
-                            setFilteredList={setUserFilteredList}
-                        ></CentralPositionFilter>
-                        <SortSelect
-                            sortOption={userSort}
-                            setSortOption={setUserSort}
-                            playerList={userFilteredList ?? []}
-                            setPlayerList={setUserFilteredList ?? []}
-                        ></SortSelect> */
-}
