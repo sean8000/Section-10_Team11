@@ -2,6 +2,19 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
+PASS src/components/TestingComponents/RoleSave.test.tsx (6.448 s)
+  ● Console
+
+    console.log
+      Team Manager
+
+      at updateRole (src/components/roleSelect.tsx:43:21)
+
+    console.log
+      Team Manager
+
+      at updateRole (src/components/roleSelect.tsx:43:21)
+
 PASS src/components/TestingComponents/UserRating.test.tsx
   ● Console
 
@@ -532,20 +545,36 @@ PASS src/components/TestingComponents/UserRating.test.tsx
 
       at updateNumber (src/components/UserRating.tsx:58:21)
 
-PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
-PASS src/components/TestingComponents/RoleSave.test.tsx
+PASS src/components/TestingComponents/FilterDescription.test.tsx
   ● Console
 
-    console.log
-      Team Manager
+    console.error
+      Error: Expected key descriptor but found "" in ""
+          See https://github.com/testing-library/user-event/blob/main/README.md#keyboardtext-options
+          for more information about how userEvent parses your input.
+          at assertDescriptor (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/@testing-library/user-event/dist/keyboard/getNextKeyDef.js:140:11)
+          at readPrintableChar (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/@testing-library/user-event/dist/keyboard/getNextKeyDef.js:98:3)
+          at readNextDescriptor (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/@testing-library/user-event/dist/keyboard/getNextKeyDef.js:92:23)
+          at getNextKeyDef (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/@testing-library/user-event/dist/keyboard/getNextKeyDef.js:53:7)
+          at keyboardImplementation (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/@testing-library/user-event/dist/keyboard/keyboardImplementation.js:38:106)
+          at keyboardImplementationWrapper (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/@testing-library/user-event/dist/keyboard/index.js:55:65)
+          at typeImplementation (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/@testing-library/user-event/dist/type/typeImplementation.js:49:51)
+          at Object.type (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/@testing-library/user-event/dist/type/index.js:27:60)
+          at Object.<anonymous> (/home/runner/work/Section-10_Team11/Section-10_Team11/src/components/TestingComponents/FilterDescription.test.tsx:27:19)
+          at Promise.then.completed (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-circus/build/utils.js:391:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-circus/build/utils.js:316:10)
+          at _callCircusTest (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-circus/build/run.js:218:40)
+          at _runTest (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-circus/build/run.js:155:3)
+          at _runTestsForDescribeBlock (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-circus/build/run.js:66:9)
+          at _runTestsForDescribeBlock (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-circus/build/run.js:60:9)
+          at run (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-circus/build/run.js:25:3)
+          at runAndTransformResultsToJestFormat (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+          at jestAdapter (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+          at runTestInternal (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-runner/build/runTest.js:389:16)
+          at runTest (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-runner/build/runTest.js:475:34)
 
-      at updateRole (src/components/roleSelect.tsx:43:21)
-
-    console.log
-      Team Manager
-
-      at updateRole (src/components/roleSelect.tsx:43:21)
-
+PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
 PASS src/components/TestingComponents/AddingAndSorting.test.tsx
   ● Console
 
@@ -599,6 +628,7 @@ PASS src/components/TestingComponents/CentralSort.test.tsx
 
 PASS src/components/TestingComponents/AddingAndFiltering.test.tsx
 PASS src/components/TestingComponents/CentralFilter.test.tsx
+PASS src/components/TestingComponents/DeleteButtons.test.tsx
 PASS src/components/TestingComponents/AddingNewPlayers.test.tsx
 PASS src/components/TestingComponents/AddingByClickButton.test.tsx
 PASS src/components/TestingComponents/IsDraggable.test.tsx
@@ -610,48 +640,48 @@ PASS src/components/TestingComponents/IsDraggable.test.tsx
       at updateRole (src/components/roleSelect.tsx:43:21)
 
 PASS src/components/TestingComponents/Roles.test.tsx
-----------------------------------|---------|----------|---------|---------|--------------------------------
-File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s              
-----------------------------------|---------|----------|---------|---------|--------------------------------
-All files                         |   75.89 |    71.51 |   69.67 |   75.74 |                                
- src                              |     100 |    54.54 |     100 |     100 |                                
-  App.tsx                         |     100 |    54.54 |     100 |     100 | 109-121                        
-  players.tsx                     |     100 |      100 |     100 |     100 |                                
- src/components                   |   62.31 |    65.21 |   59.75 |   61.92 |                                
-  AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                                
-  CentralPositionFilter.tsx       |       0 |        0 |       0 |       0 | 21-52                          
-  DragAndDisplay.tsx              |   32.75 |    60.71 |      30 |   32.75 | 69-109,149-185,224,265,326,420 
-  PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                                
-  SearchTextBox.tsx               |   14.28 |        0 |   33.33 |   14.28 | 23-31                          
-  SortFilterBox.tsx               |     100 |       50 |     100 |     100 | 54-55                          
-  SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                                
-  TeamRoster.tsx                  |     100 |      100 |     100 |     100 |                                
-  UserEdit.tsx                    |       0 |      100 |       0 |       0 | 39-47                          
-  UserPositionFilter.tsx          |   61.53 |       50 |      80 |   61.53 | 37-45                          
-  UserRating.tsx                  |     100 |      100 |     100 |     100 |                                
-  UserText.tsx                    |     100 |      100 |     100 |     100 |                                
-  roleSelect.tsx                  |   64.28 |    68.18 |   66.66 |   64.28 | 61,69-79                       
-  sortSelect.tsx                  |     100 |    92.85 |     100 |     100 | 43                             
- src/components/subComponentsEdit |     100 |    80.48 |     100 |     100 |                                
-  EditDescription.tsx             |     100 |      100 |     100 |     100 |                                
-  EditImage.tsx                   |     100 |      100 |     100 |     100 |                                
-  EditName.tsx                    |     100 |      100 |     100 |     100 |                                
-  EditPosition.tsx                |     100 |      100 |     100 |     100 |                                
-  EditRating.tsx                  |     100 |    55.55 |     100 |     100 | 23-39                          
-  EditReceptions.tsx              |     100 |     87.5 |     100 |     100 | 25                             
-  EditRushAttempts.tsx            |     100 |     87.5 |     100 |     100 | 25                             
-  EditTotalYards.tsx              |     100 |     87.5 |     100 |     100 | 25                             
-  EditTouchdowns.tsx              |     100 |     87.5 |     100 |     100 | 25                             
- src/components/visibilityButtons |   68.42 |    85.71 |   63.63 |   68.42 |                                
-  EditAdminButton.tsx             |     100 |      100 |     100 |     100 |                                
-  EditSuperButton.tsx             |      25 |       75 |   33.33 |      25 | 28-40                          
-  EditUserButton.tsx              |      25 |       80 |   33.33 |      25 | 30-44                          
- src/interfaces                   |       0 |        0 |       0 |       0 |                                
-  player.tsx                      |       0 |        0 |       0 |       0 |                                
-----------------------------------|---------|----------|---------|---------|--------------------------------
+----------------------------------|---------|----------|---------|---------|-------------------
+File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------------------------------|---------|----------|---------|---------|-------------------
+All files                         |   83.92 |    73.83 |   81.14 |   83.83 |                   
+ src                              |     100 |    54.54 |     100 |     100 |                   
+  App.tsx                         |     100 |    54.54 |     100 |     100 | 109-121           
+  players.tsx                     |     100 |      100 |     100 |     100 |                   
+ src/components                   |   75.87 |    69.56 |   76.82 |   75.63 |                   
+  AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                   
+  CentralPositionFilter.tsx       |       0 |        0 |       0 |       0 | 21-52             
+  DragAndDisplay.tsx              |   68.96 |    67.85 |      70 |   68.96 | 69-109,185,225    
+  PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                   
+  SearchTextBox.tsx               |     100 |      100 |     100 |     100 |                   
+  SortFilterBox.tsx               |     100 |       50 |     100 |     100 | 58-59             
+  SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                   
+  TeamRoster.tsx                  |     100 |      100 |     100 |     100 |                   
+  UserEdit.tsx                    |       0 |      100 |       0 |       0 | 39-47             
+  UserPositionFilter.tsx          |   61.53 |       50 |      80 |   61.53 | 37-45             
+  UserRating.tsx                  |     100 |      100 |     100 |     100 |                   
+  UserText.tsx                    |     100 |      100 |     100 |     100 |                   
+  roleSelect.tsx                  |   64.28 |    68.18 |   66.66 |   64.28 | 61,69-79          
+  sortSelect.tsx                  |     100 |    92.85 |     100 |     100 | 43                
+ src/components/subComponentsEdit |     100 |    80.48 |     100 |     100 |                   
+  EditDescription.tsx             |     100 |      100 |     100 |     100 |                   
+  EditImage.tsx                   |     100 |      100 |     100 |     100 |                   
+  EditName.tsx                    |     100 |      100 |     100 |     100 |                   
+  EditPosition.tsx                |     100 |      100 |     100 |     100 |                   
+  EditRating.tsx                  |     100 |    55.55 |     100 |     100 | 23-39             
+  EditReceptions.tsx              |     100 |     87.5 |     100 |     100 | 25                
+  EditRushAttempts.tsx            |     100 |     87.5 |     100 |     100 | 25                
+  EditTotalYards.tsx              |     100 |     87.5 |     100 |     100 | 25                
+  EditTouchdowns.tsx              |     100 |     87.5 |     100 |     100 | 25                
+ src/components/visibilityButtons |   68.42 |    85.71 |   63.63 |   68.42 |                   
+  EditAdminButton.tsx             |     100 |      100 |     100 |     100 |                   
+  EditSuperButton.tsx             |      25 |       75 |   33.33 |      25 | 28-40             
+  EditUserButton.tsx              |      25 |       80 |   33.33 |      25 | 30-44             
+ src/interfaces                   |       0 |        0 |       0 |       0 |                   
+  player.tsx                      |       0 |        0 |       0 |       0 |                   
+----------------------------------|---------|----------|---------|---------|-------------------
 
-Test Suites: 11 passed, 11 total
-Tests:       55 passed, 55 total
+Test Suites: 13 passed, 13 total
+Tests:       64 passed, 64 total
 Snapshots:   0 total
-Time:        20.05 s
+Time:        33.133 s
 Ran all test suites.
