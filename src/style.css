@@ -118,7 +118,6 @@
     text-align: center;
     width: 200px;
     color: black;
-    margin-top: 50px;
 }
 
 .names {
@@ -153,7 +152,8 @@
 .AddingAndDeletingUsers {
     width: 200px;
     float: right;
-    margin-top: -140px;
+    margin-right: 65%;
+    margin-top: -105px;
 }
 
 .padding {
