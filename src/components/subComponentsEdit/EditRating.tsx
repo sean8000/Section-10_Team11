@@ -20,6 +20,7 @@ export function EditRating({ widgets, setWidgets, player }: Rating) {
         return widgets.indexOf(player);
     }
     function updateNumber(event: React.ChangeEvent<HTMLInputElement>) {
+        //edit's the rating of the player with the rating of the user's choosing
         if (
             (parseInt(event.target.value) >= 0 &&
                 parseInt(event.target.value) <= 100) ||
@@ -44,7 +45,7 @@ export function EditRating({ widgets, setWidgets, player }: Rating) {
             setWidgets([...widgetList]);
         }
     }
-
+    //Form used to take in user input to pass through update function
     return (
         <div>
             <Form.Group className="editNums" controlId="RatingBox">

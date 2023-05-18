@@ -16,6 +16,7 @@ export function EditImage({ player, widgets, setWidgets }: Edit): JSX.Element {
     }
 
     function updateImage(event: React.ChangeEvent<HTMLInputElement>) {
+        //edits the image of the player with the image of the user's choosing
         setImage(event.target.value);
         {
             /*}
@@ -35,6 +36,7 @@ export function EditImage({ player, widgets, setWidgets }: Edit): JSX.Element {
         setWidgets([...widgetList]);
     }
     // This is the View
+    //Form used to take in user input to pass through update function
     return (
         <div className="editText">
             <Form.Group controlId="ImageBox">
