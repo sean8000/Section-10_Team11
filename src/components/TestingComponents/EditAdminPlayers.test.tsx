@@ -137,8 +137,8 @@ describe("Testing Edit Players From Admin", () => {
         const leaveButton = screen.getByTestId("Team ManagerLeaveEditButton");
         leaveButton.click();
         //For the RickGrimes rendered in the central list and the sean rendered in the admin list
-        const statsButton1 = screen.getByTestId("statsButton0");
-        statsButton1.click();
+        const statsButtonSuper1 = screen.getByTestId("statsButtonSuper0");
+        statsButtonSuper1.click();
         //Show stats
 
         expect(screen.queryAllByText(/RickGrimes/)).toHaveLength(2);
