@@ -16,6 +16,7 @@ export function EditName({ player, widgets, setWidgets }: Edit): JSX.Element {
     }
 
     function updateName(event: React.ChangeEvent<HTMLInputElement>) {
+        //edit's the name of the player with the name of the user's choosing
         setName(event.target.value);
         {
             /*}
@@ -34,6 +35,7 @@ export function EditName({ player, widgets, setWidgets }: Edit): JSX.Element {
         setWidgets([...widgetList]);
     }
     // This is the View
+    //Form used to take in user input to pass through update function
     return (
         <div className="editText">
             <Form.Group controlId="NameBox">

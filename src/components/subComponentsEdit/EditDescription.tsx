@@ -20,6 +20,7 @@ export function EditDescription({
     }
 
     function updateDesc(event: React.ChangeEvent<HTMLInputElement>) {
+        //edits the description of the player with the desription of the user's choosing
         setDesc(event.target.value);
         {
             /*}
@@ -38,6 +39,7 @@ export function EditDescription({
         setWidgets([...widgetList]);
     }
     // This is the View
+    //Form used to take in user input to pass through update function
     return (
         <div className="editText">
             <Form.Group controlId="DescriptionBox">

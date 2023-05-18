@@ -21,6 +21,7 @@ export function EditPosition({
     }
 
     function updatePos(event: React.ChangeEvent<HTMLSelectElement>) {
+        //edit's the position of the player with the position of the user's choosing
         setPos(event.target.value);
         {
             /*}
@@ -40,6 +41,7 @@ export function EditPosition({
         setWidgets([...widgetList]);
     }
     // This is the View
+    //Form used to take in user input to pass through update function
     return (
         <div className="editText">
             <Form.Group controlId="PositionBox">

@@ -22,6 +22,7 @@ export function EditTotalYards({ widgets, setWidgets, player }: Rating) {
         return widgets.indexOf(player);
     }
     function updateTotalYards(event: React.ChangeEvent<HTMLInputElement>) {
+        //edit's the player's total yards
         if (
             parseInt(event.target.value) >= 0 ||
             isNaN(parseInt(event.target.value))
@@ -48,6 +49,7 @@ export function EditTotalYards({ widgets, setWidgets, player }: Rating) {
         }
         setWidgets([...widgetList]);
     }
+    //Form used to take in user input to pass through update function
 
     return (
         <div>
