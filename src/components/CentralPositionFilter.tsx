@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+//import React, { useState } from "react";
+import React from "react";
 import { Form } from "react-bootstrap";
 import { Player } from "../interfaces/player";
 import "../style.css";
@@ -10,15 +11,21 @@ export interface Filter {
     filterPosition: string[];
     playerList: Player[];
     setFilteredList: (newPlayerList: Player[]) => void;
+    filter: string;
+    setFilter: (newValue: string) => void;
+    setText: (newValue: string) => void;
 }
 
 export function CentralPositionFilter({
     filterPosition,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     playerList,
-    setFilteredList
+    setFilteredList,
+    filter,
+    setFilter,
+    setText
 }: Filter): JSX.Element {
-    const [filter, setFilter] = useState<string>("None");
+    //const [filter, setFilter] = useState<string>("None");
 
     function updateFilter(event: React.ChangeEvent<HTMLInputElement>) {
         setFilter(event.target.value);
@@ -31,11 +38,13 @@ export function CentralPositionFilter({
                     player.position === event.target.value
             );
             setFilteredList(tempPlayerList);
+            setText("");
         } else if (event.target.value === "Rating > 90") {
             const tempPlayerList = playerList.filter(
                 (player: Player): boolean => player.rating >= 90
             );
             setFilteredList(tempPlayerList);
+            setText("");
         } else {
             setFilteredList(playerList);
         }

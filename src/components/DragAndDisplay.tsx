@@ -53,6 +53,8 @@ function DragAndDisplay({
     const [userSort, setUserSort] = useState<string>("None"); // state to keep track of user sorting
     const [centralSearchText, setCentralSearchText] = useState<string>("");
     const [userSearchText, setUserSearchText] = useState<string>("");
+    const [centralFilter, setCentralFilter] = useState<string>("None");
+    const [userFilter, setUserFilter] = useState<string>("None");
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
     const filterPositions = [
@@ -202,6 +204,8 @@ function DragAndDisplay({
                 setSearchText={setCentralSearchText}
                 name="central-box"
                 labelText="Central Description Filter"
+                filterOption={centralFilter}
+                setFilterOption={setCentralFilter}
             ></SortFilterBox>
             <div className="central">
                 <h4 className="playersTitle">Players</h4>
@@ -363,6 +367,8 @@ function DragAndDisplay({
                             setSearchText={setUserSearchText}
                             name="user-box"
                             labelText="User Description Filter"
+                            setFilterOption={setUserFilter}
+                            filterOption={userFilter}
                         ></SortFilterBox>
                     </div>
                     <div

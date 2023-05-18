@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Form } from "react-bootstrap";
 import { Player } from "../interfaces/player";
 import "../style.css";
@@ -11,6 +11,9 @@ export interface Filter {
     playerList: Player[];
     setFilteredList: (newPlayerList: Player[]) => void;
     name: string;
+    filter: string;
+    setFilter: (newValue: string) => void;
+    setText: (newValue: string) => void;
 }
 
 export function UserPositionFilter({
@@ -18,9 +21,12 @@ export function UserPositionFilter({
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     playerList,
     setFilteredList,
-    name
+    name,
+    filter,
+    setFilter,
+    setText
 }: Filter): JSX.Element {
-    const [filter, setFilter] = useState<string>("None");
+    //const [filter, setFilter] = useState<string>("None");
 
     function updateFilter(event: React.ChangeEvent<HTMLInputElement>) {
         setFilter(event.target.value);
@@ -34,12 +40,14 @@ export function UserPositionFilter({
                     player.position === event.target.value
             );
             setFilteredList(tempPlayerList);
+            setText("");
         } else if (event.target.value === "Rating > 90") {
             // if being filtered by rating
             const tempPlayerList = playerList.filter(
                 (player: Player): boolean => player.rating >= 90
             );
             setFilteredList(tempPlayerList);
+            setText("");
         } else {
             // if not being filtered by anything (resets lis)
             setFilteredList(playerList);
