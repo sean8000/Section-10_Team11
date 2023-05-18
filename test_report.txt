@@ -576,7 +576,7 @@ PASS src/components/TestingComponents/FilterDescription.test.tsx
           at runTest (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-runner/build/runTest.js:475:34)
 
 PASS src/components/TestingComponents/EditUserPlayers.test.tsx
-PASS src/components/TestingComponents/EditSuper.test.tsx (8.243 s)
+PASS src/components/TestingComponents/EditSuper.test.tsx (8.895 s)
 PASS src/components/TestingComponents/AddingAndSorting.test.tsx
   ● Console
 
@@ -685,5 +685,5 @@ All files                         |   87.39 |    79.65 |   86.88 |   87.31 |
 Test Suites: 15 passed, 15 total
 Tests:       76 passed, 76 total
 Snapshots:   0 total
-Time:        32.457 s
+Time:        34.22 s
 Ran all test suites.
