@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import App from "../../App";
 import userEvent from "@testing-library/user-event";
-describe("Filtering players by description search", () => {
+describe("Filtering players by description search, as a user", () => {
     test("Testing filtering 1 player list as guest user, when nothing is in text box,player should be displayed", () => {
         render(<App />);
         expect(screen.getByTestId(0)).toBeInTheDocument();
