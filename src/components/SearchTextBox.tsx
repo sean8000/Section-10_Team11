@@ -10,24 +10,27 @@ interface Users {
     setUserFilteredList: (newPlayerList: Player[]) => void;
     name: string;
     labelText: string;
+    setFilterOption: (newString: string) => void;
 }
 export function SearchTextBox({
     searchText,
     setSearchText,
-    userFilteredList,
+    //userFilteredList,
     setUserFilteredList,
     widgetList,
     name,
-    labelText
+    labelText,
+    setFilterOption
 }: Users): JSX.Element {
     // This is the Control
     function updateText(event: React.ChangeEvent<HTMLInputElement>) {
         setSearchText(event.target.value);
         if (event.target.value != "") {
-            const tempPlayerList = userFilteredList.filter(
+            const tempPlayerList = widgetList.filter(
                 (player: Player): boolean =>
                     player.description.includes(event.target.value)
             );
+            setFilterOption("None");
             setUserFilteredList(tempPlayerList);
         } else {
             setUserFilteredList(widgetList);
