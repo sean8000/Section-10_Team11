@@ -52,7 +52,7 @@ describe("Deleting Players as different roles", () => {
             screen.getByText(/Current player count in the central list is: 30/)
         ).toBeInTheDocument();
     });
-    test("Deleting as Team Manager", () => {
+    test("Deleting as Super", () => {
         render(<App />);
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.getByText(/Christian Mc/i)).toBeInTheDocument();
