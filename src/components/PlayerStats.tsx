@@ -13,6 +13,7 @@ export interface playerAtts {
     receptions: number;
     rushAttempts: number;
     totalYards: number;
+    role: string;
 }
 export function PlayerStats({
     index,
@@ -20,7 +21,8 @@ export function PlayerStats({
     touchdowns,
     receptions,
     rushAttempts,
-    totalYards
+    totalYards,
+    role
 }: playerAtts) {
     const [visible, setVisible] = useState<boolean>(false);
 
@@ -32,7 +34,7 @@ export function PlayerStats({
         <>
             <div style={{ paddingLeft: 30 }}>
                 <Button
-                    data-testid={"statsButton" + index}
+                    data-testid={"statsButton" + role + index}
                     onClick={flipVisibility}
                 >
                     STATS

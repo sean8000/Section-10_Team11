@@ -45,20 +45,20 @@ describe("Testing Sort", () => {
         userEvent.selectOptions(sortID, "Touchdowns");
         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
         const firstRated = screen.getByTestId(0);
-        const statsButton1 = screen.getByTestId("statsButton0");
-        statsButton1.click();
+        const statsButtonSuper1 = screen.getByTestId("statsButtonSuper0");
+        statsButtonSuper1.click();
         expect(firstRated).toHaveTextContent("41");
         const SecondRated = screen.getByTestId(1);
-        const statsButton2 = screen.getByTestId("statsButton1");
-        statsButton2.click();
+        const statsButtonSuper2 = screen.getByTestId("statsButtonSuper1");
+        statsButtonSuper2.click();
         expect(SecondRated).toHaveTextContent("40");
         const eighteen = screen.getByTestId(8);
-        const statsButton3 = screen.getByTestId("statsButton8");
-        statsButton3.click();
+        const statsButtonSuper3 = screen.getByTestId("statsButtonSuper8");
+        statsButtonSuper3.click();
         expect(eighteen).toHaveTextContent("13");
         const last = screen.getByTestId(29);
-        const statsButton4 = screen.getByTestId("statsButton29");
-        statsButton4.click();
+        const statsButtonSuper4 = screen.getByTestId("statsButtonSuper29");
+        statsButtonSuper4.click();
         expect(last).toHaveTextContent("-1");
     });
     test("Test sorted by None", () => {
@@ -68,20 +68,20 @@ describe("Testing Sort", () => {
         userEvent.selectOptions(sortID, "Touchdowns");
         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
         const firstRated = screen.getByTestId(0);
-        const statsButton1 = screen.getByTestId("statsButton0");
-        statsButton1.click();
+        const statsButtonSuper1 = screen.getByTestId("statsButtonSuper0");
+        statsButtonSuper1.click();
         expect(firstRated).toHaveTextContent("41");
         const SecondRated = screen.getByTestId(1);
-        const statsButton2 = screen.getByTestId("statsButton1");
-        statsButton2.click();
+        const statsButtonSuper2 = screen.getByTestId("statsButtonSuper1");
+        statsButtonSuper2.click();
         expect(SecondRated).toHaveTextContent("40");
         const eighteen = screen.getByTestId(8);
-        const statsButton3 = screen.getByTestId("statsButton8");
-        statsButton3.click();
+        const statsButtonSuper3 = screen.getByTestId("statsButtonSuper8");
+        statsButtonSuper3.click();
         expect(eighteen).toHaveTextContent("13");
         const last = screen.getByTestId(29);
-        const statsButton4 = screen.getByTestId("statsButton29");
-        statsButton4.click();
+        const statsButtonSuper4 = screen.getByTestId("statsButtonSuper29");
+        statsButtonSuper4.click();
         expect(last).toHaveTextContent("-1");
 
         userEvent.selectOptions(sortID, "None");

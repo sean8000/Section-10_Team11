@@ -280,6 +280,7 @@ function DragAndDisplay({
                             alt="Image"
                         />
                         <PlayerStats
+                            role="Super"
                             index={index}
                             description={curr.description}
                             touchdowns={curr.stats.touchdowns}
@@ -414,6 +415,7 @@ function DragAndDisplay({
                                     {/*} Needed to make stats button to go on the left {*/}
                                     <PlayerStats
                                         index={index}
+                                        role={role}
                                         description={curr.description}
                                         touchdowns={curr.stats.touchdowns}
                                         receptions={curr.stats.receptions}
