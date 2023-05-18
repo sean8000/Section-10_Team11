@@ -87,6 +87,7 @@ function App(): JSX.Element {
                     setUserFilteredList={setUserFilteredList}
                     widgetList={widgets}
                 ></EditUserButton>
+                <br></br>
             </h1>
             {adminEdit !== true && superEdit !== true && userEdit !== true ? (
                 <DragAndDisplay
