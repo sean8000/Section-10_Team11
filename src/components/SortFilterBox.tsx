@@ -19,6 +19,8 @@ interface SortFilter {
     setSearchText: (newString: string) => void;
 
     name: string;
+
+    labelText: string;
 }
 
 export function SortFilterBox({
@@ -30,7 +32,8 @@ export function SortFilterBox({
     setSortOption,
     searchText,
     setSearchText,
-    name
+    name,
+    labelText
 }: SortFilter): JSX.Element {
     return (
         <div className="sortFilterBox">
@@ -41,6 +44,7 @@ export function SortFilterBox({
                 setUserFilteredList={setFilteredList}
                 widgetList={playerList}
                 name={name}
+                labelText={labelText}
             ></SearchTextBox>
             <UserPositionFilter
                 filterPosition={filterPositions}

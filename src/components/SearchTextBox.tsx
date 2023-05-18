@@ -9,6 +9,7 @@ interface Users {
     userFilteredList: Player[];
     setUserFilteredList: (newPlayerList: Player[]) => void;
     name: string;
+    labelText: string;
 }
 export function SearchTextBox({
     searchText,
@@ -16,7 +17,8 @@ export function SearchTextBox({
     userFilteredList,
     setUserFilteredList,
     widgetList,
-    name
+    name,
+    labelText
 }: Users): JSX.Element {
     // This is the Control
     function updateText(event: React.ChangeEvent<HTMLInputElement>) {
@@ -36,9 +38,7 @@ export function SearchTextBox({
     return (
         <div className="filterTextBox">
             <Form.Group data-testid="StringSearch" controlId="String Search">
-                <Form.Label style={{ color: "white" }}>
-                    Filter by description:
-                </Form.Label>
+                <Form.Label style={{ color: "white" }}>{labelText}:</Form.Label>
                 <Form.Control
                     value={searchText}
                     onChange={updateText}

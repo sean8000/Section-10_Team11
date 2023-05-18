@@ -201,6 +201,7 @@ function DragAndDisplay({
                 searchText={centralSearchText}
                 setSearchText={setCentralSearchText}
                 name="central-box"
+                labelText="Central Description Filter"
             ></SortFilterBox>
             <div className="central">
                 <h4 className="playersTitle">Players</h4>
@@ -361,6 +362,7 @@ function DragAndDisplay({
                             searchText={userSearchText}
                             setSearchText={setUserSearchText}
                             name="user-box"
+                            labelText="User Description Filter"
                         ></SortFilterBox>
                     </div>
                     <div
