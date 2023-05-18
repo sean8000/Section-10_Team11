@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/RoleSave.test.tsx
+PASS src/components/TestingComponents/RoleSave.test.tsx (5.607 s)
   ● Console
 
     console.log
@@ -577,7 +577,7 @@ PASS src/components/TestingComponents/FilterUserDescription.test.tsx
 PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
 PASS src/components/TestingComponents/EditUserPlayers.test.tsx
 PASS src/components/TestingComponents/PlayerCount.test.tsx
-PASS src/components/TestingComponents/EditSuper.test.tsx (8.881 s)
+PASS src/components/TestingComponents/EditSuper.test.tsx (10.682 s)
 PASS src/components/TestingComponents/AddingAndSorting.test.tsx
   ● Console
 
@@ -768,7 +768,7 @@ File                              | % Stmts | % Branch | % Funcs | % Lines | Unc
 ----------------------------------|---------|----------|---------|---------|-------------------
 All files                         |   93.88 |    86.14 |    92.3 |   93.84 |                   
  src                              |     100 |     90.9 |     100 |     100 |                   
-  App.tsx                         |     100 |     90.9 |     100 |     100 | 119               
+  App.tsx                         |     100 |     90.9 |     100 |     100 | 120               
   players.tsx                     |     100 |      100 |     100 |     100 |                   
  src/components                   |   89.47 |    83.72 |   88.31 |   89.36 |                   
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                   
@@ -805,5 +805,5 @@ All files                         |   93.88 |    86.14 |    92.3 |   93.84 |
 Test Suites: 20 passed, 20 total
 Tests:       105 passed, 105 total
 Snapshots:   0 total
-Time:        42.915 s
+Time:        51.504 s
 Ran all test suites.
