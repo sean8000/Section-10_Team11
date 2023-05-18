@@ -37,4 +37,33 @@ describe("Role Tests", () => {
         userEvent.selectOptions(selectRole, "myName");
         expect(screen.getByLabelText("Which role")).toHaveValue("myName");
     });
+    test("Test adding empty string, should not be possible", () => {
+        render(<App />);
+        const selectRole = screen.getByLabelText("Which role", {});
+        const nameElement = screen.getByLabelText(/User Name/i);
+        expect(selectRole).toHaveLength(3);
+        userEvent.type(nameElement, "");
+        expect(nameElement).toHaveValue("");
+        const addButton = screen.getByTestId("addButton");
+        addButton.click();
+        //Stays the same length since you aren't allowed to enter an empty string
+        expect(selectRole).toHaveLength(3);
+    });
+    test("Test adding duplicate user, shouldn't be possible", () => {
+        render(<App />);
+        const selectRole = screen.getByLabelText("Which role", {});
+        const nameElement = screen.getByLabelText(/User Name/i);
+        expect(selectRole).toHaveLength(3);
+        userEvent.type(nameElement, "myName");
+        expect(nameElement).toHaveValue("myName");
+        const addButton = screen.getByTestId("addButton");
+        addButton.click();
+        //For added role
+        expect(selectRole).toHaveLength(4);
+        userEvent.type(nameElement, "myName");
+        expect(nameElement).toHaveValue("myName");
+        addButton.click();
+        //Stays the same length since you aren't allowed to add duplicates
+        expect(selectRole).toHaveLength(4);
+    });
 });
