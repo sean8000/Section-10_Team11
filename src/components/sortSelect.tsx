@@ -9,6 +9,7 @@ export interface Sort {
     playerList: Player[];
     setPlayerList: (newPlayerList: Player[]) => void;
 }
+
 export function SortSelect({
     sortOption,
     setSortOption,

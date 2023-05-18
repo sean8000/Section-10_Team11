@@ -6,11 +6,9 @@ import { UserEdit } from "./components/UserEdit";
 import { RoleSelect } from "./components/roleSelect";
 import { Player } from "./interfaces/player";
 import { playerList } from "./players";
-//import { Button } from "react-bootstrap";
 import { EditAdminButton } from "./components/visibilityButtons/EditAdminButton";
 import { EditSuperButton } from "./components/visibilityButtons/EditSuperButton";
 import { EditUserButton } from "./components/visibilityButtons/EditUserButton";
-//import { AddPlayers } from "./components/AddPlayers";
 
 function App(): JSX.Element {
     const [role, setRole] = useState<string>("League Manager");

@@ -2,6 +2,7 @@ import React from "react";
 import { Form } from "react-bootstrap";
 import "../style.css";
 import { Player } from "../interfaces/player";
+
 interface Users {
     searchText: string;
     setSearchText: (newString: string) => void;
@@ -12,6 +13,7 @@ interface Users {
     labelText: string;
     setFilterOption: (newString: string) => void;
 }
+
 export function SearchTextBox({
     searchText,
     setSearchText,

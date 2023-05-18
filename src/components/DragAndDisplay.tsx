@@ -3,17 +3,13 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "../style.css";
-//import { playerList } from "../players";
 import { Player } from "../interfaces/player";
-// import { CentralPositionFilter } from "./CentralPositionFilter";
-// import { UserPositionFilter } from "./UserPositionFilter";
-// import { SortSelect } from "./sortSelect";
 import { UserRating } from "./UserRating";
 import { AddPlayers } from "./AddPlayers";
 import { PlayerStats } from "./PlayerStats";
 import { TeamRoster } from "./TeamRoster";
-// import { SearchTextBox } from "./SearchTextBox";
 import { SortFilterBox } from "./SortFilterBox";
+
 interface Widgets {
     setWidgets: (newStringList: Player[]) => void;
     widgets: Player[];
