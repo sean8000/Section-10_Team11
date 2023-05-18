@@ -21,12 +21,12 @@ PASS src/components/TestingComponents/UserRating.test.tsx
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -47,17 +47,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -78,17 +78,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -109,17 +109,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -140,17 +140,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -171,17 +171,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -202,17 +202,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -233,17 +233,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -264,17 +264,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -295,17 +295,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -326,17 +326,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -357,17 +357,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -388,17 +388,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -419,17 +419,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -450,17 +450,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -481,17 +481,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -512,17 +512,17 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
     console.log
       widget index: 0
 
-      at getPlayerIndex (src/components/UserRating.tsx:28:17)
+      at getPlayerIndex (src/components/UserRating.tsx:27:17)
 
     console.log
       userFiltered index: 0
 
-      at getPlayerFilteredIndex (src/components/UserRating.tsx:32:17)
+      at getPlayerFilteredIndex (src/components/UserRating.tsx:31:17)
 
     console.log
       [
@@ -543,7 +543,7 @@ PASS src/components/TestingComponents/UserRating.test.tsx
         }
       ]
 
-      at updateNumber (src/components/UserRating.tsx:58:21)
+      at updateNumber (src/components/UserRating.tsx:48:21)
 
 PASS src/components/TestingComponents/EditAdminPlayers.test.tsx
 PASS src/components/TestingComponents/FilterDescription.test.tsx
@@ -576,29 +576,29 @@ PASS src/components/TestingComponents/FilterDescription.test.tsx
           at runTest (/home/runner/work/Section-10_Team11/Section-10_Team11/node_modules/jest-runner/build/runTest.js:475:34)
 
 PASS src/components/TestingComponents/EditUserPlayers.test.tsx
-PASS src/components/TestingComponents/EditSuper.test.tsx (8.895 s)
+PASS src/components/TestingComponents/EditSuper.test.tsx (8.084 s)
 PASS src/components/TestingComponents/AddingAndSorting.test.tsx
   ● Console
 
     console.log
       None
 
-      at updateSort (src/components/sortSelect.tsx:27:21)
+      at updateSort (src/components/sortSelect.tsx:28:21)
 
     console.log
       Pos
 
-      at updateSort (src/components/sortSelect.tsx:30:21)
+      at updateSort (src/components/sortSelect.tsx:31:21)
 
     console.log
       Rat
 
-      at updateSort (src/components/sortSelect.tsx:41:21)
+      at updateSort (src/components/sortSelect.tsx:42:21)
 
     console.log
       Touch
 
-      at updateSort (src/components/sortSelect.tsx:44:21)
+      at updateSort (src/components/sortSelect.tsx:45:21)
 
 PASS src/components/TestingComponents/CentralSort.test.tsx
   ● Console
@@ -606,27 +606,27 @@ PASS src/components/TestingComponents/CentralSort.test.tsx
     console.log
       Pos
 
-      at updateSort (src/components/sortSelect.tsx:30:21)
+      at updateSort (src/components/sortSelect.tsx:31:21)
 
     console.log
       Rat
 
-      at updateSort (src/components/sortSelect.tsx:41:21)
+      at updateSort (src/components/sortSelect.tsx:42:21)
 
     console.log
       Touch
 
-      at updateSort (src/components/sortSelect.tsx:44:21)
+      at updateSort (src/components/sortSelect.tsx:45:21)
 
     console.log
       Touch
 
-      at updateSort (src/components/sortSelect.tsx:44:21)
+      at updateSort (src/components/sortSelect.tsx:45:21)
 
     console.log
       None
 
-      at updateSort (src/components/sortSelect.tsx:27:21)
+      at updateSort (src/components/sortSelect.tsx:28:21)
 
 PASS src/components/TestingComponents/AddingAndFiltering.test.tsx
 PASS src/components/TestingComponents/CentralFilter.test.tsx
@@ -647,23 +647,23 @@ File                              | % Stmts | % Branch | % Funcs | % Lines | Unc
 ----------------------------------|---------|----------|---------|---------|-------------------
 All files                         |   87.39 |    79.65 |   86.88 |   87.31 |                   
  src                              |     100 |     90.9 |     100 |     100 |                   
-  App.tsx                         |     100 |     90.9 |     100 |     100 | 121               
+  App.tsx                         |     100 |     90.9 |     100 |     100 | 119               
   players.tsx                     |     100 |      100 |     100 |     100 |                   
  src/components                   |   78.92 |    71.73 |   80.48 |   78.71 |                   
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                   
-  CentralPositionFilter.tsx       |       0 |        0 |       0 |       0 | 31-61             
-  DragAndDisplay.tsx              |      70 |    67.85 |      70 |      70 | 71-111,187,229    
+  CentralPositionFilter.tsx       |       0 |        0 |       0 |       0 | 29-59             
+  DragAndDisplay.tsx              |      70 |    67.85 |      70 |      70 | 67-107,183,225    
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                   
   SearchTextBox.tsx               |     100 |      100 |     100 |     100 |                   
   SortFilterBox.tsx               |     100 |       50 |     100 |     100 | 68-69             
   SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                   
   TeamRoster.tsx                  |     100 |      100 |     100 |     100 |                   
   UserEdit.tsx                    |     100 |      100 |     100 |     100 |                   
-  UserPositionFilter.tsx          |   92.85 |    83.33 |     100 |   92.85 | 53                
+  UserPositionFilter.tsx          |   92.85 |    83.33 |     100 |   92.85 | 50                
   UserRating.tsx                  |     100 |      100 |     100 |     100 |                   
   UserText.tsx                    |     100 |      100 |     100 |     100 |                   
   roleSelect.tsx                  |   64.28 |    68.18 |   66.66 |   64.28 | 61,69-79          
-  sortSelect.tsx                  |     100 |    92.85 |     100 |     100 | 43                
+  sortSelect.tsx                  |     100 |    92.85 |     100 |     100 | 44                
  src/components/subComponentsEdit |     100 |    80.48 |     100 |     100 |                   
   EditDescription.tsx             |     100 |      100 |     100 |     100 |                   
   EditImage.tsx                   |     100 |      100 |     100 |     100 |                   
@@ -685,5 +685,5 @@ All files                         |   87.39 |    79.65 |   86.88 |   87.31 |
 Test Suites: 15 passed, 15 total
 Tests:       76 passed, 76 total
 Snapshots:   0 total
-Time:        34.22 s
+Time:        31.746 s
 Ran all test suites.
