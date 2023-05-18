@@ -24,6 +24,7 @@ export function AddPlayers({
     //Stats all automatically 1, rating automatically 1 considering they're a new player
 
     function addNewPlayer() {
+        //used to add a new player to the central list. Player's stats initalized to 1.
         const newPlayer: Player = {
             name: playerName,
             description: playerDescription,
@@ -55,15 +56,19 @@ export function AddPlayers({
         setNewPosition("QB");
     }
     function updateName(event: React.ChangeEvent<HTMLInputElement>) {
+        //function that updates the name of a player, used before the addNewPlayer function
         setPlayerName(event.target.value);
     }
     function updateDesc(event: React.ChangeEvent<HTMLInputElement>) {
+        //function that updates the description of a player, used before the addNewPlayer function
         setPlayerDescription(event.target.value);
     }
     function updateURL(event: React.ChangeEvent<HTMLInputElement>) {
+        //function that updates the image of a player, used before the addNewPlayer function
         setPlayerURL(event.target.value);
     }
     function updatePosition(event: React.ChangeEvent<HTMLSelectElement>) {
+        //function that updates the position of a player, used before the addNewPlayer function
         setNewPosition(event.target.value as Position);
     }
     return (
