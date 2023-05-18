@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import App from "../../App";
 //import userEvent from "@testing-library/user-event";
 
-describe("Testing Filter", () => {
+describe("Testing Filter in central list", () => {
     test("Testing for original 30 player list", () => {
         render(<App />);
         expect(screen.getByText(/player count in the central list is: 30/));
@@ -69,5 +69,16 @@ describe("Testing Filter", () => {
         //Check if  4 TEs in the list
         //Add 2 because there is a TE radio button, and a TE option.
         expect(screen.queryAllByText(/K/)).toHaveLength(4 + 2);
+    });
+    test("Testing for filtered by Rating", () => {
+        render(<App />);
+        const kButton = screen.getByTestId("filter" + "Rating > 90");
+        expect(kButton).not.toBeChecked;
+        kButton.click();
+        expect(kButton).toBeChecked;
+        expect(screen.getByText(/player count in the central list is: 25/));
+        //25 people over 90 in our list
+        //Add 1 because there is a Rating > 90 radio button
+        expect(screen.queryAllByText(/9/)).toHaveLength(26);
     });
 });
