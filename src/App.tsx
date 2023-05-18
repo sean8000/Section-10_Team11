@@ -45,7 +45,7 @@ function App(): JSX.Element {
             <h1 className="heading">
                 <>
                     {" "}
-                    {"NFL Football TeamBuilder"}
+                    {"NFL Football Team Builder"}
                     <br></br>
                     {"Drag or Click Player Icons to Put Them on Your Team"}
                 </>

@@ -353,7 +353,7 @@ function DragAndDisplay({
                     style={{
                         float: "right",
                         marginRight: 50,
-                        marginTop: -155
+                        marginTop: -197
                     }}
                 >
                     <div style={{ paddingLeft: 50 }}>
