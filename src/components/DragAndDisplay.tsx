@@ -201,6 +201,7 @@ function DragAndDisplay({
                 searchText={centralSearchText}
                 setSearchText={setCentralSearchText}
                 name="central-box"
+                labelText="Central Description Filter"
             ></SortFilterBox>
             <div className="central">
                 <h4 className="playersTitle">Players</h4>
@@ -256,6 +257,7 @@ function DragAndDisplay({
                                 }}
                             >
                                 <Button
+                                    data-testid={"deleteButtonSuper" + index}
                                     className="trashcan"
                                     style={{
                                         backgroundImage:
@@ -316,6 +318,9 @@ function DragAndDisplay({
                             <div className="userChangeRatings">
                                 <div style={{ paddingRight: 70 }}>
                                     <Button
+                                        data-testid={
+                                            "deleteButtonAdmin" + index
+                                        }
                                         className="trashcan"
                                         style={{
                                             backgroundImage:
@@ -357,6 +362,7 @@ function DragAndDisplay({
                             searchText={userSearchText}
                             setSearchText={setUserSearchText}
                             name="user-box"
+                            labelText="User Description Filter"
                         ></SortFilterBox>
                     </div>
                     <div
@@ -410,6 +416,9 @@ function DragAndDisplay({
                                     ></PlayerStats>
                                     <div style={{ paddingLeft: 30 }}>
                                         <Button
+                                            data-testid={
+                                                "deleteButton" + role + index
+                                            }
                                             className="trashcan"
                                             style={{
                                                 backgroundImage:
