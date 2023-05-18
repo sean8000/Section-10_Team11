@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-PASS src/components/TestingComponents/RoleSave.test.tsx (7.098 s)
+PASS src/components/TestingComponents/RoleSave.test.tsx
   ● Console
 
     console.log
@@ -643,21 +643,21 @@ PASS src/components/TestingComponents/Roles.test.tsx
 ----------------------------------|---------|----------|---------|---------|-------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------------|---------|----------|---------|---------|-------------------
-All files                         |   83.92 |    73.83 |   81.14 |   83.83 |                   
+All files                         |   83.57 |    73.83 |   81.14 |   83.48 |                   
  src                              |     100 |    54.54 |     100 |     100 |                   
   App.tsx                         |     100 |    54.54 |     100 |     100 | 109-121           
   players.tsx                     |     100 |      100 |     100 |     100 |                   
- src/components                   |   75.87 |    69.56 |   76.82 |   75.63 |                   
+ src/components                   |   75.49 |    69.56 |   76.82 |   75.24 |                   
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                   
-  CentralPositionFilter.tsx       |       0 |        0 |       0 |       0 | 21-52             
-  DragAndDisplay.tsx              |   68.96 |    67.85 |      70 |   68.96 | 69-109,185,225    
+  CentralPositionFilter.tsx       |       0 |        0 |       0 |       0 | 31-61             
+  DragAndDisplay.tsx              |      70 |    67.85 |      70 |      70 | 71-111,187,229    
   PlayerStats.tsx                 |     100 |      100 |     100 |     100 |                   
   SearchTextBox.tsx               |     100 |      100 |     100 |     100 |                   
-  SortFilterBox.tsx               |     100 |       50 |     100 |     100 | 58-59             
+  SortFilterBox.tsx               |     100 |       50 |     100 |     100 | 68-69             
   SuperAdminEdit.tsx              |     100 |      100 |     100 |     100 |                   
   TeamRoster.tsx                  |     100 |      100 |     100 |     100 |                   
   UserEdit.tsx                    |       0 |      100 |       0 |       0 | 39-47             
-  UserPositionFilter.tsx          |   61.53 |       50 |      80 |   61.53 | 37-45             
+  UserPositionFilter.tsx          |   57.14 |       50 |      80 |   57.14 | 44-53             
   UserRating.tsx                  |     100 |      100 |     100 |     100 |                   
   UserText.tsx                    |     100 |      100 |     100 |     100 |                   
   roleSelect.tsx                  |   64.28 |    68.18 |   66.66 |   64.28 | 61,69-79          
@@ -683,5 +683,5 @@ All files                         |   83.92 |    73.83 |   81.14 |   83.83 |
 Test Suites: 13 passed, 13 total
 Tests:       64 passed, 64 total
 Snapshots:   0 total
-Time:        37.946 s
+Time:        22.59 s
 Ran all test suites.
