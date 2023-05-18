@@ -2,9 +2,6 @@ import React from "react";
 import { Form } from "react-bootstrap";
 import { Player } from "../interfaces/player";
 import "../style.css";
-//import { playerList } from "../players";
-
-//const allPlayers = playerList;
 
 export interface Filter {
     filterPosition: string[];

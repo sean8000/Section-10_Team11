@@ -1,38 +1,19 @@
-//import { Player, Position } from "../interfaces/player";
 import React from "react";
 import { Player } from "../interfaces/player";
 import "../style.css";
-//import { EditName } from "./subComponentsEdit/EditName";
 import { Col, Row, Container } from "react-bootstrap";
-//import { EditDescription } from "./subComponentsEdit/EditDescription";
-//import { EditImage } from "./subComponentsEdit/EditImage";
-//import { EditPosition } from "./subComponentsEdit/EditPosition";
 import { EditTouchdowns } from "./subComponentsEdit/EditTouchdowns";
 import { EditReceptions } from "./subComponentsEdit/EditReceptions";
 import { EditRushAttempts } from "./subComponentsEdit/EditRushAttempts";
 import { EditTotalYards } from "./subComponentsEdit/EditTotalYards";
-//import { EditRating } from "./subComponentsEdit/EditRating";
+
 interface Edits {
-    //editAdmin: boolean;
     role: string;
-    //setAdminEdit: (newBool: boolean) => void;
     setAdminWidgets: (newStringList: Player[]) => void;
     adminWidgets: Player[];
-    //centralList: Player[];
-    //setCentralList: (newPlayerList: Player[]) => void;
-    //myMap: Map<string, Player[]>;
 }
 
-export function UserEdit({
-    role,
-    //editAdmin,
-    //setAdminEdit,
-    setAdminWidgets,
-    adminWidgets
-}: //centralList,
-//setCentralList,
-//myMap
-Edits) {
+export function UserEdit({ role, setAdminWidgets, adminWidgets }: Edits) {
     //Stats all automatically 1, rating automatically 1 considering they're a new player
     // Provide forms for editing the new movie
     // And also a button to append the movie

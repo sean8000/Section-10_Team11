@@ -1,4 +1,3 @@
-//import { Player, Position } from "../interfaces/player";
 import { Form } from "react-bootstrap";
 import React, { useState } from "react";
 import { Player } from "../interfaces/player";
@@ -38,12 +37,6 @@ export function UserRating({
             parseInt(event.target.value) <= 100
         ) {
             setRating(parseInt(event.target.value) || 0);
-            {
-                /*}
-            console.log(event.target.value);
-            console.log("Player index is" + getPlayerIndex());
-            {*/
-            }
             const newPlayer = {
                 ...player,
                 rating: parseInt(event.target.value)
@@ -52,9 +45,6 @@ export function UserRating({
             widgetList.splice(getPlayerIndex(), 1, newPlayer);
             const widgetFilteredList = userFilteredList;
             widgetFilteredList.splice(getPlayerFilteredIndex(), 1, newPlayer);
-            {
-                /*}console.log(widgetList);{*/
-            }
             console.log(widgetList);
             setWidgets([...widgetList]);
             setUserFilteredList([...widgetFilteredList]);
