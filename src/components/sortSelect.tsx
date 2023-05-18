@@ -53,6 +53,7 @@ export function SortSelect({
             <Form.Group controlId="Sort">
                 <Form.Label style={{ color: "white" }}>Sort Select</Form.Label>
                 <Form.Select
+                    data-testid="sort"
                     className="sortSelectHeading"
                     value={sortOption}
                     onChange={updateSort}
