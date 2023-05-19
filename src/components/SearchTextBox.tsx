@@ -17,7 +17,6 @@ interface Users {
 export function SearchTextBox({
     searchText,
     setSearchText,
-    //userFilteredList,
     setUserFilteredList,
     widgetList,
     name,

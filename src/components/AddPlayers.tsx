@@ -16,13 +16,13 @@ export function AddPlayers({
     setFilteredList,
     filteredList
 }: PlayersToBeAdded) {
-    const [playerName, setPlayerName] = useState<string>("");
-    const [playerDescription, setPlayerDescription] = useState<string>("");
+    const [playerName, setPlayerName] = useState<string>(""); // new player name
+    const [playerDescription, setPlayerDescription] = useState<string>(""); // new player description
     const [playerURL, setPlayerURL] = useState<string>(
         "https://www.ucl.ac.uk/research/domains/sites/research_domains/files/styles/medium_image/public/blank-headshot_0.jpg?itok=X_PPFx5E"
-    );
-    const [newPosition, setNewPosition] = useState<Position>("QB");
-    const totalPositions = ["QB", "RB", "WR", "TE", "K"];
+    ); // new player image
+    const [newPosition, setNewPosition] = useState<Position>("QB"); // new player position
+    const totalPositions = ["QB", "RB", "WR", "TE", "K"]; // position options
 
     //Stats all automatically 1, rating automatically 1 considering they're a new player
 

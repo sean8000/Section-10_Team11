@@ -7,6 +7,7 @@ export interface TeamRoster {
 }
 
 export function TeamRoster({ playerList }: TeamRoster): JSX.Element {
+    // variables that hold the number of each position
     const num_QB = playerList.filter(
         (player: Player): boolean => player.position === "QB"
     ).length;
@@ -23,7 +24,7 @@ export function TeamRoster({ playerList }: TeamRoster): JSX.Element {
         (player: Player): boolean => player.position === "K"
     ).length;
 
-    // apologies this componant is butt ugly
+    // apologies this html is not pretty
     return (
         <div className="teamRoster">
             QB <br></br> ({num_QB}/1)

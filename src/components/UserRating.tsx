@@ -19,7 +19,7 @@ export function UserRating({
     setUserFilteredList
 }: Rating) {
     //Stats all automatically 1, rating automatically 1 considering they're a new player
-    const [rating, setRating] = useState<number>(player.rating);
+    const [rating, setRating] = useState<number>(player.rating); // holds the players rating
     // Provide forms for editing the new movie
     // And also a button to append the movie
 

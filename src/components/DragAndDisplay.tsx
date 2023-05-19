@@ -44,15 +44,15 @@ function DragAndDisplay({
 }: Widgets) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
-    // hold current sorting method of central list
-    const [centralSort, setCentralSort] = useState<string>("None");
-    const [userSort, setUserSort] = useState<string>("None"); // state to keep track of user sorting
-    const [centralSearchText, setCentralSearchText] = useState<string>("");
-    const [userSearchText, setUserSearchText] = useState<string>("");
-    const [centralFilter, setCentralFilter] = useState<string>("None");
-    const [userFilter, setUserFilter] = useState<string>("None");
+    const [centralSort, setCentralSort] = useState<string>("None"); // keeps track of central list sorting
+    const [userSort, setUserSort] = useState<string>("None"); // keeps track of user list sorting
+    const [centralSearchText, setCentralSearchText] = useState<string>(""); // holds central list search text
+    const [userSearchText, setUserSearchText] = useState<string>(""); // holds user list search text
+    const [centralFilter, setCentralFilter] = useState<string>("None"); // keeps track of central list filtering
+    const [userFilter, setUserFilter] = useState<string>("None"); // keeps track of user list filtering
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
+    // positions that can be filtered by
     const filterPositions = [
         "None",
         "QB",
@@ -63,10 +63,12 @@ function DragAndDisplay({
         "Rating > 90"
     ];
 
+    // general drag function
     function handleOnDrag(e: React.DragEvent, widgetType: string) {
         e.dataTransfer.setData("widgetType", widgetType);
     }
 
+    // function for dropping a player into a user list
     function handleOnDrop(e: React.DragEvent) {
         const widgetType = e.dataTransfer.getData("widgetType") as string;
 
@@ -88,6 +90,7 @@ function DragAndDisplay({
         }
     }
 
+    // function for dropping a player into an admin list
     function handleOnDropAdmin(e: React.DragEvent) {
         const widgetType = e.dataTransfer.getData("widgetType") as string;
 
@@ -114,6 +117,7 @@ function DragAndDisplay({
         }
     }
 
+    // function for add player button
     function addToTeam(newPlayer: Player) {
         // modified because now widgets are players, so when you delete one player it doesnt
         // delete other players with the same name
@@ -159,6 +163,7 @@ function DragAndDisplay({
         setMyMap(myMap.set(role, newList));
     }
 
+    // function for when an admin clicks the delete player button
     function handleOnAdminButtonClick(removedPlayer: Player) {
         const newList = adminWidgets.filter(
             (player: Player): boolean => player !== removedPlayer
@@ -179,14 +184,11 @@ function DragAndDisplay({
         setFilteredList(newListFilter);
     }
 
+    // function for when an object is dragged over
     function handleDragOver(e: React.DragEvent) {
         e.preventDefault();
     }
 
-    // the curr in the both maps below now represents players,
-    // you can access its attributes with dot notation
-    // also we should consider makeing a "renderPlayer" function that way we can format the player
-    // cards separatly and clean up the code a little
     return (
         <div className="Test">
             <SortFilterBox

@@ -37,10 +37,10 @@ export function RoleSelect({
     setUserFilteredList
 }: Roles): JSX.Element {
     //const [role, setRole] = useState<string>("Super");
-    const [userText, setUserText] = useState<string>("");
+    const [userText, setUserText] = useState<string>(""); // new users name
+
     function updateRole(event: React.ChangeEvent<HTMLSelectElement>) {
         if (role === "Team Manager") {
-            console.log("Team Manager");
             setMyMap(myMap.set(role, [...adminWidgets]));
         } else {
             setMyMap(myMap.set(role, [...widgets]));
