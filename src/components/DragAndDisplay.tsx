@@ -231,6 +231,7 @@ function DragAndDisplay({
                             {role !== "League Manager" ? (
                                 role === "Team Manager" ? (
                                     <Button
+                                        className="greenButton"
                                         data-testid={"adminButton" + index}
                                         onClick={() => addToAdminTeam(curr)}
                                     >
@@ -238,6 +239,7 @@ function DragAndDisplay({
                                     </Button>
                                 ) : (
                                     <Button
+                                        className="greenButton"
                                         data-testid={"userButton" + index}
                                         onClick={() => addToTeam(curr)}
                                     >
@@ -308,14 +310,13 @@ function DragAndDisplay({
                             <div className="playerNameAndPosition">
                                 {curr.name} | {curr.position} <br />{" "}
                                 <img
-                                    className="playerImage"
+                                    className="playerImageAdmin"
                                     src={curr.image}
                                     alt="Image"
                                     draggable="false"
                                 />
                                 <span>Overall: {curr.rating}</span>
                             </div>
-                            {/*}{setMyMap(myMap.set(role, [...adminWidgets]))}{*/}
                             <div className="userChangeRatings">
                                 <div style={{ paddingRight: 70 }}>
                                     <Button
@@ -349,7 +350,7 @@ function DragAndDisplay({
                     style={{
                         float: "right",
                         marginRight: 50,
-                        marginTop: -197
+                        marginTop: -206
                     }}
                 >
                     <div style={{ paddingLeft: 50 }}>

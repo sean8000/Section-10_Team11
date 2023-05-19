@@ -27,6 +27,7 @@ export function EditAdminButton({
             {role === "Team Manager" && visibilty === false ? (
                 <div>
                     <Button
+                        className="greenButton"
                         data-testid={role + "EditButton"}
                         onClick={() => {
                             setVisibility(!visibilty);

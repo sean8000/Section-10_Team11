@@ -44,6 +44,13 @@ function App(): JSX.Element {
                 <>
                     {" "}
                     {"NFL Football Team Builder"}
+                    <img
+                        className="footballIcon"
+                        src={
+                            "https://clipartix.com/wp-content/uploads/2017/06/Football-clipart-black-and-white-free-images.png"
+                        }
+                        alt="Football"
+                    ></img>
                     <br></br>
                     {"Drag or Click Player Icons to Put Them on Your Team"}
                 </>
