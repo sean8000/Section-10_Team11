@@ -11,29 +11,22 @@ import { EditSuperButton } from "./components/visibilityButtons/EditSuperButton"
 import { EditUserButton } from "./components/visibilityButtons/EditUserButton";
 
 function App(): JSX.Element {
-    const [role, setRole] = useState<string>("League Manager");
+    const [role, setRole] = useState<string>("League Manager"); // current role selected
     const [myMap, setMyMap] = useState(new Map());
-    const [centralList, setCentralList] = useState<Player[]>(playerList);
-    const [filteredList, setFilteredList] = useState<Player[]>(playerList);
-    const [widgets, setWidgets] = useState<Player[]>([]);
-    const [userFilteredList, setUserFilteredList] = useState<Player[]>([]);
-    const [adminWidgets, setAdminWidgets] = useState<Player[]>([]);
+    const [centralList, setCentralList] = useState<Player[]>(playerList); // central list of players
+    const [filteredList, setFilteredList] = useState<Player[]>(playerList); // filtered central list
+    const [widgets, setWidgets] = useState<Player[]>([]); // user list of players
+    const [userFilteredList, setUserFilteredList] = useState<Player[]>([]); // filtered user list
+    const [adminWidgets, setAdminWidgets] = useState<Player[]>([]); // admin list of players
     const [totalRoles, setTotalRoles] = useState<string[]>([
         "League Manager",
         "Team Manager",
         "Guest User"
-    ]);
-    const [adminEdit, setAdminEdit] = useState<boolean>(false);
-    const [superEdit, setSuperEdit] = useState<boolean>(false);
-    const [userEdit, setUserEdit] = useState<boolean>(false);
-    //const [userDict, setDict] = useState<Record<string, string[]>>({});
-    {
-        /*}
-    function addUser() {
-        setTotalRoles([...totalRoles, "User2"]);
-    }
-{*/
-    }
+    ]); // roles
+    const [adminEdit, setAdminEdit] = useState<boolean>(false); // admin edit visibility
+    const [superEdit, setSuperEdit] = useState<boolean>(false); // super edit visibility
+    const [userEdit, setUserEdit] = useState<boolean>(false); //user edit visibility
+
     return (
         <div>
             <span className="names">

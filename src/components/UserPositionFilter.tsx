@@ -23,8 +23,6 @@ export function UserPositionFilter({
     setFilter,
     setText
 }: Filter): JSX.Element {
-    //const [filter, setFilter] = useState<string>("None");
-
     function updateFilter(event: React.ChangeEvent<HTMLInputElement>) {
         setFilter(event.target.value);
         if (

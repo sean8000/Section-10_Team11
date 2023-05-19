@@ -20,7 +20,7 @@ export function PlayerStats({
     totalYards,
     role
 }: playerAtts) {
-    const [visible, setVisible] = useState<boolean>(false);
+    const [visible, setVisible] = useState<boolean>(false); // keeps track of visibility
 
     function flipVisibility(): void {
         setVisible(!visible);

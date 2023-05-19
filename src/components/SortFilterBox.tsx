@@ -41,6 +41,7 @@ export function SortFilterBox({
     filterOption,
     setFilterOption
 }: SortFilter): JSX.Element {
+    // this is primarily a handler for the sub componants to reduce code
     return (
         <div className="sortFilterBox">
             <SearchTextBox
