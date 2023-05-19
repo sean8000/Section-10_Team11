@@ -52,7 +52,9 @@ export function SortSelect({
     return (
         <div className="sortSelect">
             <Form.Group controlId="Sort">
-                <Form.Label style={{ color: "white" }}>Sort Select</Form.Label>
+                <Form.Label style={{ color: "white" }}>
+                    Sort Options:
+                </Form.Label>
                 <Form.Select
                     data-testid="sort"
                     className="sortSelectHeading"

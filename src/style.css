@@ -21,18 +21,21 @@
     background-color: black;
     color: white;
     height: 298px;
+    border-radius: 5px;
 }
 
 .player:nth-child(even) {
     background-color: gray;
     color: white;
     height: 298px;
+    border-radius: 5px;
 }
 .playerWidget:nth-child(odd) {
     background-color: black;
     color: white;
     height: 310px;
     border-bottom: 2px solid black;
+    border-radius: 5px;
 }
 
 .playerWidget:nth-child(even) {
@@ -40,6 +43,7 @@
     color: white;
     height: 310px;
     border-bottom: 2px solid black;
+    border-radius: 5px;
 }
 .playerWidgetAdmin:nth-child(odd) {
     background-color: black;
@@ -141,19 +145,32 @@
 
 .AddOrDeleteUserButtons {
     background-color: #000000;
+    border: 1px solid darkgreen;
+}
+
+.AddOrDeleteUserButtons:hover {
+    background-color: darkgreen;
+    border: green;
 }
 
 .sortFilterBox {
     color: white;
     background: grey;
     width: 520px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .AddingAndDeletingUsers {
     width: 200px;
     float: right;
-    margin-right: 65%;
     margin-top: -105px;
+}
+
+.userPositionFilter {
+    border-top: 2px groove rgb(200, 200, 205);
+    border-bottom: 2px groove rgb(200, 200, 205);
+    margin-top: 5px;
 }
 
 .padding {
@@ -203,6 +220,19 @@
     margin-top: -46px;
     border: 2px black;
     background: rgb(39, 40, 45);
+    background-image: url("https://static.www.nfl.com/image/upload/v1554321393/league/nvfr7ogywskqrfaiu38m.png");
+    background-position: 50% 50%;
+    background-size: 220px 220px;
+    border-radius: 5px;
+}
+
+.playerImageAdmin {
+    float: right;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-top: -48px;
+    border: 2px black;
     border-radius: 5px;
 }
 
@@ -215,8 +245,12 @@
     margin-right: -140px;
     border: 2px black;
     background: rgb(39, 40, 45);
+    background-image: url("https://static.www.nfl.com/image/upload/v1554321393/league/nvfr7ogywskqrfaiu38m.png");
+    background-position: 50% 50%;
+    background-size: 220px 220px;
     border-radius: 5px;
 }
+
 .playerImageEdit {
     float: right;
     display: flex;
@@ -312,4 +346,20 @@ div#content:active {
     margin-bottom: 0px;
     overflow: auto;
     float: right;
+}
+
+.greenButton {
+    background: darkgreen;
+}
+
+.greenButton:hover {
+    background: green;
+    border: green;
+}
+
+.footballIcon {
+    width: 85px;
+    height: 85px;
+    margin-left: 555px;
+    margin-top: -30px;
 }

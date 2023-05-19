@@ -25,6 +25,7 @@ export function EditUserButton({
             visibilty === false ? (
                 <div>
                     <Button
+                        className="greenButton"
                         data-testid={role + "EditButton"}
                         onClick={() => {
                             setVisibility(!visibilty);

@@ -55,7 +55,7 @@ export function UserPositionFilter({
         <div className="userPositionFilter">
             <Form.Group>
                 <Form.Label style={{ color: "white" }}>
-                    Filter Buttons
+                    Filter Options:
                 </Form.Label>
                 <br></br>
                 {filterPosition.map((choice: string) => (

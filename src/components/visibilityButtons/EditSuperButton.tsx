@@ -23,6 +23,7 @@ export function EditSuperButton({
             {role === "League Manager" && visibilty === false ? (
                 <div>
                     <Button
+                        className="greenButton"
                         data-testid={role + "EditButton"}
                         onClick={() => {
                             setVisibility(!visibilty);

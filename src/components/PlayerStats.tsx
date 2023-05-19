@@ -30,10 +30,11 @@ export function PlayerStats({
         <>
             <div style={{ paddingLeft: 30 }}>
                 <Button
+                    className="greenButton"
                     data-testid={"statsButton" + role + index}
                     onClick={flipVisibility}
                 >
-                    STATS
+                    View Stats
                 </Button>
                 {visible && (
                     <div>
