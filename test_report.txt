@@ -2,7 +2,7 @@
 > react-typescript-starter@0.1.0 test
 > react-scripts test --coverage
 
-FAIL src/components/TestingComponents/RoleSave.test.tsx
+FAIL src/components/TestingComponents/RoleSave.test.tsx (5.65 s)
   ● Testing that list is saved upon role switch › Testing user list should initially be empty
 
     TestingLibraryElementError: Unable to find a label with the text of: Which role
@@ -15534,24 +15534,24 @@ FAIL src/components/TestingComponents/IsDraggable.test.tsx
 ----------------------------------|---------|----------|---------|---------|-------------------
 File                              | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------------------------------|---------|----------|---------|---------|-------------------
-All files                         |   32.72 |    21.08 |   24.78 |   32.92 |                   
+All files                         |   32.82 |    21.08 |   24.78 |   33.02 |                   
  src                              |     100 |    36.36 |     100 |     100 |                   
-  App.tsx                         |     100 |    36.36 |     100 |     100 | 99-127            
+  App.tsx                         |     100 |    36.36 |     100 |     100 | 92-120            
   players.tsx                     |     100 |      100 |     100 |     100 |                   
- src/components                   |    32.1 |    20.93 |   32.46 |   32.44 |                   
+ src/components                   |   32.27 |    20.93 |   32.46 |   32.62 |                   
   AddPlayers.tsx                  |     100 |      100 |     100 |     100 |                   
-  DragAndDisplay.tsx              |      15 |    21.42 |    6.66 |      15 | 67-183,225-434    
+  DragAndDisplay.tsx              |      15 |    21.42 |    6.66 |      15 | 68-189,227-436    
   PlayerStats.tsx                 |   66.66 |       50 |      50 |   66.66 | 26                
-  SearchTextBox.tsx               |    87.5 |       50 |     100 |    87.5 | 38                
-  SortFilterBox.tsx               |     100 |       50 |     100 |     100 | 68-69             
+  SearchTextBox.tsx               |    87.5 |       50 |     100 |    87.5 | 37                
+  SortFilterBox.tsx               |     100 |       50 |     100 |     100 | 69-70             
   SuperAdminEdit.tsx              |       0 |      100 |       0 |       0 | 25-28             
-  TeamRoster.tsx                  |       0 |      100 |       0 |       0 | 10-27             
+  TeamRoster.tsx                  |       0 |      100 |       0 |       0 | 11-28             
   UserEdit.tsx                    |       0 |      100 |       0 |       0 | 20-28             
-  UserPositionFilter.tsx          |   92.85 |    83.33 |     100 |   92.85 | 50                
+  UserPositionFilter.tsx          |   92.85 |    83.33 |     100 |   92.85 | 48                
   UserRating.tsx                  |       0 |        0 |       0 |       0 | 22-54             
   UserText.tsx                    |      50 |      100 |      50 |      50 | 13                
-  roleSelect.tsx                  |   10.71 |     4.54 |   33.33 |   10.71 | 42-79             
-  sortSelect.tsx                  |   14.28 |        0 |   33.33 |   15.78 | 22-50             
+  roleSelect.tsx                  |   11.11 |     4.54 |   33.33 |   11.11 | 43-79             
+  sortSelect.tsx                  |   14.28 |        0 |   33.33 |   15.78 | 22-43             
  src/components/subComponentsEdit |       0 |        0 |       0 |       0 |                   
   EditDescription.tsx             |       0 |      100 |       0 |       0 | 16-43             
   EditImage.tsx                   |       0 |      100 |       0 |       0 | 12-40             
@@ -15572,5 +15572,5 @@ All files                         |   32.72 |    21.08 |   24.78 |   32.92 |
 Test Suites: 17 failed, 3 passed, 20 total
 Tests:       77 failed, 28 passed, 105 total
 Snapshots:   0 total
-Time:        35.131 s
+Time:        42.654 s
 Ran all test suites.
