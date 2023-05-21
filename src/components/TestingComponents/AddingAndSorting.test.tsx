@@ -25,7 +25,7 @@ describe("Testing adding players with sort", () => {
         //Justin Korup is in the player list displayed on the screen
         expect(screen.getByText(/Justin Korup/i));
 
-        const sortID = screen.getByLabelText(/Sort Select/);
+        const sortID = screen.getByLabelText(/Sort Options/);
         userEvent.selectOptions(sortID, "None");
 
         const addedLast = screen.getByTestId(30);
@@ -48,7 +48,7 @@ describe("Testing adding players with sort", () => {
         //Justin Korup is in the player list displayed on the screen
         expect(screen.getByText(/Justin Korup/i));
 
-        const sortID = screen.getByLabelText(/Sort Select/);
+        const sortID = screen.getByLabelText(/Sort Options/);
         userEvent.selectOptions(sortID, "Position");
 
         const addedLast = screen.getByTestId(4); //He would be index 4, 5th place in the list
@@ -72,7 +72,7 @@ describe("Testing adding players with sort", () => {
         //Justin Korup is in the player list displayed on the screen
         expect(screen.getByText(/Justin Korup/i));
 
-        const sortID = screen.getByLabelText(/Sort Select/);
+        const sortID = screen.getByLabelText(/Sort Options/);
         userEvent.selectOptions(sortID, "Rating");
 
         const addedLast = screen.getByTestId(30); //He would be index  last since rating is 1
@@ -95,7 +95,7 @@ describe("Testing adding players with sort", () => {
         //Justin Korup is in the player list displayed on the screen
         expect(screen.getByText(/Justin Korup/i));
 
-        const sortID = screen.getByLabelText(/Sort Select/);
+        const sortID = screen.getByLabelText(/Sort Options/);
         userEvent.selectOptions(sortID, "Touchdowns");
 
         const addedLast = screen.getByTestId(26); //He would be index 26, he has the least touchdowns

@@ -6,9 +6,9 @@ import userEvent from "@testing-library/user-event";
 describe("Testing Edit Players From Super", () => {
     test("Testing upon editing, there are already 30 users in your list than you can edit since you're the super", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
 
@@ -21,9 +21,9 @@ describe("Testing Edit Players From Super", () => {
     });
     test("Testing That A Player can be edited after the edit is clicked", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
 
@@ -43,9 +43,9 @@ describe("Testing Edit Players From Super", () => {
     });
     test("Testing That a player will still be edited in the central list after leaving edit mode, changing name", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
 
@@ -70,9 +70,9 @@ describe("Testing Edit Players From Super", () => {
     });
     test("Testing That a player will still be edited in the central list after leaving edit mode, this time changing stats", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
 
@@ -99,9 +99,9 @@ describe("Testing Edit Players From Super", () => {
     });
     test("After editing a player in super, should be seen as a user in the central list", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
 
@@ -125,7 +125,7 @@ describe("Testing Edit Players From Super", () => {
         expect(screen.getByText(/Justin Korup/)).toBeInTheDocument();
 
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
         //Still in the document under the central list even after switch to another user
         expect(screen.getByText(/Justin Korup/)).toBeInTheDocument();
     });

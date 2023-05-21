@@ -15,12 +15,14 @@ describe("Drag Tests", () => {
     });
     test("Testing that draggable list appears when not league manager", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Team Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
+            "Team Manager"
+        );
         expect(screen.getByText(/Manage Your Team/)).toBeInTheDocument();
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
         expect(screen.getByText(/Build Your Team/)).toBeInTheDocument();
     });
     test("Testing that first player is draggable", () => {

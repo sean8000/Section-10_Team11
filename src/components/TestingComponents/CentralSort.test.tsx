@@ -11,7 +11,7 @@ describe("Testing Sort", () => {
     });
     test("Testing for sorted by position", () => {
         render(<App />);
-        const sortID = screen.getByLabelText(/Sort Select/);
+        const sortID = screen.getByLabelText(/Sort Options/);
         userEvent.selectOptions(sortID, "Position");
         //First person would be K, 4 would be a QB, 8 would be a RB, 17 would be a TE, 21 would be a WR
         const firstK = screen.getByTestId(0);
@@ -27,7 +27,7 @@ describe("Testing Sort", () => {
     });
     test("Test sorted by Rating", () => {
         render(<App />);
-        const sortID = screen.getByLabelText(/Sort Select/);
+        const sortID = screen.getByLabelText(/Sort Options/);
         userEvent.selectOptions(sortID, "Rating");
         //First person would be 99, second a 99, 18 would be a 94, 29(last) would be an 86
         const firstRated = screen.getByTestId(0);
@@ -41,7 +41,7 @@ describe("Testing Sort", () => {
     });
     test("Test sorted by Touchdowns", () => {
         render(<App />);
-        const sortID = screen.getByLabelText(/Sort Select/);
+        const sortID = screen.getByLabelText(/Sort Options/);
         userEvent.selectOptions(sortID, "Touchdowns");
         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
         const firstRated = screen.getByTestId(0);
@@ -64,7 +64,7 @@ describe("Testing Sort", () => {
     test("Test sorted by None", () => {
         //After the sort is changed back to none, it will retain the same ordering as the previous sort
         render(<App />);
-        const sortID = screen.getByLabelText(/Sort Select/);
+        const sortID = screen.getByLabelText(/Sort Options/);
         userEvent.selectOptions(sortID, "Touchdowns");
         //First person has 41, second 40, 8 has 13, 29(last) would be a -1 (has no touchdowns, placeholder)
         const firstRated = screen.getByTestId(0);

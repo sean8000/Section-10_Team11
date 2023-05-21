@@ -9,7 +9,7 @@ describe("Testing Filter in central list", () => {
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.getByTestId(1)).toBeInTheDocument();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
@@ -22,7 +22,7 @@ describe("Testing Filter in central list", () => {
 
     test("Testing no sort", () => {
         //We use the same component to display the super and user sort, the second one is the user sort
-        //const sortButton = screen.queryAllByLabelText(/Sort Select/)[1];
+        //const sortButton = screen.queryAllByLabelText(/Sort Options/)[1];
         expect(screen.queryAllByTestId("sort")).toHaveLength(2);
         const sortButton = screen.queryAllByTestId("sort")[1];
         userEvent.selectOptions(sortButton, "None");
@@ -36,7 +36,7 @@ describe("Testing Filter in central list", () => {
     });
     test("Testing sort by position", () => {
         //We use the same component to display the super and user sort, the second one is the user sort
-        //const sortButton = screen.queryAllByLabelText(/Sort Select/)[1];
+        //const sortButton = screen.queryAllByLabelText(/Sort Options/)[1];
         expect(screen.queryAllByTestId("sort")).toHaveLength(2);
         const sortButton = screen.queryAllByTestId("sort")[1];
         userEvent.selectOptions(sortButton, "Position");
@@ -50,7 +50,7 @@ describe("Testing Filter in central list", () => {
     });
     test("Testing sort by Rating", () => {
         //We use the same component to display the super and user sort, the second one is the user sort
-        //const sortButton = screen.queryAllByLabelText(/Sort Select/)[1];
+        //const sortButton = screen.queryAllByLabelText(/Sort Options/)[1];
         expect(screen.queryAllByTestId("sort")).toHaveLength(2);
         const sortButton = screen.queryAllByTestId("sort")[1];
         userEvent.selectOptions(sortButton, "Rating");
@@ -64,7 +64,7 @@ describe("Testing Filter in central list", () => {
     });
     test("Testing sort by Touchdowns", () => {
         //We use the same component to display the super and user sort, the second one is the user sort
-        //const sortButton = screen.queryAllByLabelText(/Sort Select/)[1];
+        //const sortButton = screen.queryAllByLabelText(/Sort Options/)[1];
         expect(screen.queryAllByTestId("sort")).toHaveLength(2);
         const sortButton = screen.queryAllByTestId("sort")[1];
         userEvent.selectOptions(sortButton, "Touchdowns");
@@ -78,7 +78,7 @@ describe("Testing Filter in central list", () => {
     });
     test("Testing sort by none after sorting previously, should keep same rendering order", () => {
         //We use the same component to display the super and user sort, the second one is the user sort
-        //const sortButton = screen.queryAllByLabelText(/Sort Select/)[1];
+        //const sortButton = screen.queryAllByLabelText(/Sort Options/)[1];
         expect(screen.queryAllByTestId("sort")).toHaveLength(2);
         const sortButton = screen.queryAllByTestId("sort")[1];
         userEvent.selectOptions(sortButton, "Rating");

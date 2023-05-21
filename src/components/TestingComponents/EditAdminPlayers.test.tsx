@@ -6,9 +6,11 @@ import userEvent from "@testing-library/user-event";
 describe("Testing Edit Players From Admin", () => {
     test("Testing That this object doesn't exist in the edit list if not placed there by user", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Team Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
+            "Team Manager"
+        );
 
         const editButton = screen.getByTestId("Team ManagerEditButton");
         editButton.click();
@@ -17,9 +19,11 @@ describe("Testing Edit Players From Admin", () => {
     });
     test("Testing That Player can be added and then displayed after in the edit component", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Team Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
+            "Team Manager"
+        );
 
         const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
         expect(screen.queryByTestId("otherTeam Manager0")).toBeNull();
@@ -32,9 +36,11 @@ describe("Testing Edit Players From Admin", () => {
     });
     test("Testing That Player can be edited after the edit is clicked", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Team Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
+            "Team Manager"
+        );
 
         const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
         expect(screen.queryByTestId("otherTeam Manager0")).toBeNull();
@@ -55,9 +61,11 @@ describe("Testing Edit Players From Admin", () => {
 
     test("Testing That Edited player is in central list after leaving edit mode", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Team Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
+            "Team Manager"
+        );
 
         const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
         expect(screen.queryByTestId("otherTeam Manager0")).toBeNull();
@@ -81,9 +89,11 @@ describe("Testing Edit Players From Admin", () => {
     });
     test("Testing every field and returning to central list to check if changed", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Team Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
+            "Team Manager"
+        );
 
         const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
         expect(screen.queryByTestId("otherTeam Manager0")).toBeNull();

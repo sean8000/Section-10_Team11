@@ -14,9 +14,9 @@ describe("Player count in central list, visible by super only", () => {
         render(<App />);
         expect(screen.getByTestId(0)).toBeInTheDocument();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
 
@@ -28,15 +28,15 @@ describe("Player count in central list, visible by super only", () => {
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
         expect(screen.getByTestId(0)).toBeInTheDocument();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
         expect(screen.getByTestId("0")).toHaveTextContent("No. In Use: 0");
 
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
 
@@ -49,15 +49,15 @@ describe("Player count in central list, visible by super only", () => {
         expect(screen.getByTestId(1)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
         expect(screen.getByTestId("1")).toHaveTextContent("No. In Use: 0");
 
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 1);
 
@@ -66,7 +66,7 @@ describe("Player count in central list, visible by super only", () => {
         expect(screen.getByTestId("otherGuest User" + 0)).toBeInTheDocument();
 
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
         //Number is now one because of player being added to guest user list
@@ -77,15 +77,15 @@ describe("Player count in central list, visible by super only", () => {
         expect(screen.getByTestId(2)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
         expect(screen.getByTestId("2")).toHaveTextContent("No. In Use: 0");
 
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 2);
 
@@ -98,7 +98,7 @@ describe("Player count in central list, visible by super only", () => {
         expect(screen.getByTestId("otherGuest User" + 2)).toBeInTheDocument();
 
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
         //Number is now one because of player being added to guest user list
@@ -109,15 +109,15 @@ describe("Player count in central list, visible by super only", () => {
         expect(screen.getByTestId(3)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
         expect(screen.getByTestId("3")).toHaveTextContent("No. In Use: 0");
 
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 3);
 
@@ -135,7 +135,7 @@ describe("Player count in central list, visible by super only", () => {
 
         deleteFirstPlayerButton.click();
         userEvent.selectOptions(selectRole, "League Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
         //Number is now one because of player being added to guest user list

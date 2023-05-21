@@ -6,9 +6,9 @@ import userEvent from "@testing-library/user-event";
 describe("Testing Edit Players From user", () => {
     test("Testing That this object doesn't exist in the edit list if not placed there by user", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const editButton = screen.getByTestId("Guest UserEditButton");
         editButton.click();
@@ -17,9 +17,9 @@ describe("Testing Edit Players From user", () => {
     });
     test("Testing That Player can be added and then displayed after in the edit component", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
         expect(screen.queryByTestId("otherGuest User0")).toBeNull();
@@ -32,9 +32,9 @@ describe("Testing Edit Players From user", () => {
     });
     test("Testing That one of the players stats in the dictionary can be edited", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
         expect(screen.queryByTestId("otherGuest User0")).toBeNull();
@@ -52,9 +52,9 @@ describe("Testing Edit Players From user", () => {
     });
     test("Testing That the changed stat is reflected in the list after leaving edit mode", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
         expect(screen.queryByTestId("otherGuest User0")).toBeNull();
@@ -84,9 +84,9 @@ describe("Testing Edit Players From user", () => {
     });
     test("Testing changing all stats and returning to draggable lists", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
         expect(screen.queryByTestId("otherGuest User0")).toBeNull();
@@ -140,9 +140,9 @@ describe("Testing Edit Players From user", () => {
     });
     test("Making sure there is no place for the user to change anything that isn't a dictionary stat or rating", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
         expect(screen.queryByTestId("otherGuest User0")).toBeNull();

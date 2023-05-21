@@ -10,36 +10,38 @@ describe("Role Tests", () => {
     });
     test("Tests that the first role value is League Manager", () => {
         render(<App />);
-        expect(screen.getByLabelText("Which role")).toHaveValue(
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
             "League Manager"
         );
     });
     test("Tests that the changed value is Team Manager", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Team Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
+            "Team Manager"
+        );
     });
     test("Tests that the changed value is Guest User", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
     });
     test("Test adding user", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         const nameElement = screen.getByLabelText(/User Name/i);
         userEvent.type(nameElement, "myName");
         expect(nameElement).toHaveValue("myName");
         const addButton = screen.getByTestId("addButton");
         addButton.click();
         userEvent.selectOptions(selectRole, "myName");
-        expect(screen.getByLabelText("Which role")).toHaveValue("myName");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("myName");
     });
     test("Test adding empty string, should not be possible", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         const nameElement = screen.getByLabelText(/User Name/i);
         expect(selectRole).toHaveLength(3);
         userEvent.type(nameElement, "");
@@ -51,7 +53,7 @@ describe("Role Tests", () => {
     });
     test("Test adding duplicate user, shouldn't be possible", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         const nameElement = screen.getByLabelText(/User Name/i);
         expect(selectRole).toHaveLength(3);
         userEvent.type(nameElement, "myName");

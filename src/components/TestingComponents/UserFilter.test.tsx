@@ -9,7 +9,7 @@ describe("Testing Filter in central list", () => {
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.getByTestId(1)).toBeInTheDocument();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);

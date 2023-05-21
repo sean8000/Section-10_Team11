@@ -10,7 +10,7 @@ describe("Role Tests", () => {
     });
     test("Test adding user then deleting", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         const nameElement = screen.getByLabelText(/User Name/i);
         userEvent.type(nameElement, "myName");
         expect(nameElement).toHaveValue("myName");
@@ -27,7 +27,7 @@ describe("Role Tests", () => {
     });
     test("Test deleting guest user", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         const nameElement = screen.getByLabelText(/User Name/i);
         // 3 original roles
         expect(selectRole).toHaveLength(3);
@@ -40,7 +40,7 @@ describe("Role Tests", () => {
     });
     test("Test deleting already deleted role", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         const nameElement = screen.getByLabelText(/User Name/i);
         // 3 original roles
         expect(selectRole).toHaveLength(3);
@@ -58,7 +58,7 @@ describe("Role Tests", () => {
     });
     test("Test deleting empty string", () => {
         render(<App />);
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         const nameElement = screen.getByLabelText(/User Name/i);
         // 3 original roles
         expect(selectRole).toHaveLength(3);

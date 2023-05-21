@@ -8,9 +8,9 @@ describe("Filtering players by description search, as a user", () => {
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
 
@@ -35,9 +35,9 @@ describe("Filtering players by description search, as a user", () => {
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
 
@@ -62,9 +62,9 @@ describe("Filtering players by description search, as a user", () => {
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
 
@@ -89,9 +89,9 @@ describe("Filtering players by description search, as a user", () => {
         expect(screen.getByTestId(2)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addThirdPlayerButton = screen.getByTestId("userButton" + 2);
 
@@ -115,9 +115,9 @@ describe("Filtering players by description search, as a user", () => {
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
         addFirstPlayerButton.click();

@@ -9,9 +9,9 @@ describe("Adding Players Using Button", () => {
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
 
@@ -24,9 +24,9 @@ describe("Adding Players Using Button", () => {
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.queryByTestId("otherGuest User" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Guest User");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Guest User");
+        expect(screen.getByLabelText("Role Select")).toHaveValue("Guest User");
 
         const addFirstPlayerButton = screen.getByTestId("userButton" + 0);
 
@@ -42,9 +42,11 @@ describe("Adding Players Using Button", () => {
         expect(screen.getByTestId(0)).toBeInTheDocument();
         expect(screen.queryByTestId("otherAdmin" + 0)).toBeNull();
 
-        const selectRole = screen.getByLabelText("Which role", {});
+        const selectRole = screen.getByLabelText("Role Select", {});
         userEvent.selectOptions(selectRole, "Team Manager");
-        expect(screen.getByLabelText("Which role")).toHaveValue("Team Manager");
+        expect(screen.getByLabelText("Role Select")).toHaveValue(
+            "Team Manager"
+        );
 
         const addFirstPlayerButton = screen.getByTestId("adminButton" + 0);
 
